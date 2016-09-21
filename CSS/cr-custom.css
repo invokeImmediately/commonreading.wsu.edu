@@ -808,6 +808,16 @@ div.column ul.gform_fields.top_label > li.gfield > div.gfield_description {
 div.column ul.gform_fields.top_label > li.gfield > div.ginput_complex {
   margin-top: 0;
 }
+div.column ul.gform_fields.top_label > li.gfield.gfield_error.gf_left_half,
+div.column ul.gform_fields.top_label > li.gfield.gfield_error.gf_right_half {
+  width: calc(34%);
+}
+div.column ul.gform_fields.top_label > li.gfield ul.gfield_radio.gf_left_half,
+div.column ul.gform_fields.top_label > li.gfield ul.gfield_checkbox.gf_left_half,
+div.column ul.gform_fields.top_label > li.gfield ul.gfield_radio.gf_right_half,
+div.column ul.gform_fields.top_label > li.gfield ul.gfield_checkbox.gf_right_half {
+  width: 100%;
+}
 div.column ul.gform_fields.top_label > li.gfield + li.gfield,
 div.column ul.gform_fields.top_label li.gfield:first-child {
   margin-top: 0.5rem;
