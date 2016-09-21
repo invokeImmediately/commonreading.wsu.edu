@@ -800,6 +800,16 @@ div.column li.gfield div.ginput_container_textarea > textarea {
   font-size: 16px;
   font-family: Georgia, "Times New Roman", "Bitstream Charter", Times, serif;
 }
+div.column ul.gform_fields.top_label > li.gfield.gfield_error.gf_left_half,
+div.column ul.gform_fields.top_label > li.gfield.gfield_error.gf_right_half {
+  width: calc(34%);
+}
+div.column ul.gform_fields.top_label > li.gfield.gf_left_half ul.gfield_radio,
+div.column ul.gform_fields.top_label > li.gfield.gf_right_half ul.gfield_radio,
+div.column ul.gform_fields.top_label > li.gfield.gf_left_half ul.gfield_checkbox,
+div.column ul.gform_fields.top_label > li.gfield.gf_right_half ul.gfield_checkbox {
+  width: 100%;
+}
 div.column ul.gform_fields.top_label > li.gfield > div.gfield_description {
   padding: 0;
   margin: 0;
@@ -807,16 +817,6 @@ div.column ul.gform_fields.top_label > li.gfield > div.gfield_description {
 }
 div.column ul.gform_fields.top_label > li.gfield > div.ginput_complex {
   margin-top: 0;
-}
-div.column ul.gform_fields.top_label > li.gfield.gfield_error.gf_left_half,
-div.column ul.gform_fields.top_label > li.gfield.gfield_error.gf_right_half {
-  width: calc(34%);
-}
-div.column ul.gform_fields.top_label > li.gfield ul.gfield_radio.gf_left_half,
-div.column ul.gform_fields.top_label > li.gfield ul.gfield_checkbox.gf_left_half,
-div.column ul.gform_fields.top_label > li.gfield ul.gfield_radio.gf_right_half,
-div.column ul.gform_fields.top_label > li.gfield ul.gfield_checkbox.gf_right_half {
-  width: 100%;
 }
 div.column ul.gform_fields.top_label > li.gfield + li.gfield,
 div.column ul.gform_fields.top_label li.gfield:first-child {
