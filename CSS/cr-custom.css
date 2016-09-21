@@ -802,7 +802,7 @@ div.column li.gfield div.ginput_container_textarea > textarea {
 }
 div.column ul.gform_fields.top_label > li.gfield.gfield_error.gf_left_half,
 div.column ul.gform_fields.top_label > li.gfield.gfield_error.gf_right_half {
-  width: calc(34%);
+  width: calc(50% - 16px);
 }
 div.column ul.gform_fields.top_label > li.gfield.gf_left_half ul.gfield_radio,
 div.column ul.gform_fields.top_label > li.gfield.gf_right_half ul.gfield_radio,
