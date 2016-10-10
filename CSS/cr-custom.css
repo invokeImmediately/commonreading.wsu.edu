@@ -381,7 +381,7 @@ section.row:first-child h6:first-child {
 @media screen and (min-width: 694px) {
   .fluid .row.halves .column.has-background.crimson {
     width: 48%;
-    width: calc(48%);
+    width: calc(50% - 2rem);
     padding-right: 1rem;
     margin-right: 2rem;
     margin-bottom: 2rem;
