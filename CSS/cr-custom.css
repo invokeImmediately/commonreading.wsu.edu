@@ -237,6 +237,126 @@ div.column .soft-gray-border {
     transform: none;
   }
 }
+.fade-in-from-left {
+  -webkit-animation: anim-fade-in-from-left 1s linear 1;
+  -moz-animation: anim-fade-in-from-left 1s linear 1;
+  animation: anim-fade-in-from-left 1s linear 1;
+}
+@-webkit-keyframes anim-fade-in-from-left {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    -moz-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    -moz-transform: none;
+    transform: none;
+  }
+}
+@-moz-keyframes anim-fade-in-from-left {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    -moz-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    -moz-transform: none;
+    transform: none;
+  }
+}
+@keyframes anim-fade-in-from-left {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    -moz-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    -moz-transform: none;
+    transform: none;
+  }
+}
+.fade-in-from-right {
+  -webkit-animation: anim-fade-in-from-right 1s linear 1;
+  -moz-animation: anim-fade-in-from-right 1s linear 1;
+  animation: anim-fade-in-from-right 1s linear 1;
+}
+@-webkit-keyframes anim-fade-in-from-right {
+  0% {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+    -webkit-transform: translate3d(100%, 0, 0);
+    -moz-transform: translate3d(100%, 0, 0);
+    -o-transform: translate3d(100%, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -o-transform: none;
+  }
+}
+@-moz-keyframes anim-fade-in-from-right {
+  0% {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+    -webkit-transform: translate3d(100%, 0, 0);
+    -moz-transform: translate3d(100%, 0, 0);
+    -o-transform: translate3d(100%, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -o-transform: none;
+  }
+}
+@keyframes anim-fade-in-from-right {
+  0% {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+    -webkit-transform: translate3d(100%, 0, 0);
+    -moz-transform: translate3d(100%, 0, 0);
+    -o-transform: translate3d(100%, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -o-transform: none;
+  }
+}
+@-webkit-keyframes animGlowingHighlight {
+  0% {
+    background-color: rgba(141, 203, 241, 0.75);
+    border-color: #8dcbf1;
+  }
+  100% {
+    background-color: rgba(141, 203, 241, 0.25);
+    border-color: rgba(141, 203, 241, 0.5);
+  }
+}
+@keyframes animGlowingHighlight {
+  0% {
+    background-color: rgba(141, 203, 241, 0.75);
+    border-color: #8dcbf1;
+  }
+  100% {
+    background-color: rgba(141, 203, 241, 0.25);
+    border-color: rgba(141, 203, 241, 0.5);
+  }
+}
 /**--------------------------------------------------------
  * Legacy code written by predacessors on CR marketing team
  */
@@ -667,46 +787,117 @@ body.single-post main > section.row > div.column.two {
  *  ║ Styling applied to input elements to which the gravity form classes have been applied.       ║
  *  ╚══════════════════════════════════════════════════════════════════════════════════════════════╝
  */
+input.read-more-state {
+  display: none;
+}
+input.read-more-state:checked + div.read-more-target {
+  margin-top: 0;
+  height: auto;
+  opacity: 1;
+}
+input.read-more-state ~ p label.read-more-trigger:before {
+  content: 'Show more';
+}
+label.read-more-trigger {
+  display: inline-block;
+  position: relative;
+  padding: 0 .5rem;
+  background-color: rgba(255, 184, 28, 0.25);
+  border: 1px solid #2a3033;
+  border-radius: .25rem;
+  font-size: .9rem;
+  line-height: 2;
+  color: #5e6a71;
+  -webkit-transition: all 0.3333s ease;
+  -moz-transition: all 0.3333s ease;
+  transition: all 0.3333s ease;
+  -webkit-animation: orange-glow 5s linear infinite;
+  -moz-animation: orange-glow 5s linear infinite;
+  animation: orange-glow 5s linear infinite;
+  cursor: pointer;
+}
+@-webkit-keyframes orange-glow {
+  0% {
+    background-color: rgba(255, 184, 28, 0.25);
+    box-shadow: 0 0 9px rgba(255, 184, 28, 0);
+    color: #5e6a71;
+  }
+  50% {
+    background-color: rgba(255, 184, 28, 0.5);
+    box-shadow: 0 0 18px rgba(255, 184, 28, 0.5);
+    color: #2a3033;
+  }
+  100% {
+    background-color: rgba(255, 184, 28, 0.25);
+    box-shadow: 0 0 9px rgba(255, 184, 28, 0);
+  }
+}
+@-moz-keyframes orange-glow {
+  0% {
+    background-color: rgba(255, 184, 28, 0.25);
+    box-shadow: 0 0 9px rgba(255, 184, 28, 0);
+    color: #5e6a71;
+  }
+  50% {
+    background-color: rgba(255, 184, 28, 0.5);
+    box-shadow: 0 0 18px rgba(255, 184, 28, 0.5);
+    color: #2a3033;
+  }
+  100% {
+    background-color: rgba(255, 184, 28, 0.25);
+    box-shadow: 0 0 9px rgba(255, 184, 28, 0);
+  }
+}
+@keyframes orange-glow {
+  0% {
+    background-color: rgba(255, 184, 28, 0.25);
+    box-shadow: 0 0 9px rgba(255, 184, 28, 0);
+    color: #5e6a71;
+  }
+  50% {
+    background-color: rgba(255, 184, 28, 0.5);
+    box-shadow: 0 0 18px rgba(255, 184, 28, 0.5);
+    color: #2a3033;
+  }
+  100% {
+    background-color: rgba(255, 184, 28, 0.25);
+    box-shadow: 0 0 9px rgba(255, 184, 28, 0);
+  }
+}
+label.read-more-trigger:after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  bottom: 0;
+  left: 2px;
+  border-radius: 0.25rem;
+  background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.1) 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1));
+}
+label.read-more-trigger:hover {
+  -webkit-animation: none;
+  -moz-animation: none;
+  animation: none;
+  background-color: #ffb81c;
+  box-shadow: 0 0 18px rgba(255, 184, 28, 0.6667);
+  border: 1px solid #2a3033;
+  color: #2a3033;
+}
+div.read-more-target {
+  height: 0;
+  overflow: hidden;
+  margin-top: .5rem;
+  opacity: 0;
+  transition: .333s ease;
+  -webkit-transition: .333s ease;
+  -moz-transition: .333s ease;
+  -o-transition: .333s ease;
+}
+.read-more-state:checked ~ p label.read-more-trigger:before {
+  content: 'Show less';
+}
 div.column .gform_wrapper {
   max-width: 990px;
-}
-@media all {
-  div.column .gform_wrapper {
-    line-height: 1.275em;
-    font-size: 16px;
-  }
-}
-@media all and (min-width: 1073px) {
-  div.column .gform_wrapper {
-    font-size: 16px;
-  }
-}
-@media all and (min-width: 990px) and (max-width: 1072px) {
-  div.column .gform_wrapper {
-    font-size: 16px;
-  }
-}
-@media all and (min-width: 792px) and (max-width: 989px) {
-  div.column .gform_wrapper {
-    font-size: 16px;
-  }
-}
-@media all and (min-width: 481px) and (max-width: 791px) {
-  div.column .gform_wrapper {
-    font-size: 16px;
-  }
-}
-@media all and (min-width: 361px) and (max-width: 480px) {
-  div.column .gform_wrapper {
-    font-size: 15.008px;
-    text-align: left;
-  }
-}
-@media all and (max-width: 360px) {
-  div.column .gform_wrapper {
-    font-size: 14.077504px;
-    text-align: left;
-  }
 }
 div.column .gform_wrapper .field_sublabel_above .ginput_complex.ginput_container label {
   margin: 0;
