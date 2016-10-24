@@ -783,6 +783,7 @@ body.single-post main > section.row > div.column.two {
 }
 div.column hr.subSection {
   width: 85%;
+  height: 0;
   margin: 2rem auto;
   background: none;
   border: 0;
