@@ -781,6 +781,15 @@ body.single-post main > section.row > div.column.two {
     border-bottom-right-radius: 0;
   }
 }
+div.column hr.subSection {
+  width: 85%;
+  margin: 2rem auto;
+  background: none;
+  border: 0;
+  border-top: 1px dashed rgba(94, 106, 113, 0.5);
+  border-bottom: 1px dashed rgba(160, 160, 160, 0.25);
+  text-align: center;
+}
 /*  ╔════════════════════════════════════════════════════════════════════════════════════════════════════════╗ 
  *  ║ #### INPUT FORMS ##################################################################################### ║
  *  ╠========================================================================================================╣
