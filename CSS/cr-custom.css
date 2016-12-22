@@ -833,7 +833,7 @@ div.column hr.subSection {
 body.blog div.column .hidden-on-news-feed {
   display: none;
 }
-body.post div.column .hidden-on-news-articles {
+body.single-post div.column .hidden-on-news-articles {
   display: none;
 }
 /*  ╔════════════════════════════════════════════════════════════════════════════════════════════════════════╗ 
