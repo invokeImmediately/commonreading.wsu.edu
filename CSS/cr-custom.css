@@ -1,19 +1,22 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto+Mono:300|Roboto+Condensed:400,700|Roboto+Slab);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Mono:300|Roboto+Condensed:400,700|Roboto+Slab|PT+Serif);
 .has-mono-font {
   font-family: 'Roboto Mono', monospace, sans-serif;
   font-weight: 300;
 }
 .has-dflt-font {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', 'Lucida Sans', sans-serif;
+}
+.has-dflt-font.serif {
+  font-family: 'Roboto Slab', 'Palatino', serif;
 }
 .has-alt-font {
-  font-family: 'Open Sans Condensed', 'Open Sans', sans-serif;
+  font-family: 'Open Sans Condensed', 'Lucida Sans', sans-serif;
 }
 .has-subst-font {
-  font-family: 'Roboto Condensed', 'Open Sans', sans-serif;
+  font-family: 'Roboto Condensed', 'Lucida Sans', sans-serif;
 }
 .has-subst-font.serif {
-  font-family: 'Roboto Slab', serif;
+  font-family: 'PT Serif', 'Palatino', serif;
 }
 .initially-hidden,
 div.column .initially-hidden {
@@ -186,7 +189,12 @@ div.column .soft-gray-border {
   position: relative;
   padding-top: 0.33333333rem !important;
   padding-bottom: 0.33333333rem !important;
+}
+.has-pull-quote-bordering:not(.alt):first-child {
   margin-top: 0.33333333rem;
+}
+.has-pull-quote-bordering:not(.alt):not(:first-child) {
+  margin-top: 2rem;
 }
 .has-pull-quote-bordering:not(.alt):before,
 .has-pull-quote-bordering:not(.alt):after {
@@ -198,20 +206,20 @@ div.column .soft-gray-border {
 .has-pull-quote-bordering:not(.alt):before {
   top: -0.33333333rem;
   height: 5px;
-  border-top: 5px solid rgba(70, 78, 84, 0.33);
+  border-top: 5px solid #464e54;
 }
 .has-pull-quote-bordering:not(.alt):after {
   bottom: -0.33333333rem;
   height: 1px;
   width: 33%;
-  border-top: 1px solid rgba(70, 78, 84, 0.25);
+  border-top: 1px solid rgba(70, 78, 84, 0.75757576);
 }
 .has-pull-quote-bordering.alt {
   position: relative;
   padding-left: 0.75rem !important;
   padding-right: 0.75rem !important;
-  border-right: 1px solid rgba(70, 78, 84, 0.25);
-  border-left: 5px solid rgba(70, 78, 84, 0.33);
+  border-right: 1px solid rgba(70, 78, 84, 0.18939394);
+  border-left: 5px solid #464e54;
 }
 .has-pull-quote-bordering.alt:before,
 .has-pull-quote-bordering.alt:after {
@@ -223,11 +231,11 @@ div.column .soft-gray-border {
 }
 .has-pull-quote-bordering.alt:before {
   right: 1px;
-  background-color: rgba(70, 78, 84, 0.125);
+  background-color: rgba(70, 78, 84, 0.37878788);
 }
 .has-pull-quote-bordering.alt:after {
   right: 3px;
-  background-color: rgba(70, 78, 84, 0.0675);
+  background-color: rgba(70, 78, 84, 0.75757576);
 }
 .fade-in-from-top {
   -webkit-animation: anim-fade-in-from-top 1s linear 1;
