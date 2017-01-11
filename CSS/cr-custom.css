@@ -190,11 +190,12 @@ div.column .soft-gray-border {
   padding-top: 0.33333333rem !important;
   padding-bottom: 0.33333333rem !important;
 }
-.has-pull-quote-bordering:not(.alt):first-child {
-  margin-top: 0.33333333rem;
-}
 .has-pull-quote-bordering:not(.alt):not(:first-child) {
   margin-top: 2rem;
+}
+.has-pull-quote-bordering:not(.alt):first-child,
+header:first-child + .has-pull-quote-bordering:not(.alt) {
+  margin-top: 0.33333333rem;
 }
 .has-pull-quote-bordering:not(.alt):before,
 .has-pull-quote-bordering:not(.alt):after {
