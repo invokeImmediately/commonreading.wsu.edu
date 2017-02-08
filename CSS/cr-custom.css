@@ -538,7 +538,8 @@ section.row:first-child h6:first-child {
 .column h3:first-child,
 .column h4:first-child,
 .column h5:first-child,
-.column h6:first-child {
+.column h6:first-child,
+.gform_heading h3.gform_title:first-child {
   padding-top: 0;
 }
 @media screen and (min-width: 694px) {
@@ -567,7 +568,7 @@ section.row.calendar div.column h2 {
   color: #000;
 }
 section.row.calendar div.column h3,
-section.row.calendar .gform_heading h3.gform_title {
+section.row.calendar div.gform_heading h3.gform_title {
   padding-top: 0;
   padding-bottom: 0;
   margin-top: .25rem;
