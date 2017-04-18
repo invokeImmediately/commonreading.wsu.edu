@@ -789,7 +789,7 @@ body.archives .article-header {
 body.archives .article-header .article-title {
   padding-bottom: 0.25rem;
   color: #fff;
-  text-shadow: 0 0 1px #4f3a08;
+  text-shadow: 0 0 1.125rem #4f3a08;
 }
 /**
 * dr-css-1.6 Other (TBD)
