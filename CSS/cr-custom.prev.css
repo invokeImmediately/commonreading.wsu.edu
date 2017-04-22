@@ -1,6 +1,5 @@
 @import  'https://fonts.googleapis.com/css?family=Roboto+Mono:300|Roboto+Condensed:400,700|Roboto+Slab|PT+Serif';
 
-/* Built with the LESS CSS preprocessor [http://lesscss.org/]. Please see [https://github.com/invokeImmediately/commonreading.wsu.edu] for a repository of source code. */
 .has-mono-font {
 	font-family: 'Roboto Mono', monospace, sans-serif;
 	font-weight: 300;
@@ -39,112 +38,176 @@
 	margin-top: 4rem;
 }
 
-.column .spaces-top-nrml,.spaces-top-nrml {
-	margin-top: 2rem;
-}
-
-.column .spaces-top-half,.spaces-top-half {
-	margin-top: 1rem;
-}
-
-.column .spaces-top-qrtr,.spaces-top-qrtr {
-	margin-top: .5rem;
-}
-
-.column .spaces-top-none,.spaces-top-none {
-	margin-top: 0 !important;
-}
-
 .column .spaces-rgt-full,.spaces-rgt-full {
 	margin-right: 4rem;
-}
-
-.column .spaces-rgt-nrml,.spaces-rgt-nrml {
-	margin-right: 2rem;
-}
-
-.column .spaces-rgt-half,.spaces-rgt-half {
-	margin-right: 1rem;
-}
-
-.column .spaces-rgt-qrtr,.spaces-rgt-qrtr {
-	margin-right: .5rem;
-}
-
-.column .spaces-rgt-none,.spaces-rgt-none {
-	margin-right: 0 !important;
 }
 
 .column .spaces-btm-full,.spaces-btm-full {
 	margin-bottom: 4rem;
 }
 
-.column .spaces-btm-nrml,.spaces-btm-nrml {
-	margin-bottom: 2rem;
-}
-
-.column .spaces-btm-half,.spaces-btm-half {
-	margin-bottom: 1rem;
-}
-
-.column .spaces-btm-qrtr,.spaces-btm-qrtr {
-	margin-bottom: .5rem;
-}
-
-.column .spaces-btm-none,.spaces-btm-none {
-	margin-bottom: 0 !important;
-}
-
 .column .spaces-lft-full,.spaces-lft-full {
 	margin-left: 4rem;
+}
+
+.column .spaces-top-nrml,.spaces-top-nrml {
+	margin-top: 2rem;
+}
+
+.column .spaces-rgt-nrml,.spaces-rgt-nrml {
+	margin-right: 2rem;
+}
+
+.column .spaces-btm-nrml,.spaces-btm-nrml {
+	margin-bottom: 2rem;
 }
 
 .column .spaces-lft-nrml,.spaces-lft-nrml {
 	margin-left: 2rem;
 }
 
+.column .spaces-top-half,.spaces-top-half {
+	margin-top: 1rem;
+}
+
+.column .spaces-rgt-half,.spaces-rgt-half {
+	margin-right: 1rem;
+}
+
+.column .spaces-btm-half,.spaces-btm-half {
+	margin-bottom: 1rem;
+}
+
 .column .spaces-lft-half,.spaces-lft-half {
 	margin-left: 1rem;
+}
+
+.column .spaces-top-qrtr,.spaces-top-qrtr {
+	margin-top: .5rem;
+}
+
+.column .spaces-rgt-qrtr,.spaces-rgt-qrtr {
+	margin-right: .5rem;
+}
+
+.column .spaces-btm-qrtr,.spaces-btm-qrtr {
+	margin-bottom: .5rem;
 }
 
 .column .spaces-lft-qrtr,.spaces-lft-qrtr {
 	margin-left: .5rem;
 }
 
+.column .spaces-top-8th,.spaces-top-8th {
+	margin-top: .25rem;
+}
+
+.column .spaces-rgt-8th,.spaces-rgt-8th {
+	margin-right: .25rem;
+}
+
+.column .spaces-btm-8th,.spaces-btm-8th {
+	margin-bottom: .25rem;
+}
+
+.column .spaces-lft-8th,.spaces-lft-8th {
+	margin-left: .25rem;
+}
+
+.column .spaces-top-none,.spaces-top-none {
+	margin-top: 0 !important;
+}
+
+.column .spaces-rgt-none,.spaces-rgt-none {
+	margin-right: 0 !important;
+}
+
+.column .spaces-btm-none,.spaces-btm-none {
+	margin-bottom: 0 !important;
+}
+
 .column .spaces-lft-none,.spaces-lft-none {
 	margin-left: 0 !important;
+}
+
+.column .pads-top-full,.pads-top-full {
+	padding-top: 4rem;
+}
+
+.column .pads-rgt-full,.pads-rgt-full {
+	padding-right: 4rem;
+}
+
+.column .pads-btm-full,.pads-btm-full {
+	padding-bottom: 4rem;
+}
+
+.column .pads-lft-full,.pads-lft-full {
+	padding-right: 4rem;
 }
 
 .column .pads-top-nrml,.pads-top-nrml {
 	padding-top: 2rem;
 }
 
-.column .pads-top-half,.pads-top-half {
-	padding-top: 1rem;
-}
-
 .column .pads-rgt-nrml,.pads-rgt-nrml {
 	padding-right: 2rem;
-}
-
-.column .pads-rgt-half,.pads-rgt-half {
-	padding-right: 1rem;
 }
 
 .column .pads-btm-nrml,.pads-btm-nrml {
 	padding-bottom: 2rem;
 }
 
-.column .pads-btm-half,.pads-btm-half {
-	padding-bottom: 1rem;
-}
-
 .column .pads-lft-nrml,.pads-lft-nrml {
 	padding-right: 2rem;
 }
 
+.column .pads-top-half,.pads-top-half {
+	padding-top: 1rem;
+}
+
+.column .pads-rgt-half,.pads-rgt-half {
+	padding-right: 1rem;
+}
+
+.column .pads-btm-half,.pads-btm-half {
+	padding-bottom: 1rem;
+}
+
 .column .pads-lft-half,.pads-lft-half {
 	padding-right: 1rem;
+}
+
+.column .pads-top-qrtr,.pads-top-qrtr {
+	padding-top: .5rem;
+}
+
+.column .pads-rgt-qrtr,.pads-rgt-qrtr {
+	padding-right: .5rem;
+}
+
+.column .pads-btm-qrtr,.pads-btm-qrtr {
+	padding-bottom: .5rem;
+}
+
+.column .pads-lft-qrtr,.pads-lft-qrtr {
+	padding-right: .5rem;
+}
+
+.column .pads-top-8th,.pads-top-8th {
+	padding-top: .25rem;
+}
+
+.column .pads-rgt-8th,.pads-rgt-8th {
+	padding-right: .25rem;
+}
+
+.column .pads-btm-8th,.pads-btm-8th {
+	padding-bottom: .25rem;
+}
+
+.column .pads-lft-8th,.pads-lft-8th {
+	padding-right: .25rem;
 }
 
 .column .indent-1x,.indent-1x {
@@ -519,6 +582,124 @@ cite.article-author {
 	display: none;
 }
 
+/*!
+* dr-css-1.0 CSS Authored by Daniel Rieck
+* 
+* Adjustments to and extensions of Builder template's style rule-sets and responsive behavior.
+*/
+/*! 
+* dr-css-1.1 New CSS classes
+*
+* Specification of additional, low-specificity CSS classes that can be applied to any element.
+*/
+/*! Text centering */
+.centers-text {
+	text-align: center;
+}
+
+/*! Adjustment of spacing */
+.column .spaces-top-nrml,.spaces-top-nrml {
+	margin-top: 4rem;
+}
+
+.column .spaces-top-nrml,.spaces-top-nrml {
+	margin-top: 2rem;
+}
+
+.column .spaces-top-half,.spaces-top-half {
+	margin-top: 1rem;
+}
+
+.column .spaces-top-qrtr,.spaces-top-qrtr {
+	margin-top: .5rem;
+}
+
+.column .spaces-rgt-nrml,.spaces-rgt-nrml {
+	margin-right: 4rem;
+}
+
+.column .spaces-rgt-nrml,.spaces-rgt-nrml {
+	margin-right: 2rem;
+}
+
+.column .spaces-rgt-half,.spaces-rgt-half {
+	margin-right: 1rem;
+}
+
+.column .spaces-rgt-qrtr,.spaces-rgt-qrtr {
+	margin-right: .5rem;
+}
+
+.column .spaces-btm-full,.spaces-btm-full {
+	margin-bottom: 4rem;
+}
+
+.column .spaces-btm-nrml,.spaces-btm-nrml {
+	margin-bottom: 2rem;
+}
+
+.column .spaces-btm-half,.spaces-btm-half {
+	margin-bottom: 1rem;
+}
+
+.column .spaces-btm-qrtr,.spaces-btm-qrtr {
+	margin-bottom: .5rem;
+}
+
+.column .spaces-lft-nrml,.spaces-lft-nrml {
+	margin-left: 4rem;
+}
+
+.column .spaces-lft-nrml,.spaces-lft-nrml {
+	margin-left: 2rem;
+}
+
+.column .spaces-lft-half,.spaces-lft-half {
+	margin-left: 1rem;
+}
+
+.column .spaces-lft-qrtr,.spaces-lft-qrtr {
+	margin-left: .5rem;
+}
+
+.column .pads-top-nrml,.pads-top-nrml {
+	padding-top: 2rem;
+}
+
+.column .pads-top-half,.pads-top-half {
+	padding-top: 1rem;
+}
+
+.column .pads-rgt-nrml,.pads-rgt-nrml {
+	padding-right: 2rem;
+}
+
+.column .pads-rgt-half,.pads-rgt-half {
+	padding-right: 1rem;
+}
+
+.column .pads-btm-nrml,.pads-btm-nrml {
+	padding-bottom: 2rem;
+}
+
+.column .pads-btm-half,.pads-btm-half {
+	padding-bottom: 1rem;
+}
+
+.column .pads-lft-nrml,.pads-lft-nrml {
+	padding-right: 2rem;
+}
+
+.column .pads-lft-half,.pads-lft-half {
+	padding-right: 1rem;
+}
+
+/*! 
+* dr-css-1.2 Banner slideshows
+*
+* Adjustments to Builder template's styling of banner slideshows:
+*   1. Repositions the cycle banner arrows to the bottom of the container.
+*/
 .builder-section-banner .cycle-next,.builder-section-banner .cycle-prev {
 	top: auto;
 	bottom: 0;
@@ -537,6 +718,9 @@ cite.article-author {
 	right: auto;
 }
 
+/*! 
+* dr-css-1.3 Responsive iframe containers
+*/
 div.iframe-wrapper {
 	position: relative;
 	height: 0;
@@ -558,33 +742,30 @@ div.iframe-wrapper>iframe {
 	padding: 0;
 }
 
-div.column.crimson>header:first-child>h2 {
+/*!
+ * dr-css-1.4 Crimson columns
+ *
+ * Style ruleset for specifying the visual design of columns with a faint crimson background.
+ */
+.column.crimson>header:first-child>h2 {
 	margin-bottom: .5rem;
 	color: #981e32;
 }
 
-div.column.crimson.has-background {
+.column.crimson.has-background {
 	padding-top: .8rem;
 	background-color: rgba(192,12,48,.2);
 	color: #464e54;
 }
 
-section.row:first-child h1:first-child,section.row:first-child h2:first-child,section.row:first-child h3:first-child,section.row:first-child h4:first-child,section.row:first-child h5:first-child,section.row:first-child h6:first-child {
-	padding-top: 0;
-}
-
-.column h1:first-child,.column h2:first-child,.column h3:first-child,.column h4:first-child,.column h5:first-child,.column h6:first-child,.gform_heading h3.gform_title:first-child {
-	padding-top: 0;
-}
-
 @media screen and (min-width:694px) {
-	div.column.crimson.has-background {
+	.column.crimson.has-background {
 		border-radius: 10px;
 	}
 }
 
 @media screen and (min-width:694px) {
-	.fluid .row.halves .column.has-background.crimson {
+	.fluid .row.halves .column.crimson.has-background {
 		width: 48%;
 		width: calc(50% - 2rem);
 		padding-right: 1rem;
@@ -593,144 +774,82 @@ section.row:first-child h1:first-child,section.row:first-child h2:first-child,se
 	}
 }
 
-.centers-text {
-	text-align: center;
-}
-
+/*!
+* dr-css-1.5 Default padding and spacing
+*
+* Adjustment of default padding on sections, section headings, calendar headings, etc.
+*/
+/*! Sections */
 main.spine-blank-template section.row.spaces-top {
 	margin-top: 1rem;
 }
 
-section.row.calendar div.column h2 {
+/*! Columns */
+.h1-header+section.halves.pad-top .column {
+	padding-top: 2rem;
+}
+
+/*! Column headings */
+section.row:first-child h1:first-child,section.row:first-child h2:first-child,section.row:first-child h3:first-child,section.row:first-child h4:first-child,section.row:first-child h5:first-child,section.row:first-child h6:first-child {
+	padding-top: 0;
+}
+
+.column h1:first-child,.column h2:first-child,.column h3:first-child,.column h4:first-child,.column h5:first-child,.column h6:first-child,.gform_heading h3.gform_title:first-child {
+	padding-top: 0;
+}
+
+/*! Calendar headings */
+section.row.calendar .column h2 {
 	padding-top: 0;
 	padding-bottom: 0;
 	color: #000;
 }
 
-section.row.calendar div.column h3,section.row.calendar div.gform_heading h3.gform_title {
+section.row.calendar .column h3,section.row.calendar .gform_heading h3.gform_title {
 	padding-top: 0;
 	padding-bottom: 0;
 	margin-top: .25rem;
 	margin-bottom: .25rem;
 }
 
-section.row.calendar div.column h5 {
+section.row.calendar .column h5 {
 	padding-top: 0;
 	padding-bottom: 0;
 	margin-top: 1em;
 	color: #5e6a71;
 }
 
-.h1-header+section.halves.pad-top .column {
-	padding-top: 2rem;
+/*!
+* dr-css-1.6 Archives
+*
+* Style rulesets below still need to be pulled into their own commented section.
+*/
+body.archives .article-header {
+	padding: 1rem;
+	background-color: #c69214;
 }
 
+body.archives .article-header .article-title {
+	padding-bottom: .25rem;
+	color: #fff;
+	text-shadow: 0 0 1.125rem #4f3a08;
+}
+
+/*!
+* dr-css-1.6 Other (TBD)
+*
+* Style rulesets below still need to be pulled into their own commented section.
+*/
 strong.lead-in {
 	font-family: "Roboto Condensed";
 	font-size: 1.25em;
-}
-
-.spaces-top-nrml,div.column .spaces-top-nrml {
-	margin-top: 4rem;
-}
-
-.spaces-top-nrml,div.column .spaces-top-nrml {
-	margin-top: 2rem;
-}
-
-.spaces-top-half,div.column .spaces-top-half {
-	margin-top: 1rem;
-}
-
-.spaces-top-qrtr,div.column .spaces-top-qrtr {
-	margin-top: .5rem;
-}
-
-.spaces-rgt-nrml,div.column .spaces-rgt-nrml {
-	margin-right: 4rem;
-}
-
-.spaces-rgt-nrml,div.column .spaces-rgt-nrml {
-	margin-right: 2rem;
-}
-
-.spaces-rgt-half,div.column .spaces-rgt-half {
-	margin-right: 1rem;
-}
-
-.spaces-rgt-qrtr,div.column .spaces-rgt-qrtr {
-	margin-right: .5rem;
-}
-
-.spaces-btm-full,div.column .spaces-btm-full {
-	margin-bottom: 4rem;
-}
-
-.spaces-btm-nrml,div.column .spaces-btm-nrml {
-	margin-bottom: 2rem;
-}
-
-.spaces-btm-half,div.column .spaces-btm-half {
-	margin-bottom: 1rem;
-}
-
-.spaces-btm-qrtr,div.column .spaces-btm-qrtr {
-	margin-bottom: .5rem;
-}
-
-.spaces-lft-nrml,div.column .spaces-lft-nrml {
-	margin-left: 4rem;
-}
-
-.spaces-lft-nrml,div.column .spaces-lft-nrml {
-	margin-left: 2rem;
-}
-
-.spaces-lft-half,div.column .spaces-lft-half {
-	margin-left: 1rem;
-}
-
-.spaces-lft-qrtr,div.column .spaces-lft-qrtr {
-	margin-left: .5rem;
-}
-
-.pads-top-nrml,div.column .pads-top-nrml {
-	padding-top: 2rem;
-}
-
-.pads-top-half,div.column .pads-top-half {
-	padding-top: 1rem;
-}
-
-.pads-rgt-nrml,div.column .pads-rgt-nrml {
-	padding-right: 2rem;
-}
-
-.pads-rgt-half,div.column .pads-rgt-half {
-	padding-right: 1rem;
-}
-
-.pads-btm-nrml,div.column .pads-btm-nrml {
-	padding-bottom: 2rem;
-}
-
-.pads-btm-half,div.column .pads-btm-half {
-	padding-bottom: 1rem;
-}
-
-.pads-lft-nrml,div.column .pads-lft-nrml {
-	padding-right: 2rem;
-}
-
-.pads-lft-half,div.column .pads-lft-half {
-	padding-right: 1rem;
 }
 
 img.shift-to-right {
 	float: right;
 }
 
-div.column aside.article-sidebar {
+.column aside.article-sidebar {
 	float: right;
 	width: 33%;
 	min-width: 230px;
@@ -744,52 +863,52 @@ div.column aside.article-sidebar {
 	color: #464e54;
 }
 
-div.column aside.article-sidebar:first-child+h1,div.column aside.article-sidebar:first-child+h2,div.column aside.article-sidebar:first-child+h3,div.column aside.article-sidebar:first-child+h4 {
+.column aside.article-sidebar:first-child+h1,.column aside.article-sidebar:first-child+h2,.column aside.article-sidebar:first-child+h3,.column aside.article-sidebar:first-child+h4 {
 	margin-top: 0;
 }
 
-div.column aside.article-sidebar ol,div.column aside.article-sidebar p,div.column aside.article-sidebar ul {
+.column aside.article-sidebar ol,.column aside.article-sidebar p,.column aside.article-sidebar ul {
 	font-size: inherit;
 	line-height: normal;
 }
 
-div.column aside.article-sidebar p {
+.column aside.article-sidebar p {
 	text-align: left;
 }
 
-div.column aside.article-sidebar p:not(:last-child) {
+.column aside.article-sidebar p:not(:last-child) {
 	margin-bottom: .8rem;
 }
 
-div.column aside.article-sidebar ol,div.column aside.article-sidebar ul {
+.column aside.article-sidebar ol,.column aside.article-sidebar ul {
 	padding-bottom: 0;
 }
 
-div.column aside.article-sidebar h2+hr {
+.column aside.article-sidebar h2+hr {
 	margin-top: .25rem;
 	background-color: rgba(70,78,84,.75);
 }
 
-div.column aside.article-sidebar h3 {
+.column aside.article-sidebar h3 {
 	font-size: 1.275rem;
 	margin-top: 1.2rem;
 	margin-bottom: 0;
 }
 
-div.column aside.article-sidebar h3:first-child {
+.column aside.article-sidebar h3:first-child {
 	margin-top: 0;
 }
 
-div.column aside.article-sidebar h4 {
+.column aside.article-sidebar h4 {
 	font-size: 1.05rem;
 }
 
-div.column aside.article-sidebar h4:first-child {
+.column aside.article-sidebar h4:first-child {
 	margin-top: 0;
 }
 
 @media screen and (min-width:990px) and (max-width:1098px) {
-	div.column aside.article-sidebar {
+	.column aside.article-sidebar {
 		position: absolute;
 		right: 0;
 		top: 0;
@@ -805,7 +924,7 @@ div.column aside.article-sidebar h4:first-child {
 		transition: transform .25s ease-out;
 	}
 	
-	div.column aside.article-sidebar:hover {
+	.column aside.article-sidebar:hover {
 		-webkit-transform: none;
 		-moz-transform: none;
 		transform: none;
@@ -813,7 +932,7 @@ div.column aside.article-sidebar h4:first-child {
 }
 
 @media screen and (max-width:520px) {
-	div.column aside.article-sidebar {
+	.column aside.article-sidebar {
 		position: absolute;
 		right: -2rem;
 		top: 0;
@@ -829,7 +948,7 @@ div.column aside.article-sidebar h4:first-child {
 		transition: transform .25s ease-out;
 	}
 	
-	div.column aside.article-sidebar:hover {
+	.column aside.article-sidebar:hover {
 		-webkit-transform: none;
 		-moz-transform: none;
 		transform: none;
@@ -844,7 +963,7 @@ article>div.article-body {
 	position: relative;
 }
 
-div.column article.post {
+.column article.post {
 	padding: 1em;
 	border: 1px solid rgba(0,0,0,.3333);
 	border-radius: 5px;
@@ -852,19 +971,19 @@ div.column article.post {
 	box-shadow: 1px 2px 3px rgba(0,0,0,.25);
 }
 
-div.column article.post+article.post {
+.column article.post+article.post {
 	margin-top: 1.5em;
 }
 
-div.article-summary aside.article-sidebar,div.article-summary img,div.article-summary object,div.article-summary p.article-media-contacts,div.article-summary>h3 {
+.article-summary aside.article-sidebar,.article-summary img,.article-summary object,.article-summary p.article-media-contacts,.article-summary>h3 {
 	display: none;
 }
 
-div.article-summary img.attachment-spine-thumbnail_size {
+.article-summary img.attachment-spine-thumbnail_size {
 	display: block;
 }
 
-body.blog main>section.row>div.column.two,body.single-post main>section.row>div.column.two {
+body.blog main>section.row>.column.two,body.single-post main>section.row>.column.two {
 	padding: 1rem;
 	background: #eff0f1;
 	-webkit-box-shadow: 0 0 0 1px rgba(255,255,255,.9), 0 0 0 2px rgba(0,0,0,.2);
@@ -872,20 +991,20 @@ body.blog main>section.row>div.column.two,body.single-post main>section.row>div.
 }
 
 @media screen and (min-width:694px) {
-	body.blog main>section.row>div.column.two,body.single-post main>section.row>div.column.two {
+	body.blog main>section.row>.column.two,body.single-post main>section.row>.column.two {
 		margin-top: 2rem;
 		border-radius: 4px;
 	}
 }
 
 @media screen and (max-width:1603px) {
-	body.blog main>section.row>div.column.two,body.single-post main>section.row>div.column.two {
+	body.blog main>section.row>.column.two,body.single-post main>section.row>.column.two {
 		border-top-right-radius: 0;
 		border-bottom-right-radius: 0;
 	}
 }
 
-div.column hr.subSection {
+.column hr.subSection {
 	width: 85%;
 	height: 0;
 	margin: 2rem auto;
@@ -896,11 +1015,11 @@ div.column hr.subSection {
 	text-align: center;
 }
 
-body.blog div.column .hidden-on-news-feed {
+body.blog .column .hidden-on-news-feed {
 	display: none;
 }
 
-body.single-post div.column .hidden-on-news-articles {
+body.single-post .column .hidden-on-news-articles {
 	display: none;
 }
 
