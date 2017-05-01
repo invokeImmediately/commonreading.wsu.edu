@@ -1640,16 +1640,10 @@ div.read-more-target {
            │ interface.                                                                              │
            └-----------------------------------------------------------------------------------------┘        
 */
-@media screen and (min-width: 361px) and (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .column .builder-section-content.cycle-slideshow {
-    margin-left: -1rem;
-    margin-right: -1rem;
-  }
-}
-@media screen and (max-width: 360px) {
-  .column .builder-section-content.cycle-slideshow {
-    margin-left: -0.5rem;
-    margin-right: -0.5rem;
+    margin-left: -2rem;
+    margin-right: -2rem;
   }
 }
 .column .builder-banner-content {
