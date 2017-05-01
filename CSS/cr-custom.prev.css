@@ -1,5 +1,6 @@
 ﻿@import  'https://fonts.googleapis.com/css?family=Roboto+Mono:300|Roboto+Condensed:400,700|Roboto+Slab|PT+Serif';
 
+/* Built with the LESS CSS preprocessor [http://lesscss.org/]. Please see [https://github.com/invokeImmediately/commonreading.wsu.edu] for a repository of source code. */
 .has-mono-font {
 	font-family: 'Roboto Mono', monospace, sans-serif;
 	font-weight: 300;
@@ -1754,5 +1755,111 @@ div.read-more-target {
 	
 	100% {
 		opacity: 1;
+	}
+}
+
+@media screen and (max-width:480px) {
+	.column .builder-section-content.cycle-slideshow {
+		margin-left: -2rem;
+		margin-right: -2rem;
+	}
+}
+
+.column .builder-banner-content {
+	padding: 0 0 10px;
+	font-size: 1rem;
+	line-height: 1.35rem;
+	border: 0;
+	-webkit-transition: font-size .15s linear, line-height .15s linear;
+	-moz-transition: font-size .15s linear, line-height .15s linear;
+	transition: font-size .15s linear, line-height .15s linear;
+}
+
+.column .builder-banner-content:hover {
+	font-size: 1.3333rem;
+	line-height: 1.799955rem;
+}
+
+.column .builder-banner-content:hover>div.builder-banner-inner-content {
+	background-color: rgba(0,0,0,.9);
+}
+
+.column .builder-banner-inner-content {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	background-color: rgba(0,0,0,.6);
+	font-size: inherit;
+	line-height: inherit;
+}
+
+.column .builder-banner-inner-content p {
+	padding: 10px;
+	font-size: inherit;
+	line-height: inherit;
+	text-align: center;
+}
+
+.column .builder-banner-inner-content p:last-child:not(.no-bottom-pad) {
+	padding-bottom: 10px;
+}
+
+.column .builder-banner-inner-content strong {
+	color: #f6861f;
+}
+
+.column .builder-banner-inner-content a {
+	color: #f6861f;
+	border-bottom: 1px dotted rgba(246,134,31,.4);
+	transition: color .4s linear, border-color .4s linear;
+	-webkit-transition: color .4s linear, border-color .4s linear;
+	-moz-transition: color .4s linear, border-color .4s linear;
+	-o-transition: color .4s linear, border-color .4s linear;
+}
+
+.column .builder-banner-inner-content a:hover {
+	color: #949b9d;
+	border-color: rgba(106,120,128,.4);
+}
+
+.column .builder-banner-overlay {
+	display: none;
+}
+
+@media screen and (max-width:1204px) {
+	.column .builder-banner-content {
+		font-size: 1.3278vw;
+		line-height: 1.79253vw;
+	}
+	
+	.column .builder-banner-content:hover {
+		font-size: 1.7704vw;
+		line-height: 2.39004vw;
+	}
+	
+	.column .builder-banner-inner-content p {
+		padding: 1vw;
+	}
+	
+	.column .builder-banner-inner-content p:last-child:not(.no-bottom-pad) {
+		padding-bottom: 1vw;
+	}
+}
+
+@media screen and (max-width:989px) {
+	.column .builder-banner-content {
+		font-size: 12px;
+		line-height: 16.2px;
+	}
+	
+	.column .builder-banner-content:hover {
+		font-size: 14px;
+		line-height: 18.9px;
+	}
+}
+
+@media screen and (min-width:906px) {
+	.readability-controlled {
+		width: 70%;
 	}
 }
