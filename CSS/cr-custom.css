@@ -305,6 +305,7 @@ header:first-child + .has-pull-quote-bordering:not(.alt) {
   background-color: rgba(70, 78, 84, 0.75757576);
 }
 .fade-in-from-top {
+  opacity: 0;
   -webkit-animation: anim-fade-in-from-top 1s linear 1;
   -moz-animation: anim-fade-in-from-top 1s linear 1;
   animation: anim-fade-in-from-top 1s linear 1;
@@ -351,10 +352,69 @@ header:first-child + .has-pull-quote-bordering:not(.alt) {
     transform: none;
   }
 }
+.fade-in-from-top.delayed.fast {
+  -webkit-animation: anim-fade-in-from-top 0.5s linear 1;
+  -moz-animation: anim-fade-in-from-top 0.5s linear 1;
+  animation: anim-fade-in-from-top 0.5s linear 1;
+  -webkit-animation-delay: 0.5s;
+  -moz-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+.js-fade-in-from-top {
+  position: relative;
+  opacity: 0;
+}
 .fade-in-from-left {
   -webkit-animation: anim-fade-in-from-left 1s linear 1;
   -moz-animation: anim-fade-in-from-left 1s linear 1;
   animation: anim-fade-in-from-left 1s linear 1;
+}
+@-webkit-keyframes anim-fade-in-from-left {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    -moz-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    -moz-transform: none;
+    transform: none;
+  }
+}
+@-moz-keyframes anim-fade-in-from-left {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    -moz-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    -moz-transform: none;
+    transform: none;
+  }
+}
+@keyframes anim-fade-in-from-left {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    -moz-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    -moz-transform: none;
+    transform: none;
+  }
+}
+.fade-in-from-left.fast {
+  -webkit-animation: anim-fade-in-from-left 0.5s linear 1;
+  -moz-animation: anim-fade-in-from-left 0.5s linear 1;
+  animation: anim-fade-in-from-left 0.5s linear 1;
 }
 @-webkit-keyframes anim-fade-in-from-left {
   0% {
@@ -1129,6 +1189,16 @@ img.symbolic-image {
 @media screen and (max-width: 1049px) {
   img.symbolic-image img.symbolic-image {
     width: 96px;
+  }
+}
+@media all and (min-width: 481px) {
+  img.show-on-mobile {
+    display: none;
+  }
+}
+@media all and (max-width: 480px) {
+  img.hide-on-mobile {
+    display: none;
   }
 }
 figure figcaption {
