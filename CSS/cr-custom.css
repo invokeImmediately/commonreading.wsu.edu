@@ -851,6 +851,21 @@ body.archives .article-header .article-title {
   color: #fff;
   text-shadow: 0 0 1.125rem #4f3a08;
 }
+body.archives section.h1-header .column h1 {
+  background-color: #c69214;
+  padding: 1rem;
+  color: #fff;
+  text-shadow: 0 0 1.125rem #4f3a08;
+}
+body.archives section.h1-header + section .column:first-child h1:first-child,
+body.archives section.h1-header + section .column:first-child h2:first-child,
+body.archives section.h1-header + section .column:first-child h3:first-child,
+body.archives section.h1-header + section .column:first-child h4:first-child,
+body.archives section.h1-header + section .column:first-child h5:first-child,
+body.archives section.h1-header + section .column:first-child h6:first-child {
+  margin-top: 0.5rem;
+  padding-left: 1rem;
+}
 /*!
 * dr-css-1.6 Other (TBD)
 *
