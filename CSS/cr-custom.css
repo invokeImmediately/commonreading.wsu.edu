@@ -866,6 +866,10 @@ body.archives section.h1-header + section .column:first-child h6:first-child {
   margin-top: 0.5rem;
   padding-left: 1rem;
 }
+img.archives-thumbnail {
+  width: 76px;
+  height: auto;
+}
 /*!
 * dr-css-1.6 Other (TBD)
 *
