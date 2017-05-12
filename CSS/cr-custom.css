@@ -793,7 +793,6 @@ div.iframe-wrapper > iframe {
 *
 * Adjustment of default padding on sections, section headings, calendar headings, etc.
 */
-/*! Spine Overrides */
 /*! Sections */
 main.spine-blank-template section.row.spaces-top {
   margin-top: 1rem;
@@ -867,6 +866,16 @@ body.archives section.h1-header + section .column:first-child h5:first-child,
 body.archives section.h1-header + section .column:first-child h6:first-child {
   margin-top: 0.5rem;
   padding-left: 1rem;
+  color: #815f0d;
+}
+body.archives section.h1-header + section .column:first-child h1 + hr,
+body.archives section.h1-header + section .column:first-child h2 + hr,
+body.archives section.h1-header + section .column:first-child h3 + hr,
+body.archives section.h1-header + section .column:first-child h4 + hr,
+body.archives section.h1-header + section .column:first-child h5 + hr,
+body.archives section.h1-header + section .column:first-child h6 + hr {
+  margin-top: 0.4rem;
+  background-color: rgba(198, 146, 20, 0.5);
 }
 img.archives-thumbnail {
   width: 76px;
