@@ -1,4 +1,4 @@
-﻿@import  "https://fonts.googleapis.com/css?family=Roboto+Mono:300|Roboto+Condensed:400,700|Roboto+Slab|PT+Serif";
+﻿@import  'https://fonts.googleapis.com/css?family=Roboto+Mono:300|Roboto+Condensed:400,700|Roboto+Slab|PT+Serif';
 
 /* Built with the LESS CSS preprocessor [http://lesscss.org/]. Please see [https://github.com/invokeImmediately/commonreading.wsu.edu] for a repository of source code. */
 .has-mono-font {
@@ -316,6 +316,7 @@
 }
 
 .fade-in-from-top {
+	opacity: 0;
 	-webkit-animation: anim-fade-in-from-top 1s linear 1;
 	-moz-animation: anim-fade-in-from-top 1s linear 1;
 	animation: anim-fade-in-from-top 1s linear 1;
@@ -369,10 +370,78 @@
 	}
 }
 
+.fade-in-from-top.delayed.fast {
+	-webkit-animation: anim-fade-in-from-top .5s linear 1;
+	-moz-animation: anim-fade-in-from-top .5s linear 1;
+	animation: anim-fade-in-from-top .5s linear 1;
+	-webkit-animation-delay: .5s;
+	-moz-animation-delay: .5s;
+	animation-delay: .5s;
+}
+
+.js-fade-in-from-top {
+	position: relative;
+	opacity: 0;
+}
+
 .fade-in-from-left {
 	-webkit-animation: anim-fade-in-from-left 1s linear 1;
 	-moz-animation: anim-fade-in-from-left 1s linear 1;
 	animation: anim-fade-in-from-left 1s linear 1;
+}
+
+@-webkit-keyframes anim-fade-in-from-left {
+	0% {
+		opacity: 0;
+		-webkit-transform: translate3d(-100%,0,0);
+		-moz-transform: translate3d(-100%,0,0);
+		transform: translate3d(-100%,0,0);
+	}
+	
+	100% {
+		opacity: 1;
+		-webkit-transform: none;
+		-moz-transform: none;
+		transform: none;
+	}
+}
+
+@-moz-keyframes anim-fade-in-from-left {
+	0% {
+		opacity: 0;
+		-webkit-transform: translate3d(-100%,0,0);
+		-moz-transform: translate3d(-100%,0,0);
+		transform: translate3d(-100%,0,0);
+	}
+	
+	100% {
+		opacity: 1;
+		-webkit-transform: none;
+		-moz-transform: none;
+		transform: none;
+	}
+}
+
+@keyframes anim-fade-in-from-left {
+	0% {
+		opacity: 0;
+		-webkit-transform: translate3d(-100%,0,0);
+		-moz-transform: translate3d(-100%,0,0);
+		transform: translate3d(-100%,0,0);
+	}
+	
+	100% {
+		opacity: 1;
+		-webkit-transform: none;
+		-moz-transform: none;
+		transform: none;
+	}
+}
+
+.fade-in-from-left.fast {
+	-webkit-animation: anim-fade-in-from-left .5s linear 1;
+	-moz-animation: anim-fade-in-from-left .5s linear 1;
+	animation: anim-fade-in-from-left .5s linear 1;
 }
 
 @-webkit-keyframes anim-fade-in-from-left {
@@ -836,6 +905,23 @@ body.archives .article-header .article-title {
 	text-shadow: 0 0 1.125rem #4f3a08;
 }
 
+body.archives section.h1-header .column h1 {
+	background-color: #c69214;
+	padding: 1rem;
+	color: #fff;
+	text-shadow: 0 0 1.125rem #4f3a08;
+}
+
+body.archives section.h1-header+section .column:first-child h1:first-child,body.archives section.h1-header+section .column:first-child h2:first-child,body.archives section.h1-header+section .column:first-child h3:first-child,body.archives section.h1-header+section .column:first-child h4:first-child,body.archives section.h1-header+section .column:first-child h5:first-child,body.archives section.h1-header+section .column:first-child h6:first-child {
+	margin-top: .5rem;
+	padding-left: 1rem;
+}
+
+img.archives-thumbnail {
+	width: 76px;
+	height: auto;
+}
+
 /*!
 * dr-css-1.6 Other (TBD)
 *
@@ -1214,6 +1300,18 @@ img.symbolic-image {
 @media screen and (max-width:1049px) {
 	img.symbolic-image img.symbolic-image {
 		width: 96px;
+	}
+}
+
+@media all and (min-width:481px) {
+	img.show-on-mobile {
+		display: none;
+	}
+}
+
+@media all and (max-width:480px) {
+	img.hide-on-mobile {
+		display: none;
 	}
 }
 
@@ -2264,6 +2362,3 @@ main section.row>.column table>tbody>tr>td>div>ol:last-child,main section.row>.c
 
 /*!  └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
 */
-section.h1-header.italicized {
-	font-style: italic;
-}
