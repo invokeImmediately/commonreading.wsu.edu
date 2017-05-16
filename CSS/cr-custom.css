@@ -967,6 +967,9 @@ ul.cascaded-layout.calendar > li h6:first-child + p {
 ul.cascaded-layout.calendar > li.collapsed {
   font-size: 0.5rem;
   width: 22.75%;
+  -webkit-transition: transform 0.3s ease;
+  -moz-transition: transform 0.3s ease;
+  transition: transform 0.3s ease;
 }
 @media all and (max-width: 693px) {
   ul.cascaded-layout.calendar > li.collapsed {
