@@ -965,7 +965,7 @@ ul.cascaded-layout.calendar > li h5:first-child + h6 {
   margin-top: 0;
 }
 ul.cascaded-layout.calendar > li.collapsed {
-  width: 20%;
+  width: 22%;
 }
 @media all and (max-width: 693px) {
   ul.cascaded-layout.calendar > li.collapsed {
@@ -976,6 +976,9 @@ ul.cascaded-layout.calendar > li.collapsed > div.content {
   -webkit-transform: scale(0.5);
   -moz-transform: scale(0.5);
   transform: scale(0.5);
+}
+ul.cascaded-layout.calendar > li.cascade-sizer {
+  width: 22% !important;
 }
 /*!
 * dr-css-1.8 Other (TBD)
