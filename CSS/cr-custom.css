@@ -965,7 +965,7 @@ ul.cascaded-layout.calendar > li h5:first-child + h6 {
   margin-top: 0;
 }
 ul.cascaded-layout.calendar > li.collapsed {
-  width: 30.6666%;
+  width: 22%;
 }
 @media all and (max-width: 693px) {
   ul.cascaded-layout.calendar > li.collapsed {
