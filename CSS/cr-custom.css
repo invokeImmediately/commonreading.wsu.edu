@@ -933,11 +933,11 @@ ul.cascaded-layout > li.gutter-sizer {
 ul.cascaded-layout.blank {
   padding: 0;
   margin-top: 1rem !important;
+  width: 100%;
 }
 ul.cascaded-layout.blank > li {
   float: left;
   width: 49%;
-  padding: 1rem;
   margin-bottom: 2%;
   list-style-type: none;
   /*& > h3:first-child {
