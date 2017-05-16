@@ -974,11 +974,11 @@ ul.cascaded-layout.calendar > li.collapsed {
   }
 }
 ul.cascaded-layout.calendar > li.collapsed:hover {
-  -webkit-transform: "scale(1.25)";
-  -moz-transform: "scale(1.25)";
-  transform: "scale(1.25)";
+  -webkit-transform: "scale(1.1)";
+  -moz-transform: "scale(1.1)";
+  transform: "scale(1.1)";
 }
-ul.cascaded-layout.calendar > li.collapsed:hover:after {
+ul.cascaded-layout.calendar > li.collapsed:hover:before {
   content: "Click to expand";
 }
 ul.cascaded-layout.calendar > li.cascade-sizer {
