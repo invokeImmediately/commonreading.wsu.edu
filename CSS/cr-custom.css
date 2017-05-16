@@ -547,37 +547,37 @@ body {
 h1,
 h1.crimson {
   color: #981e32;
-  Font-size: 28.74pt;
+  font-size: 28.74pt;
   font-weight: bold;
 }
 h2,
 h2.gray {
   color: #5e6a71;
-  Font-size: 26.58pt;
+  font-size: 26.58pt;
   font-weight: bold;
 }
 h3,
 h3.crimson {
   color: #981e32;
-  Font-size: 21.56pt;
+  font-size: 21.56pt;
   font-weight: bold;
 }
 h4,
 h4.gray {
   color: #5e6a71;
-  Font-size: 19.94pt;
+  font-size: 19.94pt;
   font-weight: bold;
 }
 h5,
 h5.crimson {
   color: #981e32;
-  Font-size: 16.17pt;
+  font-size: 16.17pt;
   font-weight: bold;
 }
 h6,
 h6.gray {
   color: #5e6a71;
-  Font-size: 14.95pt;
+  font-size: 14.95pt;
   font-weight: bold;
 }
 h1.gray,
@@ -851,6 +851,25 @@ body.archives .article-header .article-title {
   padding-bottom: 0.25rem;
   color: #fff;
   text-shadow: 0 0 1.125rem #4f3a08;
+}
+body.archives .column h1 {
+  font-size: 2.395em;
+}
+body.archives .column h2 {
+  font-size: 2.07883559em;
+}
+body.archives .column h3,
+body.archives .gform_heading h3.gform_title {
+  font-size: 1.8044081em;
+}
+body.archives .column h4 {
+  font-size: 1.56620784em;
+}
+body.archives .column h5 {
+  font-size: 1.35945245em;
+}
+body.archives .column h6 {
+  font-size: 1.17999087em;
 }
 body.archives section.h1-header .column h1 {
   background-color: #c69214;
