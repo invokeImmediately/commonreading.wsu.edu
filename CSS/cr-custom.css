@@ -931,14 +931,15 @@ ul.cascaded-layout > li.gutter-sizer {
   width: 2% !important;
 }
 ul.cascaded-layout.blank {
+  font-size: 1rem;
   padding: 0;
   margin-top: 1rem !important;
   width: 100%;
 }
 ul.cascaded-layout.blank > li {
   float: left;
-  width: 49%;
-  margin-bottom: 2%;
+  width: 48%;
+  margin-bottom: 4%;
   list-style-type: none;
   /*& > h3:first-child {
 					padding: (@v-dflt-spcng / 4);
@@ -998,7 +999,7 @@ ul.cascaded-layout.blank > li {
 }
 @media all and (max-width: 693px) {
   ul.cascaded-layout.blank > li {
-    width: 98%;
+    width: 96%;
     margin-bottom: 4%;
   }
 }
@@ -1009,6 +1010,9 @@ ul.cascaded-layout.blank > li {
 }
 ul.cascaded-layout.blank > li + li {
   margin-top: 0;
+}
+ul.cascaded-layout.blank > li.gutter-sizer {
+  width: 4% !important;
 }
 /*!
 * dr-css-1.8 Other (TBD)
