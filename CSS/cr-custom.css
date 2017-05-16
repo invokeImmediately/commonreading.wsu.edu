@@ -937,7 +937,7 @@ ul.cascaded-layout.blank {
 }
 ul.cascaded-layout.blank > li {
   float: left;
-  width: 48%;
+  width: 48.5%;
   margin-bottom: 4%;
   list-style-type: none;
 }
@@ -956,7 +956,7 @@ ul.cascaded-layout.blank > li + li {
   margin-top: 0;
 }
 ul.cascaded-layout.blank > li.gutter-sizer {
-  width: 4% !important;
+  width: 3% !important;
 }
 ul.cascaded-layout.calendar > li * + * {
   margin-top: 1em;
@@ -966,15 +966,23 @@ ul.cascaded-layout.calendar > li h6:first-child + p {
 }
 ul.cascaded-layout.calendar > li.collapsed {
   font-size: 0.5rem;
-  width: 22%;
+  width: 22.75%;
 }
 @media all and (max-width: 693px) {
   ul.cascaded-layout.calendar > li.collapsed {
-    width: 48%;
+    width: 48.5%;
   }
 }
+ul.cascaded-layout.calendar > li.collapsed:hover {
+  -webkit-transform: "scale(1.25)";
+  -moz-transform: "scale(1.25)";
+  transform: "scale(1.25)";
+}
+ul.cascaded-layout.calendar > li.collapsed:hover:after {
+  content: "Click to expand";
+}
 ul.cascaded-layout.calendar > li.cascade-sizer {
-  width: 22% !important;
+  width: 22.75% !important;
 }
 /*!
 * dr-css-1.8 Other (TBD)
