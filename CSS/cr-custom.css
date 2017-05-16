@@ -877,22 +877,22 @@ body.archives section.h1-header .column h1 {
   color: #fff;
   text-shadow: 0 0 1.125rem #4f3a08;
 }
-body.archives section.h1-header + section .column:first-child h1:first-child,
-body.archives section.h1-header + section .column:first-child h2:first-child,
-body.archives section.h1-header + section .column:first-child h3:first-child,
-body.archives section.h1-header + section .column:first-child h4:first-child,
-body.archives section.h1-header + section .column:first-child h5:first-child,
-body.archives section.h1-header + section .column:first-child h6:first-child {
+body.archives section.h1-header + section .column:first-child > h1:first-child,
+body.archives section.h1-header + section .column:first-child > h2:first-child,
+body.archives section.h1-header + section .column:first-child > h3:first-child,
+body.archives section.h1-header + section .column:first-child > h4:first-child,
+body.archives section.h1-header + section .column:first-child > h5:first-child,
+body.archives section.h1-header + section .column:first-child > h6:first-child {
   margin-top: 0.5rem;
   padding-left: 1rem;
   color: #815f0d;
 }
-body.archives section.h1-header + section .column:first-child h1 + hr,
-body.archives section.h1-header + section .column:first-child h2 + hr,
-body.archives section.h1-header + section .column:first-child h3 + hr,
-body.archives section.h1-header + section .column:first-child h4 + hr,
-body.archives section.h1-header + section .column:first-child h5 + hr,
-body.archives section.h1-header + section .column:first-child h6 + hr {
+body.archives section.h1-header + section .column:first-child > h1:first-child + hr,
+body.archives section.h1-header + section .column:first-child > h2:first-child + hr,
+body.archives section.h1-header + section .column:first-child > h3:first-child + hr,
+body.archives section.h1-header + section .column:first-child > h4:first-child + hr,
+body.archives section.h1-header + section .column:first-child > h5:first-child + hr,
+body.archives section.h1-header + section .column:first-child > h6:first-child + hr {
   margin-top: 0.4rem;
   background-color: rgba(198, 146, 20, 0.5);
 }
@@ -901,7 +901,116 @@ img.archives-thumbnail {
   height: auto;
 }
 /*!
-* dr-css-1.6 Other (TBD)
+* dr-css-1.6: Lists
+*/
+@media print {
+  ul.cascaded-layout[style] {
+    height: auto !important;
+  }
+}
+@media print {
+  ul.cascaded-layout > li {
+    position: relative !important;
+    display: block !important;
+    left: 0 !important;
+    top: auto !important;
+    width: 100% !important;
+    float: left;
+  }
+}
+ul.cascaded-layout > li.cascade-sizer,
+ul.cascaded-layout > li.gutter-sizer {
+  height: 0 !important;
+  min-height: 0 !important;
+  padding: 0 !important;
+  border: none !important;
+  background: none !important;
+  box-shadow: none !important;
+}
+ul.cascaded-layout > li.gutter-sizer {
+  width: 2% !important;
+}
+ul.cascaded-layout.blank {
+  margin-top: 1rem !important;
+}
+ul.cascaded-layout.blank > li {
+  float: left;
+  width: 49%;
+  padding: 0.5rem;
+  margin-bottom: 2%;
+  list-style-type: none;
+  /*& > h3:first-child {
+					padding: (@v-dflt-spcng / 4);
+					margin: 0;
+					.rgb-accent-green(); background-color: rgba(@rval, @gval, @bval, 0.5);
+					border-top: 1px solid rgba(@rval, @gval, @bval, 0.0);
+					border-top-left-radius: 4px;
+					 border-top-right-radius: 4px;
+					color: @hex-dark-green;
+					text-transform: none;
+					strong {
+						text-transform: uppercase;
+					}
+				}
+				& > h4:nth-child(2) {
+					&:extend(.has-alt-font);
+					padding: (@v-dflt-spcng * 3 / 20) (@v-dflt-spcng / 4);
+					margin-top: 0;
+					 margin-bottom: 0;
+					.rgb-accent-green(); background-color: rgba(@rval, @gval, @bval, 0.75);
+					font-size: @v-p-sz * 1.1;
+					font-weight: 700;
+					color: @hex-bright-green;
+					& + * {
+						margin-top: (@v-dflt-spcng / 4);
+					}
+				}
+				& > h5 {
+					padding-right: (@v-dflt-spcng / 4);
+					padding-left: (@v-dflt-spcng / 4);
+					.rgb-accent-green(); background-color: rgba(@rval, @gval, @bval, 0.33);
+					color: @hex-dark-green;
+				}
+				& > p {
+					font-size: inherit !important;
+					text-align: left;
+					padding-right: (@v-dflt-spcng / 4);
+					padding-left: (@v-dflt-spcng / 4);
+					& + ul,
+					& + ol {
+						margin-top: (@v-btm-mrgns * 1 / 3) !important;
+					}
+					& > span.about-requirements {
+						margin-bottom: 0.5em;
+						font-weight: bold;
+						font-style: italic;
+					}
+				}
+				& > * {
+					&:not(:first-child) {
+						margin-top: @v-btm-mrgns;
+					}
+					&:last-child {
+						padding-bottom: (@v-dflt-spcng / 4);
+					}
+				}*/
+}
+@media all and (max-width: 693px) {
+  ul.cascaded-layout.blank > li {
+    width: 98%;
+    margin-bottom: 4%;
+  }
+}
+@media all and (max-width: 1205px) {
+  ul.cascaded-layout.blank > li {
+    overflow-x: visible;
+  }
+}
+ul.cascaded-layout.blank > li + li {
+  margin-top: 0;
+}
+/*!
+* dr-css-1.8 Other (TBD)
 *
 * Style rulesets below still need to be pulled into their own commented section.
 */
