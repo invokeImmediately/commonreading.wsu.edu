@@ -961,21 +961,17 @@ ul.cascaded-layout.blank > li.gutter-sizer {
 ul.cascaded-layout.calendar > li * + * {
   margin-top: 1em;
 }
-ul.cascaded-layout.calendar > li h5:first-child + h6 {
+ul.cascaded-layout.calendar > li h6:first-child + p {
   margin-top: 0;
 }
 ul.cascaded-layout.calendar > li.collapsed {
+  font-size: 0.5rem;
   width: 22%;
 }
 @media all and (max-width: 693px) {
   ul.cascaded-layout.calendar > li.collapsed {
     width: 48%;
   }
-}
-ul.cascaded-layout.calendar > li.collapsed > div.content {
-  -webkit-transform: scale(0.5);
-  -moz-transform: scale(0.5);
-  transform: scale(0.5);
 }
 ul.cascaded-layout.calendar > li.cascade-sizer {
   width: 22% !important;
