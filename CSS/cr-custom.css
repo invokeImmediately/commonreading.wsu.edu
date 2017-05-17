@@ -869,12 +869,31 @@ body.archives .gform_heading h3.gform_title:not(.no-background) {
   border-top: 1px solid rgba(152, 30, 50, 0.6667);
   background-color: rgba(198, 12, 48, 0.075);
 }
-body.archives .column h3:not(.no-background).about-the-book,
-body.archives .gform_heading h3.gform_title:not(.no-background).about-the-book {
-  background-image: url(/wp-content/uploads/sites/52/2017/05/icon_book_displayed-at-right.png);
+body.archives .column h3:not(.no-background)[class],
+body.archives .gform_heading h3.gform_title:not(.no-background)[class] {
   background-position: right center;
   background-size: auto 31px;
   background-repeat: no-repeat;
+}
+body.archives .column h3:not(.no-background).about-the-author,
+body.archives .gform_heading h3.gform_title:not(.no-background).about-the-author {
+  background-image: url(/wp-content/uploads/sites/52/2017/05/icon_user_displayed-at-right.png);
+}
+body.archives .column h3:not(.no-background).about-the-book,
+body.archives .gform_heading h3.gform_title:not(.no-background).about-the-book {
+  background-image: url(/wp-content/uploads/sites/52/2017/05/icon_book_displayed-at-right.png);
+}
+body.archives .column h3:not(.no-background).calendar,
+body.archives .gform_heading h3.gform_title:not(.no-background).calendar {
+  background-image: url(/wp-content/uploads/sites/52/2017/05/icon_month_displayed-at-right.png);
+}
+body.archives .column h3:not(.no-background).for-families,
+body.archives .gform_heading h3.gform_title:not(.no-background).for-families {
+  background-image: url(/wp-content/uploads/sites/52/2017/05/icon_month_displayed-at-right.png);
+}
+body.archives .column h3:not(.no-background).for-faculty,
+body.archives .gform_heading h3.gform_title:not(.no-background).for-faculty {
+  background-image: url(/wp-content/uploads/sites/52/2017/05/icon_month_displayed-at-right.png);
 }
 body.archives .column h4 {
   font-size: 1.56620784em;
