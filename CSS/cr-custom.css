@@ -988,6 +988,7 @@ ul.cascaded-layout.calendar > li.cascade-sizer {
   width: 22.75% !important;
 }
 ul.cascaded-layout.calendar.thirds > li {
+  font-size: 0.6667rem;
   width: 31.3333%;
 }
 ul.cascaded-layout.calendar.thirds > li.double {
