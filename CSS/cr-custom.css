@@ -992,6 +992,11 @@ ul.cascaded-layout.calendar.thirds > li {
   font-size: 0.6667rem;
   width: 31.3333%;
 }
+@media all and (max-width: 693px) {
+  ul.cascaded-layout.calendar.thirds > li {
+    width: 48.5%;
+  }
+}
 ul.cascaded-layout.calendar.thirds > li.double {
   width: 65.6666%;
 }
