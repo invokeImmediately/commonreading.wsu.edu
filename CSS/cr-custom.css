@@ -961,8 +961,9 @@ ul.cascaded-layout.blank > li.gutter-sizer {
 ul.cascaded-layout.calendar > li * + * {
   margin-top: 0.75em;
 }
-ul.cascaded-layout.calendar > li h6:first-child + p {
-  border-top: 1px solid rgba(94, 106, 113, 0.5);
+ul.cascaded-layout.calendar > li h6:first-child {
+  padding-top: 0.25em;
+  border-top: 1px solid rgba(94, 106, 113, 0.25);
 }
 ul.cascaded-layout.calendar > li.collapsed {
   font-size: 0.5rem;
