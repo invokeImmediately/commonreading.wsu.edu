@@ -15,38 +15,44 @@
         } */
 	});
 })(jQuery);
-/**************************************************************************************************\
-| JQUERY-MEDIATED ENHANCED INTERACTIVITY OF GRAVITY FORM FIELDS                                    |
-\**************************************************************************************************/
+/************************************************************************************************************\
+| JQUERY-MEDIATED ENHANCED INTERACTIVITY OF GRAVITY FORM FIELDS                                              |
+\************************************************************************************************************/
 (function ($) {
     "use strict";
     
 	$(document).bind("gform_post_render", function () {
-		checkRqrdInpts("li.gfield_contains_required input");
-		checkRqrdChckbxs("li.gfield_contains_required ul.gfield_checkbox, li.gfield_contains_required ul.gfield_radio");
-		checkRqrdTxtAreas("li.gfield_contains_required textarea");
+		var $rqrdFlds =  $("li.gfield_contains_required");
+		checkRqrdInpts($rqrdFlds.find("input"));
+		checkRqrdChckbxs($rqrdFlds.find("ul.gfield_checkbox, ul.gfield_radio"));
+		checkRqrdTxtAreas($rqrdFlds.find("textarea"));
 	});
 	$(document).ready(function () {
         if($("div.gform_body").length > 0) {
-            // TODO: streamline functions by querying all ul.gform_fields li.gfield, then determine 
-            //   how to handle object by finding div children with gfield_container_class.
 			initWsuIdInputs(".gf-is-wsu-id");
             setupActvtrChckbxs(".oue-gf-actvtr-checkbox");
             setupActvtrChain(".oue-gf-actvtr-chain");
             setupUploadChain(".oue-gf-upload-chain");
-			hghlghtRqrdInpts("li.gfield_contains_required input");
-			hghlghtRqrdChckbxs("li.gfield_contains_required ul.gfield_checkbox, li.gfield_contains_required ul.gfield_radio");
-			hghlghtRqrdTxtAreas("li.gfield_contains_required textarea");
-			hghlghtRqrdSelects("li.gfield_contains_required select");
+			
+            // TODO: streamline functions by querying all ul.gform_fields li.gfield, then determine 
+            //   how to handle object by finding div children with gfield_container_class.
+			var $rqrdFlds =  $("li.gfield_contains_required");
+			hghlghtRqrdInpts($rqrdFlds.find("input"));
+			hghlghtRqrdChckbxs($rqrdFlds.find("ul.gfield_checkbox, ul.gfield_radio"));
+			hghlghtRqrdTxtAreas($rqrdFlds.find("textarea"));
+			hghlghtRqrdSelects($rqrdFlds.find("select"));
         }
     });
+	$(window).load(function () {
+		hghlghtRqrdRchTxtEdtrs($("li.gfield_contains_required.uses-rich-editor"));
+	});
     
-    /******************************************************************************************\
-    | Highlight required INPUTS until a value has been properly entered                        |
-    \******************************************************************************************/
-    function checkRqrdInpts (selector) {
-        if ($.type(selector) === "string") {
-            $(selector).each(function () {
+    /****************************************************************************************************\
+    | Highlight required INPUTS until a value has been properly entered                                  |
+    \****************************************************************************************************/
+    function checkRqrdInpts ($fields) {
+        if ($.isJQueryObj($fields)) {
+            $fields.each(function () {
                 var $thisInput = $(this);
 				if ($thisInput.val() == "") {
 					$thisInput.removeClass("gf-value-entered");
@@ -57,10 +63,10 @@
             });
         }
     }
-
-    function hghlghtRqrdInpts (selector) {
-        if ($.type(selector) === "string") {
-            $(selector).each(function () {
+	
+    function hghlghtRqrdInpts ($fields) {
+        if ($.isJQueryObj($fields)) {
+            $fields.each(function () {
                 var $thisInput = $(this);
 				$thisInput.blur(function () {
 					if ($thisInput.val() == "") {
@@ -74,12 +80,12 @@
         }
     }
 
-    /******************************************************************************************\
-    | Highlight required CHECKBOXES until at least one has been checked                        |
-    \******************************************************************************************/
-    function checkRqrdChckbxs (selector) {
-        if ($.type(selector) === "string") {
-            $(selector).each(function () {
+    /****************************************************************************************************\
+    | Highlight required CHECKBOXES until at least one has been checked                                  |
+    \****************************************************************************************************/
+    function checkRqrdChckbxs ($fields) {
+        if ($.isJQueryObj($fields)) {
+            $fields.each(function () {
                 var $this = $(this);
                 var $inputs = $this.find("input");
 				var inputReady = false;
@@ -98,9 +104,9 @@
 		}
 	}
 
-    function hghlghtRqrdChckbxs (selector) {
-        if ($.type(selector) === "string") {
-            $(selector).each(function () {
+    function hghlghtRqrdChckbxs ($fields) {
+        if ($.isJQueryObj($fields)) {
+            $fields.each(function () {
                 var $this = $(this);
                 var $inputs = $this.find("input");
                 $inputs.each(function () {
@@ -128,23 +134,47 @@
         }
     }
 
-    /******************************************************************************************\
-    | Highlight required TEXT AREA inputs until a value has been properly entered              |
-    \******************************************************************************************/
-    function checkRqrdTxtAreas (selector) {
-		checkRqrdInpts(selector);
+    /****************************************************************************************************\
+    | Highlight required TEXT AREA inputs until a value has been properly entered                        |
+    \****************************************************************************************************/
+    function checkRqrdTxtAreas ($fields) {
+		checkRqrdInpts($fields);
     }
 
-    function hghlghtRqrdTxtAreas (selector) {
-		hghlghtRqrdInpts(selector);
+    function hghlghtRqrdTxtAreas ($fields) {
+		hghlghtRqrdInpts($fields);
     }
 
-    /******************************************************************************************\
-    | Highlight required SELECTS until at least one has been checked                           |
-    \******************************************************************************************/
-    function hghlghtRqrdSelects (selector) {
-        if ($.type(selector) === "string") {
-            $(selector).each(function () {
+    /****************************************************************************************************\
+    | Highlight required RICH TEXT EDITOR containters until a value has been properly entered            |
+    \****************************************************************************************************/
+	function hghlghtRqrdRchTxtEdtrs($fields) {
+        if ($.isJQueryObj($fields) && $fields.length > 0) {
+            $fields.each(function () {
+				var $edtrFrm = $(this).find("iframe");
+				$edtrFrm.each(function () {
+					var $edtrBdy = $(this).contents().find("#tinymce");
+					$edtrBdy.css("background-color", "rgba(255,0,0,0.1)");
+					$edtrBdy.focus(function () {
+						$(this).css("background-color", "rgba(255,255,255,1)");
+					});
+					$edtrBdy.blur(function () {
+						var $this = $(this);
+						if($this.text().replace(/\n|\uFEFF/g, "") == "") {
+							$this.css("background-color","rgba(255,0,0,0.1)");
+						}
+					});
+				});
+			});
+		}
+	}
+
+    /****************************************************************************************************\
+    | Highlight required SELECTS until at least one has been checked                                     |
+    \****************************************************************************************************/
+    function hghlghtRqrdSelects ($fields) {
+        if ($.isJQueryObj($fields)) {
+            $fields.each(function () {
                 var $thisInput = $(this);
 				var $childSlctdOptn = $thisInput.find("option:selected");
 				var optionVal = $childSlctdOptn.text();                        
@@ -168,23 +198,47 @@
         }
     }
 
-    /******************************************************************************************\
-    | Initialize RegEx filtration of inputs that accept WSU ID numbers                         |
-    \******************************************************************************************/
+    /****************************************************************************************************\
+    | Initialize RegEx filtration of inputs that accept WSU ID numbers                                   |
+    \****************************************************************************************************/
     function initWsuIdInputs(slctrInputs) {
         var $wsuIdInputs = $(slctrInputs).find("input[type='text']");
-        $wsuIdInputs.on("keyup paste", function () {
+		$wsuIdInputs.keydown(function(e) {
             var $this = $(this);
-            var regExMask = /[^0-9]+/g;
             var inputText = $this.val();
+			if((e.keyCode < 48 || (e.keyCode > 57 && e.keyCode < 96) || e.keyCode > 105) &&
+			 !~[8, 9, 20, 35, 36, 37, 39, 46, 110, 144].indexOf(e.keyCode) &&
+			 !(e.keyCode == 86 && e.ctrlKey)) {
+				e.preventDefault();
+			}
+			else if (!~[8, 9, 20, 35, 36, 37, 39, 46, 110, 144].indexOf(e.keyCode) && inputText.length >= 9) {
+				e.preventDefault();
+				alert("Note: WSU ID numbers are no greater than nine (9) digits in length.");
+			}
+		});
+        $wsuIdInputs.on("paste", function (e) {
+            var $this = $(this);
+			var clipboardData = e.originalEvent.clipboardData || window.clipboardData;
+			var inputText = clipboardData.getData('Text');
+            var regExMask = /[^0-9]+/g;
             if (regExMask.exec(inputText) != null) {
+				var errorMsg = "Note: WSU ID numbers can only contain digits.";
+				e.stopPropagation();
+				e.preventDefault();
                 $this.val(inputText.replace(regExMask, ""));
                 inputText = $this.val();
-				alert("WSU ID numbers can only contain digts.");
+				if (inputText.length > 9) {
+					$this.val(inputText.slice(0,9));
+					errorMsg += " Also, they must be no greater than nine (9) digits in length.";
+				}
+				errorMsg += " What you pasted will automatically be corrected; please check the result to see if further corrections are needed."
+				alert(errorMsg);
             }
-            if (inputText.length > 9) {
+            else if (inputText.length > 9) {
+				e.stopPropagation();
+				e.preventDefault();
                 $this.val(inputText.slice(0,9));
-				alert("WSU ID numbers are no greater than nine (9) digits in length.");
+				alert("WSU ID numbers are no greater than nine (9) digits in length. What you pasted will automatically be corrected; please check the result to see if further corrections are needed.");
             }
         });
         $wsuIdInputs.blur(function () {
@@ -194,15 +248,15 @@
 			if (inputText != "") {
 				if (regExFinalPttrn.exec(inputText) == null) {					
 					$this.val("");
-					alert("Please try again: when the leading zero is included, WSU ID numbers are nine (9) digits long. (You can also drop the leading zero and enter in eight (8) digits.");
+					alert("Please try again: when the leading zero is included, WSU ID numbers are nine (9) digits long. (You can also drop the leading zero and enter in eight (8) digits.)");
 				}
 			}
         });
     }
 	
-    /******************************************************************************************\
-    | Setup activator checkboxes that disappear once one is selected                           |
-    \******************************************************************************************/
+    /****************************************************************************************************\
+    | Setup activator checkboxes that disappear once one is selected                                     |
+    \****************************************************************************************************/
     function setupActvtrChckbxs (selector) {
         if ($.type(selector) === "string") {
             $(".gform_body").on("change", selector + " input", function () {
@@ -213,10 +267,10 @@
         }
     }
     
-    /******************************************************************************************\
-    | Setup a chain of activator checkboxes, wherein once a checkbox is activated/deactivated, |
-    | only its closest previous sibling is hidden/shown.                                       |
-    \******************************************************************************************/
+    /****************************************************************************************************\
+    | Setup a chain of activator checkboxes, wherein once a checkbox is activated/deactivated,           |
+    | only its closest previous sibling is hidden/shown.                                                 |
+    \****************************************************************************************************/
     function setupActvtrChain (selector) {
         if ($.type(selector) === "string") {
             $(".gform_body").on("change", selector + " input", function () {
@@ -233,10 +287,10 @@
         }
     }
 
-    /******************************************************************************************\
-    | Setup a chain of file uploading inputs, wherein only the left-most input in the tree is  |
-    | visible. As the user uploads files in sequence, the next nearest neighbor is unveiled.   |
-    \******************************************************************************************/
+    /****************************************************************************************************\
+    | Setup a chain of file uploading inputs, wherein only the left-most input in the tree is            |
+    | visible. As the user uploads files in sequence, the next nearest neighbor is unveiled.             |
+    \****************************************************************************************************/
     function setupUploadChain (selector) {
         if ($.type(selector) === "string") {
             /* CHECK IF UPLOADS ALREADY EXIST:
