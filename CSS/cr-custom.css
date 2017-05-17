@@ -938,7 +938,7 @@ ul.cascaded-layout.blank {
 ul.cascaded-layout.blank > li {
   float: left;
   width: 48.5%;
-  margin-bottom: 4%;
+  margin-bottom: 3%;
   list-style-type: none;
 }
 @media all and (max-width: 693px) {
