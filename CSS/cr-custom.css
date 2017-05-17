@@ -862,6 +862,20 @@ body.archives .column h3,
 body.archives .gform_heading h3.gform_title {
   font-size: 1.8044081em;
 }
+body.archives .column h3:not(.no-background),
+body.archives .gform_heading h3.gform_title:not(.no-background) {
+  padding: 0.4em;
+  margin-bottom: 1rem;
+  border-top: 1px solid rgba(152, 30, 50, 0.6667);
+  background-color: rgba(198, 12, 48, 0.075);
+}
+body.archives .column h3:not(.no-background).about-the-book,
+body.archives .gform_heading h3.gform_title:not(.no-background).about-the-book {
+  background-image: url(/wp-content/uploads/sites/52/2017/05/icon_book_half-opacity_displayed-at-right.png);
+  background-position: right center;
+  background-size: auto 48px;
+  background-repeat: no-repeat;
+}
 body.archives .column h4 {
   font-size: 1.56620784em;
 }
