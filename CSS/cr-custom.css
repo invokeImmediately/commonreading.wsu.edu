@@ -998,6 +998,9 @@ ul.cascaded-layout.calendar.thirds > li.double {
     width: 97%;
   }
 }
+ul.cascaded-layout.calendar.thirds > li.cascade-sizer {
+  width: 31.3333% !important;
+}
 /*!
 * dr-css-1.8 Other (TBD)
 *
