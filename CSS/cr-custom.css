@@ -871,9 +871,9 @@ body.archives .gform_heading h3.gform_title:not(.no-background) {
 }
 body.archives .column h3:not(.no-background).about-the-book,
 body.archives .gform_heading h3.gform_title:not(.no-background).about-the-book {
-  background-image: url(/wp-content/uploads/sites/52/2017/05/icon_book_half-opacity_displayed-at-right.png);
+  background-image: url(/wp-content/uploads/sites/52/2017/05/icon_book_displayed-at-right.png);
   background-position: right center;
-  background-size: auto 48px;
+  background-size: auto 31px;
   background-repeat: no-repeat;
 }
 body.archives .column h4 {
