@@ -987,6 +987,17 @@ ul.cascaded-layout.calendar > li.collapsed:hover:before {
 ul.cascaded-layout.calendar > li.cascade-sizer {
   width: 22.75% !important;
 }
+ul.cascaded-layout.calendar.thirds > li {
+  width: 31.3333%;
+}
+ul.cascaded-layout.calendar.thirds > li.double {
+  width: 65.6666%;
+}
+@media all and (max-width: 693px) {
+  ul.cascaded-layout.calendar.thirds > li.double {
+    width: 97%;
+  }
+}
 /*!
 * dr-css-1.8 Other (TBD)
 *
