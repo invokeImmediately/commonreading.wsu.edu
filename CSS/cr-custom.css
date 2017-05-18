@@ -1040,6 +1040,9 @@ ul.cascaded-layout.calendar > li.cascade-sizer {
 ul.cascaded-layout.calendar.thirds > li {
   width: 31.3333%;
   font-size: 0.6667rem;
+  -webkit-transition: transform 0.3s ease;
+  -moz-transition: transform 0.3s ease;
+  transition: transform 0.3s ease;
 }
 @media all and (max-width: 693px) {
   ul.cascaded-layout.calendar.thirds > li {
@@ -1070,12 +1073,12 @@ ul.cascaded-layout.calendar.thirds > li.double {
   }
 }
 ul.cascaded-layout.calendar.thirds > li.double:hover {
-  -webkit-transform: "scale(0.95)";
-  -moz-transform: "scale(0.95)";
-  transform: "scale(0.95)";
+  -webkit-transform: "none";
+  -moz-transform: "none";
+  transform: "none";
 }
 ul.cascaded-layout.calendar.thirds > li.double:hover:before {
-  content: "Click/tap to shrink";
+  content: "";
 }
 ul.cascaded-layout.calendar.thirds > li.cascade-sizer {
   width: 14.1666% !important;
