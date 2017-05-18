@@ -1594,19 +1594,19 @@
 				var $items = $thisCalendar.children("li");
 				$items.each(function() {
 					var $thisItem = $(this);
-					$thisItem.mouseenter(function() {
+					$thisItem.click(function() {
 						expandCalendarItem($thisCalendar, $thisItem, expansionClass, expansionDelay);
 					});
-					$thisItem.mouseleave(function() {
+					/*$thisItem.mouseleave(function() {
 						collapseCalendarItem($thisCalendar, $thisItem, expansionClass, expansionDelay);
-					});
+					});*/
 				});
 			});
 		}
 	}
 	
 	function expandCalendarItem($calendar, $item, expansionClass, expansionDelay) {
-		$item.addClass(expansionClass);
+		$item.toggleClass(expansionClass);
 		setTimeout(function() {
 			$calendar.masonry();
 		}, expansionDelay);		
