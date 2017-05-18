@@ -1606,10 +1606,10 @@
 	}
 	
 	function expandCalendarItem($calendar, $item, expansionClass, expansionDelay) {
-		$item.toggleClass(expansionClass);
 		setTimeout(function() {
 			$calendar.masonry();
 		}, expansionDelay);		
+		$item.toggleClass(expansionClass);
 	}
 	
 	function collapseCalendarItem($calendar, $item, expansionClass, expansionDelay) {
