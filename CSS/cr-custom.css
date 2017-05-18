@@ -1032,8 +1032,9 @@ ul.cascaded-layout.calendar > li.cascade-sizer {
   width: 22.75% !important;
 }
 ul.cascaded-layout.calendar.thirds > li {
-  font-size: 0.6667rem;
   width: 31.3333%;
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 0.6667rem;
   -webkit-transition: width 0.3s ease, font-size 0.3s ease;
   -moz-transition: width 0.3s ease, font-size 0.3s ease;
   transition: width 0.3s ease, font-size 0.3s ease;
@@ -1046,6 +1047,7 @@ ul.cascaded-layout.calendar.thirds > li {
 ul.cascaded-layout.calendar.thirds > li.double {
   width: 65.6666%;
   font-size: 1rem;
+  z-index: 1;
 }
 @media all and (max-width: 693px) {
   ul.cascaded-layout.calendar.thirds > li.double {
