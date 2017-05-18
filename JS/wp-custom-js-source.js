@@ -1593,7 +1593,8 @@
 				var $thisCalendar = $(this);
 				var $items = $thisCalendar.children("li");
 				$items.each(function() {
-					bindDragSafeClick($(this), function() {
+					var $thisItem = $(this);
+					bindDragSafeClick($thisItem, function() {
 						toggleCalendarItemExpansion($thisCalendar, $thisItem, expansionClass, expansionDelay);
 					});
 				});
