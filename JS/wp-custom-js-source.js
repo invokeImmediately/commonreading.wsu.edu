@@ -685,10 +685,10 @@
 				var $items = $thisCalendar.children("li");
 				$items.each(function() {
 					var $thisItem = $(this);
-					$this.mouseenter(function() {
+					$thisItem.mouseenter(function() {
 						expandCalendarItem($thisCalendar, $thisItem, expansionClass, expansionDelay);
 					});
-					$this.mouseleave(function() {
+					$thisItem.mouseleave(function() {
 						collapseCalendarItem($thisCalendar, $thisItem, expansionClass, expansionDelay);
 					});
 				});
