@@ -1633,7 +1633,6 @@
 			var dx = Math.abs(clickStart.clickX - e.pageX);
 			var dy = Math.abs(clickStart.clickY - e.pageY);
 			if (dx > 4 || dy > 4) {
-				alert("dragging!");
 				$this.data("wasDragging", 1);
 			}
 		}
