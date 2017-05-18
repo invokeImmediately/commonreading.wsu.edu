@@ -1627,6 +1627,7 @@
 	}
 	
 	function dragSafeMouseMove(e) {
+		alert(e.pageX);
 		var $this = $(this);
 		var clickStart = $this.data("dragSafeClickStart");
 		if (clickStart) {
