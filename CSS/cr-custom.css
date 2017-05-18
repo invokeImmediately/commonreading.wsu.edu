@@ -911,6 +911,9 @@ body.archives .column h4 {
 body.archives .column h4.calendar-term {
   border-top: 1px solid rgba(93, 105, 112, 0.5);
 }
+body.archives .column h4.calendar-term:first-of-type {
+  margin-top: 1rem;
+}
 body.archives .column h5 {
   font-size: 1.35945245em;
 }
