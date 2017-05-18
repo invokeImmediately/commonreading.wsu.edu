@@ -1576,7 +1576,7 @@
 		params.initCalendarItemExpansion = {
 			slctrCalendars: "ul.cascaded-layout.calendar",
 			expansionClass: "double",
-			expansionDelay: 500
+			expansionDelay: 1000
 		};
 		
 		theseParams = params.initCalendarItemExpansion;
