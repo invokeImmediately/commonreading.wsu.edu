@@ -1,20 +1,3 @@
-// See [https://github.com/invokeImmediately/commonreading.wsu.edu] for repository of source code
-/**********************************************************************************************************************
- CUSTOM JQUERY-BASED DYNAMIC CONTENT
- *********************************************************************************************************************/
-(function ($) {
-	$(document).ready(function () {
-        /**********************************************************************************************
-         * Tweak HTML source to work around some quirks of WordPress setup                            *
-         **********************************************************************************************/
-        var crSiteURL = window.location.pathname;
-		/* switch(fyeSiteURL) {
-            case '/news/':
-                $('div.column.one').first().parent('section').before('<section class="row single gutter pad-top"><div class="column one"><section class="article-header header-newsEvents"><div class="header-content"><h2>News</h2><h3>What We and Our Students Have Accomplished</h3></div></section></div></section>');
-                break;
-        } */
-	});
-})(jQuery);
 /************************************************************************************************************\
 | JQUERY-MEDIATED ENHANCED INTERACTIVITY OF GRAVITY FORM FIELDS                                              |
 \************************************************************************************************************/
@@ -587,7 +570,10 @@
  * Application of imagesLoaded & Masonry libraries to WSU OUE websites.
  */
 (function ($) {
-    $(document).ready(function () {
+	/*******************************************************************************************************************
+	 * Function calls made once the DOM IS READY                                                                       *
+	 *******************************************************************************************************************/
+    $(function () {
         var $masonryTrgts = $("ul.cascaded-layout");
         $masonryTrgts.each(function () {
             var $thisCascade = $(this);
@@ -629,7 +615,11 @@
             }
         });
     });
-    $(window).load(function () {
+	
+	/*******************************************************************************************************************
+	 * WINDOW LOAD event bindings                                                                                      *
+	 *******************************************************************************************************************/
+    $(window).on("load", function () {
         var $masonryTrgts = $("ul.cascaded-layout");
         $masonryTrgts.each(function () {
             var $thisCascade = $(this);
@@ -662,4 +652,57 @@
             }
         });
     });
+})(jQuery);
+// See [https://github.com/invokeImmediately/commonreading.wsu.edu] for repository of source code
+/**********************************************************************************************************************
+ CUSTOM JQUERY-BASED DYNAMIC CONTENT
+ *********************************************************************************************************************/
+"use strict";
+
+(function ($) {
+	$(function () {
+ 		var params = new Object();
+		var theseParams;
+		
+		params.initCalendarItemExpansion( = {
+			slctrCalendars: "ul.cascaded-layout.calendar"
+			expansionClass: "double",
+			expansionDelay: 300
+		};
+		
+		theseParams = params.initCalendarItemExpansion;
+		initCalendarItemExpansion(
+			theseParams.slctrCalendars,
+			theseParams.expansionClass
+		);
+	});
+	
+	function initCalendarItemExpansion(slctrCalendars, expansionClass, expansionDelay) {
+		var $calendars = $(slctrCalendars);
+		if ($calendars.length) {
+			$calendars.each(function () {
+				var $thisCalendar = $(this);
+				var $items = $thisCalendar.children("li");
+				$items.each(function() {
+					var $thisItem = $(this);
+					$this.mouseenter(function() {
+						expandCalendarItem($thisCalendar, $thisItem, expansionClass, expansionDelay);
+					});
+					$this.mouseleave(function() {
+						collapseCalendarItem($thisCalendar, $thisItem, expansionClass, expansionDelay);
+					});
+				});
+			});
+		}
+	}
+	
+	function expandCalendarItem($calendar, $item, expansionClass, expansionDelay) {
+		$item.addClass(expansionClass);
+		$calendar.delay(expansionDelay).masonry("layout");
+	}
+	
+	function collapseCalendarItem($calendar, $item, expansionClass, expansionDelay) {
+		$item.removeClass(expansionClass);
+		$calendar.delay(expansionDelay).masonry("layout");
+	}
 })(jQuery);
