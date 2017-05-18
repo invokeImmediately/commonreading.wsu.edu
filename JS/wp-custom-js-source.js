@@ -1606,10 +1606,11 @@
 	}
 	
 	function expandCalendarItem($calendar, $item, expansionClass, expansionDelay) {
-		setTimeout(function() {
+		/*setTimeout(function() {
 			$calendar.masonry();
-		}, expansionDelay);		
+		}, expansionDelay);*/
 		$item.toggleClass(expansionClass);
+		$calendar.masonry();
 	}
 	
 	function collapseCalendarItem($calendar, $item, expansionClass, expansionDelay) {
