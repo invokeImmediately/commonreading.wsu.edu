@@ -1576,7 +1576,7 @@
 		params.initCalendarItemExpansion = {
 			slctrCalendars: "ul.cascaded-layout.calendar",
 			expansionClass: "double",
-			expansionDelay: 1000
+			expansionDelay: 3000
 		};
 		
 		theseParams = params.initCalendarItemExpansion;
@@ -1606,11 +1606,10 @@
 	}
 	
 	function expandCalendarItem($calendar, $item, expansionClass, expansionDelay) {
-		/*setTimeout(function() {
-			$calendar.masonry();
-		}, expansionDelay);*/
 		$item.toggleClass(expansionClass);
-		$calendar.masonry();
+		setTimeout(function() {
+			$calendar.masonry();
+		}, expansionDelay);
 	}
 	
 	function collapseCalendarItem($calendar, $item, expansionClass, expansionDelay) {
