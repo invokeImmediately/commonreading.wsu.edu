@@ -1593,27 +1593,55 @@
 				var $thisCalendar = $(this);
 				var $items = $thisCalendar.children("li");
 				$items.each(function() {
-					var $thisItem = $(this);
-					$thisItem.click(function() {
-						expandCalendarItem($thisCalendar, $thisItem, expansionClass, expansionDelay);
+					bindDragSafeClick($(this), function() {
+						toggleCalendarItemExpansion($thisCalendar, $thisItem, expansionClass, expansionDelay);
 					});
-					/*$thisItem.mouseleave(function() {
-						collapseCalendarItem($thisCalendar, $thisItem, expansionClass, expansionDelay);
-					});*/
 				});
 			});
 		}
 	}
 	
-	function expandCalendarItem($calendar, $item, expansionClass, expansionDelay) {
+	function toggleCalendarItemExpansion($calendar, $item, expansionClass, expansionDelay) {
 		$item.toggleClass(expansionClass);
 		$calendar.masonry();
 	}
 	
-	function collapseCalendarItem($calendar, $item, expansionClass, expansionDelay) {
-		$item.removeClass(expansionClass);
-		setTimeout(function() {
-			$calendar.masonry();
-		}, expansionDelay);		
+	function bindDragSafeClick($obj, callback) {
+		if($.isJQueryObj($obj)) {
+			$obj.mousedown(dragSafeMouseDown);
+			$obj.mousemove(dragSafeMouseMove);
+			$obj.mouseup(function (e) {
+				dragSafeMouseUp(e, callback);
+			});
+		}
+	}
+	
+	function dragSafeMouseDown(e) {
+		var $this = $(this);
+		$this.data("wasDragging", 0);
+		$this.data("dragSafeClickStart", {
+			clickX: e.pageX,
+			clickY: e.pageY
+		});
+	}
+	
+	function dragSafeMouseMove(e) {
+		var $this = $(this);
+		var clickStart = $this.data("dragSafeClickStart");
+		if (clickStart) {
+			var dx = Math.abs(clickStart.clickX - e.PageX);
+			var dy = Math.abs(clickStart.clickX - e.PageY);
+			if (dx > 4 || dy > 4) {
+				$this.data("wasDragging", 1);
+			}
+		}
+	}
+
+	function dragSafeMouseUp(e, clickCallback) {
+		var $this = $(this);
+		var wasDragging = $this.data("wasDragging");
+		if (!wasDragging) {
+			clickCallback();
+		}
 	}
 })(jQuery);
