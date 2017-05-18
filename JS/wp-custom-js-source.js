@@ -1608,6 +1608,7 @@
 	function expandCalendarItem($calendar, $item, expansionClass, expansionDelay) {
 		$item.addClass(expansionClass);
 		setTimeout(function() {
+			alert("Expanding.")
 			$calendar.masonry("layout");
 		}, expansionDelay);		
 	}
