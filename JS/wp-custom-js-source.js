@@ -1627,13 +1627,13 @@
 	}
 	
 	function dragSafeMouseMove(e) {
-		alert(e.pageX);
 		var $this = $(this);
 		var clickStart = $this.data("dragSafeClickStart");
 		if (clickStart) {
 			var dx = Math.abs(clickStart.clickX - e.pageX);
-			var dy = Math.abs(clickStart.clickX - e.pageY);
+			var dy = Math.abs(clickStart.clickY - e.pageY);
 			if (dx > 4 || dy > 4) {
+				alert("dragging!");
 				$this.data("wasDragging", 1);
 			}
 		}
