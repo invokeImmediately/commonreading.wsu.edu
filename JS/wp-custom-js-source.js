@@ -1630,8 +1630,8 @@
 		var $this = $(this);
 		var clickStart = $this.data("dragSafeClickStart");
 		if (clickStart) {
-			var dx = Math.abs(clickStart.clickX - e.PageX);
-			var dy = Math.abs(clickStart.clickX - e.PageY);
+			var dx = Math.abs(clickStart.clickX - e.pageX);
+			var dy = Math.abs(clickStart.clickX - e.pageY);
 			if (dx > 4 || dy > 4) {
 				$this.data("wasDragging", 1);
 			}
