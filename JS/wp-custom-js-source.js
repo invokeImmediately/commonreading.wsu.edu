@@ -1608,15 +1608,14 @@
 	function expandCalendarItem($calendar, $item, expansionClass, expansionDelay) {
 		$item.addClass(expansionClass);
 		setTimeout(function() {
-			alert("Expanding.")
-			$calendar.masonry("layout");
+			$calendar.masonry();
 		}, expansionDelay);		
 	}
 	
 	function collapseCalendarItem($calendar, $item, expansionClass, expansionDelay) {
 		$item.removeClass(expansionClass);
 		setTimeout(function() {
-			$calendar.masonry("layout");
+			$calendar.masonry();
 		}, expansionDelay);		
 	}
 })(jQuery);
