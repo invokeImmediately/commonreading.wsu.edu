@@ -664,7 +664,7 @@
  		var params = new Object();
 		var theseParams;
 		
-		params.initCalendarItemExpansion( = {
+		params.initCalendarItemExpansion = {
 			slctrCalendars: "ul.cascaded-layout.calendar"
 			expansionClass: "double",
 			expansionDelay: 300
