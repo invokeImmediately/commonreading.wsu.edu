@@ -911,7 +911,7 @@ body.archives .column h4 {
 body.archives .column h4.calendar-term {
   border-top: 1px solid rgba(93, 105, 112, 0.5);
 }
-table + body.archives .column h4.calendar-term {
+body.archives .column table + h4.calendar-term {
   margin-top: 1rem;
 }
 body.archives .column h5 {
