@@ -1026,7 +1026,13 @@ ul.cascaded-layout.calendar > li.collapsed:hover {
   transform: "scale(1.1)";
 }
 ul.cascaded-layout.calendar > li.collapsed:hover:before {
-  content: "Click to expand";
+  content: "Click/tap to expand";
+  position: absolute;
+  top: 0
+							left: 50%;
+  -webkit-transform: translate(-50%, -50%) translateY(-0.25em) translateY(-5px);
+  -moz-transform: translate(-50%, -50%) translateY(-0.25em) translateY(-5px);
+  transform: translate(-50%, -50%) translateY(-0.25em) translateY(-5px);
 }
 ul.cascaded-layout.calendar > li.cascade-sizer {
   width: 22.75% !important;
