@@ -1612,7 +1612,7 @@
 			$obj.mousedown(dragSafeMouseDown);
 			$obj.mousemove(dragSafeMouseMove);
 			$obj.mouseup(function () {
-				dragSafeMouseUp($this, callback);
+				dragSafeMouseUp($obj, callback);
 			});
 		}
 	}
