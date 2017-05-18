@@ -909,10 +909,12 @@ body.archives .column h4 {
   font-size: 1.56620784em;
 }
 body.archives .column h4.calendar-term {
+  padding-top: 0.2em;
+  margin-top: 0.3em;
   border-top: 1px solid rgba(93, 105, 112, 0.5);
 }
 body.archives .column table + h4.calendar-term {
-  margin-top: 1rem;
+  margin-top: 1.3rem;
 }
 body.archives .column h5 {
   font-size: 1.35945245em;
