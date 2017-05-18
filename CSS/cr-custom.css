@@ -1034,9 +1034,9 @@ ul.cascaded-layout.calendar > li.cascade-sizer {
 ul.cascaded-layout.calendar.thirds > li {
   font-size: 0.6667rem;
   width: 31.3333%;
-  -webkit-transition: "width 0.3s ease, font-size 0.3s ease";
-  -moz-transition: "width 0.3s ease, font-size 0.3s ease";
-  transition: "width 0.3s ease, font-size 0.3s ease";
+  -webkit-transition: width 0.3s ease, font-size 0.3s ease;
+  -moz-transition: width 0.3s ease, font-size 0.3s ease;
+  transition: width 0.3s ease, font-size 0.3s ease;
 }
 @media all and (max-width: 693px) {
   ul.cascaded-layout.calendar.thirds > li {
