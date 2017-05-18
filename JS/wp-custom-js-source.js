@@ -1611,8 +1611,8 @@
 		if($.isJQueryObj($obj)) {
 			$obj.mousedown(dragSafeMouseDown);
 			$obj.mousemove(dragSafeMouseMove);
-			$obj.mouseup(function (e) {
-				dragSafeMouseUp(e, callback);
+			$obj.mouseup(function () {
+				dragSafeMouseUp($this, callback);
 			});
 		}
 	}
@@ -1620,6 +1620,7 @@
 	function dragSafeMouseDown(e) {
 		var $this = $(this);
 		$this.data("wasDragging", 0);
+		$this.data("buttonClicked", e.button);
 		$this.data("dragSafeClickStart", {
 			clickX: e.pageX,
 			clickY: e.pageY
@@ -1638,11 +1639,13 @@
 		}
 	}
 
-	function dragSafeMouseUp(e, clickCallback) {
-		var $this = $(this);
-		var wasDragging = $this.data("wasDragging");
-		if (!wasDragging) {
-			clickCallback();
+	function dragSafeMouseUp($this, clickCallback) {
+		if ($.isJQueryObj($this)) {
+			var buttonClicked = $this.data("buttonClicked");
+			var wasDragging = $this.data("wasDragging");
+			if (buttonClicked === 0 && !wasDragging) {
+				clickCallback();
+			}			
 		}
 	}
 })(jQuery);
