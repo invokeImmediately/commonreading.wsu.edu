@@ -1607,9 +1607,7 @@
 	
 	function expandCalendarItem($calendar, $item, expansionClass, expansionDelay) {
 		$item.toggleClass(expansionClass);
-		setTimeout(function() {
-			$calendar.masonry();
-		}, expansionDelay);
+		$calendar.masonry();
 	}
 	
 	function collapseCalendarItem($calendar, $item, expansionClass, expansionDelay) {
