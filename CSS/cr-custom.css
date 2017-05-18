@@ -1046,6 +1046,20 @@ ul.cascaded-layout.calendar.thirds > li {
     width: 48.5%;
   }
 }
+ul.cascaded-layout.calendar.thirds > li:hover {
+  -webkit-transform: "scale(1.05)";
+  -moz-transform: "scale(1.05)";
+  transform: "scale(1.05)";
+}
+ul.cascaded-layout.calendar.thirds > li:hover:before {
+  content: "Click/tap to expand";
+  position: absolute;
+  top: 0
+						left: 50%;
+  -webkit-transform: translate(-50%, -50%) translateY(-0.25em) translateY(-5px);
+  -moz-transform: translate(-50%, -50%) translateY(-0.25em) translateY(-5px);
+  transform: translate(-50%, -50%) translateY(-0.25em) translateY(-5px);
+}
 ul.cascaded-layout.calendar.thirds > li.double {
   width: 65.6666%;
   font-size: 1rem;
@@ -1054,6 +1068,14 @@ ul.cascaded-layout.calendar.thirds > li.double {
   ul.cascaded-layout.calendar.thirds > li.double {
     width: 97%;
   }
+}
+ul.cascaded-layout.calendar.thirds > li.double:hover {
+  -webkit-transform: "scale(0.95)";
+  -moz-transform: "scale(0.95)";
+  transform: "scale(0.95)";
+}
+ul.cascaded-layout.calendar.thirds > li.double:hover:before {
+  content: "Click/tap to shrink";
 }
 ul.cascaded-layout.calendar.thirds > li.cascade-sizer {
   width: 14.1666% !important;
