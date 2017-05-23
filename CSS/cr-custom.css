@@ -910,11 +910,8 @@ body.archives .column h4 {
 }
 body.archives .column h4.calendar-term {
   padding-top: 0.2em;
-  margin-top: 0.3em;
+  margin-top: 2rem;
   border-top: 1px solid rgba(93, 105, 112, 0.5);
-}
-body.archives .column table + h4.calendar-term {
-  margin-top: 1.3rem;
 }
 body.archives .column h5 {
   font-size: 1.35945245em;
@@ -947,12 +944,20 @@ body.archives section.h1-header + section .column:first-child > h6:first-child +
   margin-top: 0.4rem;
   background-color: rgba(198, 146, 20, 0.5);
 }
+body.archives section.h1-header + section .column:first-child > h1:first-child + hr + h3,
+body.archives section.h1-header + section .column:first-child > h2:first-child + hr + h3,
+body.archives section.h1-header + section .column:first-child > h3:first-child + hr + h3,
+body.archives section.h1-header + section .column:first-child > h4:first-child + hr + h3,
+body.archives section.h1-header + section .column:first-child > h5:first-child + hr + h3,
+body.archives section.h1-header + section .column:first-child > h6:first-child + hr + h3 {
+  margin-top: 2rem;
+}
 img.archives-thumbnail {
   width: 76px;
   height: auto;
 }
 /*!
-* dr-css-1.6: Lists
+* dr-css-1.7: Lists
 */
 @media print {
   ul.cascaded-layout[style] {
@@ -1093,6 +1098,9 @@ ul.cascaded-layout.calendar.thirds > li.cascade-sizer {
 *
 * Style rulesets below still need to be pulled into their own commented section.
 */
+main > .page > .row:last-child > .column {
+  padding-bottom: 2rem;
+}
 strong.lead-in {
   font-family: "Roboto Condensed";
   font-size: 1.25em;
