@@ -2,16 +2,87 @@
 /**********************************************************************************************************************
  CUSTOM JQUERY-BASED DYNAMIC CONTENT
  *********************************************************************************************************************/
+"use strict";
+
 (function ($) {
-	$(document).ready(function () {
-        /**********************************************************************************************
-         * Tweak HTML source to work around some quirks of WordPress setup                            *
-         **********************************************************************************************/
-        var crSiteURL = window.location.pathname;
-		/* switch(fyeSiteURL) {
-            case '/news/':
-                $('div.column.one').first().parent('section').before('<section class="row single gutter pad-top"><div class="column one"><section class="article-header header-newsEvents"><div class="header-content"><h2>News</h2><h3>What We and Our Students Have Accomplished</h3></div></section></div></section>');
-                break;
-        } */
+	$(function () {
+ 		var params = new Object();
+		var theseParams;
+		
+		params.initCalendarItemExpansion = {
+			slctrCalendars: "ul.cascaded-layout.calendar.thirds",
+			expansionClass: "double",
+			expansionDelay: 3000
+		};
+		
+		theseParams = params.initCalendarItemExpansion;
+		initCalendarItemExpansion(
+			theseParams.slctrCalendars,
+			theseParams.expansionClass
+		);
 	});
+	
+	function initCalendarItemExpansion(slctrCalendars, expansionClass, expansionDelay) {
+		//TODO: implement keyboard activation
+		var $calendars = $(slctrCalendars);
+		if ($calendars.length) {
+			$calendars.each(function () {
+				var $thisCalendar = $(this);
+				var $items = $thisCalendar.children("li");
+				$items.each(function() {
+					var $thisItem = $(this);
+					bindDragSafeClick($thisItem, function() {
+						toggleCalendarItemExpansion($thisCalendar, $thisItem, expansionClass, expansionDelay);
+					});
+				});
+			});
+		}
+	}
+	
+	function toggleCalendarItemExpansion($calendar, $item, expansionClass, expansionDelay) {
+		$item.toggleClass(expansionClass);
+		$calendar.masonry();
+	}
+	
+	function bindDragSafeClick($obj, callback) {
+		if($.isJQueryObj($obj)) {
+			$obj.mousedown(dragSafeMouseDown);
+			$obj.mousemove(dragSafeMouseMove);
+			$obj.mouseup(function () {
+				dragSafeMouseUp($obj, callback);
+			});
+		}
+	}
+	
+	function dragSafeMouseDown(e) {
+		var $this = $(this);
+		$this.data("wasDragging", 0);
+		$this.data("buttonClicked", e.button);
+		$this.data("dragSafeClickStart", {
+			clickX: e.pageX,
+			clickY: e.pageY
+		});
+	}
+	
+	function dragSafeMouseMove(e) {
+		var $this = $(this);
+		var clickStart = $this.data("dragSafeClickStart");
+		if (clickStart) {
+			var dx = Math.abs(clickStart.clickX - e.pageX);
+			var dy = Math.abs(clickStart.clickY - e.pageY);
+			if (dx > 4 || dy > 4) {
+				$this.data("wasDragging", 1);
+			}
+		}
+	}
+
+	function dragSafeMouseUp($this, clickCallback) {
+		if ($.isJQueryObj($this)) {
+			var buttonClicked = $this.data("buttonClicked");
+			var wasDragging = $this.data("wasDragging");
+			if (buttonClicked === 0 && !wasDragging) {
+				clickCallback();
+			}			
+		}
+	}
 })(jQuery);
