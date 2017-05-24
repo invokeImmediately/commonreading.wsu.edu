@@ -871,6 +871,7 @@ body.archives .gform_heading h3.gform_title:not(.no-background) {
 }
 body.archives .column h3:not(.no-background)[class],
 body.archives .gform_heading h3.gform_title:not(.no-background)[class] {
+  margin-top: 2rem;
   background-position: right center;
   background-size: auto 31px;
   background-repeat: no-repeat;
