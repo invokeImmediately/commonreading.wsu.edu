@@ -2778,6 +2778,7 @@ main section.row > .column table > tbody > tr > td > div > ol:last-child {
   font-size: 0.9em;
 }
 .column p.vpue-jump-bar {
+  position: relative;
   padding: 0 1rem 1rem;
   margin: 2rem;
   background-color: rgba(0, 165, 189, 0.5);
