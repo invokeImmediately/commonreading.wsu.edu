@@ -4472,3 +4472,22 @@ ul.cascaded-layout > li.gutter-sizer {
 }
 /*     └─────────────────────────────────────────────────────────────────────────────────────────────────┘
  */
+p.vpue-jump-bar:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 25px;
+  background: #2d95a5 url(/wp-content/uploads/sites/52/2017/05/icon_hierarchy_white.png) left center / 24px 24px no-repeat;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+@media (max-width: 989px) {
+  p.vpue-jump-bar.floating {
+    background-position: left bottom;
+  }
+  p.vpue-jump-bar.floating:hover {
+    background-position: left center;
+  }
+}
