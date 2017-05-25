@@ -4473,6 +4473,9 @@ ul.cascaded-layout > li.gutter-sizer {
 }
 /*     └─────────────────────────────────────────────────────────────────────────────────────────────────┘
  */
+p.vpue-jump-bar {
+  padding-left: 25px;
+}
 p.vpue-jump-bar:before {
   content: "";
   position: absolute;
