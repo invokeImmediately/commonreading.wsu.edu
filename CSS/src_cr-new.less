@@ -205,9 +205,9 @@ div.iframe-wrapper > iframe {
 		@media screen and (min-width: 694px) {
 			width: 48%;
 			width: ~"calc(50% - 2rem)";
-			padding-right: 1rem;
-			margin-right: 2rem;
-			margin-bottom: 2rem;
+			padding-right: @v-dflt-spcng / 2;
+			margin-right: @v-dflt-spcng;
+			margin-bottom: @v-dflt-spcng;
 		}
 	}
 }
@@ -225,7 +225,7 @@ main.spine-blank-template section.row.spaces-top {
 
 /*! Columns */
 .h1-header + section.halves.pad-top .column {
-	padding-top: 2rem;
+	padding-top: @v-dflt-spcng;
 }
 
 /*! Column headings */ 
@@ -300,6 +300,7 @@ body.archives {
 				&{ border-top: 1px solid @rgba; .getRgbaStr(@hex-crimson, 0.6667); }
 				&{ background-color: @rgba; .getRgbaStr(@hex-light-crimson, 0.075); }
 				&[class] {
+					margin-top: @v-dflt-spcng;
 					background-position: right center;
 					background-size: auto 31px;
 					background-repeat: no-repeat;
@@ -334,13 +335,13 @@ body.archives {
 			font-size: (@start * pow(@scaling, 3));
 			&.calendar-term {
 				padding-top: 0.2em;
-				margin-top: 0.3em;
+				margin-top: @v-dflt-spcng;
 				border-top: 1px solid rgba(93,105,112,.5);
 			}
 		}
-		table + h4.calendar-term {
-			margin-top: (@v-btm-mrgns + 0.3em);
-		}
+		//table + h4.calendar-term {
+		//	margin-top: (@v-btm-mrgns + 0.3em);
+		//}
 		h5 {
 			font-size: (@start * pow(@scaling, 4));
 		}
@@ -364,12 +365,15 @@ body.archives {
 				& > h5,
 				& > h6 {
 					&:first-child {
-						margin-top: 0.5rem;
-						padding-left: 1rem;
+						margin-top: @v-dflt-spcng / 4;
+						padding-left: @v-dflt-spcng / 2;
 						color: #815f0d;
 						& + hr {
-							margin-top: 0.4rem;
+							margin-top: @v-dflt-spcng / 5;
 							background-color: rgba(198,146,20,.5);
+							& + h3 {
+								margin-top: @v-dflt-spcng;
+							}
 						}
 					}
 				}
@@ -384,7 +388,7 @@ img.archives-thumbnail {
 }
 
 /*!
-* dr-css-1.6: Lists
+* dr-css-1.7: Lists
 */
 ul {
 	&.cascaded-layout {
@@ -512,6 +516,9 @@ ul {
 *
 * Style rulesets below still need to be pulled into their own commented section.
 */
+main > .page > .row:last-child > .column {
+	padding-bottom: @v-dflt-spcng;
+}
 
 strong.lead-in {
 	font-family: "Roboto Condensed";
