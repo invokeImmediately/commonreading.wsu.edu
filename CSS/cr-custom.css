@@ -4474,7 +4474,7 @@ ul.cascaded-layout > li.gutter-sizer {
 /*     └─────────────────────────────────────────────────────────────────────────────────────────────────┘
  */
 .column p.vpue-jump-bar {
-  padding-left: 25px;
+  padding-left: 33px;
 }
 .column p.vpue-jump-bar:before {
   content: "";
@@ -4488,10 +4488,10 @@ ul.cascaded-layout > li.gutter-sizer {
   border-bottom-left-radius: 10px;
 }
 @media (max-width: 989px) {
-  .column p.vpue-jump-bar.floating {
+  .column p.vpue-jump-bar.floating:before {
     background-position: left bottom;
   }
-  .column p.vpue-jump-bar.floating:hover {
+  .column p.vpue-jump-bar.floating:before:hover {
     background-position: left center;
   }
 }
