@@ -4491,7 +4491,7 @@ ul.cascaded-layout > li.gutter-sizer {
   .column p.vpue-jump-bar.floating:before {
     background-position: left bottom;
   }
-  .column p.vpue-jump-bar.floating:before:hover {
+  .column p.vpue-jump-bar.floating:hover:before {
     background-position: left center;
   }
 }
