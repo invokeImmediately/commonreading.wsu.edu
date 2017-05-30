@@ -392,7 +392,7 @@ img.archives-thumbnail {
 */
 ul {
 	&.cascaded-layout {
-		@media print {
+		/*@media print {
 			&[style] {
 				height: auto !important;
 			}
@@ -417,31 +417,7 @@ ul {
 			&.gutter-sizer {
 				width: 2% !important;
 			}
-		}
-		&.blank {
-			padding: 0;
-			margin-top: @v-btm-mrgns !important;
-			font-size: 1rem !important;
-			& > li {
-				float: left;
-				width: 48.5%;
-				margin-bottom: 3%;
-				list-style-type: none;
-				@media all and (max-width: @v-rghtclmn-thrshld) {
-					width: 96%;
-					margin-bottom: 6%;
-				}
-				@media all and (max-width: @v-bckgrnd-thrshld) {
-					overflow-x: visible;
-				}
-				& + li {
-					margin-top: 0;
-				}
-				&.gutter-sizer {
-					width: 3% !important;
-				}
-			}
-		}
+		}*/
 		&.calendar {
 			& > li {
 				* + * {
