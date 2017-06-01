@@ -1575,7 +1575,7 @@ div.read-more-target {
 }
 @media all {
   .column .gform_wrapper {
-    line-height: 1.275em;
+    line-height: 1.375em;
     font-size: 16px;
   }
 }
@@ -2031,16 +2031,8 @@ div.read-more-target {
   }
 }
 /*!  ┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
-*    │ ++++++++ SECTIONS ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ │
-*    ├------------------------------------------------------------------------------------------------------------------┤
-*    │ Rule-sets for styling section elements within OUE pages built using the Builder template within the Spine theme  │
-*    │ for WordPress.                                                                                                   │
-*    │  ╘═» This file assumes the following LESS files have been imported upstream:                                     │
-*    │        • //github.com/invokeImmediately/WSU-UE---CSS/animations.less                                             │
-*    │        • //github.com/invokeImmediately/WSU-UE---CSS/color-palette.less                                          │
-*    │        • //github.com/invokeImmediately/WSU-UE---CSS/fonts.less                                                  │
-*    │        • //github.com/invokeImmediately/WSU-UE---CSS/mixins.less                                                 │
-*    ├------------------------------------------------------------------------------------------------------------------┤
+*    │ SECTIONS +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ │
+*    └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
 */
 section.column-one-with-bottom-margin > .column.one {
   margin-bottom: 2rem;
@@ -2555,21 +2547,13 @@ main section.row > .column table > tbody > tr > td > div > ol:last-child {
  */
 /*!  └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
 */
-/*     ┌─────────────────────────────────────────────────────────────────────────────────────────────────┐
- *     │ ++++++++ PARAGRAPHS +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ │
- *     ├-------------------------------------------------------------------------------------------------┤
- *     │ Rule-sets for styling paragraph elements within OUE pages built using the WSU Spine theme for   │
- *     │ WordPress.                                                                                      │
- *     │  ╘═» This file assumes the following LESS files have been imported upstream:                    │
- *     │        • //github.com/invokeImmediately/WSU-UE---CSS/animations.less                            │
- *     │        • //github.com/invokeImmediately/WSU-UE---CSS/color-palette.less                         │
- *     │        • //github.com/invokeImmediately/WSU-UE---CSS/fonts.less                                 │
- *     │        • //github.com/invokeImmediately/WSU-UE---CSS/mixins.less                                │
- *     ├-------------------------------------------------------------------------------------------------┤
- */
+/*!  ┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+*    │ PARAGRAPHS +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ │
+*    └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+*/
 @media all {
   .row.single:not(.mimic-multi-column-sections) .column p {
-    line-height: 1.275em;
+    line-height: 1.375em;
     font-size: 1em;
   }
 }
@@ -2605,7 +2589,7 @@ main section.row > .column table > tbody > tr > td > div > ol:last-child {
 }
 @media all {
   .row.single.mimic-two-column-sections .column p {
-    line-height: 1.275em;
+    line-height: 1.375em;
     font-size: 1em;
   }
 }
@@ -2640,50 +2624,50 @@ main section.row > .column table > tbody > tr > td > div > ol:last-child {
   }
 }
 @media all {
-  .row.side-right.column p,
+  .row.side-right .column p,
   .row.side-left .column p,
   .row.halves .column p {
-    line-height: 1.275em;
+    line-height: 1.375em;
     font-size: 1em;
   }
 }
 @media all and (min-width: 1073px) {
-  .row.side-right.column p,
+  .row.side-right .column p,
   .row.side-left .column p,
   .row.halves .column p {
     font-size: 1em;
   }
 }
 @media all and (min-width: 990px) and (max-width: 1072px) {
-  .row.side-right.column p,
+  .row.side-right .column p,
   .row.side-left .column p,
   .row.halves .column p {
     font-size: 1em;
   }
 }
 @media all and (min-width: 792px) and (max-width: 989px) {
-  .row.side-right.column p,
+  .row.side-right .column p,
   .row.side-left .column p,
   .row.halves .column p {
     font-size: 1em;
   }
 }
 @media all and (min-width: 481px) and (max-width: 791px) {
-  .row.side-right.column p,
+  .row.side-right .column p,
   .row.side-left .column p,
   .row.halves .column p {
     font-size: 1em;
   }
 }
 @media all and (min-width: 361px) and (max-width: 480px) {
-  .row.side-right.column p,
+  .row.side-right .column p,
   .row.side-left .column p,
   .row.halves .column p {
     font-size: 0.938em;
   }
 }
 @media all and (max-width: 360px) {
-  .row.side-right.column p,
+  .row.side-right .column p,
   .row.side-left .column p,
   .row.halves .column p {
     font-size: 0.879844em;
@@ -2692,7 +2676,7 @@ main section.row > .column table > tbody > tr > td > div > ol:last-child {
 @media all {
   .row.thirds .column p,
   .row.quarters .column p {
-    line-height: 1.275em;
+    line-height: 1.375em;
     font-size: 1em;
   }
 }
@@ -2876,12 +2860,12 @@ main section.row > .column table > tbody > tr > td > div > ol:last-child {
   margin-bottom: 2rem;
   background-color: rgba(94, 106, 113, 0.5);
   border: 1px solid #2a3033;
-  line-height: 1.275em;
+  line-height: 1.375em;
   color: #2a3033;
 }
 @media all {
   .column p.banner-text {
-    line-height: 1.275em;
+    line-height: 1.375em;
     font-size: 1.25em;
   }
 }
@@ -2943,7 +2927,7 @@ main section.row > .column table > tbody > tr > td > div > ol:last-child {
 }
 @media all {
   .column p.banner-text-orange-with-towers {
-    line-height: 1.275em;
+    line-height: 1.375em;
     font-size: 1.25em;
   }
 }
@@ -2979,7 +2963,7 @@ main section.row > .column table > tbody > tr > td > div > ol:last-child {
 }
 @media all {
   .row.single:not(.mimic-multi-column-sections) .column p.article-deck {
-    line-height: 1.275em;
+    line-height: 1.375em;
     font-size: 1.2em;
   }
 }
@@ -3015,7 +2999,7 @@ main section.row > .column table > tbody > tr > td > div > ol:last-child {
 }
 @media all {
   .row.single.mimic-two-column-sections .column p.article-deck {
-    line-height: 1.275em;
+    line-height: 1.375em;
     font-size: 1.2em;
   }
 }
@@ -3050,50 +3034,50 @@ main section.row > .column table > tbody > tr > td > div > ol:last-child {
   }
 }
 @media all {
-  .row.side-right.column p.article-deck,
+  .row.side-right .column p.article-deck,
   .row.side-left .column p.article-deck,
   .row.halves .column p.article-deck {
-    line-height: 1.275em;
+    line-height: 1.375em;
     font-size: 1.2em;
   }
 }
 @media all and (min-width: 1073px) {
-  .row.side-right.column p.article-deck,
+  .row.side-right .column p.article-deck,
   .row.side-left .column p.article-deck,
   .row.halves .column p.article-deck {
     font-size: 1.2em;
   }
 }
 @media all and (min-width: 990px) and (max-width: 1072px) {
-  .row.side-right.column p.article-deck,
+  .row.side-right .column p.article-deck,
   .row.side-left .column p.article-deck,
   .row.halves .column p.article-deck {
     font-size: 1.2em;
   }
 }
 @media all and (min-width: 792px) and (max-width: 989px) {
-  .row.side-right.column p.article-deck,
+  .row.side-right .column p.article-deck,
   .row.side-left .column p.article-deck,
   .row.halves .column p.article-deck {
     font-size: 1.2em;
   }
 }
 @media all and (min-width: 481px) and (max-width: 791px) {
-  .row.side-right.column p.article-deck,
+  .row.side-right .column p.article-deck,
   .row.side-left .column p.article-deck,
   .row.halves .column p.article-deck {
     font-size: 1.2em;
   }
 }
 @media all and (min-width: 361px) and (max-width: 480px) {
-  .row.side-right.column p.article-deck,
+  .row.side-right .column p.article-deck,
   .row.side-left .column p.article-deck,
   .row.halves .column p.article-deck {
     font-size: 1.1256em;
   }
 }
 @media all and (max-width: 360px) {
-  .row.side-right.column p.article-deck,
+  .row.side-right .column p.article-deck,
   .row.side-left .column p.article-deck,
   .row.halves .column p.article-deck {
     font-size: 1.0558128em;
@@ -3102,7 +3086,7 @@ main section.row > .column table > tbody > tr > td > div > ol:last-child {
 @media all {
   .row.thirds .column p.article-deck,
   .row.quarters .column p.article-deck {
-    line-height: 1.275em;
+    line-height: 1.375em;
     font-size: 1.2em;
   }
 }
@@ -3150,7 +3134,7 @@ main section.row > .column table > tbody > tr > td > div > ol:last-child {
 }
 @media all {
   .row.single:not(.mimic-multi-column-sections) .column p.article-tagline {
-    line-height: 1.275em;
+    line-height: 1.375em;
     font-size: 1.305em;
   }
 }
@@ -3186,7 +3170,7 @@ main section.row > .column table > tbody > tr > td > div > ol:last-child {
 }
 @media all {
   .row.single.mimic-two-column-sections .column p.article-tagline {
-    line-height: 1.275em;
+    line-height: 1.375em;
     font-size: 1.305em;
   }
 }
@@ -3221,50 +3205,50 @@ main section.row > .column table > tbody > tr > td > div > ol:last-child {
   }
 }
 @media all {
-  .row.side-right.column p.article-tagline,
+  .row.side-right .column p.article-tagline,
   .row.side-left .column p.article-tagline,
   .row.halves .column p.article-tagline {
-    line-height: 1.275em;
+    line-height: 1.375em;
     font-size: 1.305em;
   }
 }
 @media all and (min-width: 1073px) {
-  .row.side-right.column p.article-tagline,
+  .row.side-right .column p.article-tagline,
   .row.side-left .column p.article-tagline,
   .row.halves .column p.article-tagline {
     font-size: 1.305em;
   }
 }
 @media all and (min-width: 990px) and (max-width: 1072px) {
-  .row.side-right.column p.article-tagline,
+  .row.side-right .column p.article-tagline,
   .row.side-left .column p.article-tagline,
   .row.halves .column p.article-tagline {
     font-size: 1.305em;
   }
 }
 @media all and (min-width: 792px) and (max-width: 989px) {
-  .row.side-right.column p.article-tagline,
+  .row.side-right .column p.article-tagline,
   .row.side-left .column p.article-tagline,
   .row.halves .column p.article-tagline {
     font-size: 1.305em;
   }
 }
 @media all and (min-width: 481px) and (max-width: 791px) {
-  .row.side-right.column p.article-tagline,
+  .row.side-right .column p.article-tagline,
   .row.side-left .column p.article-tagline,
   .row.halves .column p.article-tagline {
     font-size: 1.305em;
   }
 }
 @media all and (min-width: 361px) and (max-width: 480px) {
-  .row.side-right.column p.article-tagline,
+  .row.side-right .column p.article-tagline,
   .row.side-left .column p.article-tagline,
   .row.halves .column p.article-tagline {
     font-size: 1.22409em;
   }
 }
 @media all and (max-width: 360px) {
-  .row.side-right.column p.article-tagline,
+  .row.side-right .column p.article-tagline,
   .row.side-left .column p.article-tagline,
   .row.halves .column p.article-tagline {
     font-size: 1.14819642em;
@@ -3273,7 +3257,7 @@ main section.row > .column table > tbody > tr > td > div > ol:last-child {
 @media all {
   .row.thirds .column p.article-tagline,
   .row.quarters .column p.article-tagline {
-    line-height: 1.275em;
+    line-height: 1.375em;
     font-size: 1.305em;
   }
 }
@@ -3315,7 +3299,7 @@ main section.row > .column table > tbody > tr > td > div > ol:last-child {
 }
 @media all {
   .row.single:not(.mimic-multi-column-sections) .column p.article-tagline.home {
-    line-height: 1.275em;
+    line-height: 1.375em;
     font-size: 1.71000023em;
   }
 }
@@ -3351,7 +3335,7 @@ main section.row > .column table > tbody > tr > td > div > ol:last-child {
 }
 @media all {
   .row.single.mimic-two-column-sections .column p.article-tagline.home {
-    line-height: 1.275em;
+    line-height: 1.375em;
     font-size: 1.71000023em;
   }
 }
@@ -3386,50 +3370,50 @@ main section.row > .column table > tbody > tr > td > div > ol:last-child {
   }
 }
 @media all {
-  .row.side-right.column p.article-tagline.home,
+  .row.side-right .column p.article-tagline.home,
   .row.side-left .column p.article-tagline.home,
   .row.halves .column p.article-tagline.home {
-    line-height: 1.275em;
+    line-height: 1.375em;
     font-size: 1.71000023em;
   }
 }
 @media all and (min-width: 1073px) {
-  .row.side-right.column p.article-tagline.home,
+  .row.side-right .column p.article-tagline.home,
   .row.side-left .column p.article-tagline.home,
   .row.halves .column p.article-tagline.home {
     font-size: 1.71000023em;
   }
 }
 @media all and (min-width: 990px) and (max-width: 1072px) {
-  .row.side-right.column p.article-tagline.home,
+  .row.side-right .column p.article-tagline.home,
   .row.side-left .column p.article-tagline.home,
   .row.halves .column p.article-tagline.home {
     font-size: 1.71000023em;
   }
 }
 @media all and (min-width: 792px) and (max-width: 989px) {
-  .row.side-right.column p.article-tagline.home,
+  .row.side-right .column p.article-tagline.home,
   .row.side-left .column p.article-tagline.home,
   .row.halves .column p.article-tagline.home {
     font-size: 1.71000023em;
   }
 }
 @media all and (min-width: 481px) and (max-width: 791px) {
-  .row.side-right.column p.article-tagline.home,
+  .row.side-right .column p.article-tagline.home,
   .row.side-left .column p.article-tagline.home,
   .row.halves .column p.article-tagline.home {
     font-size: 1.71000023em;
   }
 }
 @media all and (min-width: 361px) and (max-width: 480px) {
-  .row.side-right.column p.article-tagline.home,
+  .row.side-right .column p.article-tagline.home,
   .row.side-left .column p.article-tagline.home,
   .row.halves .column p.article-tagline.home {
     font-size: 1.60398021em;
   }
 }
 @media all and (max-width: 360px) {
-  .row.side-right.column p.article-tagline.home,
+  .row.side-right .column p.article-tagline.home,
   .row.side-left .column p.article-tagline.home,
   .row.halves .column p.article-tagline.home {
     font-size: 1.50453344em;
@@ -3438,7 +3422,7 @@ main section.row > .column table > tbody > tr > td > div > ol:last-child {
 @media all {
   .row.thirds .column p.article-tagline.home,
   .row.quarters .column p.article-tagline.home {
-    line-height: 1.275em;
+    line-height: 1.375em;
     font-size: 1.71000023em;
   }
 }
@@ -3557,7 +3541,7 @@ p.article-tagline:not(.has-no-bordering).alt:after {
 }
 @media all {
   .row.single:not(.mimic-multi-column-sections) .column p.vpue-jump-back {
-    line-height: 1.275em;
+    line-height: 1.375em;
     font-size: 0.6875em;
   }
 }
@@ -3593,7 +3577,7 @@ p.article-tagline:not(.has-no-bordering).alt:after {
 }
 @media all {
   .row.single.mimic-two-column-sections .column p.vpue-jump-back {
-    line-height: 1.275em;
+    line-height: 1.375em;
     font-size: 0.6875em;
   }
 }
@@ -3628,50 +3612,50 @@ p.article-tagline:not(.has-no-bordering).alt:after {
   }
 }
 @media all {
-  .row.side-right.column p.vpue-jump-back,
+  .row.side-right .column p.vpue-jump-back,
   .row.side-left .column p.vpue-jump-back,
   .row.halves .column p.vpue-jump-back {
-    line-height: 1.275em;
+    line-height: 1.375em;
     font-size: 0.6875em;
   }
 }
 @media all and (min-width: 1073px) {
-  .row.side-right.column p.vpue-jump-back,
+  .row.side-right .column p.vpue-jump-back,
   .row.side-left .column p.vpue-jump-back,
   .row.halves .column p.vpue-jump-back {
     font-size: 0.6875em;
   }
 }
 @media all and (min-width: 990px) and (max-width: 1072px) {
-  .row.side-right.column p.vpue-jump-back,
+  .row.side-right .column p.vpue-jump-back,
   .row.side-left .column p.vpue-jump-back,
   .row.halves .column p.vpue-jump-back {
     font-size: 0.6875em;
   }
 }
 @media all and (min-width: 792px) and (max-width: 989px) {
-  .row.side-right.column p.vpue-jump-back,
+  .row.side-right .column p.vpue-jump-back,
   .row.side-left .column p.vpue-jump-back,
   .row.halves .column p.vpue-jump-back {
     font-size: 0.6875em;
   }
 }
 @media all and (min-width: 481px) and (max-width: 791px) {
-  .row.side-right.column p.vpue-jump-back,
+  .row.side-right .column p.vpue-jump-back,
   .row.side-left .column p.vpue-jump-back,
   .row.halves .column p.vpue-jump-back {
     font-size: 0.6875em;
   }
 }
 @media all and (min-width: 361px) and (max-width: 480px) {
-  .row.side-right.column p.vpue-jump-back,
+  .row.side-right .column p.vpue-jump-back,
   .row.side-left .column p.vpue-jump-back,
   .row.halves .column p.vpue-jump-back {
     font-size: 0.644875em;
   }
 }
 @media all and (max-width: 360px) {
-  .row.side-right.column p.vpue-jump-back,
+  .row.side-right .column p.vpue-jump-back,
   .row.side-left .column p.vpue-jump-back,
   .row.halves .column p.vpue-jump-back {
     font-size: 0.60489275em;
@@ -3680,7 +3664,7 @@ p.article-tagline:not(.has-no-bordering).alt:after {
 @media all {
   .row.thirds .column p.vpue-jump-back,
   .row.quarters .column p.vpue-jump-back {
-    line-height: 1.275em;
+    line-height: 1.375em;
     font-size: 0.6875em;
   }
 }
@@ -3724,35 +3708,191 @@ p.article-tagline:not(.has-no-bordering).alt:after {
   padding-bottom: 0.33333333rem;
   margin-bottom: 0.33333333rem;
 }
+@media all {
+  .row.single:not(.mimic-multi-column-sections) .column p.article-media-contacts {
+    line-height: 1.375em;
+    font-size: 0.8rem;
+  }
+}
+@media all and (min-width: 1073px) {
+  .row.single:not(.mimic-multi-column-sections) .column p.article-media-contacts {
+    font-size: 0.85287846rem;
+  }
+}
+@media all and (min-width: 990px) and (max-width: 1072px) {
+  .row.single:not(.mimic-multi-column-sections) .column p.article-media-contacts {
+    font-size: 0.8rem;
+  }
+}
+@media all and (min-width: 792px) and (max-width: 989px) {
+  .row.single:not(.mimic-multi-column-sections) .column p.article-media-contacts {
+    font-size: 0.85287846rem;
+  }
+}
+@media all and (min-width: 481px) and (max-width: 791px) {
+  .row.single:not(.mimic-multi-column-sections) .column p.article-media-contacts {
+    font-size: 0.8rem;
+  }
+}
+@media all and (min-width: 361px) and (max-width: 480px) {
+  .row.single:not(.mimic-multi-column-sections) .column p.article-media-contacts {
+    font-size: 0.7504rem;
+  }
+}
+@media all and (max-width: 360px) {
+  .row.single:not(.mimic-multi-column-sections) .column p.article-media-contacts {
+    font-size: 0.7038752rem;
+  }
+}
+@media all {
+  .row.single.mimic-two-column-sections .column p.article-media-contacts {
+    line-height: 1.375em;
+    font-size: 0.8rem;
+  }
+}
+@media all and (min-width: 1073px) {
+  .row.single.mimic-two-column-sections .column p.article-media-contacts {
+    font-size: 0.8rem;
+  }
+}
+@media all and (min-width: 990px) and (max-width: 1072px) {
+  .row.single.mimic-two-column-sections .column p.article-media-contacts {
+    font-size: 0.8rem;
+  }
+}
+@media all and (min-width: 792px) and (max-width: 989px) {
+  .row.single.mimic-two-column-sections .column p.article-media-contacts {
+    font-size: 0.8rem;
+  }
+}
+@media all and (min-width: 481px) and (max-width: 791px) {
+  .row.single.mimic-two-column-sections .column p.article-media-contacts {
+    font-size: 0.8rem;
+  }
+}
+@media all and (min-width: 361px) and (max-width: 480px) {
+  .row.single.mimic-two-column-sections .column p.article-media-contacts {
+    font-size: 0.7504rem;
+  }
+}
+@media all and (max-width: 360px) {
+  .row.single.mimic-two-column-sections .column p.article-media-contacts {
+    font-size: 0.7038752rem;
+  }
+}
+@media all {
+  .row.side-right .column p.article-media-contacts,
+  .row.side-left .column p.article-media-contacts,
+  .row.halves .column p.article-media-contacts {
+    line-height: 1.375em;
+    font-size: 0.8rem;
+  }
+}
+@media all and (min-width: 1073px) {
+  .row.side-right .column p.article-media-contacts,
+  .row.side-left .column p.article-media-contacts,
+  .row.halves .column p.article-media-contacts {
+    font-size: 0.8rem;
+  }
+}
+@media all and (min-width: 990px) and (max-width: 1072px) {
+  .row.side-right .column p.article-media-contacts,
+  .row.side-left .column p.article-media-contacts,
+  .row.halves .column p.article-media-contacts {
+    font-size: 0.8rem;
+  }
+}
+@media all and (min-width: 792px) and (max-width: 989px) {
+  .row.side-right .column p.article-media-contacts,
+  .row.side-left .column p.article-media-contacts,
+  .row.halves .column p.article-media-contacts {
+    font-size: 0.8rem;
+  }
+}
+@media all and (min-width: 481px) and (max-width: 791px) {
+  .row.side-right .column p.article-media-contacts,
+  .row.side-left .column p.article-media-contacts,
+  .row.halves .column p.article-media-contacts {
+    font-size: 0.8rem;
+  }
+}
+@media all and (min-width: 361px) and (max-width: 480px) {
+  .row.side-right .column p.article-media-contacts,
+  .row.side-left .column p.article-media-contacts,
+  .row.halves .column p.article-media-contacts {
+    font-size: 0.7504rem;
+  }
+}
+@media all and (max-width: 360px) {
+  .row.side-right .column p.article-media-contacts,
+  .row.side-left .column p.article-media-contacts,
+  .row.halves .column p.article-media-contacts {
+    font-size: 0.7038752rem;
+  }
+}
+@media all {
+  .row.thirds .column p.article-media-contacts,
+  .row.quarters .column p.article-media-contacts {
+    line-height: 1.375em;
+    font-size: 0.8rem;
+  }
+}
+@media all and (min-width: 1073px) {
+  .row.thirds .column p.article-media-contacts,
+  .row.quarters .column p.article-media-contacts {
+    font-size: 0.8rem;
+  }
+}
+@media all and (min-width: 990px) and (max-width: 1072px) {
+  .row.thirds .column p.article-media-contacts,
+  .row.quarters .column p.article-media-contacts {
+    font-size: 0.7504rem;
+  }
+}
+@media all and (min-width: 792px) and (max-width: 989px) {
+  .row.thirds .column p.article-media-contacts,
+  .row.quarters .column p.article-media-contacts {
+    font-size: 0.8rem;
+  }
+}
+@media all and (min-width: 481px) and (max-width: 791px) {
+  .row.thirds .column p.article-media-contacts,
+  .row.quarters .column p.article-media-contacts {
+    font-size: 0.7504rem;
+  }
+}
+@media all and (min-width: 361px) and (max-width: 480px) {
+  .row.thirds .column p.article-media-contacts,
+  .row.quarters .column p.article-media-contacts {
+    font-size: 0.7038752rem;
+  }
+}
+@media all and (max-width: 360px) {
+  .row.thirds .column p.article-media-contacts,
+  .row.quarters .column p.article-media-contacts {
+    font-size: 0.7038752rem;
+  }
+}
 .column p.article-media-contacts {
   padding-left: 2em;
   text-align: left;
+}
+.column p.article-media-contacts:first-child {
+  margin-top: 1rem;
 }
 body.single-post .column p.article-media-contacts + :not(.article-media-contacts) {
   padding-top: 15px;
   border-top: 1px solid rgba(127, 127, 127, 0.2);
 }
-/*     └─────────────────────────────────────────────────────────────────────────────────────────────────┘
- */
-/*     ┌─────────────────────────────────────────────────────────────────────────────────────────────────┐
- *     │ ++++++++ LISTS ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ │
- *     ├-------------------------------------------------------------------------------------------------┤
- *     │ Rule-sets for styling list elements within OUE pages built using the WSU Spine theme for        │
- *     │ WordPress.                                                                                      │
- *     │  ╘═» This file assumes the following LESS files have been imported upstream:                    │
- *     │        • //github.com/invokeImmediately/WSU-UE---CSS/animations.less                            │
- *     │        • //github.com/invokeImmediately/WSU-UE---CSS/color-palette.less                         │
- *     │        • //github.com/invokeImmediately/WSU-UE---CSS/fonts.less                                 │
- *     │        • //github.com/invokeImmediately/WSU-UE---CSS/mixins.less                                │
- *     ├-------------------------------------------------------------------------------------------------┤
- */
-/*         ┌-----------------------------------------------------------------------------------------┐
- *         │ ···· UNORDERED list elements ·························································· │
- *         └-----------------------------------------------------------------------------------------┘
- */
+/*!  └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+*/
+/*!   ┌───────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+*     │ LIST layouts ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ │
+*     └───────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+*/
 @media all {
   .row.single:not(.mimic-multi-column-sections) .column ul {
-    line-height: 1.275em;
+    line-height: 1.375em;
     font-size: 1em;
   }
 }
@@ -3788,7 +3928,7 @@ body.single-post .column p.article-media-contacts + :not(.article-media-contacts
 }
 @media all {
   .row.single.mimic-two-column-sections .column ul {
-    line-height: 1.275em;
+    line-height: 1.375em;
     font-size: 1em;
   }
 }
@@ -3823,50 +3963,50 @@ body.single-post .column p.article-media-contacts + :not(.article-media-contacts
   }
 }
 @media all {
-  .row.side-right.column ul,
+  .row.side-right .column ul,
   .row.side-left .column ul,
   .row.halves .column ul {
-    line-height: 1.275em;
+    line-height: 1.375em;
     font-size: 1em;
   }
 }
 @media all and (min-width: 1073px) {
-  .row.side-right.column ul,
+  .row.side-right .column ul,
   .row.side-left .column ul,
   .row.halves .column ul {
     font-size: 1em;
   }
 }
 @media all and (min-width: 990px) and (max-width: 1072px) {
-  .row.side-right.column ul,
+  .row.side-right .column ul,
   .row.side-left .column ul,
   .row.halves .column ul {
     font-size: 1em;
   }
 }
 @media all and (min-width: 792px) and (max-width: 989px) {
-  .row.side-right.column ul,
+  .row.side-right .column ul,
   .row.side-left .column ul,
   .row.halves .column ul {
     font-size: 1em;
   }
 }
 @media all and (min-width: 481px) and (max-width: 791px) {
-  .row.side-right.column ul,
+  .row.side-right .column ul,
   .row.side-left .column ul,
   .row.halves .column ul {
     font-size: 1em;
   }
 }
 @media all and (min-width: 361px) and (max-width: 480px) {
-  .row.side-right.column ul,
+  .row.side-right .column ul,
   .row.side-left .column ul,
   .row.halves .column ul {
     font-size: 0.938em;
   }
 }
 @media all and (max-width: 360px) {
-  .row.side-right.column ul,
+  .row.side-right .column ul,
   .row.side-left .column ul,
   .row.halves .column ul {
     font-size: 0.879844em;
@@ -3875,7 +4015,7 @@ body.single-post .column p.article-media-contacts + :not(.article-media-contacts
 @media all {
   .row.thirds .column ul,
   .row.quarters .column ul {
-    line-height: 1.275em;
+    line-height: 1.375em;
     font-size: 1em;
   }
 }
@@ -3944,8 +4084,6 @@ ul.content-boxes {
 ul.content-boxes > li {
   position: relative;
   list-style-type: none;
-}
-ul.content-boxes > li:not(.blank) {
   min-height: 320px;
   border-radius: 4px;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.22);
@@ -3954,64 +4092,64 @@ ul.content-boxes > li:not(.blank) {
   background-color: #fff;
 }
 @media all and (max-width: 1205px) {
-  ul.content-boxes > li:not(.blank) {
+  ul.content-boxes > li {
     overflow-x: auto;
   }
 }
 @media all {
-  ul.content-boxes > li:not(.blank) p {
-    line-height: 1.275em;
+  ul.content-boxes > li p {
+    line-height: 1.375em;
     font-size: 0.938em;
   }
 }
 @media all and (min-width: 1073px) {
-  ul.content-boxes > li:not(.blank) p {
+  ul.content-boxes > li p {
     font-size: 1em;
   }
 }
 @media all and (min-width: 990px) and (max-width: 1072px) {
-  ul.content-boxes > li:not(.blank) p {
+  ul.content-boxes > li p {
     font-size: 0.938em;
   }
 }
 @media all and (min-width: 792px) and (max-width: 989px) {
-  ul.content-boxes > li:not(.blank) p {
+  ul.content-boxes > li p {
     font-size: 1em;
   }
 }
 @media all and (min-width: 481px) and (max-width: 791px) {
-  ul.content-boxes > li:not(.blank) p {
+  ul.content-boxes > li p {
     font-size: 0.938em;
   }
 }
 @media all and (min-width: 361px) and (max-width: 480px) {
-  ul.content-boxes > li:not(.blank) p {
+  ul.content-boxes > li p {
     font-size: 0.879844em;
   }
 }
 @media all and (max-width: 360px) {
-  ul.content-boxes > li:not(.blank) p {
+  ul.content-boxes > li p {
     font-size: 0.82529367em;
   }
 }
-ul.content-boxes > li:not(.blank) p.email {
+ul.content-boxes > li p.email {
   font-size: 0.9em;
   font-weight: bold;
 }
-ul.content-boxes > li:not(.blank) > img {
+ul.content-boxes > li > img {
   position: absolute;
   top: 10px;
   left: 10px;
   width: 106px;
 }
-ul.content-boxes > li:not(.blank) > .content {
+ul.content-boxes > li > .content {
   position: relative;
   left: 121px;
   width: calc(100% - 136px);
   min-width: 189px;
   padding: 10px 10px 10px 5px;
 }
-ul.content-boxes > li:not(.blank) + li {
+ul.content-boxes > li + li {
   margin-top: 2rem;
 }
 ul.external-links li {
@@ -4075,13 +4213,9 @@ ul.cascaded-layout.blank > li + li {
 ul.cascaded-layout.blank > li.gutter-sizer {
   width: 3% !important;
 }
-/*         ┌-----------------------------------------------------------------------------------------┐
- *         │ ···· ORDERED list elements ···························································· │
- *         └-----------------------------------------------------------------------------------------┘
- */
 @media all {
   .row.single:not(.mimic-multi-column-sections) .column ol {
-    line-height: 1.275em;
+    line-height: 1.375em;
     font-size: 1em;
   }
 }
@@ -4117,7 +4251,7 @@ ul.cascaded-layout.blank > li.gutter-sizer {
 }
 @media all {
   .row.single.mimic-two-column-sections .column ol {
-    line-height: 1.275em;
+    line-height: 1.375em;
     font-size: 1em;
   }
 }
@@ -4152,50 +4286,50 @@ ul.cascaded-layout.blank > li.gutter-sizer {
   }
 }
 @media all {
-  .row.side-right.column ol,
+  .row.side-right .column ol,
   .row.side-left .column ol,
   .row.halves .column ol {
-    line-height: 1.275em;
+    line-height: 1.375em;
     font-size: 1em;
   }
 }
 @media all and (min-width: 1073px) {
-  .row.side-right.column ol,
+  .row.side-right .column ol,
   .row.side-left .column ol,
   .row.halves .column ol {
     font-size: 1em;
   }
 }
 @media all and (min-width: 990px) and (max-width: 1072px) {
-  .row.side-right.column ol,
+  .row.side-right .column ol,
   .row.side-left .column ol,
   .row.halves .column ol {
     font-size: 1em;
   }
 }
 @media all and (min-width: 792px) and (max-width: 989px) {
-  .row.side-right.column ol,
+  .row.side-right .column ol,
   .row.side-left .column ol,
   .row.halves .column ol {
     font-size: 1em;
   }
 }
 @media all and (min-width: 481px) and (max-width: 791px) {
-  .row.side-right.column ol,
+  .row.side-right .column ol,
   .row.side-left .column ol,
   .row.halves .column ol {
     font-size: 1em;
   }
 }
 @media all and (min-width: 361px) and (max-width: 480px) {
-  .row.side-right.column ol,
+  .row.side-right .column ol,
   .row.side-left .column ol,
   .row.halves .column ol {
     font-size: 0.938em;
   }
 }
 @media all and (max-width: 360px) {
-  .row.side-right.column ol,
+  .row.side-right .column ol,
   .row.side-left .column ol,
   .row.halves .column ol {
     font-size: 0.879844em;
@@ -4204,7 +4338,7 @@ ul.cascaded-layout.blank > li.gutter-sizer {
 @media all {
   .row.thirds .column ol,
   .row.quarters .column ol {
-    line-height: 1.275em;
+    line-height: 1.375em;
     font-size: 1em;
   }
 }
@@ -4260,10 +4394,6 @@ ul.cascaded-layout.blank > li.gutter-sizer {
 .column ol ol ol {
   list-style-type: lower-roman;
 }
-/*         ┌-----------------------------------------------------------------------------------------┐
- *         │ ···· DEFINITION list elements and children ············································ │
- *         └-----------------------------------------------------------------------------------------┘
- */
 .column dl.faq {
   position: relative;
 }
@@ -4282,7 +4412,7 @@ ul.cascaded-layout.blank > li.gutter-sizer {
 }
 @media all {
   .column dl.faq dt {
-    line-height: 1.275em;
+    line-height: 1.375em;
     font-size: 1em;
   }
 }
@@ -4484,8 +4614,8 @@ ul.cascaded-layout.blank > li.gutter-sizer {
 .column dl.faq > .collapse-all-button {
   right: 0;
 }
-/*     └─────────────────────────────────────────────────────────────────────────────────────────────────┘
- */
+/*!   └───────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+*/
 .column p.vpue-jump-bar {
   padding-left: 33px;
 }
