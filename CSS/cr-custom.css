@@ -306,6 +306,10 @@ header:first-child + .has-pull-quote-bordering:not(.alt) {
   right: 3px;
   background-color: rgba(70, 78, 84, 0.75757576);
 }
+/*!     ┌───────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+*       │ ++++ ANIMATIONS +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ │
+*       └───────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+*/
 .fade-in-from-top {
   opacity: 0;
   -webkit-animation: anim-fade-in-from-top 1s linear 1;
@@ -1455,12 +1459,10 @@ figure figcaption {
     display: none;
   }
 }
-/*  ╔════════════════════════════════════════════════════════════════════════════════════════════════════════╗ 
- *  ║ #### INPUT FORMS ##################################################################################### ║
- *  ╠========================================================================================================╣
- *  ║ Styling applied to input elements to which the gravity form classes have been applied.                 ║
- *  ╚════════════════════════════════════════════════════════════════════════════════════════════════════════╝
- */
+/*!     ┌───────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+*       │ FORM ELEMENT LAYOUTS ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ │
+*       └───────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+*/
 input.read-more-state {
   display: none;
 }
@@ -1576,7 +1578,6 @@ div.read-more-target {
 @media all {
   .column .gform_wrapper {
     line-height: 1.375em;
-    font-size: 16px;
   }
 }
 @media all and (min-width: 1073px) {
@@ -2030,9 +2031,9 @@ div.read-more-target {
     width: 70%;
   }
 }
-/*!  ┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
-*    │ SECTIONS +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ │
-*    └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+/*!     ┌───────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+*       │ SECTIONS ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ │
+*       └───────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
 */
 section.column-one-with-bottom-margin > .column.one {
   margin-bottom: 2rem;
@@ -2085,12 +2086,6 @@ section:not(.row).article-header .header-content h3 {
     border: 1px solid white;
     color: #fff;
     text-shadow: 0 0.3333px 0 #afafaf, 0 0.6667px 0 #989898, 0 1px 0 #7f7f7f, 0 1.3333px 0 #686868, 0 1.6667px 0 #4f4f4f, 0 2px 0.3333px rgba(0, 0, 0, 0.1), 0 0 1.6667px rgba(0, 0, 0, 0.1), 0 0.3333px 1px rgba(0, 0, 0, 0.3), 0 1px 1.6667px rgba(0, 0, 0, 0.2), 0 1.6667px 3.3333px rgba(0, 0, 0, 0.25), 0 3.3333px 3.3333px rgba(0, 0, 0, 0.2), 0 6.6667px 6.6667px rgba(0, 0, 0, 0.15);
-    /*.rgb-black(); text-shadow: 0 .5px 0 #aaa, 0 1px 0 #888,
-						 0 1.5px .5px rgba(@rval,@gval,@bval,.1),
-						 0 0 2.5px rgba(@rval,@gval,@bval,.1),
-						 0 .5px 1.5px rgba(@rval,@gval,@bval,.3),
-						 0 1px 2.5px rgba(@rval,@gval,@bval,.2),
-						 0 0 .5px #000, 0 1.5px 1px #000;*/
   }
   section:not(.row).article-header .header-content h3 > mark.highlight {
     text-shadow: 0 0.3333px 0 #77898b, 0 0.6667px 0 #687779, 0 1px 0 #576365, 0 1.3333px 0 #475153, 0 1.6667px 0 #363e3f, 0 2px 0.3333px rgba(0, 0, 0, 0.1), 0 0 1.6667px rgba(0, 0, 0, 0.1), 0 0.3333px 1px rgba(0, 0, 0, 0.3), 0 1px 1.6667px rgba(0, 0, 0, 0.2), 0 1.6667px 3.3333px rgba(0, 0, 0, 0.25), 0 3.3333px 3.3333px rgba(0, 0, 0, 0.2), 0 6.6667px 6.6667px rgba(0, 0, 0, 0.15);
@@ -2228,10 +2223,6 @@ section.side-right .column.two p {
 .column section:not(:last-child) > *:last-child:not(.vpue-jump-bar) {
   padding-bottom: 0;
 }
-/*         ┌-----------------------------------------------------------------------------------------┐
- *         │ ···· SPACING OVERWRITES to improve responsive design ·································· │
- *         └-----------------------------------------------------------------------------------------┘
- */
 main section.row > .column > p:not(.no-btm-margin),
 main section.row > .column > article > .article-body > p:not(.no-btm-margin),
 main section.row > .column > article > .article-summary > p:not(.no-btm-margin),
@@ -2322,42 +2313,226 @@ main section.row > .column table > tbody > tr > td > div > p + ol:not(.spaces-to
   margin-top: -0.66666667rem;
 }
 main section.row:last-child > .column > p:last-child,
-main section.row:last-child > .column > article > .article-body > p:last-child,
-main section.row:last-child > .column > article > .article-summary > p:last-child,
+main section.row:last-child > .column > .column > article > .article-body > p:last-child,
+main section.row:last-child > .column > .column > article > .article-summary > p:last-child,
+main section.row:last-child > .column > .column > section > p:last-child,
 main section.row:last-child > .column > section > p:last-child,
-main section.row:last-child > .column > section > p:last-child,
-main section.row:last-child > .column > article > .article-body > section > p:last-child,
-main section.row:last-child > .column > article > .article-summary > section > p:last-child,
-main section.row:last-child > .column > section > section > p:last-child,
+main section.row:last-child > .column > .column > article > .article-body > section > p:last-child,
+main section.row:last-child > .column > .column > article > .article-summary > section > p:last-child,
+main section.row:last-child > .column > .column > section > section > p:last-child,
 main section.row:last-child > .column > div > p:last-child,
-main section.row:last-child > .column > article > .article-body > div > p:last-child,
-main section.row:last-child > .column > article > .article-summary > div > p:last-child,
-main section.row:last-child > .column > section > div > p:last-child,
+main section.row:last-child > .column > .column > article > .article-body > div > p:last-child,
+main section.row:last-child > .column > .column > article > .article-summary > div > p:last-child,
+main section.row:last-child > .column > .column > section > div > p:last-child,
 main section.row:last-child > .column > ul:last-child,
-main section.row:last-child > .column > article > .article-body > ul:last-child,
-main section.row:last-child > .column > article > .article-summary > ul:last-child,
+main section.row:last-child > .column > .column > article > .article-body > ul:last-child,
+main section.row:last-child > .column > .column > article > .article-summary > ul:last-child,
+main section.row:last-child > .column > .column > section > ul:last-child,
 main section.row:last-child > .column > section > ul:last-child,
-main section.row:last-child > .column > section > ul:last-child,
-main section.row:last-child > .column > article > .article-body > section > ul:last-child,
-main section.row:last-child > .column > article > .article-summary > section > ul:last-child,
-main section.row:last-child > .column > section > section > ul:last-child,
+main section.row:last-child > .column > .column > article > .article-body > section > ul:last-child,
+main section.row:last-child > .column > .column > article > .article-summary > section > ul:last-child,
+main section.row:last-child > .column > .column > section > section > ul:last-child,
 main section.row:last-child > .column > div > ul:last-child,
-main section.row:last-child > .column > article > .article-body > div > ul:last-child,
-main section.row:last-child > .column > article > .article-summary > div > ul:last-child,
-main section.row:last-child > .column > section > div > ul:last-child,
+main section.row:last-child > .column > .column > article > .article-body > div > ul:last-child,
+main section.row:last-child > .column > .column > article > .article-summary > div > ul:last-child,
+main section.row:last-child > .column > .column > section > div > ul:last-child,
 main section.row:last-child > .column > ol:last-child,
-main section.row:last-child > .column > article > .article-body > ol:last-child,
-main section.row:last-child > .column > article > .article-summary > ol:last-child,
+main section.row:last-child > .column > .column > article > .article-body > ol:last-child,
+main section.row:last-child > .column > .column > article > .article-summary > ol:last-child,
+main section.row:last-child > .column > .column > section > ol:last-child,
 main section.row:last-child > .column > section > ol:last-child,
-main section.row:last-child > .column > section > ol:last-child,
-main section.row:last-child > .column > article > .article-body > section > ol:last-child,
-main section.row:last-child > .column > article > .article-summary > section > ol:last-child,
-main section.row:last-child > .column > section > section > ol:last-child,
+main section.row:last-child > .column > .column > article > .article-body > section > ol:last-child,
+main section.row:last-child > .column > .column > article > .article-summary > section > ol:last-child,
+main section.row:last-child > .column > .column > section > section > ol:last-child,
 main section.row:last-child > .column > div > ol:last-child,
-main section.row:last-child > .column > article > .article-body > div > ol:last-child,
-main section.row:last-child > .column > article > .article-summary > div > ol:last-child,
-main section.row:last-child > .column > section > div > ol:last-child {
+main section.row:last-child > .column > .column > article > .article-body > div > ol:last-child,
+main section.row:last-child > .column > .column > article > .article-summary > div > ol:last-child,
+main section.row:last-child > .column > .column > section > div > ol:last-child {
   margin-bottom: 0;
+}
+@media all and (max-width: 693px) {
+  main section.row:last-child.halves > .column:not(:last-child) > p:last-child,
+  main section.row:last-child.thirds > .column:not(:last-child) > p:last-child,
+  main section.row:last-child.quarters > .column:not(:last-child) > p:last-child,
+  main section.row:last-child.side-right > .column:not(:last-child) > p:last-child,
+  main section.row:last-child.side-left > .column:not(:last-child) > p:last-child,
+  main section.row:last-child.halves > .column:not(:last-child) > article > .article-body > p:last-child,
+  main section.row:last-child.thirds > .column:not(:last-child) > article > .article-body > p:last-child,
+  main section.row:last-child.quarters > .column:not(:last-child) > article > .article-body > p:last-child,
+  main section.row:last-child.side-right > .column:not(:last-child) > article > .article-body > p:last-child,
+  main section.row:last-child.side-left > .column:not(:last-child) > article > .article-body > p:last-child,
+  main section.row:last-child.halves > .column:not(:last-child) > article > .article-summary > p:last-child,
+  main section.row:last-child.thirds > .column:not(:last-child) > article > .article-summary > p:last-child,
+  main section.row:last-child.quarters > .column:not(:last-child) > article > .article-summary > p:last-child,
+  main section.row:last-child.side-right > .column:not(:last-child) > article > .article-summary > p:last-child,
+  main section.row:last-child.side-left > .column:not(:last-child) > article > .article-summary > p:last-child,
+  main section.row:last-child.halves > .column:not(:last-child) > section > p:last-child,
+  main section.row:last-child.thirds > .column:not(:last-child) > section > p:last-child,
+  main section.row:last-child.quarters > .column:not(:last-child) > section > p:last-child,
+  main section.row:last-child.side-right > .column:not(:last-child) > section > p:last-child,
+  main section.row:last-child.side-left > .column:not(:last-child) > section > p:last-child,
+  main section.row:last-child.halves > .column:not(:last-child) > section > p:last-child,
+  main section.row:last-child.thirds > .column:not(:last-child) > section > p:last-child,
+  main section.row:last-child.quarters > .column:not(:last-child) > section > p:last-child,
+  main section.row:last-child.side-right > .column:not(:last-child) > section > p:last-child,
+  main section.row:last-child.side-left > .column:not(:last-child) > section > p:last-child,
+  main section.row:last-child.halves > .column:not(:last-child) > article > .article-body > section > p:last-child,
+  main section.row:last-child.thirds > .column:not(:last-child) > article > .article-body > section > p:last-child,
+  main section.row:last-child.quarters > .column:not(:last-child) > article > .article-body > section > p:last-child,
+  main section.row:last-child.side-right > .column:not(:last-child) > article > .article-body > section > p:last-child,
+  main section.row:last-child.side-left > .column:not(:last-child) > article > .article-body > section > p:last-child,
+  main section.row:last-child.halves > .column:not(:last-child) > article > .article-summary > section > p:last-child,
+  main section.row:last-child.thirds > .column:not(:last-child) > article > .article-summary > section > p:last-child,
+  main section.row:last-child.quarters > .column:not(:last-child) > article > .article-summary > section > p:last-child,
+  main section.row:last-child.side-right > .column:not(:last-child) > article > .article-summary > section > p:last-child,
+  main section.row:last-child.side-left > .column:not(:last-child) > article > .article-summary > section > p:last-child,
+  main section.row:last-child.halves > .column:not(:last-child) > section > section > p:last-child,
+  main section.row:last-child.thirds > .column:not(:last-child) > section > section > p:last-child,
+  main section.row:last-child.quarters > .column:not(:last-child) > section > section > p:last-child,
+  main section.row:last-child.side-right > .column:not(:last-child) > section > section > p:last-child,
+  main section.row:last-child.side-left > .column:not(:last-child) > section > section > p:last-child,
+  main section.row:last-child.halves > .column:not(:last-child) > div > p:last-child,
+  main section.row:last-child.thirds > .column:not(:last-child) > div > p:last-child,
+  main section.row:last-child.quarters > .column:not(:last-child) > div > p:last-child,
+  main section.row:last-child.side-right > .column:not(:last-child) > div > p:last-child,
+  main section.row:last-child.side-left > .column:not(:last-child) > div > p:last-child,
+  main section.row:last-child.halves > .column:not(:last-child) > article > .article-body > div > p:last-child,
+  main section.row:last-child.thirds > .column:not(:last-child) > article > .article-body > div > p:last-child,
+  main section.row:last-child.quarters > .column:not(:last-child) > article > .article-body > div > p:last-child,
+  main section.row:last-child.side-right > .column:not(:last-child) > article > .article-body > div > p:last-child,
+  main section.row:last-child.side-left > .column:not(:last-child) > article > .article-body > div > p:last-child,
+  main section.row:last-child.halves > .column:not(:last-child) > article > .article-summary > div > p:last-child,
+  main section.row:last-child.thirds > .column:not(:last-child) > article > .article-summary > div > p:last-child,
+  main section.row:last-child.quarters > .column:not(:last-child) > article > .article-summary > div > p:last-child,
+  main section.row:last-child.side-right > .column:not(:last-child) > article > .article-summary > div > p:last-child,
+  main section.row:last-child.side-left > .column:not(:last-child) > article > .article-summary > div > p:last-child,
+  main section.row:last-child.halves > .column:not(:last-child) > section > div > p:last-child,
+  main section.row:last-child.thirds > .column:not(:last-child) > section > div > p:last-child,
+  main section.row:last-child.quarters > .column:not(:last-child) > section > div > p:last-child,
+  main section.row:last-child.side-right > .column:not(:last-child) > section > div > p:last-child,
+  main section.row:last-child.side-left > .column:not(:last-child) > section > div > p:last-child,
+  main section.row:last-child.halves > .column:not(:last-child) > ul:last-child,
+  main section.row:last-child.thirds > .column:not(:last-child) > ul:last-child,
+  main section.row:last-child.quarters > .column:not(:last-child) > ul:last-child,
+  main section.row:last-child.side-right > .column:not(:last-child) > ul:last-child,
+  main section.row:last-child.side-left > .column:not(:last-child) > ul:last-child,
+  main section.row:last-child.halves > .column:not(:last-child) > article > .article-body > ul:last-child,
+  main section.row:last-child.thirds > .column:not(:last-child) > article > .article-body > ul:last-child,
+  main section.row:last-child.quarters > .column:not(:last-child) > article > .article-body > ul:last-child,
+  main section.row:last-child.side-right > .column:not(:last-child) > article > .article-body > ul:last-child,
+  main section.row:last-child.side-left > .column:not(:last-child) > article > .article-body > ul:last-child,
+  main section.row:last-child.halves > .column:not(:last-child) > article > .article-summary > ul:last-child,
+  main section.row:last-child.thirds > .column:not(:last-child) > article > .article-summary > ul:last-child,
+  main section.row:last-child.quarters > .column:not(:last-child) > article > .article-summary > ul:last-child,
+  main section.row:last-child.side-right > .column:not(:last-child) > article > .article-summary > ul:last-child,
+  main section.row:last-child.side-left > .column:not(:last-child) > article > .article-summary > ul:last-child,
+  main section.row:last-child.halves > .column:not(:last-child) > section > ul:last-child,
+  main section.row:last-child.thirds > .column:not(:last-child) > section > ul:last-child,
+  main section.row:last-child.quarters > .column:not(:last-child) > section > ul:last-child,
+  main section.row:last-child.side-right > .column:not(:last-child) > section > ul:last-child,
+  main section.row:last-child.side-left > .column:not(:last-child) > section > ul:last-child,
+  main section.row:last-child.halves > .column:not(:last-child) > section > ul:last-child,
+  main section.row:last-child.thirds > .column:not(:last-child) > section > ul:last-child,
+  main section.row:last-child.quarters > .column:not(:last-child) > section > ul:last-child,
+  main section.row:last-child.side-right > .column:not(:last-child) > section > ul:last-child,
+  main section.row:last-child.side-left > .column:not(:last-child) > section > ul:last-child,
+  main section.row:last-child.halves > .column:not(:last-child) > article > .article-body > section > ul:last-child,
+  main section.row:last-child.thirds > .column:not(:last-child) > article > .article-body > section > ul:last-child,
+  main section.row:last-child.quarters > .column:not(:last-child) > article > .article-body > section > ul:last-child,
+  main section.row:last-child.side-right > .column:not(:last-child) > article > .article-body > section > ul:last-child,
+  main section.row:last-child.side-left > .column:not(:last-child) > article > .article-body > section > ul:last-child,
+  main section.row:last-child.halves > .column:not(:last-child) > article > .article-summary > section > ul:last-child,
+  main section.row:last-child.thirds > .column:not(:last-child) > article > .article-summary > section > ul:last-child,
+  main section.row:last-child.quarters > .column:not(:last-child) > article > .article-summary > section > ul:last-child,
+  main section.row:last-child.side-right > .column:not(:last-child) > article > .article-summary > section > ul:last-child,
+  main section.row:last-child.side-left > .column:not(:last-child) > article > .article-summary > section > ul:last-child,
+  main section.row:last-child.halves > .column:not(:last-child) > section > section > ul:last-child,
+  main section.row:last-child.thirds > .column:not(:last-child) > section > section > ul:last-child,
+  main section.row:last-child.quarters > .column:not(:last-child) > section > section > ul:last-child,
+  main section.row:last-child.side-right > .column:not(:last-child) > section > section > ul:last-child,
+  main section.row:last-child.side-left > .column:not(:last-child) > section > section > ul:last-child,
+  main section.row:last-child.halves > .column:not(:last-child) > div > ul:last-child,
+  main section.row:last-child.thirds > .column:not(:last-child) > div > ul:last-child,
+  main section.row:last-child.quarters > .column:not(:last-child) > div > ul:last-child,
+  main section.row:last-child.side-right > .column:not(:last-child) > div > ul:last-child,
+  main section.row:last-child.side-left > .column:not(:last-child) > div > ul:last-child,
+  main section.row:last-child.halves > .column:not(:last-child) > article > .article-body > div > ul:last-child,
+  main section.row:last-child.thirds > .column:not(:last-child) > article > .article-body > div > ul:last-child,
+  main section.row:last-child.quarters > .column:not(:last-child) > article > .article-body > div > ul:last-child,
+  main section.row:last-child.side-right > .column:not(:last-child) > article > .article-body > div > ul:last-child,
+  main section.row:last-child.side-left > .column:not(:last-child) > article > .article-body > div > ul:last-child,
+  main section.row:last-child.halves > .column:not(:last-child) > article > .article-summary > div > ul:last-child,
+  main section.row:last-child.thirds > .column:not(:last-child) > article > .article-summary > div > ul:last-child,
+  main section.row:last-child.quarters > .column:not(:last-child) > article > .article-summary > div > ul:last-child,
+  main section.row:last-child.side-right > .column:not(:last-child) > article > .article-summary > div > ul:last-child,
+  main section.row:last-child.side-left > .column:not(:last-child) > article > .article-summary > div > ul:last-child,
+  main section.row:last-child.halves > .column:not(:last-child) > section > div > ul:last-child,
+  main section.row:last-child.thirds > .column:not(:last-child) > section > div > ul:last-child,
+  main section.row:last-child.quarters > .column:not(:last-child) > section > div > ul:last-child,
+  main section.row:last-child.side-right > .column:not(:last-child) > section > div > ul:last-child,
+  main section.row:last-child.side-left > .column:not(:last-child) > section > div > ul:last-child,
+  main section.row:last-child.halves > .column:not(:last-child) > ol:last-child,
+  main section.row:last-child.thirds > .column:not(:last-child) > ol:last-child,
+  main section.row:last-child.quarters > .column:not(:last-child) > ol:last-child,
+  main section.row:last-child.side-right > .column:not(:last-child) > ol:last-child,
+  main section.row:last-child.side-left > .column:not(:last-child) > ol:last-child,
+  main section.row:last-child.halves > .column:not(:last-child) > article > .article-body > ol:last-child,
+  main section.row:last-child.thirds > .column:not(:last-child) > article > .article-body > ol:last-child,
+  main section.row:last-child.quarters > .column:not(:last-child) > article > .article-body > ol:last-child,
+  main section.row:last-child.side-right > .column:not(:last-child) > article > .article-body > ol:last-child,
+  main section.row:last-child.side-left > .column:not(:last-child) > article > .article-body > ol:last-child,
+  main section.row:last-child.halves > .column:not(:last-child) > article > .article-summary > ol:last-child,
+  main section.row:last-child.thirds > .column:not(:last-child) > article > .article-summary > ol:last-child,
+  main section.row:last-child.quarters > .column:not(:last-child) > article > .article-summary > ol:last-child,
+  main section.row:last-child.side-right > .column:not(:last-child) > article > .article-summary > ol:last-child,
+  main section.row:last-child.side-left > .column:not(:last-child) > article > .article-summary > ol:last-child,
+  main section.row:last-child.halves > .column:not(:last-child) > section > ol:last-child,
+  main section.row:last-child.thirds > .column:not(:last-child) > section > ol:last-child,
+  main section.row:last-child.quarters > .column:not(:last-child) > section > ol:last-child,
+  main section.row:last-child.side-right > .column:not(:last-child) > section > ol:last-child,
+  main section.row:last-child.side-left > .column:not(:last-child) > section > ol:last-child,
+  main section.row:last-child.halves > .column:not(:last-child) > section > ol:last-child,
+  main section.row:last-child.thirds > .column:not(:last-child) > section > ol:last-child,
+  main section.row:last-child.quarters > .column:not(:last-child) > section > ol:last-child,
+  main section.row:last-child.side-right > .column:not(:last-child) > section > ol:last-child,
+  main section.row:last-child.side-left > .column:not(:last-child) > section > ol:last-child,
+  main section.row:last-child.halves > .column:not(:last-child) > article > .article-body > section > ol:last-child,
+  main section.row:last-child.thirds > .column:not(:last-child) > article > .article-body > section > ol:last-child,
+  main section.row:last-child.quarters > .column:not(:last-child) > article > .article-body > section > ol:last-child,
+  main section.row:last-child.side-right > .column:not(:last-child) > article > .article-body > section > ol:last-child,
+  main section.row:last-child.side-left > .column:not(:last-child) > article > .article-body > section > ol:last-child,
+  main section.row:last-child.halves > .column:not(:last-child) > article > .article-summary > section > ol:last-child,
+  main section.row:last-child.thirds > .column:not(:last-child) > article > .article-summary > section > ol:last-child,
+  main section.row:last-child.quarters > .column:not(:last-child) > article > .article-summary > section > ol:last-child,
+  main section.row:last-child.side-right > .column:not(:last-child) > article > .article-summary > section > ol:last-child,
+  main section.row:last-child.side-left > .column:not(:last-child) > article > .article-summary > section > ol:last-child,
+  main section.row:last-child.halves > .column:not(:last-child) > section > section > ol:last-child,
+  main section.row:last-child.thirds > .column:not(:last-child) > section > section > ol:last-child,
+  main section.row:last-child.quarters > .column:not(:last-child) > section > section > ol:last-child,
+  main section.row:last-child.side-right > .column:not(:last-child) > section > section > ol:last-child,
+  main section.row:last-child.side-left > .column:not(:last-child) > section > section > ol:last-child,
+  main section.row:last-child.halves > .column:not(:last-child) > div > ol:last-child,
+  main section.row:last-child.thirds > .column:not(:last-child) > div > ol:last-child,
+  main section.row:last-child.quarters > .column:not(:last-child) > div > ol:last-child,
+  main section.row:last-child.side-right > .column:not(:last-child) > div > ol:last-child,
+  main section.row:last-child.side-left > .column:not(:last-child) > div > ol:last-child,
+  main section.row:last-child.halves > .column:not(:last-child) > article > .article-body > div > ol:last-child,
+  main section.row:last-child.thirds > .column:not(:last-child) > article > .article-body > div > ol:last-child,
+  main section.row:last-child.quarters > .column:not(:last-child) > article > .article-body > div > ol:last-child,
+  main section.row:last-child.side-right > .column:not(:last-child) > article > .article-body > div > ol:last-child,
+  main section.row:last-child.side-left > .column:not(:last-child) > article > .article-body > div > ol:last-child,
+  main section.row:last-child.halves > .column:not(:last-child) > article > .article-summary > div > ol:last-child,
+  main section.row:last-child.thirds > .column:not(:last-child) > article > .article-summary > div > ol:last-child,
+  main section.row:last-child.quarters > .column:not(:last-child) > article > .article-summary > div > ol:last-child,
+  main section.row:last-child.side-right > .column:not(:last-child) > article > .article-summary > div > ol:last-child,
+  main section.row:last-child.side-left > .column:not(:last-child) > article > .article-summary > div > ol:last-child,
+  main section.row:last-child.halves > .column:not(:last-child) > section > div > ol:last-child,
+  main section.row:last-child.thirds > .column:not(:last-child) > section > div > ol:last-child,
+  main section.row:last-child.quarters > .column:not(:last-child) > section > div > ol:last-child,
+  main section.row:last-child.side-right > .column:not(:last-child) > section > div > ol:last-child,
+  main section.row:last-child.side-left > .column:not(:last-child) > section > div > ol:last-child {
+    margin-bottom: 1rem;
+  }
 }
 main section.row > .column table > tbody > tr > td > p:last-child,
 main section.row > .column table > tbody > tr > td > section > p:last-child,
@@ -2541,12 +2716,6 @@ main section.row > .column table > tbody > tr > td > div > ol:last-child {
     padding-left: 0.25rem;
   }
 }
-/*         ┌-----------------------------------------------------------------------------------------┐
- *         │ ···· LINKED COLUMNS content group ····················································· │
- *         └-----------------------------------------------------------------------------------------┘
- */
-/*!  └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
-*/
 /*!  ┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
 *    │ PARAGRAPHS +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ │
 *    └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
@@ -2554,7 +2723,6 @@ main section.row > .column table > tbody > tr > td > div > ol:last-child {
 @media all {
   .row.single:not(.mimic-multi-column-sections) .column p {
     line-height: 1.375em;
-    font-size: 1em;
   }
 }
 @media all and (min-width: 1073px) {
@@ -2590,7 +2758,6 @@ main section.row > .column table > tbody > tr > td > div > ol:last-child {
 @media all {
   .row.single.mimic-two-column-sections .column p {
     line-height: 1.375em;
-    font-size: 1em;
   }
 }
 @media all and (min-width: 1073px) {
@@ -2628,7 +2795,6 @@ main section.row > .column table > tbody > tr > td > div > ol:last-child {
   .row.side-left .column p,
   .row.halves .column p {
     line-height: 1.375em;
-    font-size: 1em;
   }
 }
 @media all and (min-width: 1073px) {
@@ -2677,7 +2843,6 @@ main section.row > .column table > tbody > tr > td > div > ol:last-child {
   .row.thirds .column p,
   .row.quarters .column p {
     line-height: 1.375em;
-    font-size: 1em;
   }
 }
 @media all and (min-width: 1073px) {
@@ -2866,7 +3031,6 @@ main section.row > .column table > tbody > tr > td > div > ol:last-child {
 @media all {
   .column p.banner-text {
     line-height: 1.375em;
-    font-size: 1.25em;
   }
 }
 @media all and (min-width: 1073px) {
@@ -2928,7 +3092,6 @@ main section.row > .column table > tbody > tr > td > div > ol:last-child {
 @media all {
   .column p.banner-text-orange-with-towers {
     line-height: 1.375em;
-    font-size: 1.25em;
   }
 }
 @media all and (min-width: 1073px) {
@@ -2964,7 +3127,6 @@ main section.row > .column table > tbody > tr > td > div > ol:last-child {
 @media all {
   .row.single:not(.mimic-multi-column-sections) .column p.article-deck {
     line-height: 1.375em;
-    font-size: 1.2em;
   }
 }
 @media all and (min-width: 1073px) {
@@ -3000,7 +3162,6 @@ main section.row > .column table > tbody > tr > td > div > ol:last-child {
 @media all {
   .row.single.mimic-two-column-sections .column p.article-deck {
     line-height: 1.375em;
-    font-size: 1.2em;
   }
 }
 @media all and (min-width: 1073px) {
@@ -3038,7 +3199,6 @@ main section.row > .column table > tbody > tr > td > div > ol:last-child {
   .row.side-left .column p.article-deck,
   .row.halves .column p.article-deck {
     line-height: 1.375em;
-    font-size: 1.2em;
   }
 }
 @media all and (min-width: 1073px) {
@@ -3087,7 +3247,6 @@ main section.row > .column table > tbody > tr > td > div > ol:last-child {
   .row.thirds .column p.article-deck,
   .row.quarters .column p.article-deck {
     line-height: 1.375em;
-    font-size: 1.2em;
   }
 }
 @media all and (min-width: 1073px) {
@@ -3135,7 +3294,6 @@ main section.row > .column table > tbody > tr > td > div > ol:last-child {
 @media all {
   .row.single:not(.mimic-multi-column-sections) .column p.article-tagline {
     line-height: 1.375em;
-    font-size: 1.305em;
   }
 }
 @media all and (min-width: 1073px) {
@@ -3171,7 +3329,6 @@ main section.row > .column table > tbody > tr > td > div > ol:last-child {
 @media all {
   .row.single.mimic-two-column-sections .column p.article-tagline {
     line-height: 1.375em;
-    font-size: 1.305em;
   }
 }
 @media all and (min-width: 1073px) {
@@ -3209,7 +3366,6 @@ main section.row > .column table > tbody > tr > td > div > ol:last-child {
   .row.side-left .column p.article-tagline,
   .row.halves .column p.article-tagline {
     line-height: 1.375em;
-    font-size: 1.305em;
   }
 }
 @media all and (min-width: 1073px) {
@@ -3258,7 +3414,6 @@ main section.row > .column table > tbody > tr > td > div > ol:last-child {
   .row.thirds .column p.article-tagline,
   .row.quarters .column p.article-tagline {
     line-height: 1.375em;
-    font-size: 1.305em;
   }
 }
 @media all and (min-width: 1073px) {
@@ -3300,7 +3455,6 @@ main section.row > .column table > tbody > tr > td > div > ol:last-child {
 @media all {
   .row.single:not(.mimic-multi-column-sections) .column p.article-tagline.home {
     line-height: 1.375em;
-    font-size: 1.71000023em;
   }
 }
 @media all and (min-width: 1073px) {
@@ -3336,7 +3490,6 @@ main section.row > .column table > tbody > tr > td > div > ol:last-child {
 @media all {
   .row.single.mimic-two-column-sections .column p.article-tagline.home {
     line-height: 1.375em;
-    font-size: 1.71000023em;
   }
 }
 @media all and (min-width: 1073px) {
@@ -3374,7 +3527,6 @@ main section.row > .column table > tbody > tr > td > div > ol:last-child {
   .row.side-left .column p.article-tagline.home,
   .row.halves .column p.article-tagline.home {
     line-height: 1.375em;
-    font-size: 1.71000023em;
   }
 }
 @media all and (min-width: 1073px) {
@@ -3423,7 +3575,6 @@ main section.row > .column table > tbody > tr > td > div > ol:last-child {
   .row.thirds .column p.article-tagline.home,
   .row.quarters .column p.article-tagline.home {
     line-height: 1.375em;
-    font-size: 1.71000023em;
   }
 }
 @media all and (min-width: 1073px) {
@@ -3542,7 +3693,6 @@ p.article-tagline:not(.has-no-bordering).alt:after {
 @media all {
   .row.single:not(.mimic-multi-column-sections) .column p.vpue-jump-back {
     line-height: 1.375em;
-    font-size: 0.6875em;
   }
 }
 @media all and (min-width: 1073px) {
@@ -3578,7 +3728,6 @@ p.article-tagline:not(.has-no-bordering).alt:after {
 @media all {
   .row.single.mimic-two-column-sections .column p.vpue-jump-back {
     line-height: 1.375em;
-    font-size: 0.6875em;
   }
 }
 @media all and (min-width: 1073px) {
@@ -3616,7 +3765,6 @@ p.article-tagline:not(.has-no-bordering).alt:after {
   .row.side-left .column p.vpue-jump-back,
   .row.halves .column p.vpue-jump-back {
     line-height: 1.375em;
-    font-size: 0.6875em;
   }
 }
 @media all and (min-width: 1073px) {
@@ -3665,7 +3813,6 @@ p.article-tagline:not(.has-no-bordering).alt:after {
   .row.thirds .column p.vpue-jump-back,
   .row.quarters .column p.vpue-jump-back {
     line-height: 1.375em;
-    font-size: 0.6875em;
   }
 }
 @media all and (min-width: 1073px) {
@@ -3711,7 +3858,6 @@ p.article-tagline:not(.has-no-bordering).alt:after {
 @media all {
   .row.single:not(.mimic-multi-column-sections) .column p.article-media-contacts {
     line-height: 1.375em;
-    font-size: 0.8rem;
   }
 }
 @media all and (min-width: 1073px) {
@@ -3747,7 +3893,6 @@ p.article-tagline:not(.has-no-bordering).alt:after {
 @media all {
   .row.single.mimic-two-column-sections .column p.article-media-contacts {
     line-height: 1.375em;
-    font-size: 0.8rem;
   }
 }
 @media all and (min-width: 1073px) {
@@ -3785,7 +3930,6 @@ p.article-tagline:not(.has-no-bordering).alt:after {
   .row.side-left .column p.article-media-contacts,
   .row.halves .column p.article-media-contacts {
     line-height: 1.375em;
-    font-size: 0.8rem;
   }
 }
 @media all and (min-width: 1073px) {
@@ -3834,7 +3978,6 @@ p.article-tagline:not(.has-no-bordering).alt:after {
   .row.thirds .column p.article-media-contacts,
   .row.quarters .column p.article-media-contacts {
     line-height: 1.375em;
-    font-size: 0.8rem;
   }
 }
 @media all and (min-width: 1073px) {
@@ -3893,7 +4036,6 @@ body.single-post .column p.article-media-contacts + :not(.article-media-contacts
 @media all {
   .row.single:not(.mimic-multi-column-sections) .column ul {
     line-height: 1.375em;
-    font-size: 1em;
   }
 }
 @media all and (min-width: 1073px) {
@@ -3929,7 +4071,6 @@ body.single-post .column p.article-media-contacts + :not(.article-media-contacts
 @media all {
   .row.single.mimic-two-column-sections .column ul {
     line-height: 1.375em;
-    font-size: 1em;
   }
 }
 @media all and (min-width: 1073px) {
@@ -3967,7 +4108,6 @@ body.single-post .column p.article-media-contacts + :not(.article-media-contacts
   .row.side-left .column ul,
   .row.halves .column ul {
     line-height: 1.375em;
-    font-size: 1em;
   }
 }
 @media all and (min-width: 1073px) {
@@ -4016,7 +4156,6 @@ body.single-post .column p.article-media-contacts + :not(.article-media-contacts
   .row.thirds .column ul,
   .row.quarters .column ul {
     line-height: 1.375em;
-    font-size: 1em;
   }
 }
 @media all and (min-width: 1073px) {
@@ -4099,7 +4238,6 @@ ul.content-boxes > li {
 @media all {
   ul.content-boxes > li p {
     line-height: 1.375em;
-    font-size: 0.938em;
   }
 }
 @media all and (min-width: 1073px) {
@@ -4216,7 +4354,6 @@ ul.cascaded-layout.blank > li.gutter-sizer {
 @media all {
   .row.single:not(.mimic-multi-column-sections) .column ol {
     line-height: 1.375em;
-    font-size: 1em;
   }
 }
 @media all and (min-width: 1073px) {
@@ -4252,7 +4389,6 @@ ul.cascaded-layout.blank > li.gutter-sizer {
 @media all {
   .row.single.mimic-two-column-sections .column ol {
     line-height: 1.375em;
-    font-size: 1em;
   }
 }
 @media all and (min-width: 1073px) {
@@ -4290,7 +4426,6 @@ ul.cascaded-layout.blank > li.gutter-sizer {
   .row.side-left .column ol,
   .row.halves .column ol {
     line-height: 1.375em;
-    font-size: 1em;
   }
 }
 @media all and (min-width: 1073px) {
@@ -4339,7 +4474,6 @@ ul.cascaded-layout.blank > li.gutter-sizer {
   .row.thirds .column ol,
   .row.quarters .column ol {
     line-height: 1.375em;
-    font-size: 1em;
   }
 }
 @media all and (min-width: 1073px) {
@@ -4413,7 +4547,6 @@ ul.cascaded-layout.blank > li.gutter-sizer {
 @media all {
   .column dl.faq dt {
     line-height: 1.375em;
-    font-size: 1em;
   }
 }
 @media all and (min-width: 1073px) {
@@ -4555,7 +4688,6 @@ ul.cascaded-layout.blank > li.gutter-sizer {
   .column dl.faq > .expand-all-button,
   .column dl.faq > .collapse-all-button {
     line-height: 12px;
-    font-size: 12px;
   }
 }
 @media all and (min-width: 1073px) {
