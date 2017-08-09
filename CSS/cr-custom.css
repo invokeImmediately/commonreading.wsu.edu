@@ -1077,6 +1077,7 @@ ul.cascaded-layout.calendar.thirds > li.cascade-sizer {
 */
 body {
   background: #e5e6e8;
+  background: #e5e6e8 linear-gradient(to top, #f3f3f4, #e5e6e8 50%, #bcbfc4) fixed;
 }
 #jacket {
   background-repeat: no-repeat;
