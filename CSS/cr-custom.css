@@ -775,7 +775,7 @@ cite.article-author {
   color: #981e32;
 }
 .column.crimson.has-background {
-  padding-top: .8rem;
+  padding-top: .8rem !important;
   background-color: rgba(192, 12, 48, 0.2);
   color: #464e54;
 }
