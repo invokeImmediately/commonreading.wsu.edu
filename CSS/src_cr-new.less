@@ -163,7 +163,7 @@
 /*! 
 * dr-css-1.3 Responsive iframe containers
 */
-div.iframe-wrapper {
+.iframe-wrapper {
 	position: relative;
 	height: 0;
 	width: 97%;
@@ -175,7 +175,7 @@ div.iframe-wrapper {
 	border: 1px solid @hex-darker-gray;
 }
 
-div.iframe-wrapper > iframe {
+.iframe-wrapper > iframe {
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -219,22 +219,22 @@ div.iframe-wrapper > iframe {
 */
 
 /*! Sections */
-main.spine-blank-template section.row.spaces-top {
+.spine-blank-template .row.spaces-top {
 	margin-top: 1rem;
 }
 
 /*! Columns */
-.h1-header + section.halves.pad-top .column {
+.row.h1-header + .row.halves.pad-top .column {
 	padding-top: @v-dflt-spcng;
 }
 
 /*! Column headings */ 
-section.row:first-child h1:first-child,
-section.row:first-child h2:first-child,
-section.row:first-child h3:first-child,
-section.row:first-child h4:first-child,
-section.row:first-child h5:first-child,
-section.row:first-child h6:first-child {
+.row:first-child h1:first-child,
+.row:first-child h2:first-child,
+.row:first-child h3:first-child,
+.row:first-child h4:first-child,
+.row:first-child h5:first-child,
+.row:first-child h6:first-child {
 	padding-top: 0;
 }
 
@@ -248,20 +248,20 @@ section.row:first-child h6:first-child {
 }
 
 /*! Calendar headings */
-section.row.calendar .column h2 {
+.row.calendar .column h2 {
 	padding-top: 0;
 	padding-bottom: 0;
 	color: #000;
 }
 
-section.row.calendar .column h3 {
+.row.calendar .column h3 {
 	padding-top: 0;
 	padding-bottom: 0;
 	margin-top: .25rem;
 	margin-bottom: .25rem;
 }
 
-section.row.calendar .column h5 {
+.row.calendar .column h5 {
 	padding-top: 0;
 	padding-bottom: 0;
 	margin-top: 1em;
@@ -492,7 +492,7 @@ ul {
 *
 * Style rulesets below still need to be pulled into their own commented section.
 */
-main > .page > .row:last-child > .column {
+.page > .row:last-child > .column {
 	padding-bottom: @v-dflt-spcng;
 }
 
@@ -505,7 +505,7 @@ img.shift-to-right {
 	float: right;
 }
 
-.column aside.article-sidebar {
+.column .article-sidebar {
 	float: right;
 	width: 33%;
 	min-width: 230px;
@@ -519,58 +519,58 @@ img.shift-to-right {
 	color: #464e54;
 }
 
-.column aside.article-sidebar:first-child + h1,
-.column aside.article-sidebar:first-child + h2,
-.column aside.article-sidebar:first-child + h3,
-.column aside.article-sidebar:first-child + h4 {
+.column .article-sidebar:first-child + h1,
+.column .article-sidebar:first-child + h2,
+.column .article-sidebar:first-child + h3,
+.column .article-sidebar:first-child + h4 {
 	margin-top: 0;
 }
 
-.column aside.article-sidebar p,
-.column aside.article-sidebar ol,
-.column aside.article-sidebar ul {
+.column .article-sidebar p,
+.column .article-sidebar ol,
+.column .article-sidebar ul {
 	font-size: inherit;
 	line-height: normal;
 }
 
-.column aside.article-sidebar p {
+.column .article-sidebar p {
 	text-align: left;
 }
 
-.column aside.article-sidebar p:not(:last-child) {
+.column .article-sidebar p:not(:last-child) {
 	margin-bottom: .8rem;
 }
 
-.column aside.article-sidebar ol,
-.column aside.article-sidebar ul {
+.column .article-sidebar ol,
+.column .article-sidebar ul {
 	padding-bottom: 0;
 }
 
-.column aside.article-sidebar h2 + hr {
+.column .article-sidebar h2 + hr {
 	margin-top: .25rem;
 	background-color: rgba(70,78,84,0.75);
 }
 
-.column aside.article-sidebar h3 {
+.column .article-sidebar h3 {
 	font-size: 1.275rem;
 	margin-top: 1.2rem;
 	margin-bottom: 0;
 }
 
-.column aside.article-sidebar h3:first-child {
+.column .article-sidebar h3:first-child {
 	margin-top: 0;
 }
 
-.column aside.article-sidebar h4 {
+.column .article-sidebar h4 {
 	font-size: 1.05rem;
 }
 
-.column aside.article-sidebar h4:first-child {
+.column .article-sidebar h4:first-child {
 	margin-top: 0;
 }
 
 @media screen and (min-width: 990px) and (max-width: 1098px) {
-	.column aside.article-sidebar {
+	.column .article-sidebar {
 		position: absolute;
 		right: 0;
 		top: 0;
@@ -586,7 +586,7 @@ img.shift-to-right {
 		transition: transform .25s ease-out;
 	}
 	
-	.column aside.article-sidebar:hover {
+	.column .article-sidebar:hover {
 		-webkit-transform: none;
 		-moz-transform: none;
 		transform: none;
@@ -594,7 +594,7 @@ img.shift-to-right {
 }
 
 @media screen and (max-width: 520px) {
-	.column aside.article-sidebar {
+	.column .article-sidebar {
 		position: absolute;
 		right: -2rem;
 		top: 0;
@@ -610,7 +610,7 @@ img.shift-to-right {
 		transition: transform .25s ease-out;
 	}
 	
-	.column aside.article-sidebar:hover {
+	.column .article-sidebar:hover {
 		-webkit-transform: none;
 		-moz-transform: none;
 		transform: none;
@@ -625,7 +625,7 @@ article > div.article-body {
 	position: relative;
 }
 
-.column article.post {
+.column .post {
 	padding: 1em;
 	border: 1px solid rgba(0,0,0,0.3333);
 	border-radius: 5px;
@@ -633,14 +633,14 @@ article > div.article-body {
 	box-shadow: 1px 2px 3px rgba(0,0,0,0.25);
 }
 
-.column article.post + article.post {
+.column .post + .post {
 	margin-top: 1.5em;
 }
 
-.article-summary aside.article-sidebar,
+.article-summary .article-sidebar,
 .article-summary img,
 .article-summary object,
-.article-summary p.article-media-contacts,
+.article-summary .article-media-contacts,
 .article-summary > h3 {
 	display: none;
 }
@@ -649,8 +649,8 @@ article > div.article-body {
 	display: block;
 }
 
-body.blog main > section.row > .column.two,
-body.single-post main > section.row > .column.two {
+.blog .row > .column.two,
+.single-post .row > .column.two {
 	padding: 1rem;
 	background: rgba(239,240,241,1.0);
 	-webkit-box-shadow: 0 0 0 1px rgba(255,255,255,0.9), 0 0 0 2px rgba(0,0,0,0.2);
@@ -658,16 +658,16 @@ body.single-post main > section.row > .column.two {
 }
 
 @media screen and (min-width: 694px) {
-	body.blog main > section.row > .column.two,
-					body.single-post main > section.row > .column.two {
+	.blog main > .row > .column.two,
+					.single-post .row > .column.two {
 		margin-top: 2rem;
 		border-radius: 4px;
 	}
 }
 
 @media screen and (max-width: 1603px) {
-	body.blog main > section.row > .column.two,
-					body.single-post main > section.row > .column.two {
+	.blog .row > .column.two,
+	.single-post .row > .column.two {
 		border-top-right-radius: 0;
 		border-bottom-right-radius: 0;
 	}
@@ -684,10 +684,10 @@ body.single-post main > section.row > .column.two {
   text-align: center;
 }
 
-body.blog .column .hidden-on-news-feed {
+.blog .column .hidden-on-news-feed {
 	display: none;
 }
 
-body.single-post .column .hidden-on-news-articles {
+.single-post .column .hidden-on-news-articles {
 	display: none;
 }
