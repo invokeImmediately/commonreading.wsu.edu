@@ -1093,7 +1093,49 @@ main {
   background: #fff;
 }
 /*!
-* dr-css-1.9: Other (TBD)
+* dr-css-1.11: Fancy headers
+*/
+.column h3.fancy,
+.column.show-header.has-fancy-header > header:first-child > h3,
+.gform_heading h3.gform_title.fancy,
+.gform_heading h3.gform_title {
+  position: relative;
+  padding: 0.33333333rem 0.5rem;
+  margin-left: 0;
+  margin-bottom: 1rem;
+  margin-right: 0;
+  background-color: rgba(219, 120, 121, 0.075);
+}
+.column h3.fancy.with-top-border,
+.column.show-header.has-fancy-header > header:first-child > h3,
+.gform_heading h3.gform_title.fancy.with-top-border,
+.gform_heading h3.gform_title.with-top-border,
+.gform_heading h3.gform_title {
+  padding-top: 0.4375rem;
+}
+.column h3.fancy.with-top-border:not(:first-child),
+.column.show-header.has-fancy-header > header:first-child > h3:not(:first-child),
+.gform_heading h3.gform_title.fancy.with-top-border:not(:first-child),
+.gform_heading h3.gform_title.with-top-border:not(:first-child),
+.gform_heading h3.gform_title:not(:first-child) {
+  margin-top: 2rem;
+}
+.column h3.fancy.with-top-border::before,
+.column.show-header.has-fancy-header > header:first-child > h3::before,
+.gform_heading h3.gform_title.fancy.with-top-border::before,
+.gform_heading h3.gform_title.with-top-border::before,
+.gform_heading h3.gform_title::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  border-top: 1px solid rgba(152, 30, 50, 0.67);
+  border-bottom: 1px solid rgba(152, 30, 50, 0.375);
+}
+/*!
+* dr-css-1.12: Other (TBD)
 *
 * Style rulesets below still need to be pulled into their own commented section.
 */
