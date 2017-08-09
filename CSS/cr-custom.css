@@ -775,7 +775,8 @@ cite.article-author {
   color: #981e32;
 }
 .column.crimson.has-background {
-  padding-top: .8rem !important;
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
   background-color: rgba(192, 12, 48, 0.2);
   color: #464e54;
 }
@@ -787,7 +788,7 @@ cite.article-author {
 @media screen and (min-width: 694px) {
   .fluid .row.halves .column.crimson.has-background {
     width: 48%;
-    width: calc(50% - 2rem);
+    width: calc(50% - 2rem;
     padding-right: 1rem;
     margin-right: 2rem;
     margin-bottom: 2rem;
