@@ -1100,11 +1100,14 @@ main {
 .gform_heading h3.gform_title.fancy,
 .gform_heading h3.gform_title {
   position: relative;
-  padding: 0.33333333rem 0.5rem;
+  padding-top: 0.33333333rem;
+  padding-bottom: 0.33333333rem;
   margin-left: 0;
   margin-bottom: 1rem;
   margin-right: 0;
   background-color: rgba(219, 120, 121, 0.075);
+  background: linear-gradient(to right, transparent, rgba(219, 120, 121, 0.075) 10%, rgba(219, 120, 121, 0.075) 50%, rgba(219, 120, 121, 0.15));
+  border-bottom: 2px solid rgba(219, 120, 121, 0.075);
 }
 .column h3.fancy.with-top-border,
 .column.show-header.has-fancy-header > header:first-child > h3,
