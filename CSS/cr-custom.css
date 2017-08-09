@@ -1134,6 +1134,13 @@ main {
   border-top: 1px solid rgba(152, 30, 50, 0.67);
   border-bottom: 1px solid rgba(152, 30, 50, 0.375);
 }
+.column h3.fancy.with-top-border + h4,
+.column.show-header.has-fancy-header > header:first-child > h3 + h4,
+.gform_heading h3.gform_title.fancy.with-top-border + h4,
+.gform_heading h3.gform_title.with-top-border + h4,
+.gform_heading h3.gform_title + h4 {
+  padding-top: 0;
+}
 /*!
 * dr-css-1.12: Other (TBD)
 *
