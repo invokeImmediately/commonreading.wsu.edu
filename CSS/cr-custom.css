@@ -1328,12 +1328,14 @@ article > div.article-body {
 .article-summary img.attachment-spine-thumbnail_size {
   display: block;
 }
-.blog .row > .column.two,
+.blog .row:not(.prevnext) > .column.two,
 .single-post .row > .column.two {
   padding: 1rem;
   background: #eff0f1;
   -webkit-box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.9), 0 0 0 2px rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.9), 0 0 0 2px rgba(0, 0, 0, 0.2);
+  width: 30.5% !important;
+  width: calc(33% - 2rem) !important;
 }
 @media screen and (min-width: 694px) {
   .blog main > .row > .column.two,
