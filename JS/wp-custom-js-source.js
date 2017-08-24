@@ -1557,7 +1557,7 @@ $( function () {
 $( window ).on( 'load', function () {
 	var $masonryTrgts = $( 'ul.cascaded-layout' );
 	$masonryTrgts.each( function () {
-		var $thisCascade = $( this ),
+		var $thisCascade = $( this );
 		var proceedWithLayout = true;
 		var sizerFound = false;
 		var gutterSizerFound = false;
