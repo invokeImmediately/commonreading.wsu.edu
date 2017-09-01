@@ -1244,10 +1244,44 @@ body.crimson-key-home .row.h1-header h6 {
   text-transform: uppercase;
 }
 body.crimson-key-home .row.h1-header h1 {
-  @v-fnt-sclng-fctrs .has-responsive-font((@v-h1-sz * 2), (@v-hX-lnhght * 9 / 10));
   padding-top: 2rem;
   padding-bottom: 2rem;
   text-align: center;
+}
+@media all {
+  body.crimson-key-home .row.h1-header h1 {
+    line-height: 0.99em;
+  }
+}
+@media all and (min-width: 1073px) {
+  body.crimson-key-home .row.h1-header h1 {
+    font-size: 6.02031858em;
+  }
+}
+@media all and (min-width: 990px) and (max-width: 1072px) {
+  body.crimson-key-home .row.h1-header h1 {
+    font-size: 5.64705882em;
+  }
+}
+@media all and (min-width: 792px) and (max-width: 989px) {
+  body.crimson-key-home .row.h1-header h1 {
+    font-size: 6.02031858em;
+  }
+}
+@media all and (min-width: 481px) and (max-width: 791px) {
+  body.crimson-key-home .row.h1-header h1 {
+    font-size: 5.64705882em;
+  }
+}
+@media all and (min-width: 361px) and (max-width: 480px) {
+  body.crimson-key-home .row.h1-header h1 {
+    font-size: 5.29694118em;
+  }
+}
+@media all and (max-width: 360px) {
+  body.crimson-key-home .row.h1-header h1 {
+    font-size: 4.96853082em;
+  }
 }
 body.crimson-key-home .column {
   font-family: "Kanit", fantasy;
