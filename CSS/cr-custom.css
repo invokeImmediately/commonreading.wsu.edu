@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto+Mono:300|Roboto+Condensed:400,700|Roboto+Slab|PT+Serif);
+@import url('https://fonts.googleapis.com/css?family=Kelly+Slab');
 .has-mono-font {
   font-family: 'Roboto Mono', monospace, sans-serif;
   font-weight: 300;
@@ -1191,7 +1192,16 @@ main {
   padding-top: 0;
 }
 /*!
-* dr-css-1.12: Other (TBD)
+* dr-css-1.12: Order of the Crimson Key
+*/
+body.crimson-key-home {
+  background-color: #800c23;
+}
+body.crimson-key-home .column {
+  font-family: "Kelly Slab", fantasy;
+}
+/*!
+* dr-css-1.13: Other (TBD)
 *
 * Style rulesets below still need to be pulled into their own commented section.
 */
