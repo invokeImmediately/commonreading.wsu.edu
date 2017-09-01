@@ -1196,38 +1196,38 @@ main {
 */
 @-webkit-keyframes anim-3d-rotate {
   from {
-    -webkit-transform: ;
-    -moz-transform: ;
-    transform: ;
+    -webkit-transform: rotateX(0);
+    -moz-transform: rotateX(0);
+    transform: rotateX(0);
   }
   to {
-    -webkit-transform: ;
-    -moz-transform: ;
-    transform: ;
+    -webkit-transform: rotateX(360);
+    -moz-transform: rotateX(360);
+    transform: rotateX(360);
   }
 }
 @-moz-keyframes anim-3d-rotate {
   from {
-    -webkit-transform: ;
-    -moz-transform: ;
-    transform: ;
+    -webkit-transform: rotateX(0);
+    -moz-transform: rotateX(0);
+    transform: rotateX(0);
   }
   to {
-    -webkit-transform: ;
-    -moz-transform: ;
-    transform: ;
+    -webkit-transform: rotateX(360);
+    -moz-transform: rotateX(360);
+    transform: rotateX(360);
   }
 }
 @keyframes anim-3d-rotate {
   from {
-    -webkit-transform: ;
-    -moz-transform: ;
-    transform: ;
+    -webkit-transform: rotateX(0);
+    -moz-transform: rotateX(0);
+    transform: rotateX(0);
   }
   to {
-    -webkit-transform: ;
-    -moz-transform: ;
-    transform: ;
+    -webkit-transform: rotateX(360);
+    -moz-transform: rotateX(360);
+    transform: rotateX(360);
   }
 }
 body.crimson-key-home #wsuwp-main {
