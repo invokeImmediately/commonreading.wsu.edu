@@ -1,5 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto+Mono:300|Roboto+Condensed:400,700|Roboto+Slab|PT+Serif);
-@import url('https://fonts.googleapis.com/css?family=Kelly+Slab');
+@import url('https://fonts.googleapis.com/css?family=Share+Tech+Mono|Kanit:400,700|Kelly+Slab');
 .has-mono-font {
   font-family: 'Roboto Mono', monospace, sans-serif;
   font-weight: 300;
@@ -1194,10 +1194,64 @@ main {
 /*!
 * dr-css-1.12: Order of the Crimson Key
 */
-body.crimson-key-home {
+body.crimson-key-home #wsuwp-main {
   background-color: #800c23;
 }
+body.crimson-key-home .row.h1-header h1,
+body.crimson-key-home .row.h1-header h2,
+body.crimson-key-home .row.h1-header h3,
+body.crimson-key-home .row.h1-header h4,
+body.crimson-key-home .row.h1-header h5,
+body.crimson-key-home .row.h1-header h6 {
+  font-family: "Share Tech Mono", fantasy;
+  color: #fff;
+  text-transform: uppercase;
+}
+body.crimson-key-home .row.h1-header h1 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  text-align: center;
+}
+@media all {
+  body.crimson-key-home .row.h1-header h1 {
+    line-height: 1.1em;
+  }
+}
+@media all and (min-width: 1073px) {
+  body.crimson-key-home .row.h1-header h1 {
+    font-size: 6.02031858em;
+  }
+}
+@media all and (min-width: 990px) and (max-width: 1072px) {
+  body.crimson-key-home .row.h1-header h1 {
+    font-size: 5.64705882em;
+  }
+}
+@media all and (min-width: 792px) and (max-width: 989px) {
+  body.crimson-key-home .row.h1-header h1 {
+    font-size: 6.02031858em;
+  }
+}
+@media all and (min-width: 481px) and (max-width: 791px) {
+  body.crimson-key-home .row.h1-header h1 {
+    font-size: 5.64705882em;
+  }
+}
+@media all and (min-width: 361px) and (max-width: 480px) {
+  body.crimson-key-home .row.h1-header h1 {
+    font-size: 5.29694118em;
+  }
+}
+@media all and (max-width: 360px) {
+  body.crimson-key-home .row.h1-header h1 {
+    font-size: 4.96853082em;
+  }
+}
 body.crimson-key-home .column {
+  font-family: "Kanit", fantasy;
+  color: #fff;
+}
+body.crimson-key-home .column .article-tagline {
   font-family: "Kelly Slab", fantasy;
 }
 /*!
