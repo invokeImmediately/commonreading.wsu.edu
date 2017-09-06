@@ -2500,11 +2500,17 @@ section.side-right .column.two p {
 .column section:not(:last-child) > *:last-child:not(.vpue-jump-bar) {
   padding-bottom: 0;
 }
+.row.has-charcoal-background {
+  background-color: #2f3438;
+}
+.row.has-charcoal-background .column {
+  color: #fff;
+}
 .row.has-gray-background {
   background-color: #eff0f1;
 }
 .row.has-crimson-background {
-  background-color: #eff0f1;
+  background-color: #981e32;
 }
 .row.has-crimson-background .column {
   color: #fff;
@@ -2837,6 +2843,15 @@ main section.row > .column table > tbody > tr > td > section > ol:last-child,
 main section.row > .column table > tbody > tr > td > div > ol:last-child {
   margin-bottom: 0;
 }
+.h1-header + section.pad-top .column {
+  padding-top: 2rem;
+}
+.h1-header + section.pad-top.short .column {
+  padding-top: 1rem;
+}
+.h1-header + section.pad-top.tall .column {
+  padding-top: 4rem;
+}
 @media only screen and (min-width: 481px) and (max-width: 693px) {
   .gutter .column:not(.gutterless),
   .guttered {
@@ -3006,6 +3021,15 @@ main section.row > .column table > tbody > tr > td > div > ol:last-child {
   .quarters.gutter .column.four:not(.gutterless),
   .quarters.gutter .column:nth-of-type(4n+8):not(.gutterless) {
     padding-left: 0.25rem;
+  }
+}
+@media all and (max-width: 693px) {
+  .row:not(.pad-top).halves .one ~ .column,
+  .row:not(.pad-top).thirds .one ~ .column,
+  .row:not(.pad-top).quarters .one ~ .column,
+  .row:not(.pad-top).side-right .one ~ .column,
+  .row:not(.pad-top).side-left .one ~ .column {
+    margin-top: 2rem;
   }
 }
 /*!  ┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
@@ -4041,7 +4065,8 @@ p.article-tagline:not(.has-no-bordering).crimson.alt:after {
 p.article-tagline:not(.has-no-bordering).crimson .has-gray-text {
   color: #464e54;
 }
-p.article-tagline.bold {
+p.article-tagline.bold,
+p.article-tagline .has-bold-text {
   font-weight: bold;
 }
 @media all {
@@ -5115,6 +5140,20 @@ ul.cascaded-layout.blank > li.gutter-sizer {
 }
 .column article.post + article.post {
   margin-top: 1.5em;
+}
+.row.new-article-section {
+  padding: 1rem;
+}
+.row.new-article-section h1,
+.row.new-article-section h2,
+.row.new-article-section h3,
+.row.new-article-section h4,
+.row.new-article-section h5,
+.row.new-article-section h6 {
+  padding: 0;
+  margin: 0;
+  color: inherit;
+  text-align: center;
 }
 .column p.vpue-jump-bar {
   padding-left: 33px;
