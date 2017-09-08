@@ -1,5 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto+Mono:300|Roboto+Condensed:400,700|Roboto+Slab|PT+Serif);
-@import url('https://fonts.googleapis.com/css?family=Share+Tech+Mono|Kanit:400,700|Kelly+Slab');
+@import url('https://fonts.googleapis.com/css?family=Share+Tech+Mono|Kanit:300,400,700|Kelly+Slab');
 .has-mono-font {
   font-family: 'Roboto Mono', monospace, sans-serif;
   font-weight: 300;
@@ -1285,6 +1285,7 @@ body.crimson-key-home .row.h1-header h1 {
 }
 body.crimson-key-home .column {
   font-family: "Kanit", fantasy;
+  font-weight: 300;
   color: #fff;
 }
 body.crimson-key-home .column .animated-key {
@@ -1294,6 +1295,7 @@ body.crimson-key-home .column .animated-key {
 }
 body.crimson-key-home .column .article-tagline {
   font-family: "Kelly Slab", fantasy;
+  font-weight: 400;
 }
 body.crimson-key-home .column h1,
 body.crimson-key-home .column h2,
@@ -1302,6 +1304,7 @@ body.crimson-key-home .column h4,
 body.crimson-key-home .column h5,
 body.crimson-key-home .column h6,
 body.crimson-key-home .gform_heading h3.gform_title {
+  font-weight: 400;
   color: #fff;
 }
 /*!
