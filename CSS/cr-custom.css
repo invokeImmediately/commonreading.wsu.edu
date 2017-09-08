@@ -1,5 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto+Mono:300|Roboto+Condensed:400,700|Roboto+Slab|PT+Serif);
-@import url('https://fonts.googleapis.com/css?family=Share+Tech+Mono|Kanit:300,400,600|Kelly+Slab');
+@import url('https://fonts.googleapis.com/css?family=Share+Tech+Mono|Kanit:300,400,600|Spinnaker:400,700');
 .has-mono-font {
   font-family: 'Roboto Mono', monospace, sans-serif;
   font-weight: 300;
@@ -1294,7 +1294,7 @@ body.crimson-key-home .column .animated-key {
   animation: anim-3d-rotate 6s linear infinite;
 }
 body.crimson-key-home .column .article-tagline {
-  font-family: "Kelly Slab", fantasy;
+  font-family: "Spinnaker", fantasy;
   font-weight: 400;
 }
 body.crimson-key-home .column h1,
