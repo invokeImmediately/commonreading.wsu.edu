@@ -1,5 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto+Mono:300|Roboto+Condensed:400,700|Roboto+Slab|PT+Serif);
-@import url('https://fonts.googleapis.com/css?family=Share+Tech+Mono|Kanit:300,400,700|Kelly+Slab');
+@import url('https://fonts.googleapis.com/css?family=Share+Tech+Mono|Kanit:300,400,600|Kelly+Slab');
 .has-mono-font {
   font-family: 'Roboto Mono', monospace, sans-serif;
   font-weight: 300;
