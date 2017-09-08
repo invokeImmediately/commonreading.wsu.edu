@@ -1283,6 +1283,9 @@ body.crimson-key-home .row.h1-header h1 {
     font-size: 4.96853082em;
   }
 }
+body.crimson-key-home .row.h1-header .column {
+  font-size: 1rem;
+}
 body.crimson-key-home .column {
   font-family: "Kanit", fantasy;
   font-weight: 300;
