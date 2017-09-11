@@ -893,114 +893,159 @@ cite.article-author {
 /*!
 * dr-css-1.6: Layouts for elements within Archives pages
 */
-body.archives .article-header {
+body.archives .article-header,
+body.book-nominations .article-header {
   padding: 1rem;
   background-color: #c69214;
 }
-body.archives .article-header .article-title {
+body.archives .article-header .article-title,
+body.book-nominations .article-header .article-title {
   padding-bottom: 0.25rem;
   color: #fff;
   text-shadow: 0 0 1.125rem #4f3a08;
 }
-body.archives .column h1 {
+body.archives .column h1,
+body.book-nominations .column h1 {
   font-size: 2.395em;
 }
-body.archives .column h2 {
+body.archives .column h2,
+body.book-nominations .column h2 {
   font-size: 2.07883559em;
 }
 body.archives .column h3,
-body.archives .gform_heading h3.gform_title {
+body.book-nominations .column h3,
+body.archives .gform_heading h3.gform_title,
+body.book-nominations .gform_heading h3.gform_title {
   font-size: 1.8044081em;
 }
 body.archives .column h3:not(.no-background),
-body.archives .gform_heading h3.gform_title:not(.no-background) {
+body.book-nominations .column h3:not(.no-background),
+body.archives .gform_heading h3.gform_title:not(.no-background),
+body.book-nominations .gform_heading h3.gform_title:not(.no-background) {
   padding: 0.4em;
   margin-bottom: 1rem;
   border-top: 1px solid rgba(152, 30, 50, 0.6667);
   background-color: rgba(198, 12, 48, 0.075);
 }
 body.archives .column h3:not(.no-background)[class],
-body.archives .gform_heading h3.gform_title:not(.no-background)[class] {
+body.book-nominations .column h3:not(.no-background)[class],
+body.archives .gform_heading h3.gform_title:not(.no-background)[class],
+body.book-nominations .gform_heading h3.gform_title:not(.no-background)[class] {
   margin-top: 2rem;
   background-position: right center;
   background-size: auto 31px;
   background-repeat: no-repeat;
 }
 body.archives .column h3:not(.no-background).about-the-author,
-body.archives .gform_heading h3.gform_title:not(.no-background).about-the-author {
+body.book-nominations .column h3:not(.no-background).about-the-author,
+body.archives .gform_heading h3.gform_title:not(.no-background).about-the-author,
+body.book-nominations .gform_heading h3.gform_title:not(.no-background).about-the-author {
   padding-right: 50px;
   background-image: url(/wp-content/uploads/sites/52/2017/05/icon_user_displayed-at-right.png);
 }
 body.archives .column h3:not(.no-background).about-the-book,
-body.archives .gform_heading h3.gform_title:not(.no-background).about-the-book {
+body.book-nominations .column h3:not(.no-background).about-the-book,
+body.archives .gform_heading h3.gform_title:not(.no-background).about-the-book,
+body.book-nominations .gform_heading h3.gform_title:not(.no-background).about-the-book {
   padding-right: 49px;
   background-image: url(/wp-content/uploads/sites/52/2017/05/icon_book_displayed-at-right.png);
 }
 body.archives .column h3:not(.no-background).calendar,
-body.archives .gform_heading h3.gform_title:not(.no-background).calendar {
+body.book-nominations .column h3:not(.no-background).calendar,
+body.archives .gform_heading h3.gform_title:not(.no-background).calendar,
+body.book-nominations .gform_heading h3.gform_title:not(.no-background).calendar {
   padding-right: 58px;
   background-image: url(/wp-content/uploads/sites/52/2017/05/icon_month_displayed-at-right.png);
 }
 body.archives .column h3:not(.no-background).for-families,
-body.archives .gform_heading h3.gform_title:not(.no-background).for-families {
+body.book-nominations .column h3:not(.no-background).for-families,
+body.archives .gform_heading h3.gform_title:not(.no-background).for-families,
+body.book-nominations .gform_heading h3.gform_title:not(.no-background).for-families {
   padding-right: 57px;
   background-image: url(/wp-content/uploads/sites/52/2017/05/icon_for-families_displayed-at-right.png);
 }
 body.archives .column h3:not(.no-background).for-faculty,
-body.archives .gform_heading h3.gform_title:not(.no-background).for-faculty {
+body.book-nominations .column h3:not(.no-background).for-faculty,
+body.archives .gform_heading h3.gform_title:not(.no-background).for-faculty,
+body.book-nominations .gform_heading h3.gform_title:not(.no-background).for-faculty {
   padding-right: 43px;
   background-image: url(/wp-content/uploads/sites/52/2017/05/icon_for-faculty_displayed-at-right.png);
 }
 body.archives .column h3:not(.no-background).contact,
-body.archives .gform_heading h3.gform_title:not(.no-background).contact {
+body.book-nominations .column h3:not(.no-background).contact,
+body.archives .gform_heading h3.gform_title:not(.no-background).contact,
+body.book-nominations .gform_heading h3.gform_title:not(.no-background).contact {
   padding-right: 66px;
   background-image: url(/wp-content/uploads/sites/52/2017/05/icon_contact_displayed-at-right.png);
 }
-body.archives .column h4 {
+body.archives .column h4,
+body.book-nominations .column h4 {
   font-size: 1.56620784em;
 }
-body.archives .column h4.calendar-term {
+body.archives .column h4.calendar-term,
+body.book-nominations .column h4.calendar-term {
   padding-top: 0.2em;
   margin-top: 2rem;
   border-top: 1px solid rgba(93, 105, 112, 0.5);
 }
-body.archives .column h5 {
+body.archives .column h5,
+body.book-nominations .column h5 {
   font-size: 1.35945245em;
 }
-body.archives .column h6 {
+body.archives .column h6,
+body.book-nominations .column h6 {
   font-size: 1.17999087em;
 }
-body.archives section.h1-header .column h1 {
+body.archives section.h1-header .column h1,
+body.book-nominations section.h1-header .column h1 {
   background-color: #c69214;
   padding: 1rem;
   color: #fff;
   text-shadow: 0 0 1.125rem #4f3a08;
 }
 body.archives section.h1-header + section .column:first-child > h1:first-child,
+body.book-nominations section.h1-header + section .column:first-child > h1:first-child,
 body.archives section.h1-header + section .column:first-child > h2:first-child,
+body.book-nominations section.h1-header + section .column:first-child > h2:first-child,
 body.archives section.h1-header + section .column:first-child > h3:first-child,
+body.book-nominations section.h1-header + section .column:first-child > h3:first-child,
 body.archives section.h1-header + section .column:first-child > h4:first-child,
+body.book-nominations section.h1-header + section .column:first-child > h4:first-child,
 body.archives section.h1-header + section .column:first-child > h5:first-child,
-body.archives section.h1-header + section .column:first-child > h6:first-child {
+body.book-nominations section.h1-header + section .column:first-child > h5:first-child,
+body.archives section.h1-header + section .column:first-child > h6:first-child,
+body.book-nominations section.h1-header + section .column:first-child > h6:first-child {
   margin-top: 0.5rem;
   padding-left: 1rem;
   color: #815f0d;
 }
 body.archives section.h1-header + section .column:first-child > h1:first-child + hr,
+body.book-nominations section.h1-header + section .column:first-child > h1:first-child + hr,
 body.archives section.h1-header + section .column:first-child > h2:first-child + hr,
+body.book-nominations section.h1-header + section .column:first-child > h2:first-child + hr,
 body.archives section.h1-header + section .column:first-child > h3:first-child + hr,
+body.book-nominations section.h1-header + section .column:first-child > h3:first-child + hr,
 body.archives section.h1-header + section .column:first-child > h4:first-child + hr,
+body.book-nominations section.h1-header + section .column:first-child > h4:first-child + hr,
 body.archives section.h1-header + section .column:first-child > h5:first-child + hr,
-body.archives section.h1-header + section .column:first-child > h6:first-child + hr {
+body.book-nominations section.h1-header + section .column:first-child > h5:first-child + hr,
+body.archives section.h1-header + section .column:first-child > h6:first-child + hr,
+body.book-nominations section.h1-header + section .column:first-child > h6:first-child + hr {
   margin-top: 0.4rem;
   background-color: rgba(198, 146, 20, 0.5);
 }
 body.archives section.h1-header + section .column:first-child > h1:first-child + hr + h3,
+body.book-nominations section.h1-header + section .column:first-child > h1:first-child + hr + h3,
 body.archives section.h1-header + section .column:first-child > h2:first-child + hr + h3,
+body.book-nominations section.h1-header + section .column:first-child > h2:first-child + hr + h3,
 body.archives section.h1-header + section .column:first-child > h3:first-child + hr + h3,
+body.book-nominations section.h1-header + section .column:first-child > h3:first-child + hr + h3,
 body.archives section.h1-header + section .column:first-child > h4:first-child + hr + h3,
+body.book-nominations section.h1-header + section .column:first-child > h4:first-child + hr + h3,
 body.archives section.h1-header + section .column:first-child > h5:first-child + hr + h3,
-body.archives section.h1-header + section .column:first-child > h6:first-child + hr + h3 {
+body.book-nominations section.h1-header + section .column:first-child > h5:first-child + hr + h3,
+body.archives section.h1-header + section .column:first-child > h6:first-child + hr + h3,
+body.book-nominations section.h1-header + section .column:first-child > h6:first-child + hr + h3 {
   margin-top: 2rem;
 }
 img.archives-thumbnail {
@@ -1203,18 +1248,6 @@ main {
 .gform_heading h3.gform_title.with-top-border + h4,
 .gform_heading h3.gform_title + h4 {
   padding-top: 0;
-}
-/*!
-* dr-css-1.12: Order of the Crimson Key
-*/
-body.book-nominations .article-header {
-  padding: 1rem;
-  background-color: #c69214;
-}
-body.book-nominations .article-header .article-title {
-  padding-bottom: 0.25rem;
-  color: #fff;
-  text-shadow: 0 0 1.125rem #4f3a08;
 }
 /*!
 * dr-css-1.13: Order of the Crimson Key
