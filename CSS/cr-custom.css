@@ -1054,27 +1054,23 @@ body.archives section.h1-header + section .column:first-child > h6:first-child +
 body.book-nominations section.h1-header + section .column:first-child > h6:first-child + hr + h3 {
   margin-top: 2rem;
 }
-body.archives section.h1-header:not(.gutter) .column,
-body.book-nominations section.h1-header:not(.gutter) .column {
+body.archives section.h1-header:not(.gutter) .column h1,
+body.book-nominations section.h1-header:not(.gutter) .column h1 {
   padding: 2rem;
 }
 @media only screen and (min-width: 361px) and (max-width: 480px) {
-  body.archives section.h1-header:not(.gutter) .column,
-  body.book-nominations section.h1-header:not(.gutter) .column {
+  body.archives section.h1-header:not(.gutter) .column h1,
+  body.book-nominations section.h1-header:not(.gutter) .column h1 {
     padding-right: 1rem;
     padding-left: 1rem;
   }
 }
 @media only screen and (max-width: 360px) {
-  body.archives section.h1-header:not(.gutter) .column,
-  body.book-nominations section.h1-header:not(.gutter) .column {
+  body.archives section.h1-header:not(.gutter) .column h1,
+  body.book-nominations section.h1-header:not(.gutter) .column h1 {
     padding-right: 0.5rem;
     padding-left: 0.5rem;
   }
-}
-body.archives section.h1-header:not(.gutter) .column h1,
-body.book-nominations section.h1-header:not(.gutter) .column h1 {
-  padding-left: 0;
 }
 img.archives-thumbnail {
   width: 76px;
