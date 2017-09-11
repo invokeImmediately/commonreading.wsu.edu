@@ -1,11 +1,12 @@
 /*!
-* dr-css-1.0 CSS Authored by Daniel Rieck
+* --------------------------------------------------------------------------------------------------
+* dr-css-1.0: CSS Authored by Daniel Rieck
 * 
 * Adjustments to and extensions of Builder template's style rule-sets and responsive behavior.
 */
 
 /*! 
-* dr-css-1.1 New CSS classes
+* dr-css-1.1: New CSS classes
 *
 * Specification of additional, low-specificity CSS classes that can be applied to any element.
 */
@@ -137,7 +138,7 @@
 }
 
 /*! 
-* dr-css-1.2 Banner slideshows
+* dr-css-1.2: Banner slideshows
 *
 * Adjustments to Builder template's styling of banner slideshows:
 *   1. Repositions the cycle banner arrows to the bottom of the container.
@@ -161,7 +162,7 @@
 }
 
 /*! 
-* dr-css-1.3 Responsive iframe containers
+* dr-css-1.3: Responsive iframe containers
 */
 .iframe-wrapper {
 	position: relative;
@@ -185,7 +186,7 @@
 }
 
 /*!
- * dr-css-1.4 Crimson columns
+ * dr-css-1.4: Crimson columns
  *
  * Style ruleset for specifying the visual design of columns with a faint crimson background.
  */
@@ -195,7 +196,8 @@
 }
 
 .column.crimson.has-background {
-	padding-top: .8rem;
+	padding-top: (@v-dflt-spcng / 2) !important;
+	padding-bottom: (@v-dflt-spcng / 2) !important;
 	background-color: rgba(192,12,48,0.2);
 	color: #464e54;
 	@media screen and (min-width: 694px) {
@@ -204,7 +206,7 @@
 	.fluid .row.halves & {
 		@media screen and (min-width: 694px) {
 			width: 48%;
-			width: ~"calc(50% - 2rem)";
+			width: ~"calc(50% - @{v-dflt-spcng})";
 			padding-right: @v-dflt-spcng / 2;
 			margin-right: @v-dflt-spcng;
 			margin-bottom: @v-dflt-spcng;
@@ -213,7 +215,7 @@
 }
 
 /*!
-* dr-css-1.5 Default padding and spacing
+* dr-css-1.5: Default padding and spacing
 *
 * Adjustment of default padding on sections, section headings, calendar headings, etc.
 */
@@ -269,11 +271,20 @@
 }
 
 /*!
-* dr-css-1.6 Archives
-*
-* Style rulesets below still need to be pulled into their own commented section.
+* dr-css-1.6: Page-based layouts
 */
-body.archives {
+
+.page.has-short-main-header {
+	.main-header {
+		height: 85px;
+		& > .header-group {
+			padding-bottom: 1em !important;
+		}
+	}
+}
+
+.page.archives,
+.page.book-nominations {
 	.article-header {
 		padding: 1rem;
 		background-color: @hex-yellow;
@@ -339,9 +350,6 @@ body.archives {
 				border-top: 1px solid rgba(93,105,112,.5);
 			}
 		}
-		//table + h4.calendar-term {
-		//	margin-top: (@v-btm-mrgns + 0.3em);
-		//}
 		h5 {
 			font-size: (@start * pow(@scaling, 4));
 		}
@@ -379,12 +387,43 @@ body.archives {
 				}
 			}
 		}
+		&:not(.gutter) {
+			.column {
+				display: table;
+				width: 100%;
+				min-height: 190px;
+				h1 {
+					display: inline-block;
+					display: table-cell;
+					padding: @v-dflt-spcng;
+					vertical-align: middle;
+					@lg-mobile-padding-rs: {
+						padding-right: (@v-dflt-spcng / 2);
+						padding-left: (@v-dflt-spcng / 2);
+					};
+					@nrml-mobile-padding-rs: {
+						padding-right: (@v-dflt-spcng / 4);
+						padding-left: (@v-dflt-spcng / 4);
+					};
+					.declare-mobile-layout(@lg-mobile-padding-rs, @nrml-mobile-padding-rs);
+				}
+			}
+		}
 	}
 }
 
 img.archives-thumbnail {
 	width: 76px;
 	height: auto;
+}
+
+.page.has-short-main-header {
+	.main-header {
+		height: 110px;
+		& > .header-group {
+			padding-bottom: 1em !important;
+		}
+	}
 }
 
 /*!
@@ -486,9 +525,145 @@ ul {
 		}
 	}
 }
-	
+
 /*!
-* dr-css-1.8 Other (TBD)
+* dr-css-1.10: Body styling
+*/
+body {
+	background: #e5e6e8;
+	background: #e5e6e8 linear-gradient(to top, #f3f3f4, #e5e6e8 50%, #bcbfc4) fixed;
+}
+
+#jacket {
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	background-attachment: fixed;
+}
+
+/*#spine .spine-actions section,
+#spine .spine-actions-tabs .opened,
+#spine .spine-actions-tabs .opened:hover {
+	background-color: #e5e6e8;
+}*/
+
+main {
+	background: @hex-white;
+}
+
+/*!
+* dr-css-1.11: Solid headers
+*/
+h3 {
+	.column &.fancy,
+	.column.show-header.has-fancy-header > header:first-child > &,
+	.column &.solid,
+	.column.show-header.has-solid-header > header:first-child > & {
+		@rgba-opacity: 0.075;
+		position: relative;
+		padding-top: (@v-dflt-spcng / 6);
+		padding-bottom: (@v-dflt-spcng / 6);
+		margin-left: 0;
+		margin-bottom: (@v-dflt-spcng / 2);
+		margin-right: 0;
+		.rgb-light-crimson(); background-color: rgba(@rval, @gval, @bval, 0.075);
+		background: linear-gradient(to right,
+			transparent,
+			rgba(@rval, @gval, @bval, @rgba-opacity) 10%,
+			rgba(@rval, @gval, @bval, @rgba-opacity) 50%,
+			rgba(@rval, @gval, @bval, @rgba-opacity * 2)
+		);
+		border-bottom: 2px solid rgba(@rval, @gval, @bval, @rgba-opacity);
+	}
+	.column &.fancy.with-top-border,
+	.column.show-header.has-fancy-header > header:first-child > &,
+	.column &.solid,
+	.column.show-header.has-solid-header > header:first-child > & {
+		padding-top: 0.4375rem;
+		&:not(:first-child) {
+			margin-top: @v-dflt-spcng;
+		}
+		&::before {
+			content: "";
+			position: absolute;
+				top: 0;
+				left: 0;
+			width: 100%;
+			height: 0;
+			.rgb-crimson(); border-top: 1px solid rgba(@rval,@gval,@bval,0.67);
+			border-bottom: 1px solid rgba(@rval,@gval,@bval,0.375);
+		}
+		& + h4 {
+			padding-top: 0;
+		}
+	}
+}
+
+/*!
+* dr-css-1.13: Order of the Crimson Key
+*/
+@import url('https://fonts.googleapis.com/css?family=Share+Tech+Mono|Kanit:300,400,600|Spinnaker:400,700');
+
+@rs-anim-3d-rotate: {
+	from { .transform(~"rotateY(0deg)"); } 
+	to  { .transform(~"rotateY(360deg)"); }
+};
+.keyframes(anim-3d-rotate, @rs-anim-3d-rotate);
+
+body.crimson-key-home {
+	#wsuwp-main {
+		background-color: rgb(128, 12, 35);
+	}
+	.row.h1-header {
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			font-family: "Share Tech Mono", fantasy;
+			color: @hex-white;
+			text-transform: uppercase;
+		}
+		h1 {
+			@v-ck-fnt-sclng-fctrs: 
+			.has-responsive-font((@v-h1-sz * 2), (@v-hX-lnhght * 9 / 10));
+			padding-top: 0;
+			padding-bottom: 0;
+			text-align: center;
+		}
+		.column {
+			font-size: 1rem;
+		}
+	}
+	.column {
+		font-family: "Kanit", fantasy;
+		font-weight: 300;
+		font-size: 1.2rem;
+		color: @hex-white;
+		.animated-key {
+			.animation(anim-3d-rotate, 6s);
+		}
+		.article-tagline {
+			font-family: "Spinnaker", fantasy;
+			font-weight: 400;
+		}
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			font-weight: 400;
+			color: @hex-white;
+		}
+	}
+	.font-reduction-wrapper {
+		font-size: 1rem;
+	}
+}
+
+/*!
+* dr-css-1.14: Other (TBD)
 *
 * Style rulesets below still need to be pulled into their own commented section.
 */
@@ -649,12 +824,14 @@ article > div.article-body {
 	display: block;
 }
 
-.blog .row > .column.two,
+.blog .row:not(.prevnext) > .column.two,
 .single-post .row > .column.two {
 	padding: 1rem;
 	background: rgba(239,240,241,1.0);
 	-webkit-box-shadow: 0 0 0 1px rgba(255,255,255,0.9), 0 0 0 2px rgba(0,0,0,0.2);
 	box-shadow: 0 0 0 1px rgba(255,255,255,0.9), 0 0 0 2px rgba(0,0,0,0.2);
+	width: 30.5% !important;
+	width: ~"calc(33% - 2rem) !important";
 }
 
 @media screen and (min-width: 694px) {

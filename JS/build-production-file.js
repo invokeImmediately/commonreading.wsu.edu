@@ -7,6 +7,8 @@ concat([
  '../../imagesloaded/imagesloaded.pkgd.min.js',
  '../../masonry/dist/masonry.pkgd.min.js',
  '../WSU-UE---JS/jQuery.masonry-custom.js',
+ '../../jQuery.countdown/dist/jquery.countdown.min.js',
+ '../WSU-UE---JS/jQuery.countdown-custom.js',
  './cr-custom.js'
  ], './wp-custom-js-source.js', function() {
     console.log('Concatenation complete.');     
