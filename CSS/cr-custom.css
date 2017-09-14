@@ -5574,6 +5574,9 @@ body.tribe-theme-spine .main-header .header-group .sub-header:before {
   content: "Location: ";
   font-weight: bold;
 }
+.cat_to-be-announced.tribe_events .tribe-events-single-event-description p:last-child:after {
+  content: " The time and location for this event will be announced soon.";
+}
 .single-tribe_events .tribe-events-before-html .calendar-intro-message {
   display: none;
 }
