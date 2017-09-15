@@ -5320,17 +5320,17 @@ ul.cascaded-layout.blank > li.gutter-sizer {
     padding-left: 0.5rem;
   }
 }
-body.tribe-theme-spine .main-header .header-group {
+body.tribe-theme-spine:not(.tribe_venue-template-default) .main-header .header-group {
   width: calc(90%);
   width: calc(100% - 2rem);
 }
-body.tribe-theme-spine .main-header .header-group .sub-header {
+body.tribe-theme-spine:not(.tribe_venue-template-default) .main-header .header-group .sub-header {
   color: transparent !important;
 }
-body.tribe-theme-spine .main-header .header-group .sub-header a {
+body.tribe-theme-spine:not(.tribe_venue-template-default) .main-header .header-group .sub-header a {
   display: none;
 }
-body.tribe-theme-spine .main-header .header-group .sub-header:before {
+body.tribe-theme-spine:not(.tribe_venue-template-default) .main-header .header-group .sub-header:before {
   content: "WSU Common Reading";
   position: absolute;
   color: #fff;
