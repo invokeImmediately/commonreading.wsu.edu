@@ -1423,6 +1423,7 @@ body.crimson-key-home .row header h3,
 body.crimson-key-home .row header h4,
 body.crimson-key-home .row header h5,
 body.crimson-key-home .row header h6 {
+  font-family: "Kanit", fantasy;
   font-weight: 400;
   color: #fff;
 }
