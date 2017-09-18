@@ -1417,12 +1417,12 @@ body.crimson-key-home .column a:hover {
   background-color: rgba(255, 255, 255, 0.5);
   color: #c60c30;
 }
-body.crimson-key-home .row .header h1,
-body.crimson-key-home .row .header h2,
-body.crimson-key-home .row .header h3,
-body.crimson-key-home .row .header h4,
-body.crimson-key-home .row .header h5,
-body.crimson-key-home .row .header h6 {
+body.crimson-key-home .row header h1,
+body.crimson-key-home .row header h2,
+body.crimson-key-home .row header h3,
+body.crimson-key-home .row header h4,
+body.crimson-key-home .row header h5,
+body.crimson-key-home .row header h6 {
   font-weight: 400;
   color: #fff;
 }
