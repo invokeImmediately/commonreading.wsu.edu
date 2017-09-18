@@ -1375,6 +1375,14 @@ body.crimson-key-home .gform_heading h3.gform_title {
   font-weight: 400;
   color: #fff;
 }
+body.crimson-key-home .column a {
+  color: #f0b2bc;
+  text-decoration: underline;
+}
+body.crimson-key-home .column a:hover {
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.2);
+}
 body.crimson-key-home .font-reduction-wrapper {
   font-size: 1rem;
 }
@@ -5320,17 +5328,17 @@ ul.cascaded-layout.blank > li.gutter-sizer {
     padding-left: 0.5rem;
   }
 }
-body.tribe-theme-spine:not(.tribe_venue-template-default) .main-header .header-group {
+body.tribe-theme-spine .main-header .header-group {
   width: calc(90%);
   width: calc(100% - 2rem);
 }
-body.tribe-theme-spine:not(.tribe_venue-template-default) .main-header .header-group .sub-header {
+body.tribe-theme-spine .main-header .header-group .sub-header {
   color: transparent !important;
 }
-body.tribe-theme-spine:not(.tribe_venue-template-default) .main-header .header-group .sub-header a {
+body.tribe-theme-spine .main-header .header-group .sub-header a {
   display: none;
 }
-body.tribe-theme-spine:not(.tribe_venue-template-default) .main-header .header-group .sub-header:before {
+body.tribe-theme-spine .main-header .header-group .sub-header:before {
   content: "WSU Common Reading";
   position: absolute;
   color: #fff;
@@ -5573,12 +5581,6 @@ body.tribe-theme-spine:not(.tribe_venue-template-default) .main-header .header-g
 #tribe-events-content.tribe-events-list .tribe-events-venue-details:before {
   content: "Location: ";
   font-weight: bold;
-}
-.cat_to-be-announced.tribe_events .tribe-events-single-event-description p:last-child:after {
-  content: " The time and location for this event will be announced soon.";
-}
-.tribe-events-category-to-be-announced.type-tribe_events .tribe-events-list-event-description p:nth-last-child(2):after {
-  content: " The time and location for this event will be announced soon.";
 }
 .single-tribe_events .tribe-events-before-html .calendar-intro-message {
   display: none;
