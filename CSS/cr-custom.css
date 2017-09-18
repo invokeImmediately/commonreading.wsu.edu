@@ -1381,7 +1381,7 @@ body.crimson-key-home .column a {
 }
 body.crimson-key-home .column a:hover {
   text-decoration: none;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.5);
   color: #c60c30;
 }
 body.crimson-key-home .font-reduction-wrapper {
