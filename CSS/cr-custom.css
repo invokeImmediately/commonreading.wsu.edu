@@ -1465,6 +1465,11 @@ body.crimson-key-home .row.header-has-top-border header h6 {
 body.crimson-key-home .font-reduction-wrapper {
   font-size: 1rem;
 }
+@media all and (max-width: 480px) {
+  body.crimson-key-home .font-reduction-wrapper {
+    font-size: 0.85rem;
+  }
+}
 /*!
 * dr-css-1.14: Other (TBD)
 *
