@@ -1417,6 +1417,7 @@ body.crimson-key-home .column h4.has-top-border,
 body.crimson-key-home .column h5.has-top-border,
 body.crimson-key-home .column h6.has-top-border,
 body.crimson-key-home .gform_heading h3.gform_title.has-top-border {
+  margin-top: 1em;
   border-top: 1px solid #fff;
 }
 body.crimson-key-home .column h1.has-top-border.border-is-faded,
