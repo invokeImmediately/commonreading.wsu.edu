@@ -1410,14 +1410,23 @@ body.crimson-key-home .gform_heading h3.gform_title {
   font-weight: 400;
   color: #fff;
 }
-body.crimson-key-home .column h1.has-upper-border,
-body.crimson-key-home .column h2.has-upper-border,
-body.crimson-key-home .column h3.has-upper-border,
-body.crimson-key-home .column h4.has-upper-border,
-body.crimson-key-home .column h5.has-upper-border,
-body.crimson-key-home .column h6.has-upper-border,
-body.crimson-key-home .gform_heading h3.gform_title.has-upper-border {
+body.crimson-key-home .column h1.has-top-border,
+body.crimson-key-home .column h2.has-top-border,
+body.crimson-key-home .column h3.has-top-border,
+body.crimson-key-home .column h4.has-top-border,
+body.crimson-key-home .column h5.has-top-border,
+body.crimson-key-home .column h6.has-top-border,
+body.crimson-key-home .gform_heading h3.gform_title.has-top-border {
   border-top: 1px solid #fff;
+}
+body.crimson-key-home .column h1.has-top-border.border-is-faded,
+body.crimson-key-home .column h2.has-top-border.border-is-faded,
+body.crimson-key-home .column h3.has-top-border.border-is-faded,
+body.crimson-key-home .column h4.has-top-border.border-is-faded,
+body.crimson-key-home .column h5.has-top-border.border-is-faded,
+body.crimson-key-home .column h6.has-top-border.border-is-faded,
+body.crimson-key-home .gform_heading h3.gform_title.has-top-border.border-is-faded {
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
 }
 body.crimson-key-home .column a {
   color: #f0b2bc;
@@ -1437,6 +1446,14 @@ body.crimson-key-home .row header h6 {
   font-family: "Kanit", fantasy;
   font-weight: 400;
   color: #fff;
+}
+body.crimson-key-home .row.header-has-top-border header h1,
+body.crimson-key-home .row.header-has-top-border header h2,
+body.crimson-key-home .row.header-has-top-border header h3,
+body.crimson-key-home .row.header-has-top-border header h4,
+body.crimson-key-home .row.header-has-top-border header h5,
+body.crimson-key-home .row.header-has-top-border header h6 {
+  border-top: 1px solid #fff;
 }
 body.crimson-key-home .font-reduction-wrapper {
   font-size: 1rem;
