@@ -3140,6 +3140,10 @@ main section.row > .column table > tbody > tr > td > div > ol:last-child {
   .quarters.gutter .column:nth-of-type(4n+8):not(.gutterless) {
     padding-left: 0.5rem;
   }
+  .gutter > header {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }
 @media only screen and (max-width: 360px) {
   .gutter .column:not(.gutterless),
@@ -3196,6 +3200,10 @@ main section.row > .column table > tbody > tr > td > div > ol:last-child {
   .quarters.gutter .column.four:not(.gutterless),
   .quarters.gutter .column:nth-of-type(4n+8):not(.gutterless) {
     padding-left: 0.25rem;
+  }
+  .gutter > header {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
 }
 @media all and (max-width: 693px) {
