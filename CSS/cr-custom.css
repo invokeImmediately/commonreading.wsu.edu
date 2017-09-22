@@ -1336,19 +1336,9 @@ body.crimson-key-home .row.h1-header h3,
 body.crimson-key-home .row.h1-header h4,
 body.crimson-key-home .row.h1-header h5,
 body.crimson-key-home .row.h1-header h6 {
-  padding-top: 0;
-  margin-top: 0.5em;
   font-family: "Share Tech Mono", fantasy;
   color: #fff;
   text-transform: uppercase;
-}
-body.crimson-key-home .row.h1-header h1.has-upper-border,
-body.crimson-key-home .row.h1-header h2.has-upper-border,
-body.crimson-key-home .row.h1-header h3.has-upper-border,
-body.crimson-key-home .row.h1-header h4.has-upper-border,
-body.crimson-key-home .row.h1-header h5.has-upper-border,
-body.crimson-key-home .row.h1-header h6.has-upper-border {
-  border-top: 1px solid #fff;
 }
 body.crimson-key-home .row.h1-header h1 {
   padding-top: 0;
@@ -1415,8 +1405,19 @@ body.crimson-key-home .column h4,
 body.crimson-key-home .column h5,
 body.crimson-key-home .column h6,
 body.crimson-key-home .gform_heading h3.gform_title {
+  padding-top: 0;
+  margin-top: 0.5em;
   font-weight: 400;
   color: #fff;
+}
+body.crimson-key-home .column h1.has-upper-border,
+body.crimson-key-home .column h2.has-upper-border,
+body.crimson-key-home .column h3.has-upper-border,
+body.crimson-key-home .column h4.has-upper-border,
+body.crimson-key-home .column h5.has-upper-border,
+body.crimson-key-home .column h6.has-upper-border,
+body.crimson-key-home .gform_heading h3.gform_title.has-upper-border {
+  border-top: 1px solid #fff;
 }
 body.crimson-key-home .column a {
   color: #f0b2bc;
