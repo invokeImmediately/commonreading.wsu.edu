@@ -1213,6 +1213,11 @@ body {
   background-position: right bottom;
   background-attachment: fixed;
 }
+@media all and (max-width: 989px) {
+  .main-header {
+    height: 108px;
+  }
+}
 /*#spine .spine-actions section,
 #spine .spine-actions-tabs .opened,
 #spine .spine-actions-tabs .opened:hover {
