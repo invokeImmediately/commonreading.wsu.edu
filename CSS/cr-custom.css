@@ -1332,143 +1332,203 @@ main {
     transform: rotateY(360deg);
   }
 }
-body.crimson-key-home #wsuwp-main {
+.page.crimson-key-home #wsuwp-main,
+.page.crimson-key.black-key-clue #wsuwp-main {
   background-color: #800c23;
 }
-body.crimson-key-home .row.h1-header h1,
-body.crimson-key-home .row.h1-header h2,
-body.crimson-key-home .row.h1-header h3,
-body.crimson-key-home .row.h1-header h4,
-body.crimson-key-home .row.h1-header h5,
-body.crimson-key-home .row.h1-header h6 {
+.page.crimson-key-home .row.h1-header h1,
+.page.crimson-key.black-key-clue .row.h1-header h1,
+.page.crimson-key-home .row.h1-header h2,
+.page.crimson-key.black-key-clue .row.h1-header h2,
+.page.crimson-key-home .row.h1-header h3,
+.page.crimson-key.black-key-clue .row.h1-header h3,
+.page.crimson-key-home .row.h1-header h4,
+.page.crimson-key.black-key-clue .row.h1-header h4,
+.page.crimson-key-home .row.h1-header h5,
+.page.crimson-key.black-key-clue .row.h1-header h5,
+.page.crimson-key-home .row.h1-header h6,
+.page.crimson-key.black-key-clue .row.h1-header h6 {
   font-family: "Share Tech Mono", fantasy;
   color: #fff;
   text-transform: uppercase;
 }
-body.crimson-key-home .row.h1-header h1 {
+.page.crimson-key-home .row.h1-header h1,
+.page.crimson-key.black-key-clue .row.h1-header h1 {
   padding-top: 0;
   padding-bottom: 0;
   text-align: center;
 }
 @media all {
-  body.crimson-key-home .row.h1-header h1 {
+  .page.crimson-key-home .row.h1-header h1,
+  .page.crimson-key.black-key-clue .row.h1-header h1 {
     line-height: 0.99em;
   }
 }
 @media all and (min-width: 1073px) {
-  body.crimson-key-home .row.h1-header h1 {
+  .page.crimson-key-home .row.h1-header h1,
+  .page.crimson-key.black-key-clue .row.h1-header h1 {
     font-size: 5.64705882em;
   }
 }
 @media all and (min-width: 990px) and (max-width: 1072px) {
-  body.crimson-key-home .row.h1-header h1 {
+  .page.crimson-key-home .row.h1-header h1,
+  .page.crimson-key.black-key-clue .row.h1-header h1 {
     font-size: 5.64705882em;
   }
 }
 @media all and (min-width: 792px) and (max-width: 989px) {
-  body.crimson-key-home .row.h1-header h1 {
+  .page.crimson-key-home .row.h1-header h1,
+  .page.crimson-key.black-key-clue .row.h1-header h1 {
     font-size: 5.64705882em;
   }
 }
 @media all and (min-width: 481px) and (max-width: 791px) {
-  body.crimson-key-home .row.h1-header h1 {
+  .page.crimson-key-home .row.h1-header h1,
+  .page.crimson-key.black-key-clue .row.h1-header h1 {
     font-size: 5.64705882em;
   }
 }
 @media all and (min-width: 361px) and (max-width: 480px) {
-  body.crimson-key-home .row.h1-header h1 {
+  .page.crimson-key-home .row.h1-header h1,
+  .page.crimson-key.black-key-clue .row.h1-header h1 {
     font-size: 2.82352941em;
   }
 }
 @media all and (max-width: 360px) {
-  body.crimson-key-home .row.h1-header h1 {
+  .page.crimson-key-home .row.h1-header h1,
+  .page.crimson-key.black-key-clue .row.h1-header h1 {
     font-size: 1.88216471em;
   }
 }
-body.crimson-key-home .row.h1-header .column {
+.page.crimson-key-home .row.h1-header .column,
+.page.crimson-key.black-key-clue .row.h1-header .column {
   font-size: 1rem;
 }
-body.crimson-key-home .column {
+.page.crimson-key-home .column,
+.page.crimson-key.black-key-clue .column {
   font-family: "Kanit", fantasy;
   font-weight: 300;
   font-size: 1.2rem;
   color: #fff;
 }
-body.crimson-key-home .column .animated-key {
+.page.crimson-key-home .column .animated-key,
+.page.crimson-key.black-key-clue .column .animated-key {
   -webkit-animation: anim-3d-rotate 6s linear infinite;
   -moz-animation: anim-3d-rotate 6s linear infinite;
   animation: anim-3d-rotate 6s linear infinite;
 }
-body.crimson-key-home .column .article-tagline {
+.page.crimson-key-home .column .article-tagline,
+.page.crimson-key.black-key-clue .column .article-tagline {
   font-family: "Spinnaker", fantasy;
   font-weight: 400;
 }
-body.crimson-key-home .column h1,
-body.crimson-key-home .column h2,
-body.crimson-key-home .column h3,
-body.crimson-key-home .column h4,
-body.crimson-key-home .column h5,
-body.crimson-key-home .column h6,
-body.crimson-key-home .gform_heading h3.gform_title {
+.page.crimson-key-home .column h1,
+.page.crimson-key.black-key-clue .column h1,
+.page.crimson-key-home .column h2,
+.page.crimson-key.black-key-clue .column h2,
+.page.crimson-key-home .column h3,
+.page.crimson-key.black-key-clue .column h3,
+.page.crimson-key-home .column h4,
+.page.crimson-key.black-key-clue .column h4,
+.page.crimson-key-home .column h5,
+.page.crimson-key.black-key-clue .column h5,
+.page.crimson-key-home .column h6,
+.page.crimson-key.black-key-clue .column h6,
+.page.crimson-key-home .gform_heading h3.gform_title,
+.page.crimson-key.black-key-clue .gform_heading h3.gform_title {
   padding-top: 0;
   margin-top: 0.5em;
   font-weight: 400;
   color: #fff;
 }
-body.crimson-key-home .column h1.has-top-border,
-body.crimson-key-home .column h2.has-top-border,
-body.crimson-key-home .column h3.has-top-border,
-body.crimson-key-home .column h4.has-top-border,
-body.crimson-key-home .column h5.has-top-border,
-body.crimson-key-home .column h6.has-top-border,
-body.crimson-key-home .gform_heading h3.gform_title.has-top-border {
+.page.crimson-key-home .column h1.has-top-border,
+.page.crimson-key.black-key-clue .column h1.has-top-border,
+.page.crimson-key-home .column h2.has-top-border,
+.page.crimson-key.black-key-clue .column h2.has-top-border,
+.page.crimson-key-home .column h3.has-top-border,
+.page.crimson-key.black-key-clue .column h3.has-top-border,
+.page.crimson-key-home .column h4.has-top-border,
+.page.crimson-key.black-key-clue .column h4.has-top-border,
+.page.crimson-key-home .column h5.has-top-border,
+.page.crimson-key.black-key-clue .column h5.has-top-border,
+.page.crimson-key-home .column h6.has-top-border,
+.page.crimson-key.black-key-clue .column h6.has-top-border,
+.page.crimson-key-home .gform_heading h3.gform_title.has-top-border,
+.page.crimson-key.black-key-clue .gform_heading h3.gform_title.has-top-border {
   margin-top: 1em;
   border-top: 1px solid #fff;
 }
-body.crimson-key-home .column h1.has-top-border.border-is-faded,
-body.crimson-key-home .column h2.has-top-border.border-is-faded,
-body.crimson-key-home .column h3.has-top-border.border-is-faded,
-body.crimson-key-home .column h4.has-top-border.border-is-faded,
-body.crimson-key-home .column h5.has-top-border.border-is-faded,
-body.crimson-key-home .column h6.has-top-border.border-is-faded,
-body.crimson-key-home .gform_heading h3.gform_title.has-top-border.border-is-faded {
+.page.crimson-key-home .column h1.has-top-border.border-is-faded,
+.page.crimson-key.black-key-clue .column h1.has-top-border.border-is-faded,
+.page.crimson-key-home .column h2.has-top-border.border-is-faded,
+.page.crimson-key.black-key-clue .column h2.has-top-border.border-is-faded,
+.page.crimson-key-home .column h3.has-top-border.border-is-faded,
+.page.crimson-key.black-key-clue .column h3.has-top-border.border-is-faded,
+.page.crimson-key-home .column h4.has-top-border.border-is-faded,
+.page.crimson-key.black-key-clue .column h4.has-top-border.border-is-faded,
+.page.crimson-key-home .column h5.has-top-border.border-is-faded,
+.page.crimson-key.black-key-clue .column h5.has-top-border.border-is-faded,
+.page.crimson-key-home .column h6.has-top-border.border-is-faded,
+.page.crimson-key.black-key-clue .column h6.has-top-border.border-is-faded,
+.page.crimson-key-home .gform_heading h3.gform_title.has-top-border.border-is-faded,
+.page.crimson-key.black-key-clue .gform_heading h3.gform_title.has-top-border.border-is-faded {
   border-top: 1px solid rgba(255, 255, 255, 0.5);
 }
-body.crimson-key-home .column a {
+.page.crimson-key-home .column a,
+.page.crimson-key.black-key-clue .column a {
   color: #f0b2bc;
   text-decoration: underline;
 }
-body.crimson-key-home .column a:hover {
+.page.crimson-key-home .column a:hover,
+.page.crimson-key.black-key-clue .column a:hover {
   text-decoration: none;
   background-color: rgba(255, 255, 255, 0.5);
   color: #c60c30;
 }
-body.crimson-key-home .row header h1,
-body.crimson-key-home .row header h2,
-body.crimson-key-home .row header h3,
-body.crimson-key-home .row header h4,
-body.crimson-key-home .row header h5,
-body.crimson-key-home .row header h6 {
+.page.crimson-key-home .row header h1,
+.page.crimson-key.black-key-clue .row header h1,
+.page.crimson-key-home .row header h2,
+.page.crimson-key.black-key-clue .row header h2,
+.page.crimson-key-home .row header h3,
+.page.crimson-key.black-key-clue .row header h3,
+.page.crimson-key-home .row header h4,
+.page.crimson-key.black-key-clue .row header h4,
+.page.crimson-key-home .row header h5,
+.page.crimson-key.black-key-clue .row header h5,
+.page.crimson-key-home .row header h6,
+.page.crimson-key.black-key-clue .row header h6 {
   padding-top: 0;
   font-family: "Kanit", fantasy;
   font-weight: 400;
   color: #fff;
 }
-body.crimson-key-home .row.header-has-top-border header h1,
-body.crimson-key-home .row.header-has-top-border header h2,
-body.crimson-key-home .row.header-has-top-border header h3,
-body.crimson-key-home .row.header-has-top-border header h4,
-body.crimson-key-home .row.header-has-top-border header h5,
-body.crimson-key-home .row.header-has-top-border header h6 {
+.page.crimson-key-home .row.header-has-top-border header h1,
+.page.crimson-key.black-key-clue .row.header-has-top-border header h1,
+.page.crimson-key-home .row.header-has-top-border header h2,
+.page.crimson-key.black-key-clue .row.header-has-top-border header h2,
+.page.crimson-key-home .row.header-has-top-border header h3,
+.page.crimson-key.black-key-clue .row.header-has-top-border header h3,
+.page.crimson-key-home .row.header-has-top-border header h4,
+.page.crimson-key.black-key-clue .row.header-has-top-border header h4,
+.page.crimson-key-home .row.header-has-top-border header h5,
+.page.crimson-key.black-key-clue .row.header-has-top-border header h5,
+.page.crimson-key-home .row.header-has-top-border header h6,
+.page.crimson-key.black-key-clue .row.header-has-top-border header h6 {
   border-top: 1px solid #fff;
 }
-body.crimson-key-home .font-reduction-wrapper {
+.page.crimson-key-home .font-reduction-wrapper,
+.page.crimson-key.black-key-clue .font-reduction-wrapper {
   font-size: 1rem;
 }
 @media all and (max-width: 480px) {
-  body.crimson-key-home .font-reduction-wrapper {
+  .page.crimson-key-home .font-reduction-wrapper,
+  .page.crimson-key.black-key-clue .font-reduction-wrapper {
     font-size: 0.85rem;
   }
+}
+.blog .post.category-black-key-clue,
+.archive.category .post.category-black-key-clue {
+  display: none;
 }
 /*!
 * dr-css-1.14: Other (TBD)
