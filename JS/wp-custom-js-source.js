@@ -1745,8 +1745,8 @@ function processCountdownTimerMsg ( $countdownTimerMsg ) {
 		};
 
 		params.removeHiddenBlackKeyCluePosts = {
-			slctrPageTypes = '.blog, .archive.category',
-			slctrBlackKeyPosts = '.post.category-black-key-clue'
+			slctrPageTypes: '.blog, .archive.category',
+			slctrBlackKeyPosts: '.post.category-black-key-clue'
 		}
 
 		// Make function calls
