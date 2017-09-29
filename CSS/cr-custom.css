@@ -1537,7 +1537,11 @@ main {
   display: none;
 }
 .page.crimson-key.black-key-clue .wsuwp-content-syndicate-wrapper .content-item-content {
+  margin-top: 2rem;
+}
+.page.crimson-key.black-key-clue .wsuwp-content-syndicate-wrapper .content-item-content * {
   text-align: center;
+  font-size: 1.5em;
 }
 .blog .post.category-black-key-clue,
 .archive.category .post.category-black-key-clue {
