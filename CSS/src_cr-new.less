@@ -632,7 +632,7 @@ h3 {
 			text-transform: uppercase;
 		}
 		h1 {
-			@v-ck-fnt-sclng-fctrs: 1.0, 1.0, 1.0, 1.0, .5, .3333;
+			@v-ck-fnt-sclng-fctrs: 1.0, 1.0, 1.0, .71, .5, .3333;
 			.has-responsive-font((@v-h1-sz * 2), (@v-hX-lnhght * 9 / 10), @v-ck-fnt-sclng-fctrs);
 			padding-top: 0;
 			padding-bottom: 0;
@@ -724,6 +724,8 @@ h3 {
 		color: @hex-black;
 		text-shadow: 0 0 18px @hex-white, 0 0 5px @hex-white, 0 0 5px @hex-white, 0 0 5px @hex-white;
 		letter-spacing: -5px;
+		@v-ck-fnt-sclng-fctrs: 1.0, 1.0, 1.0, .71, .5, .5;
+		.has-responsive-font((@v-h1-sz * 2), (@v-hX-lnhght * 9 / 10), @v-ck-fnt-sclng-fctrs);
 	}
 	.wsuwp-content-syndicate-wrapper {
 		.content-item-thumbnail,
