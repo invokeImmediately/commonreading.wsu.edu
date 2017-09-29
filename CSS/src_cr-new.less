@@ -615,7 +615,8 @@ h3 {
 };
 .keyframes(anim-3d-rotate, @rs-anim-3d-rotate);
 
-body.crimson-key-home {
+.page.crimson-key-home,
+.page.crimson-key.black-key-clue {
 	#wsuwp-main {
 		background-color: rgb(128, 12, 35);
 	}
@@ -715,6 +716,14 @@ body.crimson-key-home {
 		@media all and (max-width: @v-lg-mbl-thrshld) {
 			font-size: 0.85rem;
 		}
+	}
+}
+
+// TODO: Also hide on any WSUWP_JSON feeds that are not specifically marked as pertaining to the clue.
+.blog,
+.archive.category {
+	.post.category-black-key-clue {
+		display: none;
 	}
 }
 
