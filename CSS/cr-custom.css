@@ -1531,6 +1531,14 @@ main {
   text-shadow: 0 0 18px #fff, 0 0 5px #fff, 0 0 5px #fff, 0 0 5px #fff;
   letter-spacing: -5px;
 }
+.page.crimson-key.black-key-clue .wsuwp-content-syndicate-wrapper .content-item-thumbnail,
+.page.crimson-key.black-key-clue .wsuwp-content-syndicate-wrapper .content-item-title,
+.page.crimson-key.black-key-clue .wsuwp-content-syndicate-wrapper .content-item-byline {
+  display: none;
+}
+.page.crimson-key.black-key-clue .wsuwp-content-syndicate-wrapper .content-item-content {
+  text-align: center;
+}
 .blog .post.category-black-key-clue,
 .archive.category .post.category-black-key-clue {
   display: none;
