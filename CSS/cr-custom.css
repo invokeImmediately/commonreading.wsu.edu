@@ -1526,6 +1526,11 @@ main {
     font-size: 0.85rem;
   }
 }
+.page.crimson-key.black-key-clue .row.h1-header h1 {
+  color: #000;
+  text-shadow: 0 0 18px #fff, 0 0 5px #fff, 0 0 5px #fff, 0 0 5px #fff;
+  letter-spacing: -5px;
+}
 .blog .post.category-black-key-clue,
 .archive.category .post.category-black-key-clue {
   display: none;
