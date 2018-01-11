@@ -211,6 +211,14 @@
 			margin-bottom: ~"calc(@{v-dflt-spcng})";
 		}
 	}
+	.fluid .row.side-right & {
+		@media screen and (min-width: 694px) {
+			width: ~"calc(33% - @{v-dflt-spcng} / 4)";
+			padding-right: ~"calc(@{v-dflt-spcng} / 4)";
+			margin-right: ~"calc(@{v-dflt-spcng} / 4)";
+			margin-bottom: ~"calc(@{v-dflt-spcng})";
+		}
+	}
 }
 
 /*!
