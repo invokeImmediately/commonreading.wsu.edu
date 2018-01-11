@@ -840,6 +840,11 @@ cite.article-author {
   }
 }
 @media screen and (min-width: 694px) {
+  .fluid .row.halves.pad-top .column.crimson.has-background {
+    margin-top: calc(2rem);
+  }
+}
+@media screen and (min-width: 694px) {
   .fluid .row.side-right .column.crimson.has-background {
     width: calc(33% - 2rem / 4);
     padding-right: calc(2rem / 4);
