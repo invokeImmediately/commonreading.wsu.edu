@@ -205,11 +205,10 @@
 	}
 	.fluid .row.halves & {
 		@media screen and (min-width: 694px) {
-			width: 48%;
 			width: ~"calc(50% - @{v-dflt-spcng})";
-			padding-right: @v-dflt-spcng / 2;
-			margin-right: @v-dflt-spcng;
-			margin-bottom: @v-dflt-spcng;
+			padding-right: ~"calc(@{v-dflt-spcng} / 2)";
+			margin-right: ~"calc(@{v-dflt-spcng})";
+			margin-bottom: ~"calc(@{v-dflt-spcng})";
 		}
 	}
 }
