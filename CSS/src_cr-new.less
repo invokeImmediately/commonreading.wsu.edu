@@ -200,11 +200,11 @@
 	padding-bottom: (@v-dflt-spcng / 2) !important;
 	background-color: rgba(192,12,48,0.2);
 	color: #464e54;
-	@media screen and (min-width: 694px) {
+	@media screen and (min-width: (@column-floating-threshold + 1)) {
 		border-radius: 10px;
 	}
 	.fluid .row.halves & {
-		@media screen and (min-width: 694px) {
+		@media screen and (min-width: (@column-floating-threshold + 1)) {
 			width: ~"calc(50% - @{v-dflt-spcng})";
 			padding-right: ~"calc(@{v-dflt-spcng} / 2)";
 			margin-right: ~"calc(@{v-dflt-spcng})";
@@ -212,12 +212,12 @@
 		}
 	}
 	.fluid .row.halves.pad-top & {
-		@media screen and (min-width: 694px) {
+		@media screen and (min-width: (@column-floating-threshold + 1)) {
 			margin-top: ~"calc(@{v-dflt-spcng})";
 		}
 	}
 	.fluid .row.side-right & {
-		@media screen and (min-width: 694px) {
+		@media screen and (min-width: (@column-floating-threshold + 1)) {
 			width: ~"calc(33% - @{v-dflt-spcng} / 4)";
 			padding-right: ~"calc(@{v-dflt-spcng} / 4)";
 			margin-right: ~"calc(@{v-dflt-spcng} / 4)";
