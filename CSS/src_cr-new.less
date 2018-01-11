@@ -469,7 +469,7 @@ ul {
 				&.collapsed {
 					font-size: 0.5rem;
 					width: 22.75%;
-					@media all and (max-width: @v-rghtclmn-thrshld) {
+					@media all and (max-width: @column-floating-threshold) {
 						width: 48.5%;
 					}
 					.transition(~"transform 0.3s ease");
@@ -491,7 +491,7 @@ ul {
 			&.thirds > li {
 				width: 31.3333%;
 				font-size: 0.6667rem;
-				@media all and (max-width: @v-rghtclmn-thrshld) {
+				@media all and (max-width: @column-floating-threshold) {
 					width: 48.5%;
 				}
 				&:hover {
@@ -508,7 +508,7 @@ ul {
 					width: 65.6666%;
 					font-size: 1rem;
 					//z-index: 1;
-					@media all and (max-width: @v-rghtclmn-thrshld) {
+					@media all and (max-width: @column-floating-threshold) {
 						width: 97%;
 					}
 					&:hover {
@@ -541,7 +541,7 @@ body {
 }
 
 .main-header {
-	@media all and (max-width: @v-spn-thrshld) {
+	@media all and (max-width: @spine-threshold) {
 		height: 108px;
 	}
 }
@@ -713,7 +713,7 @@ h3 {
 	}
 	.font-reduction-wrapper {
 		font-size: 1rem;
-		@media all and (max-width: @v-lg-mbl-thrshld) {
+		@media all and (max-width: @large-mobile-screen-width) {
 			font-size: 0.85rem;
 		}
 	}
