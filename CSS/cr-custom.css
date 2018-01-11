@@ -1590,7 +1590,21 @@ main {
   display: none;
 }
 /*!
-* dr-css-1.14: Other (TBD)
+* dr-css-1.14: Screen readers
+*
+* Layouts and style rules applied to elements related to screen reader technology.
+*/
+.for-screen-readers {
+  height: 0 !important;
+  width: 0 !important;
+  overflow: hidden !important;
+  opacity: 0 !important;
+}
+.for-screen-readers.row {
+  margin: 0 !important;
+}
+/*!
+* dr-css-1.15: Other (TBD)
 *
 * Style rulesets below still need to be pulled into their own commented section.
 */
