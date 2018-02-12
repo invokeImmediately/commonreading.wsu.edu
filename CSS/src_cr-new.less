@@ -393,9 +393,9 @@
 			font-size: (@start * pow(@scaling, 5));
 		}
 	}
-	section.h1-header {
+	.row.h1-header.yellow {
+		background-color: @hex-yellow;
 		.column h1 {
-			background-color: @hex-yellow;
 			padding: 1rem;
 			color: @hex-white;
 			text-shadow: 0 0 1.125rem @hex-darkest-yellow;
@@ -647,7 +647,7 @@ h3 {
 * --------------------------------------------------------------------------------------------------
 * dr-css-1.10: Styling of h1-header sections
 */
-.row.h1-header .column {
+body:not(.crimson-key-home):not(.crimson-key) .row.h1-header .column {
 	position: relative;
 	padding-top: 4rem;
 	padding-bottom: 4rem;
