@@ -1048,81 +1048,84 @@ cite.article-author {
 .page.book-nominations .column h6 {
   font-size: 1.17999087em;
 }
-.page.archives section.h1-header .column h1,
-.page.book-nominations section.h1-header .column h1 {
+.page.archives .row.h1-header.yellow,
+.page.book-nominations .row.h1-header.yellow {
   background-color: #c69214;
+}
+.page.archives .row.h1-header.yellow .column h1,
+.page.book-nominations .row.h1-header.yellow .column h1 {
   padding: 1rem;
   color: #fff;
   text-shadow: 0 0 1.125rem #4f3a08;
 }
-.page.archives section.h1-header + section .column:first-child > h1:first-child,
-.page.book-nominations section.h1-header + section .column:first-child > h1:first-child,
-.page.archives section.h1-header + section .column:first-child > h2:first-child,
-.page.book-nominations section.h1-header + section .column:first-child > h2:first-child,
-.page.archives section.h1-header + section .column:first-child > h3:first-child,
-.page.book-nominations section.h1-header + section .column:first-child > h3:first-child,
-.page.archives section.h1-header + section .column:first-child > h4:first-child,
-.page.book-nominations section.h1-header + section .column:first-child > h4:first-child,
-.page.archives section.h1-header + section .column:first-child > h5:first-child,
-.page.book-nominations section.h1-header + section .column:first-child > h5:first-child,
-.page.archives section.h1-header + section .column:first-child > h6:first-child,
-.page.book-nominations section.h1-header + section .column:first-child > h6:first-child {
+.page.archives .row.h1-header.yellow + section .column:first-child > h1:first-child,
+.page.book-nominations .row.h1-header.yellow + section .column:first-child > h1:first-child,
+.page.archives .row.h1-header.yellow + section .column:first-child > h2:first-child,
+.page.book-nominations .row.h1-header.yellow + section .column:first-child > h2:first-child,
+.page.archives .row.h1-header.yellow + section .column:first-child > h3:first-child,
+.page.book-nominations .row.h1-header.yellow + section .column:first-child > h3:first-child,
+.page.archives .row.h1-header.yellow + section .column:first-child > h4:first-child,
+.page.book-nominations .row.h1-header.yellow + section .column:first-child > h4:first-child,
+.page.archives .row.h1-header.yellow + section .column:first-child > h5:first-child,
+.page.book-nominations .row.h1-header.yellow + section .column:first-child > h5:first-child,
+.page.archives .row.h1-header.yellow + section .column:first-child > h6:first-child,
+.page.book-nominations .row.h1-header.yellow + section .column:first-child > h6:first-child {
   margin-top: 0.5rem;
   padding-left: 1rem;
   color: #815f0d;
 }
-.page.archives section.h1-header + section .column:first-child > h1:first-child + hr,
-.page.book-nominations section.h1-header + section .column:first-child > h1:first-child + hr,
-.page.archives section.h1-header + section .column:first-child > h2:first-child + hr,
-.page.book-nominations section.h1-header + section .column:first-child > h2:first-child + hr,
-.page.archives section.h1-header + section .column:first-child > h3:first-child + hr,
-.page.book-nominations section.h1-header + section .column:first-child > h3:first-child + hr,
-.page.archives section.h1-header + section .column:first-child > h4:first-child + hr,
-.page.book-nominations section.h1-header + section .column:first-child > h4:first-child + hr,
-.page.archives section.h1-header + section .column:first-child > h5:first-child + hr,
-.page.book-nominations section.h1-header + section .column:first-child > h5:first-child + hr,
-.page.archives section.h1-header + section .column:first-child > h6:first-child + hr,
-.page.book-nominations section.h1-header + section .column:first-child > h6:first-child + hr {
+.page.archives .row.h1-header.yellow + section .column:first-child > h1:first-child + hr,
+.page.book-nominations .row.h1-header.yellow + section .column:first-child > h1:first-child + hr,
+.page.archives .row.h1-header.yellow + section .column:first-child > h2:first-child + hr,
+.page.book-nominations .row.h1-header.yellow + section .column:first-child > h2:first-child + hr,
+.page.archives .row.h1-header.yellow + section .column:first-child > h3:first-child + hr,
+.page.book-nominations .row.h1-header.yellow + section .column:first-child > h3:first-child + hr,
+.page.archives .row.h1-header.yellow + section .column:first-child > h4:first-child + hr,
+.page.book-nominations .row.h1-header.yellow + section .column:first-child > h4:first-child + hr,
+.page.archives .row.h1-header.yellow + section .column:first-child > h5:first-child + hr,
+.page.book-nominations .row.h1-header.yellow + section .column:first-child > h5:first-child + hr,
+.page.archives .row.h1-header.yellow + section .column:first-child > h6:first-child + hr,
+.page.book-nominations .row.h1-header.yellow + section .column:first-child > h6:first-child + hr {
   margin-top: 0.4rem;
   background-color: rgba(198, 146, 20, 0.5);
 }
-.page.archives section.h1-header + section .column:first-child > h1:first-child + hr + h3,
-.page.book-nominations section.h1-header + section .column:first-child > h1:first-child + hr + h3,
-.page.archives section.h1-header + section .column:first-child > h2:first-child + hr + h3,
-.page.book-nominations section.h1-header + section .column:first-child > h2:first-child + hr + h3,
-.page.archives section.h1-header + section .column:first-child > h3:first-child + hr + h3,
-.page.book-nominations section.h1-header + section .column:first-child > h3:first-child + hr + h3,
-.page.archives section.h1-header + section .column:first-child > h4:first-child + hr + h3,
-.page.book-nominations section.h1-header + section .column:first-child > h4:first-child + hr + h3,
-.page.archives section.h1-header + section .column:first-child > h5:first-child + hr + h3,
-.page.book-nominations section.h1-header + section .column:first-child > h5:first-child + hr + h3,
-.page.archives section.h1-header + section .column:first-child > h6:first-child + hr + h3,
-.page.book-nominations section.h1-header + section .column:first-child > h6:first-child + hr + h3 {
+.page.archives .row.h1-header.yellow + section .column:first-child > h1:first-child + hr + h3,
+.page.book-nominations .row.h1-header.yellow + section .column:first-child > h1:first-child + hr + h3,
+.page.archives .row.h1-header.yellow + section .column:first-child > h2:first-child + hr + h3,
+.page.book-nominations .row.h1-header.yellow + section .column:first-child > h2:first-child + hr + h3,
+.page.archives .row.h1-header.yellow + section .column:first-child > h3:first-child + hr + h3,
+.page.book-nominations .row.h1-header.yellow + section .column:first-child > h3:first-child + hr + h3,
+.page.archives .row.h1-header.yellow + section .column:first-child > h4:first-child + hr + h3,
+.page.book-nominations .row.h1-header.yellow + section .column:first-child > h4:first-child + hr + h3,
+.page.archives .row.h1-header.yellow + section .column:first-child > h5:first-child + hr + h3,
+.page.book-nominations .row.h1-header.yellow + section .column:first-child > h5:first-child + hr + h3,
+.page.archives .row.h1-header.yellow + section .column:first-child > h6:first-child + hr + h3,
+.page.book-nominations .row.h1-header.yellow + section .column:first-child > h6:first-child + hr + h3 {
   margin-top: 2rem;
 }
-.page.archives section.h1-header:not(.gutter) .column,
-.page.book-nominations section.h1-header:not(.gutter) .column {
+.page.archives .row.h1-header.yellow:not(.gutter) .column,
+.page.book-nominations .row.h1-header.yellow:not(.gutter) .column {
   display: table;
   width: 100%;
   min-height: 190px;
 }
-.page.archives section.h1-header:not(.gutter) .column h1,
-.page.book-nominations section.h1-header:not(.gutter) .column h1 {
+.page.archives .row.h1-header.yellow:not(.gutter) .column h1,
+.page.book-nominations .row.h1-header.yellow:not(.gutter) .column h1 {
   display: inline-block;
   display: table-cell;
   padding: 2rem;
   vertical-align: middle;
 }
 @media only screen and (min-width: 361px) and (max-width: 480px) {
-  .page.archives section.h1-header:not(.gutter) .column h1,
-  .page.book-nominations section.h1-header:not(.gutter) .column h1 {
+  .page.archives .row.h1-header.yellow:not(.gutter) .column h1,
+  .page.book-nominations .row.h1-header.yellow:not(.gutter) .column h1 {
     padding-right: 1rem;
     padding-left: 1rem;
   }
 }
 @media only screen and (max-width: 360px) {
-  .page.archives section.h1-header:not(.gutter) .column h1,
-  .page.book-nominations section.h1-header:not(.gutter) .column h1 {
+  .page.archives .row.h1-header.yellow:not(.gutter) .column h1,
+  .page.book-nominations .row.h1-header.yellow:not(.gutter) .column h1 {
     padding-right: 0.5rem;
     padding-left: 0.5rem;
   }
@@ -1346,14 +1349,14 @@ main {
 * --------------------------------------------------------------------------------------------------
 * dr-css-1.10: Styling of h1-header sections
 */
-.row.h1-header .column {
+body:not(.crimson-key-home):not(.crimson-key) .row.h1-header .column {
   position: relative;
   padding-top: 4rem;
   padding-bottom: 4rem;
   border-bottom: 1px solid #717171;
   background: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1) 1%, rgba(0, 0, 0, 0) 90%, rgba(0, 0, 0, 0.05) 99%, rgba(0, 0, 0, 0.1));
 }
-.row.h1-header .column:before {
+body:not(.crimson-key-home):not(.crimson-key) .row.h1-header .column:before {
   content: "";
   position: absolute;
   width: 100%;
