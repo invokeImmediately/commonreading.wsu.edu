@@ -1,5 +1,5 @@
-﻿@import  'https://fonts.googleapis.com/css?family=Roboto+Mono:300|Roboto+Condensed:400,700|Roboto+Slab|PT+Serif';
-@import  'https://fonts.googleapis.com/css?family=Share+Tech+Mono|Kanit:300,400,600|Spinnaker:400,700';
+﻿@import  "https://fonts.googleapis.com/css?family=Roboto+Mono:300|Roboto+Condensed:400,700|Roboto+Slab|PT+Serif";
+@import  "https://fonts.googleapis.com/css?family=Share+Tech+Mono|Kanit:300,400,600|Spinnaker:400,700";
 
 /*! Built with the LESS CSS preprocessor [http://lesscss.org/]. Please see [https://github.com/invokeImmediately/commonreading.wsu.edu] for a repository of source code. */
 .has-mono-font {
@@ -29,6 +29,19 @@
 
 .column .initially-hidden,.initially-hidden {
 	display: none;
+}
+
+.for-screen-readers {
+	box-sizing: border-box !important;
+	height: 0 !important;
+	width: 0 !important;
+	border: 0 !important;
+	overflow: hidden !important;
+	opacity: 0 !important;
+}
+
+.for-screen-readers.row {
+	margin: 0 !important;
 }
 
 #binder.fluid.max-1188 .row.halves .column img.auto-scaled,.column .margin-centered,.margin-centered,img.shift-to-center,img.shiftToCenter {
@@ -673,20 +686,13 @@ h2.crimson,h4.crimson,h6.crimson {
 	color: #981e32;
 }
 
-a:link {
+.column a {
+	border: 1px solid transparent;
+}
+
+.column a:hover {
+	border-color: #981e32;
 	text-decoration: none;
-}
-
-a:visited {
-	text-decoration: none;
-}
-
-a:hover {
-	text-decoration: underline;
-}
-
-a:active {
-	text-decoration: underline;
 }
 
 cite.article-author {
@@ -700,9 +706,10 @@ cite.article-author {
 * Adjustments to and extensions of Builder template's style rule-sets and responsive behavior.
 */
 /*! 
-* dr-css-1.1: New CSS classes
+* --------------------------------------------------------------------------------------------------
+* dr-css-1.1: New utility classes
 *
-* Specification of additional, low-specificity CSS classes that can be applied to any element.
+* Specification of additional, functionally focused CSS classes that can be applied to any element.
 */
 /*! Text centering */
 .centers-text {
@@ -807,6 +814,7 @@ cite.article-author {
 }
 
 /*! 
+* --------------------------------------------------------------------------------------------------
 * dr-css-1.2: Banner slideshows
 *
 * Adjustments to Builder template's styling of banner slideshows:
@@ -831,6 +839,7 @@ cite.article-author {
 }
 
 /*! 
+* --------------------------------------------------------------------------------------------------
 * dr-css-1.3: Responsive iframe containers
 */
 .iframe-wrapper {
@@ -855,10 +864,11 @@ cite.article-author {
 }
 
 /*!
- * dr-css-1.4: Crimson columns
- *
- * Style ruleset for specifying the visual design of columns with a faint crimson background.
- */
+* --------------------------------------------------------------------------------------------------
+* dr-css-1.4: Crimson columns
+*
+* Style ruleset for specifying the visual design of columns with a faint crimson background.
+*/
 .column.crimson>header:first-child>h2 {
 	margin-bottom: .5rem;
 	color: #981e32;
@@ -902,6 +912,7 @@ cite.article-author {
 }
 
 /*!
+* --------------------------------------------------------------------------------------------------
 * dr-css-1.5: Default padding and spacing
 *
 * Adjustment of default padding on sections, section headings, calendar headings, etc.
@@ -947,6 +958,7 @@ cite.article-author {
 }
 
 /*!
+* --------------------------------------------------------------------------------------------------
 * dr-css-1.6: Page-based layouts
 */
 .page.has-short-main-header .main-header {
@@ -1042,35 +1054,38 @@ cite.article-author {
 	font-size: 1.17999087em;
 }
 
-.page.archives section.h1-header .column h1,.page.book-nominations section.h1-header .column h1 {
+.page.archives .row.h1-header.yellow,.page.book-nominations .row.h1-header.yellow {
 	background-color: #c69214;
+}
+
+.page.archives .row.h1-header.yellow .column h1,.page.book-nominations .row.h1-header.yellow .column h1 {
 	padding: 1rem;
 	color: #fff;
 	text-shadow: 0 0 1.125rem #4f3a08;
 }
 
-.page.archives section.h1-header+section .column:first-child>h1:first-child,.page.archives section.h1-header+section .column:first-child>h2:first-child,.page.archives section.h1-header+section .column:first-child>h3:first-child,.page.archives section.h1-header+section .column:first-child>h4:first-child,.page.archives section.h1-header+section .column:first-child>h5:first-child,.page.archives section.h1-header+section .column:first-child>h6:first-child,.page.book-nominations section.h1-header+section .column:first-child>h1:first-child,.page.book-nominations section.h1-header+section .column:first-child>h2:first-child,.page.book-nominations section.h1-header+section .column:first-child>h3:first-child,.page.book-nominations section.h1-header+section .column:first-child>h4:first-child,.page.book-nominations section.h1-header+section .column:first-child>h5:first-child,.page.book-nominations section.h1-header+section .column:first-child>h6:first-child {
+.page.archives .row.h1-header.yellow+section .column:first-child>h1:first-child,.page.archives .row.h1-header.yellow+section .column:first-child>h2:first-child,.page.archives .row.h1-header.yellow+section .column:first-child>h3:first-child,.page.archives .row.h1-header.yellow+section .column:first-child>h4:first-child,.page.archives .row.h1-header.yellow+section .column:first-child>h5:first-child,.page.archives .row.h1-header.yellow+section .column:first-child>h6:first-child,.page.book-nominations .row.h1-header.yellow+section .column:first-child>h1:first-child,.page.book-nominations .row.h1-header.yellow+section .column:first-child>h2:first-child,.page.book-nominations .row.h1-header.yellow+section .column:first-child>h3:first-child,.page.book-nominations .row.h1-header.yellow+section .column:first-child>h4:first-child,.page.book-nominations .row.h1-header.yellow+section .column:first-child>h5:first-child,.page.book-nominations .row.h1-header.yellow+section .column:first-child>h6:first-child {
 	margin-top: .5rem;
 	padding-left: 1rem;
 	color: #815f0d;
 }
 
-.page.archives section.h1-header+section .column:first-child>h1:first-child+hr,.page.archives section.h1-header+section .column:first-child>h2:first-child+hr,.page.archives section.h1-header+section .column:first-child>h3:first-child+hr,.page.archives section.h1-header+section .column:first-child>h4:first-child+hr,.page.archives section.h1-header+section .column:first-child>h5:first-child+hr,.page.archives section.h1-header+section .column:first-child>h6:first-child+hr,.page.book-nominations section.h1-header+section .column:first-child>h1:first-child+hr,.page.book-nominations section.h1-header+section .column:first-child>h2:first-child+hr,.page.book-nominations section.h1-header+section .column:first-child>h3:first-child+hr,.page.book-nominations section.h1-header+section .column:first-child>h4:first-child+hr,.page.book-nominations section.h1-header+section .column:first-child>h5:first-child+hr,.page.book-nominations section.h1-header+section .column:first-child>h6:first-child+hr {
+.page.archives .row.h1-header.yellow+section .column:first-child>h1:first-child+hr,.page.archives .row.h1-header.yellow+section .column:first-child>h2:first-child+hr,.page.archives .row.h1-header.yellow+section .column:first-child>h3:first-child+hr,.page.archives .row.h1-header.yellow+section .column:first-child>h4:first-child+hr,.page.archives .row.h1-header.yellow+section .column:first-child>h5:first-child+hr,.page.archives .row.h1-header.yellow+section .column:first-child>h6:first-child+hr,.page.book-nominations .row.h1-header.yellow+section .column:first-child>h1:first-child+hr,.page.book-nominations .row.h1-header.yellow+section .column:first-child>h2:first-child+hr,.page.book-nominations .row.h1-header.yellow+section .column:first-child>h3:first-child+hr,.page.book-nominations .row.h1-header.yellow+section .column:first-child>h4:first-child+hr,.page.book-nominations .row.h1-header.yellow+section .column:first-child>h5:first-child+hr,.page.book-nominations .row.h1-header.yellow+section .column:first-child>h6:first-child+hr {
 	margin-top: .4rem;
 	background-color: rgba(198,146,20,.5);
 }
 
-.page.archives section.h1-header+section .column:first-child>h1:first-child+hr+h3,.page.archives section.h1-header+section .column:first-child>h2:first-child+hr+h3,.page.archives section.h1-header+section .column:first-child>h3:first-child+hr+h3,.page.archives section.h1-header+section .column:first-child>h4:first-child+hr+h3,.page.archives section.h1-header+section .column:first-child>h5:first-child+hr+h3,.page.archives section.h1-header+section .column:first-child>h6:first-child+hr+h3,.page.book-nominations section.h1-header+section .column:first-child>h1:first-child+hr+h3,.page.book-nominations section.h1-header+section .column:first-child>h2:first-child+hr+h3,.page.book-nominations section.h1-header+section .column:first-child>h3:first-child+hr+h3,.page.book-nominations section.h1-header+section .column:first-child>h4:first-child+hr+h3,.page.book-nominations section.h1-header+section .column:first-child>h5:first-child+hr+h3,.page.book-nominations section.h1-header+section .column:first-child>h6:first-child+hr+h3 {
+.page.archives .row.h1-header.yellow+section .column:first-child>h1:first-child+hr+h3,.page.archives .row.h1-header.yellow+section .column:first-child>h2:first-child+hr+h3,.page.archives .row.h1-header.yellow+section .column:first-child>h3:first-child+hr+h3,.page.archives .row.h1-header.yellow+section .column:first-child>h4:first-child+hr+h3,.page.archives .row.h1-header.yellow+section .column:first-child>h5:first-child+hr+h3,.page.archives .row.h1-header.yellow+section .column:first-child>h6:first-child+hr+h3,.page.book-nominations .row.h1-header.yellow+section .column:first-child>h1:first-child+hr+h3,.page.book-nominations .row.h1-header.yellow+section .column:first-child>h2:first-child+hr+h3,.page.book-nominations .row.h1-header.yellow+section .column:first-child>h3:first-child+hr+h3,.page.book-nominations .row.h1-header.yellow+section .column:first-child>h4:first-child+hr+h3,.page.book-nominations .row.h1-header.yellow+section .column:first-child>h5:first-child+hr+h3,.page.book-nominations .row.h1-header.yellow+section .column:first-child>h6:first-child+hr+h3 {
 	margin-top: 2rem;
 }
 
-.page.archives section.h1-header:not(.gutter) .column,.page.book-nominations section.h1-header:not(.gutter) .column {
+.page.archives .row.h1-header.yellow:not(.gutter) .column,.page.book-nominations .row.h1-header.yellow:not(.gutter) .column {
 	display: table;
 	width: 100%;
 	min-height: 190px;
 }
 
-.page.archives section.h1-header:not(.gutter) .column h1,.page.book-nominations section.h1-header:not(.gutter) .column h1 {
+.page.archives .row.h1-header.yellow:not(.gutter) .column h1,.page.book-nominations .row.h1-header.yellow:not(.gutter) .column h1 {
 	display: inline-block;
 	display: table-cell;
 	padding: 2rem;
@@ -1078,14 +1093,14 @@ cite.article-author {
 }
 
 @media only screen and (min-width:361px) and (max-width:480px) {
-	.page.archives section.h1-header:not(.gutter) .column h1,.page.book-nominations section.h1-header:not(.gutter) .column h1 {
+	.page.archives .row.h1-header.yellow:not(.gutter) .column h1,.page.book-nominations .row.h1-header.yellow:not(.gutter) .column h1 {
 		padding-right: 1rem;
 		padding-left: 1rem;
 	}
 }
 
 @media only screen and (max-width:360px) {
-	.page.archives section.h1-header:not(.gutter) .column h1,.page.book-nominations section.h1-header:not(.gutter) .column h1 {
+	.page.archives .row.h1-header.yellow:not(.gutter) .column h1,.page.book-nominations .row.h1-header.yellow:not(.gutter) .column h1 {
 		padding-right: .5rem;
 		padding-left: .5rem;
 	}
@@ -1105,6 +1120,7 @@ img.archives-thumbnail {
 }
 
 /*!
+* --------------------------------------------------------------------------------------------------
 * dr-css-1.7: Lists
 */
 ul.cascaded-layout.calendar>li *+* {
@@ -1203,7 +1219,8 @@ ul.cascaded-layout.calendar.thirds>li.cascade-sizer {
 }
 
 /*!
-* dr-css-1.10: Body styling
+* --------------------------------------------------------------------------------------------------
+* dr-css-1.8: Body styling
 */
 body {
 	background: #e5e6e8;
@@ -1227,7 +1244,8 @@ main {
 }
 
 /*!
-* dr-css-1.11: Solid headers
+* --------------------------------------------------------------------------------------------------
+* dr-css-1.9: Solid headers
 */
 .column h3.fancy,.column h3.solid,.column.show-header.has-fancy-header>header:first-child>h3,.column.show-header.has-solid-header>header:first-child>h3,.gform_heading h3.gform_title,.gform_heading h3.gform_title.fancy,.gform_heading h3.gform_title.solid {
 	position: relative;
@@ -1265,7 +1283,30 @@ main {
 }
 
 /*!
-* dr-css-1.13: Order of the Crimson Key
+* --------------------------------------------------------------------------------------------------
+* dr-css-1.10: Styling of h1-header sections
+*/
+body:not(.crimson-key-home):not(.crimson-key) .row.h1-header .column {
+	position: relative;
+	padding-top: 4rem;
+	padding-bottom: 4rem;
+	border-bottom: 1px solid #717171;
+	background: linear-gradient(to right,rgba(0,0,0,.2),rgba(0,0,0,.1) 1%,rgba(0,0,0,0) 90%,rgba(0,0,0,.05) 99%,rgba(0,0,0,.1));
+}
+
+body:not(.crimson-key-home):not(.crimson-key) .row.h1-header .column:before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 0;
+	bottom: 0;
+	left: 0;
+	border-bottom: 1px solid rgba(0,0,0,.2);
+}
+
+/*!
+* --------------------------------------------------------------------------------------------------
+* dr-css-1.11: Order of the Crimson Key
 */
 @-webkit-keyframes anim-3d-rotate {
 	from {
@@ -1503,23 +1544,8 @@ main {
 }
 
 /*!
-* dr-css-1.14: Screen readers
-*
-* Layouts and style rules applied to elements related to screen reader technology.
-*/
-.for-screen-readers {
-	height: 0 !important;
-	width: 0 !important;
-	overflow: hidden !important;
-	opacity: 0 !important;
-}
-
-.for-screen-readers.row {
-	margin: 0 !important;
-}
-
-/*!
-* dr-css-1.15: Other (TBD)
+* --------------------------------------------------------------------------------------------------
+* dr-css-1.12: Other (TBD)
 *
 * Style rulesets below still need to be pulled into their own commented section.
 */
@@ -2550,8 +2576,9 @@ div.read-more-target {
 }
 
 .column .builder-banner-content {
+	position: static;
 	padding: 0 0 10px;
-	font-size: 1.5rem;
+	font-size: 1.3em;
 	line-height: 1.35em;
 	border: 0;
 	-webkit-transition: font-size .15s linear, line-height .15s linear;
@@ -2560,7 +2587,7 @@ div.read-more-target {
 }
 
 .column .builder-banner-content:hover {
-	font-size: 2rem;
+	font-size: 1.6em;
 }
 
 .column .builder-banner-content:hover>div.builder-banner-inner-content {
@@ -2574,6 +2601,9 @@ div.read-more-target {
 	background-color: rgba(0,0,0,.6);
 	font-size: inherit;
 	line-height: inherit;
+	box-sizing: border-box;
+	padding-left: 4rem;
+	padding-right: 4rem;
 }
 
 .column .builder-banner-inner-content p {
@@ -2642,14 +2672,23 @@ div.read-more-target {
 }
 
 @media all and (max-width:480px) {
+	.column .builder-banner-slide {
+		padding-bottom: 80% !important;
+	}
+	
 	.column .builder-banner-content {
 		font-size: 5.1568vw;
 		line-height: 6.9616vw;
 	}
 	
 	.column .builder-banner-content:hover {
-		font-size: 6.8758vw;
-		line-height: 9.2822vw;
+		font-size: 6.8757vw;
+		line-height: 9.2722vw;
+	}
+	
+	.column .builder-banner-inner-content {
+		padding-left: 0;
+		padding-right: 0;
 	}
 }
 
@@ -5857,4 +5896,8 @@ body.tribe-theme-spine:not(.tribe_venue-template-default) .main-header .header-g
 
 .wsuwp-content-syndicate-list:empty:after {
 	content: "None.";
+}
+
+.main-header {
+	background-color: #981e32;
 }
