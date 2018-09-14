@@ -1,5 +1,5 @@
 /*! Built with the Less CSS preprocessor [http://lesscss.org/]. Please see [https://github.com/invokeImmediately/commonreading.wsu.edu] for a repository of source code. */
-@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:300|Roboto+Condensed:400,700|Roboto+Slab|PT+Serif');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:300|Roboto+Condensed:400,700|Roboto+Slab|PT+Serif|Share+Tech+Mono|Kanit:300,400,600|Spinnaker:400,700');
 /*! ================================================================================================
 *** MASTER STYLE SHEET for WSU Office of Undergraduate Education (OUE) Websites
 *** ================================================================================================
@@ -8974,12 +8974,7 @@ article > div.article-body {
 }
 .blog .row:not(.prevnext) > .column.two,
 .single-post .row > .column.two {
-  padding: 1rem;
-  background: #eff0f1;
-  -webkit-box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.9), 0 0 0 2px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.9), 0 0 0 2px rgba(0, 0, 0, 0.2);
-  width: 30.5% !important;
-  width: calc(33% - 2rem) !important;
+  padding: 0;
 }
 @media screen and (min-width: 694px) {
   .blog main > .row > .column.two,
