@@ -9013,6 +9013,10 @@ article > div.article-body {
     width: calc(33% - 2rem);
   }
 }
+.single-post .widget_search input#s {
+  margin-bottom: 0.5rem;
+  width: 100%;
+}
 .main-header {
   background-color: #981e32;
 }
