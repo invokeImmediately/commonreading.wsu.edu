@@ -9007,7 +9007,7 @@ article > div.article-body {
   display: none;
 }
 @media screen and (min-width: 694px) {
-  .single-post .column.two {
+  .single-post .fluid .row.side-right .column.two {
     margin-right: 2rem;
     width: 30%;
     width: calc(33% - 2rem);
