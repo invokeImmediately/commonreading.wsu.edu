@@ -9006,6 +9006,13 @@ article > div.article-body {
 .single-post .column .hidden-on-news-articles {
   display: none;
 }
+@media screen and (min-width: 694px) {
+  .single-post .column.two {
+    margin-right: 2rem;
+    width: 30%;
+    width: calc(33% - 2rem);
+  }
+}
 .main-header {
   background-color: #981e32;
 }
