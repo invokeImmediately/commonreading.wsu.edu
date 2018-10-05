@@ -9,18 +9,19 @@
 * TABLE OF CONTENTS:
 * -----------------
 *   dr-css-1.0: CSS Authored by Daniel Rieck.....................................................3
-*   dr-css-1.1: New utility classes.............................................................28
-*   dr-css-1.2: Banner slideshows..............................................................161
-*   dr-css-1.3: Responsive iframe containers...................................................197
-*   dr-css-1.4: Crimson columns................................................................222
-*   dr-css-1.5: Default padding and spacing....................................................264
-*   dr-css-1.6: Page-based layouts.............................................................321
-*   dr-css-1.7: Lists..........................................................................478
-*   dr-css-1.8: Body styling...................................................................579
-*   dr-css-1.9: Solid headers..................................................................610
-*   dr-css-1.10: Styling of h1-header sections.................................................659
-*   dr-css-1.11: Order of the Crimson Key......................................................685
-*   dr-css-1.12: Other (TBD)...................................................................833
+*   dr-css-1.1: New utility classes.............................................................29
+*   dr-css-1.2: Banner slideshows..............................................................162
+*   dr-css-1.3: Responsive iframe containers...................................................198
+*   dr-css-1.4: Crimson columns................................................................223
+*   dr-css-1.5: Default padding and spacing....................................................265
+*   dr-css-1.6: Page-based layouts.............................................................303
+*   dr-css-1.7: Lists..........................................................................460
+*   dr-css-1.8: Body styling...................................................................562
+*   dr-css-1.9: Solid headers..................................................................594
+*   dr-css-1.10: Styling of h1-header sections.................................................644
+*   dr-css-1.11: Order of the Crimson Key......................................................670
+*   dr-css-1.12: Other (TBD)...................................................................819
+*   dr-css-1.13: Other (TBD)...................................................................848
 */
 
 /*! 
@@ -458,6 +459,7 @@ img.archives-thumbnail {
 * --------------------------------------------------------------------------------------------------
 * dr-css-1.7: Lists
 */
+
 ul {
 	&.cascaded-layout {
 		/*@media print {
@@ -559,6 +561,7 @@ ul {
 * --------------------------------------------------------------------------------------------------
 * dr-css-1.8: Body styling
 */
+
 body {
 	background: #e5e6e8;
 	background: #e5e6e8 linear-gradient(to top, #f3f3f4, #e5e6e8 50%, #bcbfc4) fixed;
@@ -590,6 +593,7 @@ main {
 * --------------------------------------------------------------------------------------------------
 * dr-css-1.9: Solid headers
 */
+
 h3 {
 	.column &.fancy,
 	.column.show-header.has-fancy-header > header:first-child > &,
@@ -812,10 +816,40 @@ body:not(.crimson-key-home):not(.crimson-key) .row.h1-header .column {
 
 /*!
 * --------------------------------------------------------------------------------------------------
-* dr-css-1.12: Other (TBD)
+* dr-css-1.12: News
+*
+* Styling unique to the news section of the Common Reading website.
+*/
+
+.blog .column .hidden-on-news-feed {
+	display: none;
+}
+
+.single-post .column .hidden-on-news-articles {
+	display: none;
+}
+
+.blog .fluid .row.side-right .column.two,
+.single-post .fluid .row.side-right .column.two {
+	@media screen and (min-width: 694px) {
+		margin-right: 2rem;
+		width: 30%;
+		width: ~"calc(33% - 2rem)";
+	}
+}
+
+.single-post .widget_search input#s {
+	margin-bottom: .5rem;
+	width: 100%;
+}
+
+/*!
+* --------------------------------------------------------------------------------------------------
+* dr-css-1.13: Other (TBD)
 *
 * Style rulesets below still need to be pulled into their own commented section.
 */
+
 .page > .row:last-child > .column {
 	padding-bottom: @v-dflt-spcng;
 }
@@ -1009,27 +1043,6 @@ article > div.article-body {
   border-top: 1px dashed rgba(94, 106, 113, 0.5);
   border-bottom: 1px dashed rgba(160, 160, 160, 0.25);
   text-align: center;
-}
-
-.blog .column .hidden-on-news-feed {
-	display: none;
-}
-
-.single-post .column .hidden-on-news-articles {
-	display: none;
-}
-
-.single-post .fluid .row.side-right .column.two {
-	@media screen and (min-width: 694px) {
-		margin-right: 2rem;
-		width: 30%;
-		width: ~"calc(33% - 2rem)";
-	}
-}
-
-.single-post .widget_search input#s {
-	margin-bottom: .5rem;
-	width: 100%;
 }
 
 .main-header {
