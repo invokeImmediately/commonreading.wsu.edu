@@ -8858,6 +8858,11 @@ body:not(.crimson-key-home):not(.crimson-key) .row.h1-header .column:before {
     width: calc(33% - 2rem);
   }
 }
+@media screen and (min-width: 694px) {
+  .blog .fluid .row.side-right .column.two {
+    padding-left: 1rem;
+  }
+}
 .single-post .widget_search input#s {
   margin-bottom: 0.5rem;
   width: 100%;
