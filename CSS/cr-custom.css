@@ -3482,9 +3482,6 @@ ol {
 .wsuwp-json--headlines .content-item-byline-date:before {
   content: "Posted on ";
 }
-.wsuwp-json--headlines .content-item-event-venue:empty {
-  display: none;
-}
 .wsuwp-json--headlines .content-item-excerpt .article-media-contacts,
 .wsuwp-json--headlines .content-item-excerpt .article-sidebar,
 .wsuwp-json--headlines .content-item-excerpt .photo-caption,
@@ -9367,6 +9364,9 @@ body.tribe-theme-spine:not(.tribe_venue-template-default) .main-header .header-g
 }
 .wsuwp-content-syndicate-event .content-item-event-venue:before {
   content: "in ";
+}
+.wsuwp-content-syndicate-event .content-item-event-venue:empty {
+  display: none;
 }
 .wsuwp-content-syndicate-list:empty:after {
   content: "None.";
