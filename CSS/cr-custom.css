@@ -3482,6 +3482,9 @@ ol {
 .wsuwp-json--headlines .content-item-byline-date:before {
   content: "Posted on ";
 }
+.wsuwp-json--headlines .content-item-event-venue:empty {
+  display: none;
+}
 .wsuwp-json--headlines .content-item-excerpt .article-media-contacts,
 .wsuwp-json--headlines .content-item-excerpt .article-sidebar,
 .wsuwp-json--headlines .content-item-excerpt .photo-caption,
