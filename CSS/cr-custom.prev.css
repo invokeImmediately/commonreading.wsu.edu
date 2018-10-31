@@ -1,4 +1,4 @@
-﻿@import  "https://fonts.googleapis.com/css?family=Roboto+Mono:300|Roboto+Condensed:400,700|Roboto+Slab|PT+Serif|Share+Tech+Mono|Kanit:300,400,600|Spinnaker:400,700";
+﻿@import  'https://fonts.googleapis.com/css?family=Roboto+Mono:300|Roboto+Condensed:400,700|Roboto+Slab|PT+Serif|Share+Tech+Mono|Kanit:300,400,600|Spinnaker:400,700';
 
 /*! Built with the Less CSS preprocessor [http://lesscss.org/]. Please see [https://github.com/invokeImmediately/commonreading.wsu.edu] for a repository of source code. */
 /*! ================================================================================================
@@ -18,29 +18,28 @@
 ***     (Please see above git repository for fully documented, precompiled source code.)
 *** ================================================================================================
 **/
-.has-mono-font {
-	font-family: 'Roboto Mono', monospace, sans-serif;
-	font-weight: 300;
-}
-
-.column,.column h1,.column h2,.column h3,.column h4,.gform_heading h3.gform_title,.has-dflt-font,body {
+.column,.column h1,.column h2,.column h3,.column h4,.ff--sans,.gform_heading h3.gform_title,.has-dflt-font,body {
 	font-family: 'Open Sans', 'Lucida Sans', sans-serif;
 }
 
-.has-dflt-font.serif {
+.ff--serif,.has-dflt-font.serif {
 	font-family: 'Roboto Slab', Palatino, serif;
 }
 
-.column p.article-tagline.article-tagline--sans,.column p.article-tagline.sans,.has-alt-font,.row.article-notice .column>p,span.accentuated-text {
+.ff--serif-2,.has-subst-font.serif {
+	font-family: 'PT Serif', Palatino, serif;
+}
+
+.column p.article-tagline.article-tagline--sans,.column p.article-tagline.sans,.ff--condensed,.has-alt-font,.row.article-notice .column>p,span.accentuated-text {
 	font-family: 'Open Sans Condensed', 'Lucida Sans', sans-serif;
 }
 
-.has-subst-font {
+.ff--condensed-2,.has-subst-font {
 	font-family: 'Roboto Condensed', 'Lucida Sans', sans-serif;
 }
 
-.has-subst-font.serif {
-	font-family: 'PT Serif', Palatino, serif;
+.ff--mono,.has-mono-font {
+	font-family: 'Roboto Mono', monospace, sans-serif;
 }
 
 .column .initially-hidden,.initially-hidden {
@@ -2049,7 +2048,6 @@ ol {
 	border: 1px solid #afb5b7;
 	background-color: #d7dadb;
 	font-family: 'Roboto Mono', monospace, sans-serif;
-	font-weight: 300;
 	cursor: pointer;
 	-webkit-transform: translateY(-100%) translateY(-5px);
 	-moz-transform: translateY(-100%) translateY(-5px);
@@ -2210,6 +2208,8 @@ ol {
 }
 
 .wsuwp-json--headlines.layout--2-columns .wsuwp-content-syndicate-item {
+	padding-bottom: 2em;
+	padding-right: 2em;
 	width: 50%;
 }
 
@@ -2320,7 +2320,7 @@ section.pad-top div.column.half-pad,section.pad-top.half-pad {
 
 .column {
 	font-size: 1rem;
-	color: #464e54;
+	color: #2a3033;
 }
 
 .column:nth-child(1) {
@@ -4166,7 +4166,6 @@ div.read-more-target {
 	font-size: 18px;
 	line-height: 16px;
 	font-family: 'Roboto Mono', monospace, sans-serif;
-	font-weight: 300;
 	text-align: center;
 	background-color: #981e32;
 	color: #fff;
@@ -4888,9 +4887,9 @@ div.auto-scroller ul li {
 
 .page-header__column-1--tx-bottom {
 	top: 100%;
-	-webkit-transform: translateY(-100%) translateY(-2rem);
-	-moz-transform: translateY(-100%) translateY(-2rem);
-	transform: translateY(-100%) translateY(-2rem);
+	-webkit-transform: translateY(-100%);
+	-moz-transform: translateY(-100%);
+	transform: translateY(-100%);
 }
 
 .page-header .page-header__column-1 {
@@ -7053,7 +7052,26 @@ body:not(.crimson-key-home):not(.crimson-key) .row.h1-header .column:before {
 
 /*!
 * --------------------------------------------------------------------------------------------------
-* dr-css-1.12: Other (TBD)
+* dr-css-1.12: News
+*
+* Styling unique to the news section of the Common Reading website.
+*/
+.blog .column .hidden-on-news-feed {
+	display: none;
+}
+
+.single-post .column .hidden-on-news-articles {
+	display: none;
+}
+
+.single-post .widget_search input#s {
+	margin-bottom: .5rem;
+	width: 100%;
+}
+
+/*!
+* --------------------------------------------------------------------------------------------------
+* dr-css-1.13: Other (TBD)
 *
 * Style rulesets below still need to be pulled into their own commented section.
 */
@@ -7169,19 +7187,6 @@ article>div.article-body {
 	border-top: 1px dashed rgba(94,106,113,.5);
 	border-bottom: 1px dashed rgba(160,160,160,.25);
 	text-align: center;
-}
-
-.blog .column .hidden-on-news-feed {
-	display: none;
-}
-
-.single-post .column .hidden-on-news-articles {
-	display: none;
-}
-
-.single-post .widget_search input#s {
-	margin-bottom: .5rem;
-	width: 100%;
 }
 
 .main-header {
@@ -7546,7 +7551,7 @@ body.tribe-theme-spine:not(.tribe_venue-template-default) .main-header .header-g
 		-webkit-transition-timing-function: linear;
 	}
 	
-	img.show-on-mobile {
+	.show-on-mobile {
 		display: none;
 	}
 }
@@ -7637,15 +7642,19 @@ body.tribe-theme-spine:not(.tribe_venue-template-default) .main-header .header-g
 		margin-bottom: calc(2rem);
 	}
 	
-	.blog main>.row>.column.two,.single-post .row>.column.two {
-		margin-top: 2rem;
-		border-radius: 4px;
-	}
-	
-	.single-post .fluid .row.side-right .column.two {
+	.blog .fluid .row.side-right .column.two,.single-post .fluid .row.side-right .column.two {
 		margin-right: 2rem;
 		width: 30%;
 		width: calc(33% - 2rem);
+	}
+	
+	.blog .fluid .row.side-right .column.two {
+		padding-left: 1rem;
+	}
+	
+	.blog main>.row>.column.two,.single-post .row>.column.two {
+		margin-top: 2rem;
+		border-radius: 4px;
 	}
 }
 
@@ -7832,26 +7841,6 @@ body.tribe-theme-spine:not(.tribe_venue-template-default) .main-header .header-g
 	}
 }
 
-@media all and (max-width:1204px) {
-	.column .builder-banner-content {
-		font-size: 2.1179vw;
-		line-height: 2.8592vw;
-	}
-	
-	.column .builder-banner-slide:hover .builder-banner-content {
-		font-size: 2.8239vw;
-		line-height: 3.8122vw;
-	}
-	
-	.column .builder-banner-inner-content p {
-		padding: 1vw;
-	}
-	
-	.column .builder-banner-inner-content p:last-child:not(.no-bottom-pad) {
-		padding-bottom: 1vw;
-	}
-}
-
 @media all and (max-width:1073px) {
 	.row.halves .column,.row.quarters .column,.row.side-left .column,.row.side-right .column,.row.single .column,.row.thirds .column {
 		font-size: 1rem;
@@ -7909,16 +7898,6 @@ body.tribe-theme-spine:not(.tribe_venue-template-default) .main-header .header-g
 		-webkit-transform: translate(-50%,-5px);
 		-moz-transform: translate(-50%,-5px);
 		transform: translate(-50%,-5px);
-	}
-	
-	.column .builder-banner-content {
-		font-size: 2.5784vw;
-		line-height: 3.4808vw;
-	}
-	
-	.builder-banner-slide:hover .builder-banner-content {
-		font-size: 3.4379vw;
-		line-height: 4.6411vw;
 	}
 	
 	span.hides-with-spine {
@@ -7990,12 +7969,6 @@ body.tribe-theme-spine:not(.tribe_venue-template-default) .main-header .header-g
 	
 	#tribe-events-content.tribe-events-month .tribe-events-sub-nav li a {
 		background-color: transparent;
-	}
-}
-
-@media screen and (max-width:693px) {
-	.column .cycle-next:before,.column .cycle-prev:before {
-		border-radius: 15px;
 	}
 }
 
@@ -8076,6 +8049,12 @@ body.tribe-theme-spine:not(.tribe_venue-template-default) .main-header .header-g
 	
 	.row.article-notice .column>:last-child {
 		padding-bottom: .33333333rem !important;
+	}
+}
+
+@media screen and (max-width:693px) {
+	.column .cycle-next:before,.column .cycle-prev:before {
+		border-radius: 15px;
 	}
 }
 
@@ -8216,15 +8195,15 @@ body.tribe-theme-spine:not(.tribe_venue-template-default) .main-header .header-g
 		font-size: .9em;
 	}
 	
-	img.hide-on-mobile {
-		display: none;
-	}
-	
 	.column .decoration {
 		float: none;
 		margin-left: 0;
 		padding-bottom: 40%;
 		width: 100%;
+	}
+	
+	.hide-on-mobile {
+		display: none;
 	}
 	
 	#common-reading-slideshow .builder-banner-slide {
@@ -8941,6 +8920,38 @@ body.tribe-theme-spine:not(.tribe_venue-template-default) .main-header .header-g
 	}
 }
 
+@media all and (max-width:1204px) and (min-width:990px) {
+	.column .builder-banner-content {
+		font-size: 2.1179vw;
+		line-height: 2.8592vw;
+	}
+	
+	.column .builder-banner-slide:hover .builder-banner-content {
+		font-size: 2.8239vw;
+		line-height: 3.8122vw;
+	}
+	
+	.column .builder-banner-inner-content p {
+		padding: 1vw;
+	}
+	
+	.column .builder-banner-inner-content p:last-child:not(.no-bottom-pad) {
+		padding-bottom: 1vw;
+	}
+}
+
+@media all and (max-width:989px) and (min-width:481px) {
+	.column .builder-banner-content {
+		font-size: 2.5784vw;
+		line-height: 3.4808vw;
+	}
+	
+	.builder-banner-slide:hover .builder-banner-content {
+		font-size: 3.4379vw;
+		line-height: 4.6411vw;
+	}
+}
+
 @media all and (min-width:792px) and (max-width:1049px) {
 	.column .large-format-friendly {
 		max-width: 792px;
@@ -9171,8 +9182,4 @@ body.tribe-theme-spine:not(.tribe_venue-template-default) .main-header .header-g
 	.column .decoration {
 		display: none;
 	}
-}
-
-.column {
-	fill: #981e32;
 }
