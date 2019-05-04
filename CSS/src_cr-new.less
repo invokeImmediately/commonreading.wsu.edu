@@ -17,11 +17,10 @@
 *   dr-css-1.6: Page-based layouts.............................................................303
 *   dr-css-1.7: Lists..........................................................................460
 *   dr-css-1.8: Body styling...................................................................562
-*   dr-css-1.9: Solid headers..................................................................594
-*   dr-css-1.10: Styling of h1-header sections.................................................644
-*   dr-css-1.11: Order of the Crimson Key......................................................670
-*   dr-css-1.12: News..........................................................................819
-*   dr-css-1.13: Other (TBD)...................................................................848
+*   dr-css-1.9: Styling of h1-header sections..................................................644
+*   dr-css-1.10: Order of the Crimson Key......................................................670
+*   dr-css-1.11: News..........................................................................819
+*   dr-css-1.12: Other (TBD)...................................................................848
 */
 
 /*! 
@@ -591,57 +590,7 @@ main {
 
 /*!
 * --------------------------------------------------------------------------------------------------
-* dr-css-1.9: Solid headers
-*/
-
-h3 {
-	.column &.fancy,
-	.column.show-header.has-fancy-header > header:first-child > &,
-	.column &.solid,
-	.column.show-header.has-solid-header > header:first-child > & {
-		@rgba-opacity: 0.075;
-		position: relative;
-		padding-top: (@v-dflt-spcng / 6);
-		padding-bottom: (@v-dflt-spcng / 6);
-		margin-left: 0;
-		margin-bottom: (@v-dflt-spcng / 2);
-		margin-right: 0;
-		.rgb-light-crimson(); background-color: rgba(@rval, @gval, @bval, 0.075);
-		background: linear-gradient(to right,
-			transparent,
-			rgba(@rval, @gval, @bval, @rgba-opacity) 10%,
-			rgba(@rval, @gval, @bval, @rgba-opacity) 50%,
-			rgba(@rval, @gval, @bval, @rgba-opacity * 2)
-		);
-		border-bottom: 2px solid rgba(@rval, @gval, @bval, @rgba-opacity);
-	}
-	.column &.fancy.with-top-border,
-	.column.show-header.has-fancy-header > header:first-child > &,
-	.column &.solid,
-	.column.show-header.has-solid-header > header:first-child > & {
-		padding-top: 0.4375rem;
-		&:not(:first-child) {
-			margin-top: @v-dflt-spcng;
-		}
-		&::before {
-			content: "";
-			position: absolute;
-				top: 0;
-				left: 0;
-			width: 100%;
-			height: 0;
-			.rgb-crimson(); border-top: 1px solid rgba(@rval,@gval,@bval,0.67);
-			border-bottom: 1px solid rgba(@rval,@gval,@bval,0.375);
-		}
-		& + h4 {
-			padding-top: 0;
-		}
-	}
-}
-
-/*!
-* --------------------------------------------------------------------------------------------------
-* dr-css-1.10: Styling of h1-header sections
+* dr-css-1.9: Styling of h1-header sections
 */
 body:not(.crimson-key-home):not(.crimson-key) .row.h1-header .column {
 	position: relative;
@@ -667,7 +616,7 @@ body:not(.crimson-key-home):not(.crimson-key) .row.h1-header .column {
 
 /*!
 * --------------------------------------------------------------------------------------------------
-* dr-css-1.11: Order of the Crimson Key
+* dr-css-1.10: Order of the Crimson Key
 */
 
 // @import url('https://fonts.googleapis.com/css?family=Share+Tech+Mono|Kanit:300,400,600|Spinnaker:400,700');
@@ -816,7 +765,7 @@ body:not(.crimson-key-home):not(.crimson-key) .row.h1-header .column {
 
 /*!
 * --------------------------------------------------------------------------------------------------
-* dr-css-1.12: News
+* dr-css-1.11: News
 *
 * Styling unique to the news section of the Common Reading website.
 */
@@ -851,7 +800,7 @@ body:not(.crimson-key-home):not(.crimson-key) .row.h1-header .column {
 
 /*!
 * --------------------------------------------------------------------------------------------------
-* dr-css-1.13: Other (TBD)
+* dr-css-1.12: Other (TBD)
 *
 * Style rulesets below still need to be pulled into their own commented section.
 */
