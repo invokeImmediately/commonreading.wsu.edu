@@ -1600,8 +1600,8 @@ p ~ p {
 hr {
   background: none;
   border: 0;
-  border-bottom: 1px solid rgba(160, 160, 160, 0.25);
-  border-top: 1px solid rgba(94, 106, 113, 0.5);
+  border-bottom: 1px solid rgba(42, 48, 51, 0.2);
+  border-top: 1px solid #2a3033;
   height: 0;
   margin-bottom: 2em;
   margin-top: 2em;
@@ -1620,40 +1620,6 @@ hr.sub-section {
 }
 hr.spacer {
   border: none;
-}
-hr.crimson {
-  border-top: 1px solid rgba(152, 30, 50, 0.67);
-  border-bottom: 1px solid rgba(152, 30, 50, 0.375);
-}
-hr.dark-gray {
-  border-top: 1px solid rgba(70, 78, 84, 0.6667);
-  border-bottom: 1px solid rgba(70, 78, 84, 0.3333);
-}
-hr.light-gray {
-  border-top: 1px dashed rgba(94, 106, 113, 0.25);
-  border-bottom: 1px dashed rgba(160, 160, 160, 0.125);
-}
-hr.narrow-top-margin {
-  margin-top: 0.5rem;
-}
-hr.half-top-margin {
-  margin-top: 1rem;
-}
-hr.no-bottom-margin {
-  margin-bottom: 0;
-}
-hr.narrow-bottom-margin {
-  margin-bottom: 0.5rem;
-}
-hr.half-bottom-margin {
-  margin-bottom: 1rem;
-}
-hr.encroach-horizontal {
-  margin-left: -0.5rem;
-  margin-right: -0.5rem;
-}
-hr.does-not-clear {
-  clear: none;
 }
 hr.thicker {
   border-top-width: 2px;
