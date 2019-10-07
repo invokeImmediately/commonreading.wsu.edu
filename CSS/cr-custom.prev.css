@@ -4426,7 +4426,7 @@ div.auto-scroller ul li {
 }
 
 .mw--64px {
-	max-width: 64px;
+	max-width: 64px !important;
 }
 
 .w--96px {
@@ -4438,7 +4438,7 @@ div.auto-scroller ul li {
 }
 
 .mw--96px {
-	max-width: 96px;
+	max-width: 96px !important;
 }
 
 .w--128px {
@@ -4450,7 +4450,7 @@ div.auto-scroller ul li {
 }
 
 .mw--128px {
-	max-width: 128px;
+	max-width: 128px !important;
 }
 
 .w--160px {
@@ -4462,7 +4462,7 @@ div.auto-scroller ul li {
 }
 
 .mw--160px {
-	max-width: 160px;
+	max-width: 160px !important;
 }
 
 .w--192px {
@@ -4474,7 +4474,7 @@ div.auto-scroller ul li {
 }
 
 .mw--192px {
-	max-width: 192px;
+	max-width: 192px !important;
 }
 
 .w--224px {
@@ -4486,7 +4486,7 @@ div.auto-scroller ul li {
 }
 
 .mw--224px {
-	max-width: 224px;
+	max-width: 224px !important;
 }
 
 .w--256px {
@@ -4498,7 +4498,7 @@ div.auto-scroller ul li {
 }
 
 .mw--256px {
-	max-width: 256px;
+	max-width: 256px !important;
 }
 
 .w--288px {
@@ -4510,7 +4510,7 @@ div.auto-scroller ul li {
 }
 
 .mw--288px {
-	max-width: 288px;
+	max-width: 288px !important;
 }
 
 .w--320px {
@@ -4522,7 +4522,7 @@ div.auto-scroller ul li {
 }
 
 .mw--320px {
-	max-width: 320px;
+	max-width: 320px !important;
 }
 
 .w--384px {
@@ -4534,7 +4534,7 @@ div.auto-scroller ul li {
 }
 
 .mw--384px {
-	max-width: 384px;
+	max-width: 384px !important;
 }
 
 .w--448px {
@@ -4546,7 +4546,7 @@ div.auto-scroller ul li {
 }
 
 .mw--448px {
-	max-width: 448px;
+	max-width: 448px !important;
 }
 
 .w--512px {
@@ -4558,7 +4558,7 @@ div.auto-scroller ul li {
 }
 
 .mw--512px {
-	max-width: 512px;
+	max-width: 512px !important;
 }
 
 .w--576px {
@@ -4570,7 +4570,7 @@ div.auto-scroller ul li {
 }
 
 .mw--576px {
-	max-width: 576px;
+	max-width: 576px !important;
 }
 
 .w--640px {
@@ -4582,7 +4582,7 @@ div.auto-scroller ul li {
 }
 
 .mw--640px {
-	max-width: 640px;
+	max-width: 640px !important;
 }
 
 .w--768px {
@@ -4594,7 +4594,7 @@ div.auto-scroller ul li {
 }
 
 .mw--768px {
-	max-width: 768px;
+	max-width: 768px !important;
 }
 
 .w--832px {
@@ -4606,7 +4606,7 @@ div.auto-scroller ul li {
 }
 
 .mw--832px {
-	max-width: 832px;
+	max-width: 832px !important;
 }
 
 .w--896px {
@@ -4618,7 +4618,7 @@ div.auto-scroller ul li {
 }
 
 .mw--896px {
-	max-width: 896px;
+	max-width: 896px !important;
 }
 
 .w--960px {
@@ -4630,7 +4630,7 @@ div.auto-scroller ul li {
 }
 
 .mw--960px {
-	max-width: 960px;
+	max-width: 960px !important;
 }
 
 .mw--none {
@@ -4638,7 +4638,7 @@ div.auto-scroller ul li {
 }
 
 .mw--80ch {
-	max-width: 80ch;
+	max-width: 80ch !important;
 }
 
 .w--auto {
