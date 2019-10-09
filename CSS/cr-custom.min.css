@@ -80,7 +80,7 @@
 * dr-css-1.11: News
 *
 * Styling unique to the news section of and news feeds on the Common Reading website.
-*/.blog .column .hidden-on-news-feed{display:none}.single-post .column .hidden-on-news-articles{display:none}.archive.category .widget_search input#s,.archive.tag .widget_search input#s,.blog .widget_search input#s,.single-post.post-template-default .widget_search input#s{margin-bottom:.5rem;width:100%}.home .wsuwp-content-syndicate-list{list-style:disc inside none!important}.home .wsuwp-content-syndicate-item{list-style-type:inherit!important}/*!
+*/.blog .column .hidden-on-news-feed{display:none}.single-post .column .hidden-on-news-articles{display:none}.archive.category .widget_search input#s,.archive.tag .widget_search input#s,.blog .widget_search input#s,.single-post.post-template-default .widget_search input#s{margin-bottom:.5rem;width:100%}.widget_archive ul,.widget_categories ul{padding-left:0}.home .wsuwp-content-syndicate-list{list-style:disc inside none!important}.home .wsuwp-content-syndicate-item{list-style-type:inherit!important}/*!
 * --------------------------------------------------------------------------------------------------
 * dr-css-1.12: Other (TBD)
 *

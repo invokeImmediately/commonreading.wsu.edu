@@ -6986,6 +6986,10 @@ body:not(.crimson-key-home):not(.crimson-key) .row.h1-header .column:before {
   margin-bottom: 0.5rem;
   width: 100%;
 }
+.widget_categories ul,
+.widget_archive ul {
+  padding-left: 0;
+}
 .home .wsuwp-content-syndicate-list {
   list-style: disc inside none !important;
 }
