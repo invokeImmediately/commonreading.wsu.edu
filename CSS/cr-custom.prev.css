@@ -6297,6 +6297,10 @@ body:not(.crimson-key-home):not(.crimson-key) .row.h1-header .column:before {
 	width: 100%;
 }
 
+.widget_archive ul,.widget_categories ul {
+	padding-left: 0;
+}
+
 .home .wsuwp-content-syndicate-list {
 	list-style: disc inside none !important;
 }
