@@ -37,9 +37,7 @@ o+Condensed:400,700|Roboto+Slab|PT+Serif|Share+Tech+Mono|Kanit:300,400,600|Spinn
 			'stopAfterFirstMatch': true
 		},
 		minCssFileExtension: '.min.css',
-		minCssFileHeaderStr: '/*! Built with the Less CSS preprocessor [http://lesscss.org/]. Pleas\
-e see [https://github.com/invokeImmediately/commonreading.wsu.edu] for a repository of source code.\
- */\r\n',
+		minCssFileHeaderStr: '',
 		sourceFile: './CSS/cr-custom.less'
 	};
 }
