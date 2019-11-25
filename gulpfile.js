@@ -29,11 +29,26 @@ function getCssBuildSettings() {
 o+Condensed:400,700|Roboto+Slab|PT+Serif|Share+Tech+Mono|Kanit:300,400,600|Spinnaker:400,700\');\r\n',
 		insertingMediaQuerySectionHeader: {
 			'before': /^@media/,
-			'lineBefore': '/*! ╔═══════════════════════════════════════════════════════════════════\
-════════════════════════════════════════════════════╗\r\n*   ║ MEDIA QUERIES ######################\
-################################################################################# ║\r\n*   ╚═══════\
-═══════════════════════════════════════════════════════════════════════════════════════════════════\
-═════════════╝\r\n*/',
+			'lineBefore': '/*! ====================================================================\
+============================\r\n*** Media queries section\r\n*** ==================================\
+==============================================================\r\n***   SUMMARY: Media queries buil\
+t from precompiled CSS written in the Less language extension of\r\n***    CSS. Queries in this sec\
+tion are a combination of those designed for use on DAESA websites***    and those intended specifi\
+cally for use on the Common Reading program website.\r\n***\r\n***   DESCRIPTION: Fully documented,\
+ precompiled source code from which this section of the custom\r\n***    stylesheet was built is de\
+veloped and maintained on the following two GitHub projects:\r\n***    https://github.com/invokeImm\
+ediately/WSU-UE---CSS/\r\n***    https://github.com/invokeImmediately/commonreading.wsu.edu/\r\n***\
+   AUTHOR: Daniel Rieck [daniel.rieck@wsu.edu] (https://github.com/invokeImmediately)\r\n***\r\n***\
+   LICENSE: ISC - Copyright (c) 2019 Daniel C. Rieck.\r\n***\r\n***     Permission to use, copy, mo\
+dify, and/or distribute this software for any purpose with or\r\n***     without fee is hereby gran\
+ted, provided that the above copyright notice and this permission\r\n***     notice appear in all c\
+opies.\r\n***\r\n***     THE SOFTWARE IS PROVIDED "AS IS" AND DANIEL RIECK DISCLAIMS ALL WARRANTIES\
+ WITH REGARD TO\r\n***     THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FI\
+TNESS. IN NO EVENT\r\n***     SHALL DANIEL RIECK BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CO\
+NSEQUENTIAL DAMAGES OR\r\n***     ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFIT\
+S, WHETHER IN AN ACTION OF\r\n***     CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF\
+ OR IN CONNECTION WITH THE USE\r\n***     OR PERFORMANCE OF THIS SOFTWARE.\r\n*** =================\
+===============================================================================\r\n**/',
 			'stopAfterFirstMatch': true
 		},
 		minCssFileExtension: '.min.css',
