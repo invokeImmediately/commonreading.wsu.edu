@@ -1,6 +1,8 @@
 /*! Built with the Less CSS preprocessor [http://lesscss.org/]. Please see [https://github.com/invokeImmediately/commonreading.wsu.edu] for a repository of source code. */
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono:300|Roboto+Condensed:400,700|Roboto+Slab|PT+Serif|Share+Tech+Mono|Kanit:300,400,600|Spinnaker:400,700');
 /*! ================================================================================================
+*** WSU DAESA Styling Section
+*** ================================================================================================
 ***   SUMMARY: The following section of this stylesheet contains CSS code written for use on all
 ***    websites designed, built, and maintained by the Divsion of Academic Engagement and Student
 ***    Achievement (DAESA) in the Office of the Provost at Washington State University (WSU).
@@ -9,7 +11,7 @@
 ***     in the Less language extension of CSS. It is designed to be applied via the WSUWP CSS
 ***     Stylesheet Editor functioning in add-on mode.
 ***
-***     Please refer to the git repository at https://github.com/invokeImmediately/WSU-UE---CSS/
+***     Please refer to the GitHub proejct at https://github.com/invokeImmediately/WSU-UE---CSS/
 ***     for fully documented, precompiled source code.  
 ***     
 ***   AUTHOR: Daniel Rieck [daniel.rieck@wsu.edu] (https://github.com/invokeImmediately)
@@ -1573,6 +1575,13 @@ hr {
   overflow: visible;
   position: relative;
 }
+hr.bc--crimson {
+  border-bottom: 1px solid rgba(198, 12, 48, 0.25);
+  border-top: 1px solid #981e32;
+}
+hr.spacer {
+  border: none;
+}
 hr.subSection,
 hr.sub-section {
   width: 85%;
@@ -1582,9 +1591,6 @@ hr.sub-section {
   border-top: 1px dashed rgba(94, 106, 113, 0.5);
   border-bottom: 1px dashed rgba(160, 160, 160, 0.25);
   text-align: center;
-}
-hr.spacer {
-  border: none;
 }
 hr.thicker {
   border-top-width: 2px;
@@ -5127,6 +5133,15 @@ div.auto-scroller ul li {
 .mw--64px {
   max-width: 64px !important;
 }
+.w--80px {
+  width: 80px;
+}
+.mnw--80px {
+  min-width: 80px;
+}
+.mw--80px {
+  max-width: 80px !important;
+}
 .w--96px {
   width: 96px;
 }
@@ -5135,6 +5150,15 @@ div.auto-scroller ul li {
 }
 .mw--96px {
   max-width: 96px !important;
+}
+.w--112px {
+  width: 112px;
+}
+.mnw--112px {
+  min-width: 112px;
+}
+.mw--112px {
+  max-width: 112px !important;
 }
 .w--128px {
   width: 128px;
@@ -5145,6 +5169,15 @@ div.auto-scroller ul li {
 .mw--128px {
   max-width: 128px !important;
 }
+.w--144px {
+  width: 144px;
+}
+.mnw--144px {
+  min-width: 144px;
+}
+.mw--144px {
+  max-width: 144px !important;
+}
 .w--160px {
   width: 160px;
 }
@@ -5153,6 +5186,15 @@ div.auto-scroller ul li {
 }
 .mw--160px {
   max-width: 160px !important;
+}
+.w--176px {
+  width: 176px;
+}
+.mnw--176px {
+  min-width: 176px;
+}
+.mw--176px {
+  max-width: 176px !important;
 }
 .w--192px {
   width: 192px;
@@ -5163,6 +5205,15 @@ div.auto-scroller ul li {
 .mw--192px {
   max-width: 192px !important;
 }
+.w--208px {
+  width: 208px;
+}
+.mnw--208px {
+  min-width: 208px;
+}
+.mw--208px {
+  max-width: 208px !important;
+}
 .w--224px {
   width: 224px;
 }
@@ -5171,6 +5222,15 @@ div.auto-scroller ul li {
 }
 .mw--224px {
   max-width: 224px !important;
+}
+.w--240px {
+  width: 240px;
+}
+.mnw--240px {
+  min-width: 240px;
+}
+.mw--240px {
+  max-width: 240px !important;
 }
 .w--256px {
   width: 256px;
@@ -5226,58 +5286,58 @@ div.auto-scroller ul li {
 .mw--512px {
   max-width: 512px !important;
 }
-.w--576px {
+.w--extract(64px, 80px, 96px, 112px, 128px, 144px, 160px, 176px, 192px, 208px, 224px, 240px, 256px, 288px, 320px, 384px, 448px, 512px, 19) {
   width: 576px;
 }
-.mnw--576px {
+.mnw--extract(64px, 80px, 96px, 112px, 128px, 144px, 160px, 176px, 192px, 208px, 224px, 240px, 256px, 288px, 320px, 384px, 448px, 512px, 19) {
   min-width: 576px;
 }
-.mw--576px {
+.mw--extract(64px, 80px, 96px, 112px, 128px, 144px, 160px, 176px, 192px, 208px, 224px, 240px, 256px, 288px, 320px, 384px, 448px, 512px, 19) {
   max-width: 576px !important;
 }
-.w--640px {
+.w--extract(64px, 80px, 96px, 112px, 128px, 144px, 160px, 176px, 192px, 208px, 224px, 240px, 256px, 288px, 320px, 384px, 448px, 512px, 20) {
   width: 640px;
 }
-.mnw--640px {
+.mnw--extract(64px, 80px, 96px, 112px, 128px, 144px, 160px, 176px, 192px, 208px, 224px, 240px, 256px, 288px, 320px, 384px, 448px, 512px, 20) {
   min-width: 640px;
 }
-.mw--640px {
+.mw--extract(64px, 80px, 96px, 112px, 128px, 144px, 160px, 176px, 192px, 208px, 224px, 240px, 256px, 288px, 320px, 384px, 448px, 512px, 20) {
   max-width: 640px !important;
 }
-.w--768px {
+.w--extract(64px, 80px, 96px, 112px, 128px, 144px, 160px, 176px, 192px, 208px, 224px, 240px, 256px, 288px, 320px, 384px, 448px, 512px, 21) {
   width: 768px;
 }
-.mnw--768px {
+.mnw--extract(64px, 80px, 96px, 112px, 128px, 144px, 160px, 176px, 192px, 208px, 224px, 240px, 256px, 288px, 320px, 384px, 448px, 512px, 21) {
   min-width: 768px;
 }
-.mw--768px {
+.mw--extract(64px, 80px, 96px, 112px, 128px, 144px, 160px, 176px, 192px, 208px, 224px, 240px, 256px, 288px, 320px, 384px, 448px, 512px, 21) {
   max-width: 768px !important;
 }
-.w--832px {
+.w--extract(64px, 80px, 96px, 112px, 128px, 144px, 160px, 176px, 192px, 208px, 224px, 240px, 256px, 288px, 320px, 384px, 448px, 512px, 22) {
   width: 832px;
 }
-.mnw--832px {
+.mnw--extract(64px, 80px, 96px, 112px, 128px, 144px, 160px, 176px, 192px, 208px, 224px, 240px, 256px, 288px, 320px, 384px, 448px, 512px, 22) {
   min-width: 832px;
 }
-.mw--832px {
+.mw--extract(64px, 80px, 96px, 112px, 128px, 144px, 160px, 176px, 192px, 208px, 224px, 240px, 256px, 288px, 320px, 384px, 448px, 512px, 22) {
   max-width: 832px !important;
 }
-.w--896px {
+.w--extract(64px, 80px, 96px, 112px, 128px, 144px, 160px, 176px, 192px, 208px, 224px, 240px, 256px, 288px, 320px, 384px, 448px, 512px, 23) {
   width: 896px;
 }
-.mnw--896px {
+.mnw--extract(64px, 80px, 96px, 112px, 128px, 144px, 160px, 176px, 192px, 208px, 224px, 240px, 256px, 288px, 320px, 384px, 448px, 512px, 23) {
   min-width: 896px;
 }
-.mw--896px {
+.mw--extract(64px, 80px, 96px, 112px, 128px, 144px, 160px, 176px, 192px, 208px, 224px, 240px, 256px, 288px, 320px, 384px, 448px, 512px, 23) {
   max-width: 896px !important;
 }
-.w--960px {
+.w--extract(64px, 80px, 96px, 112px, 128px, 144px, 160px, 176px, 192px, 208px, 224px, 240px, 256px, 288px, 320px, 384px, 448px, 512px, 24) {
   width: 960px;
 }
-.mnw--960px {
+.mnw--extract(64px, 80px, 96px, 112px, 128px, 144px, 160px, 176px, 192px, 208px, 224px, 240px, 256px, 288px, 320px, 384px, 448px, 512px, 24) {
   min-width: 960px;
 }
-.mw--960px {
+.mw--extract(64px, 80px, 96px, 112px, 128px, 144px, 160px, 176px, 192px, 208px, 224px, 240px, 256px, 288px, 320px, 384px, 448px, 512px, 24) {
   max-width: 960px !important;
 }
 .mw--none {
@@ -5579,29 +5639,89 @@ div.auto-scroller ul li {
 .dy--flex {
   display: flex;
 }
-.fw--no-wrap {
+.flxd--row {
+  flex-direction: row;
+}
+.flxd--row-reverse {
+  flex-direction: row-reverse;
+}
+.flxd--column {
+  flex-direction: column;
+}
+.flxd--column-reverse {
+  flex-direction: column;
+}
+.flxw--no-wrap {
   flex-wrap: nowrap;
 }
-.fw--wrap {
+.flxw--wrap {
   flex-wrap: wrap;
 }
-.fw--wrap-reverse {
+.flxw--wrap-reverse {
   flex-wrap: wrap;
 }
-.jc--start {
+.flxjc--start {
   justify-content: start;
 }
-.jc--center {
+.flxjc--center {
   justify-content: center;
 }
-.jc--space-between {
+.flxjc--space-between {
   justify-content: space-between;
 }
-.jc--space-around {
+.flxjc--space-around {
   justify-content: space-around;
 }
-.jc--space-evenly {
+.flxjc--space-evenly {
   justify-content: space-evenly;
+}
+.flxai--flex-start {
+  align-items: flex-start;
+}
+.flxai--flex-end {
+  align-items: flex-end;
+}
+.flxai--stretch {
+  align-items: stretch;
+}
+.flxai--center {
+  align-items: center;
+}
+.flxac--flex-start {
+  align-content: flex-start;
+}
+.flxac--flex-end {
+  align-content: flex-end;
+}
+.flxac--center {
+  align-content: center;
+}
+.flxac--space-between {
+  align-content: space-between;
+}
+.flxac--space-around {
+  align-content: space-around;
+}
+.flxb--0 {
+  flex-basis: 0;
+}
+.flxb--auto {
+  flex-basis: auto;
+}
+.flxb--content {
+  flex-basis: content;
+}
+.flxg--0 {
+  flex-grow: 0;
+}
+.flxg--1 {
+  flex-grow: 1;
+}
+.flxs--0 {
+  flex-shrink: 0;
+}
+.flxs--1 {
+  flex-shrink: 1;
 }
 .ma--0mx {
   margin: 0em;
@@ -6186,29 +6306,33 @@ div.auto-scroller ul li {
 .bgc--orange--tint {
   background-color: #feefe2;
 }
-/*!
-* --------------------------------------------------------------------------------------------------
-* dr-css-1.0: CSS Authored by Daniel Rieck
-* 
-* Adjustments to and extensions of Builder template's style rule-sets and responsive behavior.
-*/
-/*! 
-* --------------------------------------------------------------------------------------------------
-* dr-css-1.1: New utility classes
-*
-* Specification of additional, functionally focused CSS classes that can be applied to any element.
-*/
-/*! Text centering */
-.centers-text {
-  text-align: center;
-}
-/*! 
-* --------------------------------------------------------------------------------------------------
-* dr-css-1.2: Banner slideshows
-*
-* Adjustments to Builder template's styling of banner slideshows:
-*   1. Repositions the cycle banner arrows to the bottom of the container.
-*/
+/*! ================================================================================================
+*** Common Reading Program Styling Section
+*** ================================================================================================
+***   SUMMARY: CSS code designed for use on Washington State University's (WSU's) [Common Reading
+***    Program website](https://commonreading.wsu.edu) that was built from precompiled CSS written
+***    in the Less language extension of CSS.
+***
+***   DESCRIPTION: Fully documented, precompiled source code from which this section of the
+***    custom stylesheet was built is developed and maintained on the following GitHub project:
+***    https://github.com/invokeImmediately/commonreading.wsu.edu/
+***
+***   AUTHOR: Daniel Rieck [daniel.rieck@wsu.edu] (https://github.com/invokeImmediately)            
+***
+***   LICENSE: ISC - Copyright (c) 2019 Daniel C. Rieck.
+***
+***     Permission to use, copy, modify, and/or distribute this software for any purpose with or
+***     without fee is hereby granted, provided that the above copyright notice and this permission
+***     notice appear in all copies.
+***
+***     THE SOFTWARE IS PROVIDED "AS IS" AND DANIEL RIECK DISCLAIMS ALL WARRANTIES WITH REGARD TO
+***     THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT
+***     SHALL DANIEL RIECK BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR
+***     ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF
+***     CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE
+***     OR PERFORMANCE OF THIS SOFTWARE.
+*** ================================================================================================
+**/
 .builder-section-banner .cycle-prev,
 .builder-section-banner .cycle-next {
   top: auto;
@@ -6233,10 +6357,6 @@ div.auto-scroller ul li {
     padding-bottom: 100%;
   }
 }
-/*! 
-* --------------------------------------------------------------------------------------------------
-* dr-css-1.3: Responsive iframe containers
-*/
 .iframe-wrapper {
   position: relative;
   height: 0;
@@ -6256,12 +6376,6 @@ div.auto-scroller ul li {
   width: 100%;
   padding: 0;
 }
-/*!
-* --------------------------------------------------------------------------------------------------
-* dr-css-1.4: Crimson columns
-*
-* Style ruleset for specifying the visual design of columns with a faint crimson background.
-*/
 .column.crimson > header:first-child > h2 {
   margin-bottom: 0.5rem;
   color: #981e32;
@@ -6298,12 +6412,6 @@ div.auto-scroller ul li {
     margin-bottom: calc(2rem);
   }
 }
-/*!
-* --------------------------------------------------------------------------------------------------
-* dr-css-1.5: Default padding and spacing
-*
-* Adjustment of default padding on sections, section headings, calendar headings, etc.
-*/
 /*! Sections */
 .spine-blank-template .row.spaces-top {
   margin-top: 1rem;
@@ -6331,10 +6439,6 @@ div.auto-scroller ul li {
   margin-top: 1em;
   color: #5e6a71;
 }
-/*!
-* --------------------------------------------------------------------------------------------------
-* dr-css-1.6: Page-based layouts
-*/
 .page.archives .article-header,
 .page.book-nominations .article-header {
   padding: 1rem;
@@ -6524,10 +6628,6 @@ img.archives-thumbnail {
   width: 76px;
   height: auto;
 }
-/*!
-* --------------------------------------------------------------------------------------------------
-* dr-css-1.7: Lists
-*/
 ul.cascaded-layout {
   /*@media print {
 			&[style] {
@@ -6623,10 +6723,6 @@ ul.cascaded-layout.calendar.thirds > li.double:hover:before {
 ul.cascaded-layout.calendar.thirds > li.cascade-sizer {
   width: 14.1666% !important;
 }
-/*!
-* --------------------------------------------------------------------------------------------------
-* dr-css-1.8: Body styling
-*/
 body {
   background: #e5e6e8;
   background: #e5e6e8 linear-gradient(to top, #f3f3f4, #e5e6e8 50%, #bcbfc4) fixed;
@@ -6639,10 +6735,6 @@ body {
 main {
   background: #fff;
 }
-/*!
-* --------------------------------------------------------------------------------------------------
-* dr-css-1.9: Styling of h1-header sections
-*/
 body:not(.crimson-key-home):not(.crimson-key) .row.h1-header .column {
   position: relative;
   padding-top: 4rem;
@@ -6659,10 +6751,6 @@ body:not(.crimson-key-home):not(.crimson-key) .row.h1-header .column:before {
   left: 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
-/*!
-* --------------------------------------------------------------------------------------------------
-* dr-css-1.10: Order of the Crimson Key
-*/
 @keyframes anim-3d-rotate {
   from {
     transform: rotateY(0deg);
@@ -6842,12 +6930,6 @@ body:not(.crimson-key-home):not(.crimson-key) .row.h1-header .column:before {
 .archive.category .post.category-black-key-clue {
   display: none;
 }
-/*!
-* --------------------------------------------------------------------------------------------------
-* dr-css-1.11: News
-*
-* Styling unique to the news section of and news feeds on the Common Reading website.
-*/
 .blog .column .hidden-on-news-feed {
   display: none;
 }
@@ -6884,12 +6966,6 @@ body:not(.crimson-key-home):not(.crimson-key) .row.h1-header .column:before {
 .home .wsuwp-content-syndicate-item {
   list-style-type: inherit !important;
 }
-/*!
-* --------------------------------------------------------------------------------------------------
-* dr-css-1.12: Other (TBD)
-*
-* Style rulesets below still need to be pulled into their own commented section.
-*/
 .page > .row:last-child > .column {
   padding-bottom: 2rem;
 }
