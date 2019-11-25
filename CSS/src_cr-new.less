@@ -1,47 +1,34 @@
-/*!
-* --------------------------------------------------------------------------------------------------
-* dr-css-1.0: CSS Authored by Daniel Rieck
-* 
-* Adjustments to and extensions of Builder template's style rule-sets and responsive behavior.
-*/
+/** ┌──────────────────────────────────────────────────────────────────────────────────────────────┐
+*** │ FILENAME: src_cr-new.less                                                                    │
+*** │                                                                                              │
+*** │ SUMMARY: New custom styling for the Common Reading website designed after Daniel Rieck       │
+*** │  became the web developer and coordinator for DAESA.                                         │
+*** │                                                                                              │
+*** │ AUTHOR: Daniel Rieck [daniel.rieck@wsu.edu] (https://github.com/invokeImmediately)           │
+*** └──────────────────────────────────────────────────────────────────────────────────────────────┘
+***  TABLE OF CONTENTS:
+***  ────────────────────────────────────────────────────────────────────────────────────────────
+***  §1: Banner slideshows.....................................................................41
+***  §2: Responsive iframe containers..........................................................76
+***  §3: Crimson columns......................................................................100
+***  §4: Default padding and spacing..........................................................141
+***  §5: Page-based layouts...................................................................178
+***  §6: Lists................................................................................317
+***  §7: Body styling.........................................................................418
+***  §8: Styling of h1-header sections........................................................438
+***  §9: Order of the Crimson Key.............................................................463
+***  §10: News................................................................................611
+***  §11: Other (TBD).........................................................................669
+***  ───────────────────────────────────────────────────────────────────────────────────────────────
+**/
 
-/*
-* TABLE OF CONTENTS:
-* -----------------
-*   dr-css-1.0: CSS Authored by Daniel Rieck.....................................................3
-*   dr-css-1.1: New utility classes.............................................................28
-*   dr-css-1.2: Banner slideshows...............................................................40
-*   dr-css-1.3: Responsive iframe containers....................................................76
-*   dr-css-1.4: Crimson columns................................................................101
-*   dr-css-1.5: Default padding and spacing....................................................143
-*   dr-css-1.6: Page-based layouts.............................................................181
-*   dr-css-1.7: Lists..........................................................................321
-*   dr-css-1.8: Body styling...................................................................423
-*   dr-css-1.9: Styling of h1-header sections..................................................443
-*   dr-css-1.10: Order of the Crimson Key......................................................469
-*   dr-css-1.11: News..........................................................................618
-*   dr-css-1.12: Other (TBD)...................................................................677
-*/
+/** ================================================================================================
+*** §1: Banner slideshows
+**
+*** Adjustments to Builder template's styling of banner slideshows:
+***   1. Repositions the cycle banner arrows to the bottom of the container.
+**/
 
-/*! 
-* --------------------------------------------------------------------------------------------------
-* dr-css-1.1: New utility classes
-*
-* Specification of additional, functionally focused CSS classes that can be applied to any element.
-*/
-
-/*! Text centering */
-.centers-text {
-	text-align: center;
-}
-
-/*! 
-* --------------------------------------------------------------------------------------------------
-* dr-css-1.2: Banner slideshows
-*
-* Adjustments to Builder template's styling of banner slideshows:
-*   1. Repositions the cycle banner arrows to the bottom of the container.
-*/
 .builder-section-banner .cycle-prev, .builder-section-banner .cycle-next {
 	top: auto;
 	bottom: 0;
@@ -70,11 +57,10 @@
 	}
 }
 
+/** ================================================================================================
+*** §2: Responsive iframe containers
+**/
 
-/*! 
-* --------------------------------------------------------------------------------------------------
-* dr-css-1.3: Responsive iframe containers
-*/
 .iframe-wrapper {
 	position: relative;
 	height: 0;
@@ -96,12 +82,12 @@
 	padding: 0;
 }
 
-/*!
-* --------------------------------------------------------------------------------------------------
-* dr-css-1.4: Crimson columns
-*
-* Style ruleset for specifying the visual design of columns with a faint crimson background.
-*/
+/** ================================================================================================
+*** §3: Crimson columns
+**
+*** Style ruleset for specifying the visual design of columns with a faint crimson background.
+**/
+
 .column.crimson > header:first-child > h2 {
 	margin-bottom: .5rem;
 	color: #981e32;
@@ -138,12 +124,11 @@
 	}
 }
 
-/*!
-* --------------------------------------------------------------------------------------------------
-* dr-css-1.5: Default padding and spacing
-*
-* Adjustment of default padding on sections, section headings, calendar headings, etc.
-*/
+/** ================================================================================================
+*** §4: Default padding and spacing
+**
+*** Adjustment of default padding on sections, section headings, calendar headings, etc.
+**/
 
 /*! Sections */
 .spine-blank-template .row.spaces-top {
@@ -176,10 +161,9 @@
 	color: #5e6a71;
 }
 
-/*!
-* --------------------------------------------------------------------------------------------------
-* dr-css-1.6: Page-based layouts
-*/
+/** ================================================================================================
+*** §5: Page-based layouts
+**/
 
 // TODO: Remove unused styling below.
 .page.archives,
@@ -316,10 +300,9 @@ img.archives-thumbnail {
 	height: auto;
 }
 
-/*!
-* --------------------------------------------------------------------------------------------------
-* dr-css-1.7: Lists
-*/
+/** ================================================================================================
+*** §6: Lists
+**/
 
 ul {
 	&.cascaded-layout {
@@ -418,10 +401,9 @@ ul {
 	}
 }
 
-/*!
-* --------------------------------------------------------------------------------------------------
-* dr-css-1.8: Body styling
-*/
+/** ================================================================================================
+*** §7: Body styling
+**/
 
 body {
 	background: #e5e6e8;
@@ -438,10 +420,10 @@ main {
 	background: @hex-white;
 }
 
-/*!
-* --------------------------------------------------------------------------------------------------
-* dr-css-1.9: Styling of h1-header sections
-*/
+/*
+*** ================================================================================================-
+*** §8: Styling of h1-header sections
+**/
 body:not(.crimson-key-home):not(.crimson-key) .row.h1-header .column {
 	position: relative;
 	padding-top: 4rem;
@@ -464,10 +446,9 @@ body:not(.crimson-key-home):not(.crimson-key) .row.h1-header .column {
 	}
 }
 
-/*!
-* --------------------------------------------------------------------------------------------------
-* dr-css-1.10: Order of the Crimson Key
-*/
+/** ================================================================================================
+*** §9: Order of the Crimson Key
+**/
 
 // @import url('https://fonts.googleapis.com/css?family=Share+Tech+Mono|Kanit:300,400,600|Spinnaker:400,700');
 
@@ -613,12 +594,11 @@ body:not(.crimson-key-home):not(.crimson-key) .row.h1-header .column {
 	}
 }
 
-/*!
-* --------------------------------------------------------------------------------------------------
-* dr-css-1.11: News
-*
-* Styling unique to the news section of and news feeds on the Common Reading website.
-*/
+/** ================================================================================================
+*** §10: News
+**
+*** Styling unique to the news section of and news feeds on the Common Reading website.
+**/
 
 .blog .column .hidden-on-news-feed {
 	display: none;
@@ -672,12 +652,11 @@ body:not(.crimson-key-home):not(.crimson-key) .row.h1-header .column {
 	}
 }
 
-/*!
-* --------------------------------------------------------------------------------------------------
-* dr-css-1.12: Other (TBD)
-*
-* Style rulesets below still need to be pulled into their own commented section.
-*/
+/** ================================================================================================
+*** §11: Other (TBD)
+**
+*** Style rulesets below still need to be pulled into their own commented section.
+**/
 
 .page > .row:last-child > .column {
 	padding-bottom: @v-dflt-spcng;

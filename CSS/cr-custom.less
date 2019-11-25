@@ -1,7 +1,62 @@
+/** ┌──────────────────────────────────────────────────────────────────────────────────────────────┐
+*** │ FILENAME: cr-custom.less                                                                     │
+*** │                                                                                              │
+*** │ See persistent section header comment below (§2) for additional information and license.     │
+*** └──────────────────────────────────────────────────────────────────────────────────────────────┘
+***  TABLE OF CONTENTS:
+***  ────────────────────────────────────────────────────────────────────────────────────────────
+***  §1: Build entry point from DAESA's CSS development project................................15
+***  §2: Persistent section header comment for unit specific styling...........................24
+***  §3: Common Reading Program stylesheet imports.............................................56
+***  ───────────────────────────────────────────────────────────────────────────────────────────────
+**/
+
+/** ================================================================================================
+*** §1: Build entry point from DAESA's CSS development project 
+**/
+
 @grid-behavior: "hybrid";
 @oue-rules-wrapper: ~"";
+
 @import "..\WSU-UE---CSS\variables.less";
 @import "..\WSU-UE---CSS\css-build-entry-point.less";
+
+/** ================================================================================================
+*** §2: Persistent section header comment for unit specific styling
+**/
+
+/*! ================================================================================================
+*** Common Reading Program Styling Section
+*** ================================================================================================
+***   SUMMARY: CSS code designed for use on Washington State University's (WSU's) [Common Reading
+***    Program website](https://commonreading.wsu.edu) that was built from precompiled CSS written
+***    in the Less language extension of CSS.
+***
+***   DESCRIPTION: Fully documented, precompiled source code from which this section of the
+***    custom stylesheet was built is developed and maintained on the following GitHub project:
+***    https://github.com/invokeImmediately/commonreading.wsu.edu/
+***
+***   AUTHOR: Daniel Rieck [daniel.rieck@wsu.edu] (https://github.com/invokeImmediately)            
+***
+***   LICENSE: ISC - Copyright (c) 2019 Daniel C. Rieck.
+***
+***     Permission to use, copy, modify, and/or distribute this software for any purpose with or
+***     without fee is hereby granted, provided that the above copyright notice and this permission
+***     notice appear in all copies.
+***
+***     THE SOFTWARE IS PROVIDED "AS IS" AND DANIEL RIECK DISCLAIMS ALL WARRANTIES WITH REGARD TO
+***     THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT
+***     SHALL DANIEL RIECK BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR
+***     ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF
+***     CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE
+***     OR PERFORMANCE OF THIS SOFTWARE.
+*** ================================================================================================
+**/
+
+/** ================================================================================================
+*** §3: Common Reading Program stylesheet imports
+**/
+
 // TODO: Clean up src_cr-new.less
 @import "src_cr-new.less";
 
