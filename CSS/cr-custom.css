@@ -1220,9 +1220,6 @@ h6.crimson-text.solid::before {
 footer.article-footer div.author-info {
   display: none;
 }
-/*!     ····························································································
-***     >>> §1.1: Component-based styling
-**/
 .article-deck {
   color: #72652a;
 }
@@ -1548,9 +1545,6 @@ h5 + .article-tagline:not(.alt),
 h6 + .article-tagline:not(.alt) {
   margin-top: 1.33333333rem;
 }
-/*!     ····························································································
-***     >>> §2.1: Style Defaults
-**/
 p {
   font-size: 1em;
   line-height: 1.5em;
