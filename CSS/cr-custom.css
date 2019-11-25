@@ -6312,8 +6312,8 @@ div.auto-scroller ul li {
 ***    Program website](https://commonreading.wsu.edu) that was built from precompiled CSS written
 ***    in the Less language extension of CSS.
 ***
-***   DESCRIPTION: Fully documented, precompiled source code from which this section of the
-***    custom stylesheet was built is developed and maintained on the following GitHub project:
+***   DESCRIPTION: Fully documented, precompiled source code from which this section of the custom
+***    stylesheet was built is developed and maintained on the following GitHub project:
 ***    https://github.com/invokeImmediately/commonreading.wsu.edu/
 ***
 ***   AUTHOR: Daniel Rieck [daniel.rieck@wsu.edu] (https://github.com/invokeImmediately)            
@@ -6411,15 +6411,6 @@ div.auto-scroller ul li {
     margin-bottom: calc(2rem);
   }
 }
-/*! Sections */
-.spine-blank-template .row.spaces-top {
-  margin-top: 1rem;
-}
-/*! Columns */
-.row.h1-header + .row.halves.pad-top .column {
-  padding-top: 2rem;
-}
-/*! Calendar headings */
 .row.calendar .column h2 {
   padding-top: 0;
   padding-bottom: 0;
@@ -6437,6 +6428,12 @@ div.auto-scroller ul li {
   padding-bottom: 0;
   margin-top: 1em;
   color: #5e6a71;
+}
+.row.h1-header + .row.halves.pad-top .column {
+  padding-top: 2rem;
+}
+.spine-blank-template .row.spaces-top {
+  margin-top: 1rem;
 }
 .page.archives .article-header,
 .page.book-nominations .article-header {
