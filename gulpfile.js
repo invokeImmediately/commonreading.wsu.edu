@@ -25,8 +25,9 @@ function getCssBuildSettings() {
 		commentRemovalNeedle: /^(?:[ \t]*)?\/\*[^!].*$\n(?:^\*\*?[^/].*$\n)*\*\*?\/\n\n?/gm,
 		dependenciesPath: './WSU-UE---CSS/',
 		destFolder: './CSS/',
-		fontImportStr: '@import url(\'https://fonts.googleapis.com/css?family=Roboto+Mono:300|Robot\
-o+Condensed:400,700|Roboto+Slab|PT+Serif|Share+Tech+Mono|Kanit:300,400,600|Spinnaker:400,700\');\r\n',
+		fontImportStr: '@import url(\'https://fonts.googleapis.com/css?family=Open+Sans:300,300i' +
+			',400,400i,600,600i,700,700i|Roboto+Condensed:400,400i,700,700i|PT+Serif:400,400i,70' +
+			'0,700i|Roboto+Mono:400,400i,700,700i&display=swap\');\r\n',
 		insertingMediaQuerySectionHeader: {
 			'before': /^@media/,
 			'lineBefore': '/*! ====================================================================\
