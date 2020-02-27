@@ -1,21 +1,20 @@
 ﻿@import  'https://fonts.googleapis.com/css?family=Roboto+Mono:300|Roboto+Condensed:400,700|Roboto+Slab|PT+Serif|Share+Tech+Mono|Kanit:300,400,600|Spinnaker:400,700';
 
-/*! Built with the Less CSS preprocessor [http://lesscss.org/]. Please see [https://github.com/invokeImmediately/commonreading.wsu.edu] for a repository of source code. */
 /*! ================================================================================================
-*** Styles common to all WSU Office of Undergraduate Education (OUE) websites
+*** WSU DAESA Styling Section
 *** ================================================================================================
-***   SUMMARY: CSS code designed for use on all OUE websites that was built from precompiled CSS
-**     written in the Less language extension of CSS.
+***   SUMMARY: The following section of this stylesheet contains CSS code written for use on all
+***    websites designed, built, and maintained by the Divsion of Academic Engagement and Student
+***    Achievement (DAESA) in the Office of the Provost at Washington State University (WSU).
 ***
-***   DESCRIPTION: Intended for use with all WSUWP websites associated with the WSU Office of 
-***     Undergraduate Education, a unit within the Office of the Provost. (Please see 
-***     https://web.wsu.edu and https://vpue.wsu.edu/oue for more information.) It is designed to 
-***     be applied via the WSUWP CSS Stylesheet Editor functioning in add-on mode.
+***   DESCRIPTION: The CSS code in the following section was generated from precompiled CSS written
+***     in the Less language extension of CSS. It is designed to be applied via the WSUWP CSS
+***     Stylesheet Editor functioning in add-on mode.
 ***
-***   AUTHOR: Daniel Rieck [daniel.rieck@wsu.edu] (https://github.com/invokeImmediately)            
-***
-***   GIT REPOSITORY: https://github.com/invokeImmediately/wsu-ue---css/
-***     (Please see above git repository for fully documented, precompiled source code.)
+***     Please refer to the GitHub proejct at https://github.com/invokeImmediately/WSU-UE---CSS/
+***     for fully documented, precompiled source code.  
+***     
+***   AUTHOR: Daniel Rieck [daniel.rieck@wsu.edu] (https://github.com/invokeImmediately)
 ***
 ***   LICENSE: ISC - Copyright (c) 2019 Daniel C. Rieck.
 ***
@@ -286,7 +285,7 @@
 }
 
 html {
-	font-size: 106.25%;
+	font-size: 100%;
 }
 
 .column article.post {
@@ -301,35 +300,35 @@ html {
 	margin-top: 1.5em;
 }
 
-.row.h1-header.new-article-section {
+.h1-header.new-article-section {
 	padding: 1rem;
 }
 
-.row.h1-header.new-article-section h1,.row.h1-header.new-article-section h2,.row.h1-header.new-article-section h3,.row.h1-header.new-article-section h4,.row.h1-header.new-article-section h5,.row.h1-header.new-article-section h6 {
+.h1-header.new-article-section h1,.h1-header.new-article-section h2,.h1-header.new-article-section h3,.h1-header.new-article-section h4,.h1-header.new-article-section h5,.h1-header.new-article-section h6 {
 	color: inherit;
 	margin: 0;
 	padding: 0;
 	text-align: center;
 }
 
-.row.side-right .column.one.new-article-section header {
+.side-left .one.new-article-section header,.side-right .one.new-article-section header {
 	margin-bottom: 2rem;
 	margin-left: -2rem;
 	padding: 1rem 2rem;
 }
 
-.row.side-right .column.two.new-article-section header {
+.side-left .two.new-article-section header,.side-right .two.new-article-section header {
 	margin-bottom: 2rem;
 	margin-right: -2.01rem;
 	padding: 1rem 2rem;
 }
 
-.row.side-right .column.one.new-article-section header,.row.side-right .column.two.new-article-section header {
+.side-left .one.new-article-section header,.side-left .two.new-article-section header,.side-right .one.new-article-section header,.side-right .two.new-article-section header {
 	background-color: #2f3438;
 	color: #fff;
 }
 
-.row.side-right .column.one.new-article-section header>*,.row.side-right .column.two.new-article-section header>* {
+.side-left .one.new-article-section header>*,.side-left .two.new-article-section header>*,.side-right .one.new-article-section header>*,.side-right .two.new-article-section header>* {
 	color: inherit;
 	margin: 0;
 	padding: 0;
@@ -908,9 +907,6 @@ footer.article-footer div.author-info {
 	display: none;
 }
 
-/*!     ····························································································
-***     >>> §1.1: Component-based styling
-**/
 .article-deck {
 	color: #72652a;
 }
@@ -1073,9 +1069,6 @@ h1+.article-tagline:not(.alt),h2+.article-tagline:not(.alt),h3+.article-tagline:
 	margin-top: 1.33333333rem;
 }
 
-/*!     ····························································································
-***     >>> §2.1: Style Defaults
-**/
 p {
 	font-size: 1em;
 	line-height: 1.5em;
@@ -1103,6 +1096,15 @@ hr {
 	position: relative;
 }
 
+hr.bc--crimson {
+	border-bottom: 1px solid rgba(198,12,48,.25);
+	border-top: 1px solid #981e32;
+}
+
+hr.spacer {
+	border: none;
+}
+
 hr.sub-section,hr.subSection {
 	width: 85%;
 	margin: 2rem auto;
@@ -1111,10 +1113,6 @@ hr.sub-section,hr.subSection {
 	border-top: 1px dashed rgba(94,106,113,.5);
 	border-bottom: 1px dashed rgba(160,160,160,.25);
 	text-align: center;
-}
-
-hr.spacer {
-	border: none;
 }
 
 hr.thicker {
@@ -1498,21 +1496,12 @@ ol {
 	padding: 1em;
 }
 
-.widget.widget_recent_entries {
-	font-size: .8rem;
-}
-
 .widget.widget_recent_entries ul {
-	padding: .75em 0 0 1em;
+	padding: 0;
 }
 
 .widget.widget_recent_entries ul li {
 	padding-bottom: .5em;
-}
-
-.widget.widget_recent_entries ul li a {
-	border-bottom: none;
-	box-shadow: none;
 }
 
 .widget.widget_recent_entries .post-date:before {
@@ -1622,12 +1611,17 @@ ol {
 
 .wsuwp-json--headlines.layout--2-columns .wsuwp-content-syndicate-list {
 	font-size: .9em;
+	max-width: none !important;
 }
 
 .wsuwp-json--headlines.layout--2-columns .wsuwp-content-syndicate-item {
 	padding-bottom: 2em;
 	padding-right: 2em;
 	width: 50%;
+}
+
+.wsuwp-json--headlines.layout--2-columns *+.wsuwp-content-syndicate-item {
+	margin-top: 0;
 }
 
 .award-banner {
@@ -2456,148 +2450,6 @@ div.callout.top:after,span.callout.top:after {
 	}
 }
 
-.column a.pop-out-link {
-	transition: color .4s linear, background .4s ease-in, font-size .25s linear;
-}
-
-.column a.pop-out-link:hover {
-	font-size: 1.05em;
-}
-
-.column a.learn-more {
-	font-weight: 700;
-	font-size: .925em;
-}
-
-.column a.dark-red-button {
-	display: block;
-	padding: .5em 1em;
-	border-radius: 0;
-	color: #fff;
-	background-color: #981e32;
-	text-transform: uppercase;
-	font-size: 1em;
-	font-weight: 700;
-	letter-spacing: .0625em;
-	transition: "~background-color .3333s linear";
-}
-
-.column a.dark-red-button:hover {
-	background-color: #c60c30;
-}
-
-.column a[data-title] {
-	position: relative;
-}
-
-.column a[data-title]:hover:after {
-	content: attr(data-title);
-	position: absolute;
-	left: 5px;
-	top: 100%;
-	width: 220px;
-	border: 1px solid #925b29;
-	padding: 4px 8px;
-	background: #eddccc;
-	background: -webkit-linear-gradient(top,#eddccc,#fff);
-	background: -moz-linear-gradient(top,#eddccc,#fff);
-	background: -o-linear-gradient(top,#eddccc,#fff);
-	background: linear-gradient(top,#eddccc,#fff);
-	color: #464e54;
-	z-index: 20;
-}
-
-.column:hover a.loud-link {
-	border-bottom: .0625em solid rgba(198,12,48,.2);
-	box-shadow: inset 0 -.3125em 0 rgba(198,12,48,.2);
-}
-
-a.vpue-tooltip {
-	position: relative;
-	border-bottom: dotted 1px #b67233;
-	outline: 0;
-	text-decoration: none;
-	color: #b67233;
-}
-
-a.vpue-tooltip strong {
-	line-height: 30px;
-}
-
-a.vpue-tooltip>span {
-	position: absolute;
-	width: 300px;
-	padding: 10px 20px;
-	margin-top: 20px;
-	margin-left: -100px;
-	opacity: 0;
-	visibility: hidden;
-	z-index: 10;
-	border-radius: 3px;
-	box-shadow: 2px 2px 2px rgba(146,91,41,.5);
-	-webkit-box-shadow: 2px 2px 2px rgba(146,91,41,.5);
-	-moz-box-shadow: 2px 2px 2px rgba(146,91,41,.5);
-	font-family: inherit;
-	font-size: .9em;
-	font-style: normal;
-	transition-property: opacity, margin-top, visibility, margin-left;
-	-webkit-transition-property: opacity, margin-top, visibility, margin-left;
-	-moz-transition-property: opacity, margin-top, visibility, margin-left;
-	-o-transition-property: opacity, margin-top, visibility, margin-left;
-	transition-duration: .4s, .3s, .4s, .3s;
-	-webkit-transition-duration: .4s, .3s, .4s, .3s;
-	-moz-transition-duration: .4s, .3s, .4s, .3s;
-	-o-transition-duration: .4s, .3s, .4s, .3s;
-	transition-timing-function: ease-in-out, ease-in-out, ease-in-out, ease-in-out;
-	-webkit-transition-timing-function: ease-in-out, ease-in-out, ease-in-out, ease-in-out;
-	-moz-transition-timing-function: ease-in-out, ease-in-out, ease-in-out, ease-in-out;
-	-o-transition-timing-function: ease-in-out, ease-in-out, ease-in-out, ease-in-out;
-}
-
-a.vpue-tooltip:hover>span {
-	display: inline;
-	margin-top: 40px;
-	margin-left: -90px;
-	overflow: visible;
-	opacity: 1;
-	visibility: visible;
-	text-decoration: none;
-}
-
-a.vpue-tooltip span b {
-	display: block;
-	position: absolute;
-	width: 15px;
-	height: 15px;
-	margin-top: -19px;
-	margin-left: 40px;
-	transform: rotate(-45deg);
-	-webkit-transform: rotate(-45deg);
-	-moz-transform: rotate(-45deg);
-	-ms-transform: rotate(-45deg);
-	-o-transform: rotate(-45deg);
-	box-shadow: inset 0 1px 0 #fff;
-	-webkit-box-shadow: inset -1px 1px 0 #fff;
-	-moz-box-shadow: inset 0 1px 0 #fff;
-	-o-box-shadow: inset 0 1px 0 #fff;
-}
-
-a.vpue-tooltip>span {
-	background: #eddccc;
-	background: -webkit-linear-gradient(top,#eddccc,#fff);
-	background: -moz-linear-gradient(top,#eddccc,#fff);
-	background: -o-linear-gradient(top,#eddccc,#fff);
-	background: linear-gradient(top,#eddccc,#fff);
-	border: 1px solid #925b29;
-	color: #5e6a71;
-}
-
-a.vpue-tooltip span b {
-	background: #eddccc;
-	border-top: 1px solid #925b29;
-	border-right: 1px solid #925b29;
-}
-
 .column a {
 	border: 1px solid transparent;
 	border-bottom-color: #981e32;
@@ -2620,6 +2472,14 @@ a.vpue-tooltip span b {
 
 .column a.gform_anchor {
 	border: none;
+}
+
+.column a.pop-out-link {
+	transition: color .4s linear, background .4s ease-in, font-size .25s linear;
+}
+
+.column a.pop-out-link:hover {
+	font-size: 1.05em;
 }
 
 .column .article-thumbnail a,.column a.non-text-link {
@@ -4448,6 +4308,18 @@ div.auto-scroller ul li {
 	max-width: 64px !important;
 }
 
+.w--80px {
+	width: 80px;
+}
+
+.mnw--80px {
+	min-width: 80px;
+}
+
+.mw--80px {
+	max-width: 80px !important;
+}
+
 .w--96px {
 	width: 96px;
 }
@@ -4458,6 +4330,18 @@ div.auto-scroller ul li {
 
 .mw--96px {
 	max-width: 96px !important;
+}
+
+.w--112px {
+	width: 112px;
+}
+
+.mnw--112px {
+	min-width: 112px;
+}
+
+.mw--112px {
+	max-width: 112px !important;
 }
 
 .w--128px {
@@ -4472,6 +4356,18 @@ div.auto-scroller ul li {
 	max-width: 128px !important;
 }
 
+.w--144px {
+	width: 144px;
+}
+
+.mnw--144px {
+	min-width: 144px;
+}
+
+.mw--144px {
+	max-width: 144px !important;
+}
+
 .w--160px {
 	width: 160px;
 }
@@ -4482,6 +4378,18 @@ div.auto-scroller ul li {
 
 .mw--160px {
 	max-width: 160px !important;
+}
+
+.w--176px {
+	width: 176px;
+}
+
+.mnw--176px {
+	min-width: 176px;
+}
+
+.mw--176px {
+	max-width: 176px !important;
 }
 
 .w--192px {
@@ -4496,6 +4404,18 @@ div.auto-scroller ul li {
 	max-width: 192px !important;
 }
 
+.w--208px {
+	width: 208px;
+}
+
+.mnw--208px {
+	min-width: 208px;
+}
+
+.mw--208px {
+	max-width: 208px !important;
+}
+
 .w--224px {
 	width: 224px;
 }
@@ -4506,6 +4426,18 @@ div.auto-scroller ul li {
 
 .mw--224px {
 	max-width: 224px !important;
+}
+
+.w--240px {
+	width: 240px;
+}
+
+.mnw--240px {
+	min-width: 240px;
+}
+
+.mw--240px {
+	max-width: 240px !important;
 }
 
 .w--256px {
@@ -4580,75 +4512,75 @@ div.auto-scroller ul li {
 	max-width: 512px !important;
 }
 
-.w--576px {
+.w--extract(64px,80px,96px,112px,128px,144px,160px,176px,192px,208px,224px,240px,256px,288px,320px,384px,448px,512px,19) {
 	width: 576px;
 }
 
-.mnw--576px {
+.mnw--extract(64px,80px,96px,112px,128px,144px,160px,176px,192px,208px,224px,240px,256px,288px,320px,384px,448px,512px,19) {
 	min-width: 576px;
 }
 
-.mw--576px {
+.mw--extract(64px,80px,96px,112px,128px,144px,160px,176px,192px,208px,224px,240px,256px,288px,320px,384px,448px,512px,19) {
 	max-width: 576px !important;
 }
 
-.w--640px {
+.w--extract(64px,80px,96px,112px,128px,144px,160px,176px,192px,208px,224px,240px,256px,288px,320px,384px,448px,512px,20) {
 	width: 640px;
 }
 
-.mnw--640px {
+.mnw--extract(64px,80px,96px,112px,128px,144px,160px,176px,192px,208px,224px,240px,256px,288px,320px,384px,448px,512px,20) {
 	min-width: 640px;
 }
 
-.mw--640px {
+.mw--extract(64px,80px,96px,112px,128px,144px,160px,176px,192px,208px,224px,240px,256px,288px,320px,384px,448px,512px,20) {
 	max-width: 640px !important;
 }
 
-.w--768px {
+.w--extract(64px,80px,96px,112px,128px,144px,160px,176px,192px,208px,224px,240px,256px,288px,320px,384px,448px,512px,21) {
 	width: 768px;
 }
 
-.mnw--768px {
+.mnw--extract(64px,80px,96px,112px,128px,144px,160px,176px,192px,208px,224px,240px,256px,288px,320px,384px,448px,512px,21) {
 	min-width: 768px;
 }
 
-.mw--768px {
+.mw--extract(64px,80px,96px,112px,128px,144px,160px,176px,192px,208px,224px,240px,256px,288px,320px,384px,448px,512px,21) {
 	max-width: 768px !important;
 }
 
-.w--832px {
+.w--extract(64px,80px,96px,112px,128px,144px,160px,176px,192px,208px,224px,240px,256px,288px,320px,384px,448px,512px,22) {
 	width: 832px;
 }
 
-.mnw--832px {
+.mnw--extract(64px,80px,96px,112px,128px,144px,160px,176px,192px,208px,224px,240px,256px,288px,320px,384px,448px,512px,22) {
 	min-width: 832px;
 }
 
-.mw--832px {
+.mw--extract(64px,80px,96px,112px,128px,144px,160px,176px,192px,208px,224px,240px,256px,288px,320px,384px,448px,512px,22) {
 	max-width: 832px !important;
 }
 
-.w--896px {
+.w--extract(64px,80px,96px,112px,128px,144px,160px,176px,192px,208px,224px,240px,256px,288px,320px,384px,448px,512px,23) {
 	width: 896px;
 }
 
-.mnw--896px {
+.mnw--extract(64px,80px,96px,112px,128px,144px,160px,176px,192px,208px,224px,240px,256px,288px,320px,384px,448px,512px,23) {
 	min-width: 896px;
 }
 
-.mw--896px {
+.mw--extract(64px,80px,96px,112px,128px,144px,160px,176px,192px,208px,224px,240px,256px,288px,320px,384px,448px,512px,23) {
 	max-width: 896px !important;
 }
 
-.w--960px {
+.w--extract(64px,80px,96px,112px,128px,144px,160px,176px,192px,208px,224px,240px,256px,288px,320px,384px,448px,512px,24) {
 	width: 960px;
 }
 
-.mnw--960px {
+.mnw--extract(64px,80px,96px,112px,128px,144px,160px,176px,192px,208px,224px,240px,256px,288px,320px,384px,448px,512px,24) {
 	min-width: 960px;
 }
 
-.mw--960px {
+.mw--extract(64px,80px,96px,112px,128px,144px,160px,176px,192px,208px,224px,240px,256px,288px,320px,384px,448px,512px,24) {
 	max-width: 960px !important;
 }
 
@@ -4988,36 +4920,116 @@ div.auto-scroller ul li {
 	display: flex;
 }
 
-.fw--no-wrap {
+.flxd--row {
+	flex-direction: row;
+}
+
+.flxd--row-reverse {
+	flex-direction: row-reverse;
+}
+
+.flxd--column {
+	flex-direction: column;
+}
+
+.flxd--column-reverse {
+	flex-direction: column;
+}
+
+.flxw--no-wrap {
 	flex-wrap: nowrap;
 }
 
-.fw--wrap {
+.flxw--wrap {
 	flex-wrap: wrap;
 }
 
-.fw--wrap-reverse {
+.flxw--wrap-reverse {
 	flex-wrap: wrap;
 }
 
-.jc--start {
+.flxjc--start {
 	justify-content: start;
 }
 
-.jc--center {
+.flxjc--center {
 	justify-content: center;
 }
 
-.jc--space-between {
+.flxjc--space-between {
 	justify-content: space-between;
 }
 
-.jc--space-around {
+.flxjc--space-around {
 	justify-content: space-around;
 }
 
-.jc--space-evenly {
+.flxjc--space-evenly {
 	justify-content: space-evenly;
+}
+
+.flxai--flex-start {
+	align-items: flex-start;
+}
+
+.flxai--flex-end {
+	align-items: flex-end;
+}
+
+.flxai--stretch {
+	align-items: stretch;
+}
+
+.flxai--center {
+	align-items: center;
+}
+
+.flxac--flex-start {
+	align-content: flex-start;
+}
+
+.flxac--flex-end {
+	align-content: flex-end;
+}
+
+.flxac--center {
+	align-content: center;
+}
+
+.flxac--space-between {
+	align-content: space-between;
+}
+
+.flxac--space-around {
+	align-content: space-around;
+}
+
+.flxb--0 {
+	flex-basis: 0;
+}
+
+.flxb--auto {
+	flex-basis: auto;
+}
+
+.flxb--content {
+	flex-basis: content;
+}
+
+.flxg--0 {
+	flex-grow: 0;
+}
+
+.flxg--1 {
+	flex-grow: 1;
+}
+
+.flxs--0 {
+	flex-shrink: 0;
+}
+
+.flxs--1 {
+	flex-shrink: 1;
 }
 
 .ma--0mx {
@@ -5797,30 +5809,33 @@ div.auto-scroller ul li {
 	background-color: #feefe2;
 }
 
-/*!
-* --------------------------------------------------------------------------------------------------
-* dr-css-1.0: CSS Authored by Daniel Rieck
-* 
-* Adjustments to and extensions of Builder template's style rule-sets and responsive behavior.
-*/
-/*! 
-* --------------------------------------------------------------------------------------------------
-* dr-css-1.1: New utility classes
-*
-* Specification of additional, functionally focused CSS classes that can be applied to any element.
-*/
-/*! Text centering */
-.centers-text {
-	text-align: center;
-}
-
-/*! 
-* --------------------------------------------------------------------------------------------------
-* dr-css-1.2: Banner slideshows
-*
-* Adjustments to Builder template's styling of banner slideshows:
-*   1. Repositions the cycle banner arrows to the bottom of the container.
-*/
+/*! ================================================================================================
+*** Common Reading Program Styling Section
+*** ================================================================================================
+***   SUMMARY: CSS code designed for use on Washington State University's (WSU's) [Common Reading
+***    Program website](https://commonreading.wsu.edu) that was built from precompiled CSS written
+***    in the Less language extension of CSS.
+***
+***   DESCRIPTION: Fully documented, precompiled source code from which this section of the custom
+***    stylesheet was built is developed and maintained on the following GitHub project:
+***    https://github.com/invokeImmediately/commonreading.wsu.edu/
+***
+***   AUTHOR: Daniel Rieck [daniel.rieck@wsu.edu] (https://github.com/invokeImmediately)            
+***
+***   LICENSE: ISC - Copyright (c) 2019 Daniel C. Rieck.
+***
+***     Permission to use, copy, modify, and/or distribute this software for any purpose with or
+***     without fee is hereby granted, provided that the above copyright notice and this permission
+***     notice appear in all copies.
+***
+***     THE SOFTWARE IS PROVIDED "AS IS" AND DANIEL RIECK DISCLAIMS ALL WARRANTIES WITH REGARD TO
+***     THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT
+***     SHALL DANIEL RIECK BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR
+***     ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF
+***     CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE
+***     OR PERFORMANCE OF THIS SOFTWARE.
+*** ================================================================================================
+**/
 .builder-section-banner .cycle-next,.builder-section-banner .cycle-prev {
 	top: auto;
 	bottom: 0;
@@ -5843,10 +5858,6 @@ div.auto-scroller ul li {
 	padding-bottom: 39.58333333%;
 }
 
-/*! 
-* --------------------------------------------------------------------------------------------------
-* dr-css-1.3: Responsive iframe containers
-*/
 .iframe-wrapper {
 	position: relative;
 	height: 0;
@@ -5868,12 +5879,6 @@ div.auto-scroller ul li {
 	padding: 0;
 }
 
-/*!
-* --------------------------------------------------------------------------------------------------
-* dr-css-1.4: Crimson columns
-*
-* Style ruleset for specifying the visual design of columns with a faint crimson background.
-*/
 .column.crimson>header:first-child>h2 {
 	margin-bottom: .5rem;
 	color: #981e32;
@@ -5886,23 +5891,6 @@ div.auto-scroller ul li {
 	color: #464e54;
 }
 
-/*!
-* --------------------------------------------------------------------------------------------------
-* dr-css-1.5: Default padding and spacing
-*
-* Adjustment of default padding on sections, section headings, calendar headings, etc.
-*/
-/*! Sections */
-.spine-blank-template .row.spaces-top {
-	margin-top: 1rem;
-}
-
-/*! Columns */
-.row.h1-header+.row.halves.pad-top .column {
-	padding-top: 2rem;
-}
-
-/*! Calendar headings */
 .row.calendar .column h2 {
 	padding-top: 0;
 	padding-bottom: 0;
@@ -5923,10 +5911,14 @@ div.auto-scroller ul li {
 	color: #5e6a71;
 }
 
-/*!
-* --------------------------------------------------------------------------------------------------
-* dr-css-1.6: Page-based layouts
-*/
+.row.h1-header+.row.halves.pad-top .column {
+	padding-top: 2rem;
+}
+
+.spine-blank-template .row.spaces-top {
+	margin-top: 1rem;
+}
+
 .page.archives .article-header,.page.book-nominations .article-header {
 	padding: 1rem;
 	background-color: #c69214;
@@ -6055,10 +6047,6 @@ img.archives-thumbnail {
 	height: auto;
 }
 
-/*!
-* --------------------------------------------------------------------------------------------------
-* dr-css-1.7: Lists
-*/
 ul.cascaded-layout.calendar>li *+* {
 	margin-top: .75em;
 }
@@ -6122,10 +6110,6 @@ ul.cascaded-layout.calendar.thirds>li.cascade-sizer {
 	width: 14.1666% !important;
 }
 
-/*!
-* --------------------------------------------------------------------------------------------------
-* dr-css-1.8: Body styling
-*/
 body {
 	background: #e5e6e8;
 	background: #e5e6e8 linear-gradient(to top,#f3f3f4,#e5e6e8 50%,#bcbfc4) fixed;
@@ -6141,10 +6125,6 @@ main {
 	background: #fff;
 }
 
-/*!
-* --------------------------------------------------------------------------------------------------
-* dr-css-1.9: Styling of h1-header sections
-*/
 body:not(.crimson-key-home):not(.crimson-key) .row.h1-header .column {
 	position: relative;
 	padding-top: 4rem;
@@ -6163,10 +6143,6 @@ body:not(.crimson-key-home):not(.crimson-key) .row.h1-header .column:before {
 	border-bottom: 1px solid rgba(0,0,0,.2);
 }
 
-/*!
-* --------------------------------------------------------------------------------------------------
-* dr-css-1.10: Order of the Crimson Key
-*/
 @keyframes anim-3d-rotate {
 	from {
 		transform: rotateY(0);
@@ -6278,12 +6254,6 @@ body:not(.crimson-key-home):not(.crimson-key) .row.h1-header .column:before {
 	display: none;
 }
 
-/*!
-* --------------------------------------------------------------------------------------------------
-* dr-css-1.11: News
-*
-* Styling unique to the news section of and news feeds on the Common Reading website.
-*/
 .blog .column .hidden-on-news-feed {
 	display: none;
 }
@@ -6309,12 +6279,6 @@ body:not(.crimson-key-home):not(.crimson-key) .row.h1-header .column:before {
 	list-style-type: inherit !important;
 }
 
-/*!
-* --------------------------------------------------------------------------------------------------
-* dr-css-1.12: Other (TBD)
-*
-* Style rulesets below still need to be pulled into their own commented section.
-*/
 .page>.row:last-child>.column {
 	padding-bottom: 2rem;
 }
@@ -6756,10 +6720,33 @@ body.tribe-theme-spine:not(.tribe_venue-template-default) .main-header .header-g
 	content: "None.";
 }
 
-/*! ╔═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╗
-*   ║ MEDIA QUERIES ####################################################################################################### ║
-*   ╚═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╝
-*/
+/*! ================================================================================================
+*** Media queries section
+*** ================================================================================================
+***   SUMMARY: Media queries built from precompiled CSS written in the Less language extension of
+***    CSS. Queries in this section are a combination of those designed for use on DAESA websites***
+    and those intended specifically for use on the Common Reading program website.
+***
+***   DESCRIPTION: Fully documented, precompiled source code from which this section of the custom
+***    stylesheet was built is developed and maintained on the following two GitHub projects:
+***    https://github.com/invokeImmediately/WSU-UE---CSS/
+***    https://github.com/invokeImmediately/commonreading.wsu.edu/
+***   AUTHOR: Daniel Rieck [daniel.rieck@wsu.edu] (https://github.com/invokeImmediately)
+***
+***   LICENSE: ISC - Copyright (c) 2019 Daniel C. Rieck.
+***
+***     Permission to use, copy, modify, and/or distribute this software for any purpose with or
+***     without fee is hereby granted, provided that the above copyright notice and this permission
+***     notice appear in all copies.
+***
+***     THE SOFTWARE IS PROVIDED "AS IS" AND DANIEL RIECK DISCLAIMS ALL WARRANTIES WITH REGARD TO
+***     THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT
+***     SHALL DANIEL RIECK BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR
+***     ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF
+***     CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE
+***     OR PERFORMANCE OF THIS SOFTWARE.
+*** ================================================================================================
+**/
 @media all and (min-width:481px) {
 	.interactively-flipped-panels .container .panel-wrapper:hover .panel .front {
 		transition-property: opacity, z-index;
@@ -7209,6 +7196,10 @@ body.tribe-theme-spine:not(.tribe_venue-template-default) .main-header .header-g
 		width: 96px;
 	}
 	
+	.wsuwp-json--headlines.layout--2-columns .wsuwp-content-syndicate-item {
+		width: 100%;
+	}
+	
 	.builder-banner-content {
 		font-size: 5.1568vw;
 		line-height: 6.9616vw;
@@ -7389,7 +7380,7 @@ body.tribe-theme-spine:not(.tribe_venue-template-default) .main-header .header-g
 }
 
 @media only screen and (max-width:360px) {
-	.row.side-right .column.one.new-article-section header,.row.side-right .column.two.new-article-section header {
+	.side-left .one.new-article-section header,.side-left .two.new-article-section header,.side-right .one.new-article-section header,.side-right .two.new-article-section header {
 		padding-left: .5rem;
 		padding-right: .5rem;
 		margin-left: -.5rem;
@@ -7428,7 +7419,7 @@ body.tribe-theme-spine:not(.tribe_venue-template-default) .main-header .header-g
 }
 
 @media only screen and (min-width:361px) and (max-width:480px) {
-	.row.side-right .column.one.new-article-section header,.row.side-right .column.two.new-article-section header {
+	.side-left .one.new-article-section header,.side-left .two.new-article-section header,.side-right .one.new-article-section header,.side-right .two.new-article-section header {
 		padding-left: 1rem;
 		padding-right: 1rem;
 		margin-left: -1rem;
