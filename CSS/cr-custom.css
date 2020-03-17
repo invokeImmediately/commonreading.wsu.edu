@@ -5340,6 +5340,12 @@ div.auto-scroller ul li {
 .lh--1500mx {
   line-height: 1.5em;
 }
+.lh--1750mx {
+  line-height: 1.75em;
+}
+.lh--2000mx {
+  line-height: 2em;
+}
 .fw--light {
   font-weight: 300;
 }
@@ -6324,28 +6330,28 @@ div.auto-scroller ul li {
 /*! ================================================================================================
 *** Common Reading Program Styling Section
 *** ================================================================================================
-***   SUMMARY: CSS code designed for use on Washington State University's (WSU's) [Common Reading
-***    Program website](https://commonreading.wsu.edu) that was built from precompiled CSS written
-***    in the Less language extension of CSS.
+*** SUMMARY: CSS code designed for use on Washington State University's (WSU's) [Common Reading
+***   Program website](https://commonreading.wsu.edu) that was built from precompiled CSS written
+***   in the Less language extension of CSS.
 ***
-***   DESCRIPTION: Fully documented, precompiled source code from which this section of the custom
-***    stylesheet was built is developed and maintained on the following GitHub project:
-***    https://github.com/invokeImmediately/commonreading.wsu.edu/
+*** DESCRIPTION: Fully documented, precompiled source code from which this section of the custom
+***   stylesheet was built is developed and maintained on the following GitHub project:
+***   https://github.com/invokeImmediately/commonreading.wsu.edu/
 ***
-***   AUTHOR: Daniel Rieck [daniel.rieck@wsu.edu] (https://github.com/invokeImmediately)            
+*** AUTHOR: Daniel Rieck [daniel.rieck@wsu.edu] (https://github.com/invokeImmediately)            
 ***
-***   LICENSE: ISC - Copyright (c) 2019 Daniel C. Rieck.
+*** LICENSE: ISC - Copyright (c) 2020 Daniel C. Rieck.
 ***
-***     Permission to use, copy, modify, and/or distribute this software for any purpose with or
-***     without fee is hereby granted, provided that the above copyright notice and this permission
-***     notice appear in all copies.
+***   Permission to use, copy, modify, and/or distribute this software for any purpose with or
+***   without fee is hereby granted, provided that the above copyright notice and this permission
+***   notice appear in all copies.
 ***
-***     THE SOFTWARE IS PROVIDED "AS IS" AND DANIEL RIECK DISCLAIMS ALL WARRANTIES WITH REGARD TO
-***     THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT
-***     SHALL DANIEL RIECK BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR
-***     ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF
-***     CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE
-***     OR PERFORMANCE OF THIS SOFTWARE.
+***   THE SOFTWARE IS PROVIDED "AS IS" AND DANIEL C. RIECK DISCLAIMS ALL WARRANTIES WITH REGARD TO
+***   THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT
+***   SHALL DANIEL C. RIECK BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR
+***   ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF
+***   CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+***   PERFORMANCE OF THIS SOFTWARE.
 *** ================================================================================================
 **/
 .builder-section-banner .cycle-prev,
@@ -7142,6 +7148,79 @@ article > div.article-body {
 }
 .main-header {
   background-color: #981e32;
+}
+.column .notice {
+  background-color: #fef1f4;
+  border: 1px solid #a60f2d;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  padding: 1rem;
+  padding-right: calc(1rem + 32px);
+  position: relative;
+  width: 80%;
+  width: calc(90% - 2 * 1rem - 32px);
+}
+.column .notice::before {
+  bottom: 0;
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 32px;
+  background: rgba(152, 30, 50, 0.3333) url(/wp-content/uploads/sites/51/2017/05/icon_genericons-neue_notice_v5.png) 4px 1rem no-repeat;
+}
+.column .notice.linked a {
+  display: none;
+}
+.column .notice.linked a:first-of-type {
+  border-color: transparent;
+  border-radius: 10px;
+  box-shadow: none;
+  color: transparent;
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+.column .notice.linked a:first-of-type::before {
+  border-bottom: 3px solid #981e32;
+  bottom: -5px;
+  box-sizing: border-box;
+  content: "";
+  height: 3px;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+  transition: all 0.25s linear;
+  width: 100%;
+}
+.column .notice.linked a:first-of-type:hover {
+  background-color: rgba(255, 255, 255, 0.33);
+  text-shadow: none;
+  transition: all 0.25s linear;
+}
+.column .notice.linked a:first-of-type:hover::before {
+  border-bottom: 10px solid #b96875;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid transparent;
+  height: 10px;
+  width: 10px;
+}
+.column .notice.linked .hyperlink-simulator {
+  border-bottom: 0.0625em solid #981e32;
+  border-bottom-left-radius: 0.25em;
+  border-bottom-right-radius: 0.25em;
+  box-shadow: inset 0 -0.3125em 0 rgba(152, 30, 50, 0.15);
+  color: #981e32;
 }
 .row.article-notice.has-countdown {
   display: none;
