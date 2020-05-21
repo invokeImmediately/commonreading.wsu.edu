@@ -6463,6 +6463,10 @@ body:not(.crimson-key-home):not(.crimson-key) .row.h1-header .column:before {
 	width: calc(90% - 2 * 1rem - 32px);
 }
 
+.column .notice.full-width {
+	width: 100%;
+}
+
 .column .notice::before {
 	bottom: 0;
 	border-bottom-right-radius: 3px;
@@ -6538,18 +6542,6 @@ body:not(.crimson-key-home):not(.crimson-key) .row.h1-header .column:before {
 .column .notice.information::before {
 	width: 32px;
 	background: #6decff url(https://s3.wp.wsu.edu/uploads/sites/52/2020/03/icon_genericons-neue_info-blue.png) 4px center no-repeat;
-}
-
-.tribe-theme-spine.events-archive .article-header,.tribe_events-template-default .article-header {
-	display: none;
-}
-
-.tribe-events-before-html {
-	margin-bottom: 2rem;
-}
-
-.tribe-events-sub-nav {
-	max-width: none;
 }
 
 .page>.row:last-child>.column {
@@ -6709,32 +6701,20 @@ article>div.article-body {
 	text-shadow: 0 1px 1px rgba(0,0,0,.5);
 }
 
-body.tribe-theme-spine:not(.tribe_venue-template-default) .main-header .header-group {
-	width: calc(90%);
-	width: calc(100% - 2rem);
+.single-tribe_venue .tribe-events-venue-meta .tribe-venue-name::before {
+	content: "Events by Venue: ";
 }
 
-body.tribe-theme-spine:not(.tribe_venue-template-default) .main-header .header-group .sub-header {
-	color: transparent !important;
-}
-
-body.tribe-theme-spine:not(.tribe_venue-template-default) .main-header .header-group .sub-header a {
+.single-tribe_venue .tribe-events-venue-meta .venue-address {
 	display: none;
 }
 
-body.tribe-theme-spine:not(.tribe_venue-template-default) .main-header .header-group .sub-header::before {
-	content: "WSU Common Reading";
-	position: absolute;
-	color: #fff;
+.tribe-events-before-html {
+	margin-bottom: 2rem;
 }
 
-.column #tribe-events ul li {
-	list-style-image: none;
-}
-
-#tribe-events .workshop-note {
-	font-size: .9em;
-	color: #715409;
+.single-tribe_events .tribe-events-before-html .calendar-intro-message {
+	display: none;
 }
 
 .tribe-events-calendar td.tribe-events-future div[id*=tribe-events-daynum-]>a,.tribe-events-calendar td.tribe-events-past div[id*=tribe-events-daynum-]>a,.tribe-events-calendar td.tribe-events-present div[id*=tribe-events-daynum-]>a {
@@ -6751,57 +6731,8 @@ body.tribe-theme-spine:not(.tribe_venue-template-default) .main-header .header-g
 	color: #c60c30;
 }
 
-#tribe-bar-views a {
-	border-bottom: none;
-	border-bottom-left-radius: 0;
-	border-bottom-right-radius: 0;
-	box-shadow: none;
-	text-shadow: none;
-}
-
-#tribe-bar-views li.tribe-bar-active a {
-	border-bottom: .0625em solid transparent;
-}
-
-#tribe-bar-views li.tribe-bar-active a:hover {
-	border-bottom-right-radius: .25em;
-	border-bottom-left-radius: .25em;
-	border-bottom: .0625em solid #981e32;
-	box-shadow: inset 0 -.3125em 0 rgba(152,30,50,.15);
-	color: #c60c30 !important;
-}
-
-.type-tribe_events[class*=post-] .tribe-events-event-image {
-	float: left;
-	height: 0;
-	padding-bottom: 30%;
-	position: relative;
-}
-
-.tribe-events-single .type-tribe_events[class*=post-] .tribe-events-event-image {
-	width: 30%;
-	margin-right: 3%;
-}
-
-.type-tribe_events[class*=post-] .tribe-events-event-image a {
-	display: block;
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	border-bottom: none;
-	box-shadow: none;
-	z-index: 1;
-}
-
-.type-tribe_events[class*=post-] .tribe-events-event-image img {
-	width: 100%;
-	height: auto;
-}
-
-.type-tribe_events[class*=post-] .tribe-events-cal-links {
-	clear: left;
+.tribe-events-sub-nav {
+	max-width: none;
 }
 
 .tribe-related-events-thumbnail {
@@ -6828,12 +6759,160 @@ body.tribe-theme-spine:not(.tribe_venue-template-default) .main-header .header-g
 	border: .0625em solid #981e32;
 }
 
+.wsuwp-content-syndicate-event .content-item-event-date {
+	font-weight: 700;
+}
+
+.wsuwp-content-syndicate-event .content-item-event-date::after {
+	content: ":";
+}
+
+.wsuwp-content-syndicate-event .content-item-event-venue::before {
+	content: "in ";
+}
+
+.wsuwp-content-syndicate-event .content-item-event-venue::empty {
+	display: none;
+}
+
+.wsuwp-content-syndicate-list:empty::after {
+	content: "None.";
+}
+
 .recurring-info-tooltip,.tribe-events-calendar .tribe-events-tooltip,.tribe-events-shortcode.view-week .tribe-events-tooltip,.tribe-events-week .tribe-events-tooltip {
 	padding: .75em 1em;
 }
 
 .recurring-info-tooltip .workshop-note,.tribe-events-calendar .tribe-events-tooltip .workshop-note,.tribe-events-shortcode.view-week .tribe-events-tooltip .workshop-note,.tribe-events-week .tribe-events-tooltip .workshop-note {
 	display: none;
+}
+
+.tribe-theme-spine.events-archive .article-header,.tribe_events-template-default .article-header,.tribe_venue-template-default .article-header {
+	display: none;
+}
+
+.type-tribe_events[class*=post-] .tribe-events-cal-links {
+	clear: left;
+}
+
+.type-tribe_events[class*=post-] .tribe-events-event-image {
+	float: left;
+	height: 0;
+	padding-bottom: 30%;
+	position: relative;
+}
+
+.type-tribe_events[class*=post-] .tribe-events-event-image a {
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	border-bottom: none;
+	box-shadow: none;
+	z-index: 1;
+}
+
+.type-tribe_events[class*=post-] .tribe-events-event-image img {
+	width: 100%;
+	height: auto;
+}
+
+.tribe-events-single .type-tribe_events[class*=post-] .tribe-events-event-image {
+	width: 30%;
+	margin-right: 3%;
+}
+
+body.tribe-theme-spine:not(.tribe_venue-template-default) .main-header .header-group {
+	width: calc(90%);
+	width: calc(100% - 2rem);
+}
+
+body.tribe-theme-spine:not(.tribe_venue-template-default) .main-header .header-group .sub-header {
+	color: transparent !important;
+}
+
+body.tribe-theme-spine:not(.tribe_venue-template-default) .main-header .header-group .sub-header::before {
+	content: "WSU Common Reading";
+	position: absolute;
+	color: #fff;
+}
+
+body.tribe-theme-spine:not(.tribe_venue-template-default) .main-header .header-group .sub-header a {
+	display: none;
+}
+
+#tribe-bar-views a {
+	border-bottom: none;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	box-shadow: none;
+	text-shadow: none;
+}
+
+#tribe-bar-views li.tribe-bar-active a {
+	border-bottom: .0625em solid transparent;
+}
+
+#tribe-bar-views li.tribe-bar-active a:hover {
+	border-bottom-right-radius: .25em;
+	border-bottom-left-radius: .25em;
+	border-bottom: .0625em solid #981e32;
+	box-shadow: inset 0 -.3125em 0 rgba(152,30,50,.15);
+	color: #c60c30 !important;
+}
+
+#tribe-events .workshop-note {
+	font-size: .9em;
+	color: #715409;
+}
+
+.column #tribe-events ul li {
+	list-style-image: none;
+}
+
+#tribe-events-content.tribe-events-day .tribe-events-day-time-slot>h5:first-child {
+	background-color: #3b4042;
+}
+
+#tribe-events-content.tribe-events-list .tribe-events-page-title {
+	padding-bottom: .5em;
+	padding-top: .42em;
+	border-radius: 10px;
+	background-color: #58111d;
+	color: #fff;
+}
+
+#tribe-events-content.tribe-events-list .tribe-events-page-title a {
+	color: #c60c30;
+	border-bottom: 1px solid transparent;
+}
+
+#tribe-events-content.tribe-events-list .tribe-events-page-title a:hover {
+	color: #e38698;
+	border-bottom-color: #e38698;
+}
+
+#tribe-events-content.tribe-events-list .tribe-event-schedule-details {
+	font-size: 1.3rem;
+}
+
+#tribe-events-content.tribe-events-list .tribe-events-venue-details {
+	font-size: 1.3rem;
+	margin-top: /*! TODO: Replace with a JavaScript-based solution b/c some events lack a venue, but the plugin loads empty HTML tags regardless.
+				&:before {
+					content: "Location: ";
+					font-weight: bold;
+				}*/
+0;
+}
+
+#tribe-events-content.tribe-events-list .tribe-events-list-separator-month span {
+	padding-bottom: .2em;
+	border-radius: 4px;
+	background-color: #981e32;
+	color: #fff;
 }
 
 #tribe-events-content.tribe-events-month {
@@ -6914,10 +6993,6 @@ body.tribe-theme-spine:not(.tribe_venue-template-default) .main-header .header-g
 	font-size: .925rem;
 }
 
-#tribe-events-content.tribe-events-day .tribe-events-day-time-slot>h5:first-child {
-	background-color: #3b4042;
-}
-
 #tribe-events-content.tribe-events-single .tribe-events-event-meta {
 	padding-top: 1.5rem;
 }
@@ -6928,69 +7003,6 @@ body.tribe-theme-spine:not(.tribe_venue-template-default) .main-header .header-g
 
 #tribe-events-content.tribe-events-single .tribe-events-schedule h2 {
 	font-size: 1.3rem;
-}
-
-#tribe-events-content.tribe-events-list .tribe-events-page-title {
-	padding-bottom: .5em;
-	padding-top: .42em;
-	border-radius: 10px;
-	background-color: #58111d;
-	color: #fff;
-}
-
-#tribe-events-content.tribe-events-list .tribe-events-page-title a {
-	color: #c60c30;
-	border-bottom: 1px solid transparent;
-}
-
-#tribe-events-content.tribe-events-list .tribe-events-page-title a:hover {
-	color: #e38698;
-	border-bottom-color: #e38698;
-}
-
-#tribe-events-content.tribe-events-list .tribe-events-list-separator-month span {
-	padding-bottom: .2em;
-	border-radius: 4px;
-	background-color: #981e32;
-	color: #fff;
-}
-
-#tribe-events-content.tribe-events-list .tribe-event-schedule-details {
-	font-size: 1.3rem;
-}
-
-#tribe-events-content.tribe-events-list .tribe-events-venue-details {
-	font-size: 1.3rem;
-	margin-top: /*! TODO: Replace with a JavaScript-based solution b/c some events lack a venue, but the plugin loads empty HTML tags regardless.
-				&:before {
-					content: "Location: ";
-					font-weight: bold;
-				}*/
-0;
-}
-
-.single-tribe_events .tribe-events-before-html .calendar-intro-message {
-	display: none;
-}
-
-.wsuwp-content-syndicate-event .content-item-event-date {
-	font-weight: 700;
-}
-
-.wsuwp-content-syndicate-event .content-item-event-date::after {
-	content: ":";
-}
-
-.wsuwp-content-syndicate-event .content-item-event-venue::before {
-	content: "in ";
-}
-
-.wsuwp-content-syndicate-event .content-item-event-venue::empty {
-	display: none;
-}
-
-.wsuwp-content-syndicate-list:empty::after {
-	content: "None.";
 }
 
 /*! ================================================================================================
