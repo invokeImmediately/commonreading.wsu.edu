@@ -8,18 +8,15 @@
 *** └──────────────────────────────────────────────────────────────────────────────────────────────┘
 ***  TABLE OF CONTENTS:
 ***  ────────────────────────────────────────────────────────────────────────────────────────────
-***  §1: Banner slideshows.....................................................................27
-***  §2: Responsive iframe containers..........................................................62
-***  §3: Crimson columns.......................................................................87
-***  §4: Default padding and spacing..........................................................129
-***  §5: Page-based layouts...................................................................170
-***  §6: Lists................................................................................309
-***  §7: Body styling.........................................................................410
-***  §8: Styling of h1-header sections........................................................430
-***  §9: Order of the Crimson Key.............................................................455
-***  §10: News................................................................................603
-***  §11: Notices.............................................................................662
-***  §12: Other (TBD).........................................................................679
+***  §1: Banner slideshows.....................................................................24
+***  §2: Responsive iframe containers..........................................................48
+***  §3: Default padding and spacing...........................................................73
+***  §4: Page-based layouts...................................................................108
+***  §5: Lists................................................................................193
+***  §6: Body styling.........................................................................268
+***  §7: Styling of h1-header sections........................................................288
+***  §8: Order of the Crimson Key.............................................................313
+***  §9: Notices..............................................................................461
 ***  ───────────────────────────────────────────────────────────────────────────────────────────────
 **/
 
@@ -30,22 +27,11 @@
 ***   1. Repositions the cycle banner arrows to the bottom of the container.
 **/
 
-.builder-section-banner .cycle-prev, .builder-section-banner .cycle-next {
+.builder-section-banner .cycle-next,
+.builder-section-banner .cycle-prev {
 	top: auto;
 	bottom: 0;
 	height: auto;
-}
-
-.builder-section-banner .cycle-prev:before, .builder-section-banner .cycle-next:before {
-	line-height: 2rem;
-}
-
-.builder-section-banner .cycle-prev:before {
-	left: auto;
-}
-
-.builder-section-banner .cycle-next:before {
-	right: auto;
 }
 
 #common-reading-slideshow .builder-banner-slide {
@@ -84,49 +70,7 @@
 }
 
 /** ================================================================================================
-*** §3: Crimson columns
-***
-*** Style ruleset for specifying the visual design of columns with a faint crimson background.
-**/
-
-.column.crimson > header:first-child > h2 {
-	margin-bottom: .5rem;
-	color: #981e32;
-}
-
-.column.crimson.has-background {
-	padding-top: (@v-dflt-spcng / 2) !important;
-	padding-bottom: (@v-dflt-spcng / 2) !important;
-	background-color: rgba(192,12,48,0.2);
-	color: #464e54;
-	@media screen and (min-width: (@column-floating-threshold + 1)) {
-		border-radius: 10px;
-	}
-	.fluid .row.halves & {
-		@media screen and (min-width: (@column-floating-threshold + 1)) {
-			width: ~"calc(50% - @{v-dflt-spcng})";
-			padding-right: ~"calc(@{v-dflt-spcng} / 2)";
-			margin-right: ~"calc(@{v-dflt-spcng})";
-			margin-bottom: ~"calc(@{v-dflt-spcng})";
-		}
-	}
-	.fluid .row.halves.pad-top & {
-		@media screen and (min-width: (@column-floating-threshold + 1)) {
-			margin-top: ~"calc(@{v-dflt-spcng})";
-		}
-	}
-	.fluid .row.side-right & {
-		@media screen and (min-width: (@column-floating-threshold + 1)) {
-			width: ~"calc(33% - @{v-dflt-spcng} / 4)";
-			padding-right: ~"calc(@{v-dflt-spcng} / 4)";
-			margin-right: ~"calc(@{v-dflt-spcng} / 4)";
-			margin-bottom: ~"calc(@{v-dflt-spcng})";
-		}
-	}
-}
-
-/** ================================================================================================
-*** §4: Default padding and spacing
+*** §3: Default padding and spacing
 ***
 *** Adjustment of default padding on sections, section headings, calendar headings, etc.
 **/
@@ -160,17 +104,10 @@
 	}
 }
 
-.spine-blank-template {
-	.row.spaces-top {
-		margin-top: 1rem;
-	}
-}
-
 /** ================================================================================================
-*** §5: Page-based layouts
+*** §4: Page-based layouts
 **/
 
-// TODO: Remove unused styling below.
 .page.archives,
 .page.book-nominations {
 	.article-header {
@@ -245,59 +182,6 @@
 			font-size: (@start * pow(@scaling, 5));
 		}
 	}
-	.row.h1-header.yellow {
-		background-color: @hex-yellow;
-		.column h1 {
-			padding: 1rem;
-			color: @hex-white;
-			text-shadow: 0 0 1.125rem @hex-darkest-yellow;
-		}
-		& + section {
-			.column:first-child {
-				& > h1,
-				& > h2,
-				& > h3,
-				& > h4,
-				& > h5,
-				& > h6 {
-					&:first-child {
-						margin-top: @v-dflt-spcng / 4;
-						padding-left: @v-dflt-spcng / 2;
-						color: #815f0d;
-						& + hr {
-							margin-top: @v-dflt-spcng / 5;
-							background-color: rgba(198,146,20,.5);
-							& + h3 {
-								margin-top: @v-dflt-spcng;
-							}
-						}
-					}
-				}
-			}
-		}
-		&:not(.gutter) {
-			.column {
-				display: table;
-				width: 100%;
-				min-height: 190px;
-				h1 {
-					display: inline-block;
-					display: table-cell;
-					padding: @v-dflt-spcng;
-					vertical-align: middle;
-					@lg-mobile-padding-rs: {
-						padding-right: (@v-dflt-spcng / 2);
-						padding-left: (@v-dflt-spcng / 2);
-					};
-					@nrml-mobile-padding-rs: {
-						padding-right: (@v-dflt-spcng / 4);
-						padding-left: (@v-dflt-spcng / 4);
-					};
-					.declare-mobile-layout(@lg-mobile-padding-rs, @nrml-mobile-padding-rs);
-				}
-			}
-		}
-	}
 }
 
 img.archives-thumbnail {
@@ -306,37 +190,11 @@ img.archives-thumbnail {
 }
 
 /** ================================================================================================
-*** §6: Lists
+*** §5: Lists
 **/
 
 ul {
 	&.cascaded-layout {
-		/*@media print {
-			&[style] {
-				height: auto !important;
-			}
-		}
-		& > li {
-			@media print {
-				position: relative !important;
-				display:block !important;
-				left:0 !important;
-				top: auto !important;
-				width: 100% !important;
-				float: left;
-			}
-			&.cascade-sizer, &.gutter-sizer {
-				height: 0 !important;
-				min-height: 0 !important;
-				padding: 0 !important;
-				border: none !important;
-				background: none !important;
-				box-shadow: none !important;
-			}
-			&.gutter-sizer {
-				width: 2% !important;
-			}
-		}*/
 		&.calendar {
 			& > li {
 				* + * {
@@ -407,7 +265,7 @@ ul {
 }
 
 /** ================================================================================================
-*** §7: Body styling
+*** §6: Body styling
 **/
 
 body {
@@ -427,7 +285,7 @@ main {
 
 /*
 *** ================================================================================================-
-*** §8: Styling of h1-header sections
+*** §7: Styling of h1-header sections
 **/
 body:not(.crimson-key-home):not(.crimson-key) .row.h1-header .column {
 	position: relative;
@@ -452,7 +310,7 @@ body:not(.crimson-key-home):not(.crimson-key) .row.h1-header .column {
 }
 
 /** ================================================================================================
-*** §9: Order of the Crimson Key
+*** §8: Order of the Crimson Key
 **/
 
 // @import url('https://fonts.googleapis.com/css?family=Share+Tech+Mono|Kanit:300,400,600|Spinnaker:400,700');
@@ -600,66 +458,7 @@ body:not(.crimson-key-home):not(.crimson-key) .row.h1-header .column {
 }
 
 /** ================================================================================================
-*** §10: News
-***
-*** Styling unique to the news section of and news feeds on the Common Reading website.
-**/
-
-.blog .column .hidden-on-news-feed {
-	display: none;
-}
-
-.single-post .column .hidden-on-news-articles {
-	display: none;
-}
-
-.blog .fluid .row.side-right .column.two,
-.single-post .fluid .row.side-right .column.two {
-	@media screen and (min-width: 694px) {
-		margin-right: 2rem;
-		width: 30%;
-		width: ~"calc(33% - 2rem)";
-	}
-}
-
-.blog .fluid .row.side-right .column.two {
-	@media screen and (min-width: 694px) {
-		padding-left: 1rem;
-	}
-}
-
-.widget_search {
-	.blog &,
-	.archive.category &,
-	.archive.tag &,
-	.single-post.post-template-default & {
-		input#s {
-			margin-bottom: .5rem;
-			width: 100%;
-		}
-	}
-}
-
-.widget_categories,
-.widget_archive {
-	ul {
-		padding-left: 0;
-	}
-}
-
-.home {
-	.wsuwp-content-syndicate-list {
-		list-style: disc outside none !important;
-		padding-left: 1.2rem;
-	}
-
-	.wsuwp-content-syndicate-item {
-		list-style-type: inherit !important;
-	}
-}
-
-/** ================================================================================================
-*** §11: Notices
+*** §9: Notices
 **/
 
 .use-paragraph-notices(url(/wp-content/uploads/sites/51/2017/05/icon_genericons-neue_notice_v5.png));
@@ -674,208 +473,3 @@ body:not(.crimson-key-home):not(.crimson-key) .row.h1-header .column {
 	24px,
 	"centered"
 );
-
-/** ================================================================================================
-*** §12: Other (TBD)
-***
-*** Style rulesets below still need to be pulled into their own commented section.
-**/
-
-.page > .row:last-child > .column {
-	padding-bottom: @v-dflt-spcng;
-}
-
-strong.lead-in {
-	font-family: "Roboto Condensed";
-	font-size: 1.25em;
-}
-
-img.shift-to-right {
-	float: right;
-}
-
-.column .article-sidebar {
-	float: right;
-	width: 33%;
-	min-width: 230px;
-	padding: .8rem;
-	margin-left: 1rem;
-	margin-bottom: 1rem;
-	background: #f8f1eb;
-	border: 1px solid #6d441f;
-	box-shadow: 1px 1px 2px rgba(109,68,31,0.5);
-	font-size: .8rem;
-	color: #464e54;
-}
-
-.column .article-sidebar:first-child + h1,
-.column .article-sidebar:first-child + h2,
-.column .article-sidebar:first-child + h3,
-.column .article-sidebar:first-child + h4 {
-	margin-top: 0;
-}
-
-.column .article-sidebar p,
-.column .article-sidebar ol,
-.column .article-sidebar ul {
-	font-size: inherit;
-	line-height: normal;
-}
-
-.column .article-sidebar p {
-	text-align: left;
-}
-
-.column .article-sidebar p:not(:last-child) {
-	margin-bottom: .8rem;
-}
-
-.column .article-sidebar ol,
-.column .article-sidebar ul {
-	padding-bottom: 0;
-}
-
-.column .article-sidebar h2 + hr {
-	margin-top: .25rem;
-	background-color: rgba(70,78,84,0.75);
-}
-
-.column .article-sidebar h3 {
-	font-size: 1.275rem;
-	margin-top: 1.2rem;
-	margin-bottom: 0;
-}
-
-.column .article-sidebar h3:first-child {
-	margin-top: 0;
-}
-
-.column .article-sidebar h4 {
-	font-size: 1.05rem;
-}
-
-.column .article-sidebar h4:first-child {
-	margin-top: 0;
-}
-
-@media screen and (min-width: 990px) and (max-width: 1098px) {
-	.column .article-sidebar {
-		position: absolute;
-		right: 0;
-		top: 0;
-		width: 230px;
-		-webkit-transform-origin: 100% 0 0;
-		-ms-transform-origin: 100% 0 0;
-		transform-origin: 100% 0 0;
-		-webkit-transform: rotate(-90deg);
-		-moz-transform: rotate(-90deg);
-		transform: rotate(-90deg);
-		-webkit-transition: transform .25s ease-out;
-		-moz-transition: transform .25s ease-out;
-		transition: transform .25s ease-out;
-	}
-	
-	.column .article-sidebar:hover {
-		-webkit-transform: none;
-		-moz-transform: none;
-		transform: none;
-	}
-}
-
-@media screen and (max-width: 520px) {
-	.column .article-sidebar {
-		position: absolute;
-		right: -2rem;
-		top: 0;
-		width: 230px;
-		-webkit-transform-origin: 100% 0 0;
-		-ms-transform-origin: 100% 0 0;
-		transform-origin: 100% 0 0;
-		-webkit-transform: rotate(-90deg) translateY(-2.1rem);
-		-moz-transform: rotate(-90deg) translateY(-2.1rem);
-		transform: rotate(-90deg) translateY(-2.1rem);
-		-webkit-transition: transform .25s ease-out;
-		-moz-transition: transform .25s ease-out;
-		transition: transform .25s ease-out;
-	}
-	
-	.column .article-sidebar:hover {
-		-webkit-transform: none;
-		-moz-transform: none;
-		transform: none;
-	}
-}
-
-div.author-info {
-	display: none;
-}
-
-article > div.article-body {
-	position: relative;
-}
-
-.column .post {
-	padding: 1em;
-	border: 1px solid rgba(0,0,0,0.3333);
-	border-radius: 5px;
-	background-color: #fff;
-	box-shadow: 1px 2px 3px rgba(0,0,0,0.25);
-}
-
-.column .post + .post {
-	margin-top: 1.5em;
-}
-
-.article-summary .article-sidebar,
-.article-summary img,
-.article-summary object,
-.article-summary .article-media-contacts,
-.article-summary > h3 {
-	display: none;
-}
-
-.article-summary img.attachment-spine-thumbnail_size {
-	display: block;
-}
-
-.blog .row:not(.prevnext) > .column.two,
-.single-post .row > .column.two {
-	padding: 0;
-	// padding: 1rem;
-	// background: rgba(239,240,241,1.0);
-	// -webkit-box-shadow: 0 0 0 1px rgba(255,255,255,0.9), 0 0 0 2px rgba(0,0,0,0.2);
-	// box-shadow: 0 0 0 1px rgba(255,255,255,0.9), 0 0 0 2px rgba(0,0,0,0.2);
-	// width: 30.5% !important;
-	// width: ~"calc(33% - 2rem) !important";
-}
-
-@media screen and (min-width: 694px) {
-	.blog main > .row > .column.two,
-	.single-post .row > .column.two {
-		margin-top: 2rem;
-		border-radius: 4px;
-	}
-}
-
-@media screen and (max-width: 1603px) {
-	.blog .row > .column.two,
-	.single-post .row > .column.two {
-		border-top-right-radius: 0;
-		border-bottom-right-radius: 0;
-	}
-}
-
-.column hr.subSection {
-  width: 85%;
-  height: 0;
-  margin: 2rem auto;
-  background: none;
-  border: 0;
-  border-top: 1px dashed rgba(94, 106, 113, 0.5);
-  border-bottom: 1px dashed rgba(160, 160, 160, 0.25);
-  text-align: center;
-}
-
-.main-header {
-	background-color: @hex-crimson;
-}
