@@ -1886,6 +1886,134 @@ ul.cascaded-layout.blank > li.gutter-sizer {
 .wsuwp-json--headlines.layout--2-columns * + .wsuwp-content-syndicate-item {
   margin-top: 0;
 }
+.daesa-news-summary {
+  display: none;
+}
+.daesa-news-feed {
+  max-width: none;
+}
+.daesa-news-feed .content-item-byline-author {
+  display: none;
+}
+.daesa-news-feed .content-item-byline-date,
+.daesa-news-feed .content-item-thumbnail,
+.daesa-news-feed .content-item-title {
+  display: block;
+}
+.daesa-news-feed .content-item-byline-date {
+  font-size: 0.9rem;
+  line-height: 1.5em;
+  margin-bottom: 0.5rem;
+}
+.daesa-news-feed .content-item-byline-date:before {
+  background: url(https://s3.wp.wsu.edu/uploads/sites/56/2020/02/date.svg) center / 100% no-repeat;
+  content: "";
+  display: inline-block;
+  height: 0.75rem;
+  margin: 0 0.375rem -0.0625rem 0;
+  width: 0.75rem;
+}
+.daesa-news-feed .content-item-thumbnail {
+  background: #a60f2d url(https://s3.wp.wsu.edu/uploads/sites/2334/2018/10/bg-dots.png) top left repeat;
+  background: linear-gradient(90deg, transparent, #a60f2d 18%, #a60f2d 82%, transparent), #a60f2d url(https://s3.wp.wsu.edu/uploads/sites/2334/2018/10/bg-dots.png) top left repeat;
+}
+@media only screen and (max-width: 791px) {
+  .daesa-news-feed .content-item-thumbnail {
+    background: transparent;
+  }
+}
+.daesa-news-feed .content-item-thumbnail img {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  display: block;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 791px) {
+  .daesa-news-feed .content-item-thumbnail img {
+    border-left: none;
+    border-right: none;
+    margin: 0;
+  }
+}
+.daesa-news-feed .content-item-excerpt > *:not(.daesa-news-summary):not(.content-item-read-story) {
+  display: none;
+}
+.daesa-news-feed .content-item-read-story {
+  display: inline-block;
+  margin-top: 0.5em;
+}
+.daesa-news-feed .content-item-title {
+  margin: 0.5em 0;
+}
+.daesa-news-feed .daesa-news-summary {
+  display: block;
+}
+.daesa-news-feed .wsuwp-content-syndicate-item {
+  flex-basis: 30%;
+  padding-bottom: 2rem;
+}
+.daesa-news-feed .wsuwp-content-syndicate-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  list-style-type: none;
+  margin-top: 0.5em;
+  max-width: none;
+  padding: 0 1em 0 0;
+}
+.daesa-news-feed a {
+  font-weight: bold;
+}
+.daesa-news-feed a:after {
+  background: url(https://s3.wp.wsu.edu/uploads/sites/56/2020/02/link.svg) .2em/70% no-repeat;
+  content: "";
+  height: 1em;
+  margin: 0 0 -0.05em 0.1em;
+  position: absolute;
+  width: 1em;
+}
+.daesa-news-feed a:not(:hover) {
+  border-bottom: 3px solid transparent;
+  box-shadow: none;
+  color: black;
+}
+.daesa-news-feed--gray .content-item-thumbnail {
+  background: #b5babe url(https://s3.wp.wsu.edu/uploads/sites/2334/2018/10/bg-dots.png) top left repeat;
+  background: linear-gradient(90deg, transparent, #b5babe 18%, #b5babe 82%, transparent), #b5babe url(https://s3.wp.wsu.edu/uploads/sites/2334/2018/10/bg-dots.png) top left repeat;
+}
+.daesa-news-feed--1-col .wsuwp-content-syndicate-item {
+  flex-basis: 100%;
+}
+.daesa-news-feed--2-col .wsuwp-content-syndicate-item {
+  box-sizing: border-box;
+  flex-basis: 50%;
+}
+.daesa-news-feed--2-col .wsuwp-content-syndicate-item:nth-child(2n) {
+  padding-left: 1rem;
+}
+.daesa-news-feed--2-col .wsuwp-content-syndicate-item:nth-child(2n + 1) {
+  padding-right: 1rem;
+}
+.blog .column .article-title,
+.archive.category .column .article-title,
+.archive.tag .column .article-title {
+  padding-right: 1rem;
+}
+.blog .column .article-title a,
+.archive.category .column .article-title a,
+.archive.tag .column .article-title a {
+  text-decoration: none;
+}
+.blog .column .article-title a:after,
+.archive.category .column .article-title a:after,
+.archive.tag .column .article-title a:after {
+  background: url(https://s3.wp.wsu.edu/uploads/sites/56/2020/02/link.svg) .2em/60% no-repeat;
+  content: "";
+  height: 1em;
+  margin: 0 0 -0.05em 0.1em;
+  position: absolute;
+  width: 1em;
+}
 .award-banner {
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -6812,6 +6940,20 @@ body:not(.crimson-key-home):not(.crimson-key) .row.h1-header .column:before {
 .column .notice.information::before {
   width: 32px;
   background: #6decff url(https://s3.wp.wsu.edu/uploads/sites/52/2020/03/icon_genericons-neue_info-blue.png) 4px center no-repeat;
+}
+body.tribe-theme-spine:not(.tribe_venue-template-default) .main-header .header-group .sub-header.sub-header::before {
+  border-left: 1px solid #fff;
+  content: "Division of Academic Engagement and Student Achievement";
+  display: inline;
+  font-weight: 300;
+  line-height: 1.4em;
+  margin-left: 1em;
+  margin-top: -0.2em;
+  padding-left: 1.25em;
+  text-transform: uppercase;
+}
+body.tribe-theme-spine:not(.tribe_venue-template-default) .main-header .header-group .sub-header .sub-header-default {
+  visibility: hidden;
 }
 .row.article-notice.has-countdown {
   display: none;

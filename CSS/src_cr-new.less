@@ -17,6 +17,7 @@
 ***  §7: Headers..............................................................................324
 ***  §8: Order of the Crimson Key.............................................................352
 ***  §9: Notices..............................................................................500
+***  §10: Common reading calendar.............................................................500
 ***  ───────────────────────────────────────────────────────────────────────────────────────────────
 **/
 
@@ -512,3 +513,28 @@ body:not(.crimson-key-home):not(.crimson-key) .row.h1-header .column {
 	24px,
 	"centered"
 );
+
+/** ================================================================================================
+*** §10: Common Reading calendar
+**/
+
+@rs-cr-calendar: {
+	body.tribe-theme-spine:not(.tribe_venue-template-default) .main-header .header-group .sub-header {
+		&.sub-header::before {
+			border-left: 1px solid #fff;
+			content: "Division of Academic Engagement and Student Achievement";
+			display: inline;
+			font-weight: 300;
+			line-height: 1.4em;
+			margin-left: 1em;
+			margin-top: -.2em;
+			padding-left: 1.25em;
+			text-transform: uppercase;
+		}
+
+		.sub-header-default {
+			visibility: hidden;
+		}
+	}
+};
+@rs-cr-calendar();
