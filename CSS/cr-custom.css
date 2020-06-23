@@ -6997,9 +6997,9 @@ body.tribe-theme-spine:not(.tribe_venue-template-default) .main-header .header-g
 .tribe-events-week .tribe-events-tooltip .workshop-note {
   display: none;
 }
-.tribe_events-template-default .article-header,
-.tribe_venue-template-default .article-header,
-.tribe-theme-spine.events-archive .article-header {
+.tribe_events-template-default .article-header:not(.row),
+.tribe_venue-template-default .article-header:not(.row),
+.tribe-theme-spine.events-archive .article-header:not(.row) {
   display: none;
 }
 .type-tribe_events[class*=post-] .tribe-events-cal-links {
