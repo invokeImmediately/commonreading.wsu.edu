@@ -2,68 +2,28 @@
 /**********************************************************************************************************************
  CUSTOM JQUERY-BASED DYNAMIC CONTENT
  *********************************************************************************************************************/
-"use strict";
-
 ( function ( $ ) {
 
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// DOM LOADED:
-// Call functions to be executed once the DOM is loaded.
+"use strict";
 
-$( function () {
-	var params = new Object();
-	var theseParams;
-
-	// Setup parameters for function calls.
-	params.initCalendarItemExpansion = {
-		slctrCalendars: 'ul.cascaded-layout.calendar.thirds',
-		expansionClass: 'double',
-		expansionDelay: 3000
-	};
-
-	params.removeHiddenBlackKeyCluePosts = {
-		slctrPageTypes: '.blog, .archive.category',
-		slctrBlackKeyPosts: '.post.category-black-key-clue'
-	}
-
-	// Make function calls
-	theseParams = params.initCalendarItemExpansion;
-	initCalendarItemExpansion(
-		theseParams.slctrCalendars,
-		theseParams.expansionClass
-	);
-
-	theseParams = params.removeHiddenBlackKeyCluePosts;
-	removeHiddenBlackKeyCluePosts(
-		theseParams.slctrPageTypes,
-		theseParams.slctrBlackKeyPosts
-	);
-} );
-
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// FUNCTION DECLARATIONS
-
-function initCalendarItemExpansion( slctrCalendars, expansionClass, expansionDelay ) {
-
-	//TODO: implement keyboard activation
-	var $calendars = $( slctrCalendars );
-	if ( $calendars.length ) {
-		$calendars.each( function () {
-			var $thisCalendar = $( this );
-			var $items = $thisCalendar.children( 'li' );
-			$items.each( function () {
-				var $thisItem = $( this );
-				bindDragSafeClick( $thisItem, function() {
-					toggleCalendarItemExpansion( $thisCalendar, $thisItem, expansionClass, expansionDelay );
-				} );
-			} );
-		} );
+function addNewsHeaderViaClassUtilization( markup ) {
+	var $body = $( 'body' ).first();
+	if ( $body.hasClass( 'single-post' ) || ( $body.hasClass( 'archive' ) &&
+			( $body.hasClass( 'category' ) ||  $body.hasClass( 'tag' ) ) ) ) {
+		$body.find( '.column.one' ).first().parent( '.row' ).before( markup );
 	}
 }
 
-function toggleCalendarItemExpansion( $calendar, $item, expansionClass, expansionDelay ) {
-	$item.toggleClass( expansionClass );
-	$calendar.masonry();
+function addNewsHeaderViaLocation( markup ) {
+	var siteURL = window.location.pathname;
+	if ( siteURL == '/news/' ) {
+		$( '.column.one' ).first().parent( '.row' ).before( markup );
+	}
+}
+
+function addPageHeaderOnNewsPages( params ) {
+	addNewsHeaderViaLocation( params.markup );
+	addNewsHeaderViaClassUtilization( params.markup );
 }
 
 function bindDragSafeClick( $obj, callback ) {
@@ -72,6 +32,28 @@ function bindDragSafeClick( $obj, callback ) {
 		$obj.mousemove( dragSafeMouseMove );
 		$obj.mouseup( function () {
 			dragSafeMouseUp( $obj, callback );
+		} );
+	}
+}
+
+function initCalendarItemExpansion( params ) {
+	//TODO: implement keyboard activation
+	var $calendars = $( params.slctrCalendars );
+	if ( $calendars.length ) {
+		$calendars.each( function () {
+			var $thisCalendar = $( this );
+			var $items = $thisCalendar.children( 'li' );
+			$items.each( function () {
+				var $thisItem = $( this );
+				bindDragSafeClick( $thisItem, function() {
+					toggleCalendarItemExpansion(
+						$thisCalendar,
+						$thisItem,
+						params.expansionClass,
+						params.expansionDelay
+					);
+				} );
+			} );
 		} );
 	}
 }
@@ -109,14 +91,46 @@ function dragSafeMouseUp( $this, clickCallback ) {
 	}
 }
 
-function removeHiddenBlackKeyCluePosts( slctrPageTypes, slctrBlackKeyPosts) {
-	var $pages = $( slctrPageTypes );
+function removeHiddenBlackKeyCluePosts( params ) {
+	var $pages = $( params.slctrPageTypes );
 	var $posts;
 
 	if ( $pages.length > 0 ) {
-		$posts = $pages.find( slctrBlackKeyPosts );
+		$posts = $pages.find( params.slctrBlackKeyPosts );
 		$posts.remove();
 	}
 }
+
+function toggleCalendarItemExpansion( $calendar, $item, expansionClass, expansionDelay ) {
+	$item.toggleClass( expansionClass );
+	$calendar.masonry();
+}
+
+$( function () {
+	addPageHeaderOnNewsPages( {
+		markup:	'<section id="news-section-header" class="row single article-header h--192px">\n' +
+			'\t<div class="column one">\n' +
+			'\t\t<div class="wrapper">\n' +
+			'\t\t\t<ol class="breadcrumb-list">\n' +
+			'\t\t\t\t<li class="breadcrumb-list__breadcrumb"><a class="breadcrumb-list__link"' +
+			' href="/">Common Reading</a></li>\n' +
+			'\t\t\t</ol>\n' +
+			'\t\t\t<h1 class="tt--uppercase">News</h1>\n' +
+			'\t\t</div>\n' +
+			'\t</div>\n' +
+			'</section>'
+	} );
+
+	initCalendarItemExpansion( {
+		slctrCalendars: 'ul.cascaded-layout.calendar.thirds',
+		expansionClass: 'double',
+		expansionDelay: 3000
+	} );
+
+	removeHiddenBlackKeyCluePosts( {
+		slctrPageTypes: '.blog, .archive.category',
+		slctrBlackKeyPosts: '.post.category-black-key-clue'
+	} );
+} );
 
 } )( jQuery );
