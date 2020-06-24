@@ -3053,6 +3053,13 @@ function addPageHeaderOnNewsPages( params ) {
 	addNewsHeaderViaClassUtilization( params.markup );
 }
 
+function addPgHeaderOnCalendarPages( params ) {
+	var $body = $( 'body' ).first();
+	if ( $body.hasClass( params.bodyClass ) ) {
+		$body.find( '.row.single' ).first().before( params.markup );
+	}
+}
+
 function bindDragSafeClick( $obj, callback ) {
 	if( $.isJQueryObj( $obj ) ) {
 		$obj.mousedown( dragSafeMouseDown );
@@ -3134,6 +3141,38 @@ function toggleCalendarItemExpansion( $calendar, $item, expansionClass, expansio
 }
 
 $( function () {
+	addPgHeaderOnCalendarPages( {
+		bodyClass: 'post-type-archive-tribe_events',
+		markup:	'<section id="page-heading" class="row single article-header h--192px">\n' +
+			'\t<div class="column one">\n' +
+			'\t\t<div class="wrapper">\n' +
+			'\t\t\t<ol class="breadcrumb-list">\n' +
+			'\t\t\t\t<li class="breadcrumb-list__breadcrumb"><a class="breadcrumb-list__link"' +
+			' href="/">Common Reading</a></li>\n' +
+			'\t\t\t</ol>\n' +
+			'\t\t\t<h1 class="tt--uppercase">Calendar</h1>\n' +
+			'\t\t</div>\n' +
+			'\t</div>\n' +
+			'</section>'
+	} );
+
+	addPgHeaderOnCalendarPages( {
+		bodyClass: 'single-tribe_events',
+		markup:	'<section id="page-heading" class="row single article-header h--192px">\n' +
+			'\t<div class="column one">\n' +
+			'\t\t<div class="wrapper">\n' +
+			'\t\t\t<ol class="breadcrumb-list">\n' +
+			'\t\t\t\t<li class="breadcrumb-list__breadcrumb"><a class="breadcrumb-list__link"' +
+			' href="/">Common Reading</a></li>\n' +
+			'\t\t\t\t<li class="breadcrumb-list__breadcrumb"><a class="breadcrumb-list__link"' +
+			' href="/calendar/">Calendar</a></li>\n' +
+			'\t\t\t</ol>\n' +
+			'\t\t\t<h1 class="tt--uppercase">Event Details</h1>\n' +
+			'\t\t</div>\n' +
+			'\t</div>\n' +
+			'</section>'
+	} );
+
 	addPageHeaderOnNewsPages( {
 		markup:	'<section id="news-section-header" class="row single article-header h--192px">\n' +
 			'\t<div class="column one">\n' +
