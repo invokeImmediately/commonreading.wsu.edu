@@ -1803,10 +1803,10 @@ ul.cascaded-layout.blank > li.gutter-sizer {
 .widget_archive label.screen-reader-text {
   display: none;
 }
-.wsuwp-json--headlines .content-item-byline-author {
+.wsuwp-json-news .content-item-byline-author {
   display: none;
 }
-.wsuwp-json--headlines .content-item-byline-date {
+.wsuwp-json-news .content-item-byline-date {
   display: block;
   padding-bottom: 0.25em;
   margin-top: 0.5em;
@@ -1814,40 +1814,40 @@ ul.cascaded-layout.blank > li.gutter-sizer {
   color: #737373;
   text-transform: uppercase;
 }
-.wsuwp-json--headlines .content-item-byline-date:before {
+.wsuwp-json-news .content-item-byline-date:before {
   content: "Posted on ";
 }
-.wsuwp-json--headlines .content-item-excerpt .article-media-contacts,
-.wsuwp-json--headlines .content-item-excerpt .article-sidebar,
-.wsuwp-json--headlines .content-item-excerpt .photo-caption,
-.wsuwp-json--headlines .content-item-excerpt .more-link,
-.wsuwp-json--headlines .content-item-excerpt img,
-.wsuwp-json--headlines .content-item-excerpt object,
-.wsuwp-json--headlines .content-item-excerpt > h3 {
+.wsuwp-json-news .content-item-excerpt .article-media-contacts,
+.wsuwp-json-news .content-item-excerpt .article-sidebar,
+.wsuwp-json-news .content-item-excerpt .photo-caption,
+.wsuwp-json-news .content-item-excerpt .more-link,
+.wsuwp-json-news .content-item-excerpt img,
+.wsuwp-json-news .content-item-excerpt object,
+.wsuwp-json-news .content-item-excerpt > h3 {
   display: none;
 }
-.wsuwp-json--headlines .content-item-excerpt .content-item-read-story {
+.wsuwp-json-news .content-item-excerpt .content-item-read-story {
   display: inline-block;
 }
-.wsuwp-json--headlines .content-item-excerpt > * + *,
-.wsuwp-json--headlines .content-item-excerpt .content-item-read-story {
+.wsuwp-json-news .content-item-excerpt > * + *,
+.wsuwp-json-news .content-item-excerpt .content-item-read-story {
   margin-top: 1em;
 }
-.wsuwp-json--headlines .content-item-title {
+.wsuwp-json-news .content-item-title {
   font-size: 1.325em;
   font-weight: bold;
   line-height: 1.4em;
   line-height: calc(1.4em + 1px);
 }
-.wsuwp-json--headlines .content-item-title a {
+.wsuwp-json-news .content-item-title a {
   border-bottom-color: transparent;
   box-shadow: none;
   text-decoration: underline;
 }
-.wsuwp-json--headlines .content-item-title a:hover {
+.wsuwp-json-news .content-item-title a:hover {
   text-decoration: none;
 }
-.wsuwp-json--headlines .content-item-thumbnail {
+.wsuwp-json-news .content-item-thumbnail {
   float: right;
   margin-bottom: 0.5em;
   margin-left: 0.5em;
@@ -1855,35 +1855,39 @@ ul.cascaded-layout.blank > li.gutter-sizer {
   min-width: 96px;
   width: 28.5%;
 }
-.wsuwp-json--headlines .wsuwp-content-syndicate-item {
+.wsuwp-json-news .wsuwp-content-syndicate-item {
   box-sizing: border-box;
   line-height: 1.5em;
   list-style-image: none !important;
 }
-.wsuwp-json--headlines * + .wsuwp-content-syndicate-item {
+.wsuwp-json-news * + .wsuwp-content-syndicate-item {
   margin-top: 1em;
 }
-.wsuwp-json--headlines .wsuwp-content-syndicate-list {
+.wsuwp-json-news .wsuwp-content-syndicate-list {
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
   padding: 0;
 }
-.wsuwp-json--headlines.layout--2-columns .wsuwp-content-syndicate-list {
+.wsuwp-json-news.wsuwp-json-news--headlines .wsuwp-content-syndicate-list {
+  list-style-type: disc;
+  padding-left: 1.1rem;
+}
+.wsuwp-json-news.wsuwp-json-news--2-columns .wsuwp-content-syndicate-list {
   font-size: 0.9em;
   max-width: none !important;
 }
-.wsuwp-json--headlines.layout--2-columns .wsuwp-content-syndicate-item {
+.wsuwp-json-news.wsuwp-json-news--2-columns .wsuwp-content-syndicate-item {
   padding-bottom: 2em;
   padding-right: 2em;
   width: 50%;
 }
 @media all and (max-width: 480px) {
-  .wsuwp-json--headlines.layout--2-columns .wsuwp-content-syndicate-item {
+  .wsuwp-json-news.wsuwp-json-news--2-columns .wsuwp-content-syndicate-item {
     width: 100%;
   }
 }
-.wsuwp-json--headlines.layout--2-columns * + .wsuwp-content-syndicate-item {
+.wsuwp-json-news.wsuwp-json-news--2-columns * + .wsuwp-content-syndicate-item {
   margin-top: 0;
 }
 .daesa-news-summary {

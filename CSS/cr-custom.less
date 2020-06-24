@@ -6,8 +6,8 @@
 ***  TABLE OF CONTENTS:
 ***  ────────────────────────────────────────────────────────────────────────────────────────────
 ***  §1: Build entry point from DAESA's CSS development project................................15
-***  §2: Persistent section header comment for unit specific styling...........................28
-***  §3: Common Reading Program stylesheet imports.............................................60
+***  §2: Persistent section header comment for unit specific styling...........................30
+***  §3: Common Reading Program stylesheet imports.............................................62
 ***  ───────────────────────────────────────────────────────────────────────────────────────────────
 **/
 
@@ -21,6 +21,8 @@
 @import "..\WSU-UE---CSS\variables.less";
 @use-design__daesa-main-headers: false;
 @use-design__provost-main-headers: true;
+@use-design__wsuwp-json-legacy: false;
+@use-design__wsuwp-json-bem: true;
 @use-design__insider-news-feeds: true;
 @import "..\WSU-UE---CSS\css-build-entry-point.less";
 
