@@ -5630,114 +5630,6 @@ div.auto-scroller ul li {
 	background-color: transparent;
 }
 
-.c--gray--lightest {
-	color: #eff0f1;
-}
-
-.c--gray--lighter {
-	color: #d7dadb;
-}
-
-.c--gray--light {
-	color: #b5babe;
-}
-
-.c--gray--lightish {
-	color: #8d959a;
-}
-
-.c--gray--darkish {
-	color: #5e5e5e;
-}
-
-.c--gray--dark {
-	color: #3b4042;
-}
-
-.c--gray--darker {
-	color: #2a3033;
-}
-
-.c--gray--darkest {
-	color: #000;
-}
-
-.c--gray--accent {
-	color: #fff;
-}
-
-.bgc--gray--lightest {
-	background-color: #eff0f1;
-}
-
-.bgc--gray--lightest--25pct {
-	background-color: rgba(239,240,241,.25);
-}
-
-.bgc--gray--lighter {
-	background-color: #d7dadb;
-}
-
-.bgc--gray--lighter--25pct {
-	background-color: rgba(215,218,219,.25);
-}
-
-.bgc--gray--light {
-	background-color: #b5babe;
-}
-
-.bgc--gray--light--25pct {
-	background-color: rgba(181,186,190,.25);
-}
-
-.bgc--gray--lightish {
-	background-color: #8d959a;
-}
-
-.bgc--gray--lightish--25pct {
-	background-color: rgba(141,149,154,.25);
-}
-
-.bgc--gray--darkish {
-	background-color: #5e5e5e;
-}
-
-.bgc--gray--darkish--25pct {
-	background-color: rgba(94,94,94,.25);
-}
-
-.bgc--gray--dark {
-	background-color: #3b4042;
-}
-
-.bgc--gray--dark--25pct {
-	background-color: rgba(59,64,66,.25);
-}
-
-.bgc--gray--darker {
-	background-color: #2a3033;
-}
-
-.bgc--gray--darker--25pct {
-	background-color: rgba(42,48,51,.25);
-}
-
-.bgc--gray--darkest {
-	background-color: #000;
-}
-
-.bgc--gray--darkest--25pct {
-	background-color: rgba(0,0,0,.25);
-}
-
-.bgc--gray--accent {
-	background-color: #fff;
-}
-
-.bgc--gray--accent--25pct {
-	background-color: rgba(255,255,255,.25);
-}
-
 .c--crimson--lightest {
 	color: #dc4e65;
 }
@@ -5848,22 +5740,6 @@ div.auto-scroller ul li {
 
 .bgc--crimson--tint {
 	background-color: #f2e2e4;
-}
-
-.bgc--green--tint {
-	background-color: #f4f3de;
-}
-
-.bgc--yellow--tint {
-	background-color: #fff6e1;
-}
-
-.bgc--blue--tint {
-	background-color: #def3f6;
-}
-
-.bgc--orange--tint {
-	background-color: #feefe2;
 }
 
 /*! ================================================================================================
@@ -6356,12 +6232,12 @@ body:not(.crimson-key-home):not(.crimson-key) .row.h1-header .column:before {
 	display: none;
 }
 
-.column .notice {
+.notice {
 	background-color: #fef1f4;
-	border: 1px solid #a60f2d;
+	border: 1px solid rgba(166,15,45,.2);
+	border-radius: 5px;
 	box-sizing: border-box;
-	margin-left: auto;
-	margin-right: auto;
+	box-shadow: 0 12px 16px 2px rgba(0,0,0,.03), 0 5px 22px 4px rgba(0,0,0,.03), 0 6px 13px 0 rgba(0,0,0,.02);
 	overflow: hidden;
 	padding: 1rem;
 	padding-right: calc(1rem + 32px);
@@ -6370,11 +6246,16 @@ body:not(.crimson-key-home):not(.crimson-key) .row.h1-header .column:before {
 	width: calc(90% - 2 * 1rem - 32px);
 }
 
-.column .notice.full-width {
+.column .notice {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.notice.full-width {
 	width: 100%;
 }
 
-.column .notice::before {
+.notice::before {
 	bottom: 0;
 	content: "";
 	position: absolute;
@@ -6384,11 +6265,11 @@ body:not(.crimson-key-home):not(.crimson-key) .row.h1-header .column:before {
 	background: rgba(152,30,50,.3333) url(/wp-content/uploads/sites/51/2017/05/icon_genericons-neue_notice_v5.png) 4px 1rem no-repeat;
 }
 
-.column .notice.linked a {
+.notice.linked a {
 	display: none;
 }
 
-.column .notice.linked a:first-of-type {
+.notice.linked a:first-of-type {
 	border-color: transparent;
 	box-shadow: none;
 	color: transparent;
@@ -6401,7 +6282,7 @@ body:not(.crimson-key-home):not(.crimson-key) .row.h1-header .column:before {
 	z-index: 1;
 }
 
-.column .notice.linked a:first-of-type::before {
+.notice.linked a:first-of-type::before {
 	border-bottom: 3px solid #981e32;
 	bottom: -5px;
 	box-sizing: border-box;
@@ -6414,13 +6295,13 @@ body:not(.crimson-key-home):not(.crimson-key) .row.h1-header .column:before {
 	width: 100%;
 }
 
-.column .notice.linked a:first-of-type:hover {
+.notice.linked a:first-of-type:hover {
 	background-color: rgba(255,255,255,.33);
 	text-shadow: none;
 	transition: all .25s linear;
 }
 
-.column .notice.linked a:first-of-type:hover::before {
+.notice.linked a:first-of-type:hover::before {
 	border-bottom: 10px solid #b96875;
 	border-left: 10px solid transparent;
 	border-right: 10px solid transparent;
@@ -6429,7 +6310,7 @@ body:not(.crimson-key-home):not(.crimson-key) .row.h1-header .column:before {
 	width: 10px;
 }
 
-.column .notice.linked .hyperlink-simulator {
+.notice.linked .hyperlink-simulator {
 	border-bottom: .0625em solid #981e32;
 	box-shadow: inset 0 -.3125em 0 rgba(152,30,50,.15);
 	color: #981e32;
@@ -6437,7 +6318,7 @@ body:not(.crimson-key-home):not(.crimson-key) .row.h1-header .column:before {
 
 .column .notice.information {
 	background-color: #f8feff;
-	border-color: #00a5bd;
+	border-color: rgba(0,165,189,.2);
 	padding-right: calc(1rem + 32px);
 }
 
@@ -6587,7 +6468,7 @@ body.tribe-theme-spine:not(.tribe_venue-template-default) .main-header .header-g
 	display: none;
 }
 
-.tribe-theme-spine.events-archive .article-header,.tribe_events-template-default .article-header,.tribe_venue-template-default .article-header {
+.tribe-theme-spine.events-archive .article-header:not(.row),.tribe_events-template-default .article-header:not(.row),.tribe_venue-template-default .article-header:not(.row) {
 	display: none;
 }
 
@@ -6818,15 +6699,15 @@ body.tribe-theme-spine:not(.tribe_venue-template-default) .main-header .header-g
 ***    https://github.com/invokeImmediately/commonreading.wsu.edu/
 ***   AUTHOR: Daniel Rieck [daniel.rieck@wsu.edu] (https://github.com/invokeImmediately)
 ***
-***   LICENSE: ISC - Copyright (c) 2019 Daniel C. Rieck.
+***   LICENSE: ISC - Copyright (c) 2020 Daniel C. Rieck.
 ***
 ***     Permission to use, copy, modify, and/or distribute this software for any purpose with or
 ***     without fee is hereby granted, provided that the above copyright notice and this permission
 ***     notice appear in all copies.
 ***
-***     THE SOFTWARE IS PROVIDED "AS IS" AND DANIEL RIECK DISCLAIMS ALL WARRANTIES WITH REGARD TO
+***     THE SOFTWARE IS PROVIDED "AS IS" AND DANIEL C. RIECK DISCLAIMS ALL WARRANTIES WITH REGARD TO
 ***     THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT
-***     SHALL DANIEL RIECK BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR
+***     SHALL DANIEL C. RIECK BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR
 ***     ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF
 ***     CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE
 ***     OR PERFORMANCE OF THIS SOFTWARE.
@@ -6920,6 +6801,10 @@ body.tribe-theme-spine:not(.tribe_venue-template-default) .main-header .header-g
 	
 	span.hides-from-rghtclmn {
 		display: none;
+	}
+	
+	.hide-when-floating-columns {
+		display: none !important;
 	}
 }
 
@@ -7153,6 +7038,10 @@ body.tribe-theme-spine:not(.tribe_venue-template-default) .main-header .header-g
 		display: none;
 	}
 	
+	.show-when-floating-columns {
+		display: none !important;
+	}
+	
 	ul.cascaded-layout.calendar>li.collapsed {
 		width: 48.5%;
 	}
@@ -7198,6 +7087,12 @@ body.tribe-theme-spine:not(.tribe_venue-template-default) .main-header .header-g
 	
 	.row.article-header.halves .column.one .parent-page {
 		font-size: 3.25vw;
+	}
+}
+
+@media (max-width:693px) {
+	.notice {
+		width: 100%;
 	}
 }
 
