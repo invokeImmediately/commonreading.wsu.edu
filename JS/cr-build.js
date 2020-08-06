@@ -1518,7 +1518,7 @@ function showDefinitionListButtons( slctrDefList, expandAllClass, collapseAllCla
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 // §1: Gravity Forms enhancement modules
 
-////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////
 // §1.1: EmailConfirmations class
 
 /**
@@ -1542,7 +1542,7 @@ var EmailConfirmations = ( function( $ ) {
 	 */
 	function EmailConfirmations( selGfield ) {
 
-		////////////////////////////////////////////////////////////////////////////////////////////
+		////////////////////////////
 		// §1.1.1: Public properties
 
 		/**
@@ -1558,7 +1558,7 @@ var EmailConfirmations = ( function( $ ) {
 		};
 	}
 
-	////////////////////////////////////////////////////////////////////////////////////////////
+	/////////////////////////
 	// §1.1.2: Public methods
 
 	/**
@@ -1590,7 +1590,7 @@ var EmailConfirmations = ( function( $ ) {
 	return EmailConfirmations;
 } )( jQuery );
 
-////////////////////////////////////////////////////////////////////////////////////////////
+///////////////
 // §1.2: OueGFs
 
 /**
@@ -1607,7 +1607,7 @@ var OueGFs = ( function( $ ) {
 	 */
 	function OueGFs() {
 
-		////////////////////////////////////////////////////////////////////////////////////////////
+		////////////////////////////
 		// §1.2.1: Public properties
 
 		/**
@@ -1636,7 +1636,7 @@ var OueGFs = ( function( $ ) {
 		this.emailConfirmations = null;
 	}
 
-	////////////////////////////////////////////////////////////////////////////////////////////
+	/////////////////////////
 	// §1.2.2: Public methods
 
 	/**
@@ -1663,7 +1663,7 @@ var OueGFs = ( function( $ ) {
 		} );
 	};
 
-	////////////////////////////////////////////////////////////////////////////////////////////
+	////////////////////////////////////////////////
 	// §1.2.3: Lexically scoped supporting functions
 
 	/**
@@ -1690,7 +1690,7 @@ var OueGFs = ( function( $ ) {
 
 } )( jQuery );
 
-////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////
 // §1.3: WsuIdInputs
 
 /**
@@ -1710,7 +1710,7 @@ var WsuIdInputs = ( function ( $ ) {
 	 */
 	function WsuIdInputs( selGfield ) {
 
-		////////////////////////////////////////////////////////////////////////////////////////////
+		////////////////////////////
 		// §1.3.1: Public properties
 
 		/**
@@ -1725,7 +1725,7 @@ var WsuIdInputs = ( function ( $ ) {
 		};
 	}
 
-	////////////////////////////////////////////////////////////////////////////////////////////
+	/////////////////////////
 	// §1.3.2: Public methods
 
 	/**
@@ -1822,7 +1822,7 @@ var WsuIdInputs = ( function ( $ ) {
 		}
 	};
 
-	////////////////////////////////////////////////////////////////////////////////////////////
+	////////////////////////////////////////////////
 	// §1.3.3: Lexically scoped supporting functions
 
 	/**
@@ -1853,7 +1853,7 @@ var WsuIdInputs = ( function ( $ ) {
 ( function ( $ ) {
 	'use strict';
 
-	////////////////////////////////////////////////////////////////////////////////////////////////
+	/////////////////////////////////////
 	// §2.1: Application of OueGFs module
 
 	var oueGfs;
@@ -1861,7 +1861,7 @@ var WsuIdInputs = ( function ( $ ) {
 	oueGfs = new OueGFs();
 	oueGfs.init();
 
-	////////////////////////////////////////////////////////////////////////////////////////////////
+	///////////////////////////////////////////////////////////////
 	// §2.2: Binding of handlers to Gravity Forms post-render event
 
 	$( document ).on( 'gform_post_render', function () {
@@ -1880,7 +1880,7 @@ var WsuIdInputs = ( function ( $ ) {
 	} );
 
 
-	////////////////////////////////////////////////////////////////////////////////////////////////
+	//////////////////////////////
 	// §2.3: Function declarations
 
 	/**
@@ -2028,25 +2028,27 @@ var WsuIdInputs = ( function ( $ ) {
 	function hghlghtRqrdRchTxtEdtrs( $fields ) {
 		if ( $.isJQueryObj( $fields ) && $fields.length > 0 ) {
 			$fields.each( function () {
-				var $editorForm = $( this ).find( 'iframe' );
-				$editorForm.each( function () {
-					var $editorBody = $( this ).contents().find( '#tinymce' );
-					$editorBody.css( 'fontFamily', '"Open sans", sans-serif' );
-					if ( $editorBody.text().replace( /\n|\uFEFF/g, '' ) == ''  ) {
-						$editorBody.css( 'background', '#fff linear-gradient(to bottom,' +
-							' rgba(255,0,0,0.1), rgba(255,0,0,0)) no-repeat' );
-					}
-					$editorBody.focus( function () {
-						$( this ).css( 'background', '#fff' );
-					} );
-					$editorBody.blur( function () {
-						var $this = $( this );
-						if ( $this.text().replace( /\n|\uFEFF/g, '' ) == '' ) {
-							$this.css( 'background', '#fff linear-gradient(to bottom,' +
+				setTimeout( function() {
+					var $editorForm = $( this ).find( 'iframe' );
+					$editorForm.each( function () {
+						var $editorBody = $( this ).contents().find( '#tinymce' );
+						$editorBody.css( 'fontFamily', '"Open sans", sans-serif' );
+						if ( $editorBody.text().replace( /\n|\uFEFF/g, '' ) == ''  ) {
+							$editorBody.css( 'background', '#fff linear-gradient(to bottom,' +
 								' rgba(255,0,0,0.1), rgba(255,0,0,0)) no-repeat' );
 						}
+						$editorBody.focus( function () {
+							$( this ).css( 'background', '#fff' );
+						} );
+						$editorBody.blur( function () {
+							var $this = $( this );
+							if ( $this.text().replace( /\n|\uFEFF/g, '' ) == '' ) {
+								$this.css( 'background', '#fff linear-gradient(to bottom,' +
+									' rgba(255,0,0,0.1), rgba(255,0,0,0)) no-repeat' );
+							}
+						} );
 					} );
-				} );
+				}.bind(this), 2000 );
 			} );
 		}
 	}
