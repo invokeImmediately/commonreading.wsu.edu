@@ -58,9 +58,10 @@ function getCssBuildSettings() {
 	var commentRemovalNeedle = /^(?:[ \t]*)?\/\*[^!].*$\n(?:^\*\*?[^/].*$\n)*\*\*?\/\n\n?/gm;
 	var dependenciesPath = './WSU-UE---CSS/';
 	var destFolder = './CSS/';
-	var fontImportStr = '@import url(\'https://fonts.googleapis.com/css?family=Open+Sans:300,300i' +
-		',400,400i,600,600i,700,700i|Roboto+Condensed:400,400i,700,700i|PT+Serif:400,400i,700,700' +
-		'i|Roboto+Mono:400,400i,700,700i&display=swap\');\r\n';
+	var fontImportStr = '@import url(\'https://fonts.googleapis.com/css2?family=Open+Sans:ital,wg' +
+		'ht@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&family=PT+Serif:ital,wght@0,400;0,700' +
+		';1,400;1,700&family=Roboto+Condensed:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Mon' +
+		'o:ital,wght@0,400;0,700;1,400;1,700&display=swap\');\r\n';
 	var insertingMediaQuerySectionHeader = {
 			'before': /^@media/,
 			'lineBefore': '/*! ==================================================================' +
