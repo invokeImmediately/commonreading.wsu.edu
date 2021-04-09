@@ -1,0 +1,121 @@
+/*!*************************************
+█▀▀▀▐▄ ▄▌▐▀█▀▌█▀▀▄ ▄▀▀▄   ▄▀▀▀ ▄▀▀▀ ▄▀▀▀
+█▀▀   █    █  █▄▄▀ █▄▄█   █    ▀▀▀█ ▀▀▀█
+▀▀▀▀▐▀ ▀▌  █  ▀  ▀▄█  ▀    ▀▀▀ ▀▀▀  ▀▀▀ 
+FOR THE COMMON READING WEBSITE
+------------------------------
+@version 1.0.0
+@author Daniel Rieck
+  [daniel.rieck@wsu.edu]
+  (https://github.com/invokeImmediately)
+@license MIT - Copyright © 2021
+  Washington State University
+  https://mit-license.org/
+***************************************/
+
+/*!*************************************
+ * TRIBE EVENTS CALENDAR TWEAKS
+ **************************************/
+.tribe-events-loop .type-tribe_events + .type-tribe_events {
+	border-top: 1px solid #eff0f1;
+	padding-top: 1.5em;
+}
+
+.single-tribe_events .tribe-events-single-event-title {
+	line-height:1.2em;
+}
+
+.tribe-events-event-url a,
+.tribe-venue-url a,
+.tribe-organizer-url a {
+	word-break: break-all;
+}
+
+.tribe-events-nav-previous,
+.tribe-events-nav-next {
+	max-width: 35ch;
+}
+
+/*!*************************************
+ * REPOSITIONING OF SLIDESHOW'S PAUSE
+ *   BUTTON
+ **************************************/
+
+#common-reading-slideshow .wsu-cycle-pause {
+	bottom: 100%;
+	transform: translateY(100%) translateY(10px);
+}
+
+/*!*************************************
+ * SIMPLE BUTTON DESIGN
+ * Written by Daniel Rieck, added
+ *   2020-10-12.
+ * Last updated 2020-11-03.
+ **************************************/
+
+.simple-button {
+	border-radius: 4px;
+	display: inline-block;
+	margin-bottom: 9px;
+	padding: .5rem 1rem;
+}
+
+.simple-button:not(:hover) {
+	background-color: #eff0f1;
+	border: 1px solid #a60f2d;
+	box-shadow: 0 12px 16px 2px rgba(0,0,0,.03), 0 5px 22px 4px rgba(0,0,0,.03), 0 6px 13px 0 rgba(0,0,0,.02);
+}
+
+.simple-button:hover {
+	background-color: #eff0f1;
+	border: 1px solid #ca1237;
+	box-shadow: 0 12px 16px 2px rgba(202,18,55,.05), 0 5px 22px 4px rgba(202,18,55,.05), 0 6px 13px 0 rgba(202,18,55,.02);
+}
+
+.column .simple-button:hover {
+	border-bottom-width: 1px;
+	text-shadow: none;
+}
+
+.simple-button.simple-button--crimson:not(:hover) {
+	background-color: #a60f2d;
+	border: 0;
+	color: white;
+}
+
+.simple-button.simple-button--crimson:hover {
+	background-color: #ca1237;
+	border: 0;
+	box-shadow: 0 5px 18px rgba(202,18,55,.4);
+	color: white;
+}
+
+.column .simple-button.simple-button--hover:hover {
+	border-bottom-width: 0;
+}
+
+/*!*************************************
+ * ABOUT THE DIRECTOR SECTION
+ **************************************/
+
+#about-karen-weathermon {
+	background-color: #effbfe;
+	border-top: 1px solid #dadddf;
+}
+
+/*!*************************************
+ * BEM STYLE ENHANCEMENTS FOR BUILDER
+ *   SECTION ROWS
+ **************************************/
+
+.row.article-header {
+	border-bottom: 1px solid #dadddf;
+}
+
+.row--border-top {
+	border-top: 1px solid #eff0f1;
+}
+
+.row--dark-border-top {
+	border-top: 1px solid #dadddf;
+}
