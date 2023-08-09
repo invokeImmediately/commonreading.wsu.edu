@@ -1,4 +1,4 @@
-﻿@import  'https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Condensed:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap';
+﻿@import  "https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Condensed:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap";
 
 /*! ================================================================================================
  *  █▀▀▄ ▄▀▀▄ █▀▀▀ ▄▀▀▀ ▄▀▀▄   ▄▀▀▀ █  █ ▄▀▀▀▐▀█▀▌▄▀▀▄ ▐▀▄▀▌   ▄▀▀▀▐▀█▀▌█  █ █    ▀█▀ ▐▀▀▄ █▀▀▀
@@ -15,11 +15,11 @@
  *
  *  Please refer to the linked GitHub project for fully documented, precompiled source code.
  *
- *  @version 1.1.0-rc0.5.20
+ *  @version 1.2.0-rc0.0.2
  *
  *  @link https://github.com/invokeImmediately/WSU-DAESA-CSS
  *  @author Daniel Rieck [daniel.rieck@wsu.edu] (https://github.com/invokeImmediately)
- *  @license MIT Copyright (c) 2021 Washington State University
+ *  @license MIT Copyright (c) 2022 Washington State University
  *    Permission is hereby granted, free of charge, to any person obtaining a copy of this software
  *      and associated documentation files (the "Software"), to deal in the Software without
  *      restriction, including without limitation the rights to use, copy, modify, merge, publish,
@@ -1962,7 +1962,7 @@ main>.page>.row:last-child>.column:last-child {
 	border: none;
 }
 
-.column h1 a:not([class*=fw--]),.column h2 a:not([class*=fw--]),.column h3 a:not([class*=fw--]),.column h4 a:not([class*=fw--]),.column h5 a:not([class*=fw--]),.column h6 a:not([class*=fw--]),.gform_heading h3.gform_title a:not([class*=fw--]) {
+.column h1 a:not([class*=fw--]),.column h2 a:not([class*=fw--]),.column h3 a:not([class*=fw--]),.column h4 a:not([class*=fw--]),.column h5 a:not([class*=fw--]),.column h6 a:not([class*=fw--]) {
 	font-weight: inherit;
 }
 
@@ -2075,18 +2075,18 @@ main>.page>.row:last-child>.column:last-child {
 	width: 2rem;
 }
 
-.column h1 a:not(.non-text-link),.column h2 a:not(.non-text-link),.column h3 a:not(.non-text-link),.column h4 a:not(.non-text-link),.column h5 a:not(.non-text-link),.column h6 a:not(.non-text-link),.gform_heading h3.gform_title a:not(.non-text-link) {
+.column h1 a:not(.non-text-link),.column h2 a:not(.non-text-link),.column h3 a:not(.non-text-link),.column h4 a:not(.non-text-link),.column h5 a:not(.non-text-link),.column h6 a:not(.non-text-link) {
 	line-height: 1.4em;
 	line-height: calc(1.4em + 1px);
 }
 
-.column .article-footer a,.column h1 a:not(.non-text-link),.column h2 a:not(.non-text-link),.column h3 a:not(.non-text-link),.column h4 a:not(.non-text-link),.column h5 a:not(.non-text-link),.column h6 a:not(.non-text-link),.gform_heading h3.gform_title a:not(.non-text-link) {
+.column .article-footer a,.column h1 a:not(.non-text-link),.column h2 a:not(.non-text-link),.column h3 a:not(.non-text-link),.column h4 a:not(.non-text-link),.column h5 a:not(.non-text-link),.column h6 a:not(.non-text-link) {
 	border-bottom: 1px solid transparent;
 	box-shadow: none;
 	text-decoration: underline;
 }
 
-.column .article-footer a:hover,.column h1 a:not(.non-text-link):hover,.column h2 a:not(.non-text-link):hover,.column h3 a:not(.non-text-link):hover,.column h4 a:not(.non-text-link):hover,.column h5 a:not(.non-text-link):hover,.column h6 a:not(.non-text-link):hover,.gform_heading h3.gform_title a:not(.non-text-link):hover {
+.column .article-footer a:hover,.column h1 a:not(.non-text-link):hover,.column h2 a:not(.non-text-link):hover,.column h3 a:not(.non-text-link):hover,.column h4 a:not(.non-text-link):hover,.column h5 a:not(.non-text-link):hover,.column h6 a:not(.non-text-link):hover {
 	border-bottom: 4px solid #ca1237;
 	text-decoration: none;
 }
@@ -2383,231 +2383,67 @@ figure figcaption {
 	background-color: #049cdb;
 }
 
-.column .gform_wrapper {
-	max-width: 990px;
+.gform_wrapper.gravity-theme .gform_body {
+	background-color: #f7f7f7;
+	padding: .5rem 2rem 2rem;
 }
 
-.column .gform_wrapper #extensions_message {
-	padding-left: 1rem;
-}
-
-.column .gform_wrapper .field_sublabel_above .ginput_complex.ginput_container label {
-	margin: 0;
-}
-
-.column .gform_wrapper .gfield_checkbox li {
-	margin-bottom: 0;
-}
-
-.column .gform_wrapper .gfield_checkbox li label,.column .gform_wrapper .gfield_radio li label {
-	font-weight: 400;
-}
-
-.column .gform_wrapper .gfield_checkbox li input,.column .gform_wrapper .gfield_checkbox li input[type=checkbox],.column .gform_wrapper .gfield_radio li input[type=radio] {
-	vertical-align: top;
-}
-
-.column .gform_wrapper.gf_browser_chrome .gfield_checkbox li input,.column .gform_wrapper.gf_browser_chrome .gfield_checkbox li input[type=checkbox],.column .gform_wrapper.gf_browser_chrome .gfield_radio li input[type=radio] {
-	margin-top: 8px;
-}
-
-.column .gform_wrapper .gfield_description {
-	max-width: 80ch;
-}
-
-.column .gform_wrapper .gform_body>ul>li.has-top-border:not(.gsection):not(.gfield_html)+li:not(.gsection)::before,.column .gform_wrapper .gform_body>ul>li.has-top-spacer:not(.gsection):not(.gfield_html)+li:not(.gsection)::before {
-	content: "";
-	display: block;
-	height: 0;
-	margin: 2rem auto 0;
-	width: 95%;
-}
-
-.column .gform_wrapper .gform_body>ul>li.has-top-border:not(.gsection):not(.gfield_html)+li:not(.gsection)::before {
-	border-bottom: 1px dashed rgba(160,160,160,.25);
-	border-top: 1px dashed rgba(94,94,94,.3333);
-}
-
-.column .gform_wrapper .gform_body>ul>li.gf-bckgrnd-field {
-	display: none !important;
-}
-
-.column .gform_wrapper .gform_heading li {
-	list-style: disc !important;
-}
-
-.column .gform_wrapper .ginput_complex span.ginput_full:not(:first-of-type) label,.column .gform_wrapper .ginput_complex span.ginput_left:not(:first-of-type) label,.column .gform_wrapper .ginput_complex span.ginput_right:not(:nth-of-type(2)) label {
-	margin-top: .4em;
-}
-
-.column .gform_wrapper .gsection {
-	margin-bottom: 0;
-	margin-top: 2rem;
-}
-
-.column .gform_wrapper .percentbar_blue {
-	background-color: #a60f2d;
-}
-
-.column .gform_wrapper h2.fancy {
-	margin-right: 0;
-	margin-left: 0;
-}
-
-.column .gform_wrapper h2.gsection_title {
-	font-size: 1.6em;
-}
-
-.column .gform_wrapper label.gfield_label {
+.gform_wrapper.gravity-theme .field_sublabel_above .gfield_description {
 	margin-top: 0;
-	margin-bottom: 0;
-	font-size: 1.125em;
-}
-
-.column .gform_wrapper table.gfield_list thead th {
-	font-weight: 600;
-}
-
-.column .gform_wrapper ul:last-child {
 	padding-bottom: 0;
 }
 
-.column li.gfield :focus {
-	outline: 1px solid #00f;
+.gform_wrapper.gravity-theme .field_sublabel_above .gfield_description+.ginput_container {
+	margin-top: .5rem;
 }
 
-.column li.gfield .chosen-drop,.column li.gfield .chosen-single {
-	border-color: #717171 !important;
-}
-
-.column li.gfield input,.column li.gfield select {
-	border-color: #717171 !important;
-	border-style: solid !important;
-	border-width: 1px !important;
-}
-
-.column li.gfield.uses-rich-editor .tmce-active .mce-menubar {
-	display: none;
-}
-
-.column li.gfield.uses-rich-editor .tmce-active .mce-toolbar .mce-btn[aria-label="Align center (Shift+Alt+C)"],.column li.gfield.uses-rich-editor .tmce-active .mce-toolbar .mce-btn[aria-label="Align left (Shift+Alt+L)"],.column li.gfield.uses-rich-editor .tmce-active .mce-toolbar .mce-btn[aria-label="Align right (Shift+Alt+R)"],.column li.gfield.uses-rich-editor .tmce-active .mce-toolbar .mce-btn[aria-label="Insert/edit image (Shift+Alt+M)"],.column li.gfield.uses-rich-editor .tmce-active .mce-toolbar .mce-btn[aria-label="Show blocks"],.column li.gfield.uses-rich-editor .tmce-active .mce-toolbar .mce-btn[aria-label="Source code"],.column li.gfield.uses-rich-editor .tmce-active .mce-toolbar .mce-btn[aria-label="Text color"],.column li.gfield.uses-rich-editor .tmce-active .mce-toolbar .mce-btn[aria-label="Toolbar Toggle (Shift+Alt+Z)"],.column li.gfield.uses-rich-editor .tmce-active .mce-toolbar .mce-btn[aria-label=Table],.column li.gfield.uses-rich-editor .tmce-active .mce-toolbar-grp .mce-btn[aria-label="Align center (Shift+Alt+C)"],.column li.gfield.uses-rich-editor .tmce-active .mce-toolbar-grp .mce-btn[aria-label="Align left (Shift+Alt+L)"],.column li.gfield.uses-rich-editor .tmce-active .mce-toolbar-grp .mce-btn[aria-label="Align right (Shift+Alt+R)"],.column li.gfield.uses-rich-editor .tmce-active .mce-toolbar-grp .mce-btn[aria-label="Insert/edit image (Shift+Alt+M)"],.column li.gfield.uses-rich-editor .tmce-active .mce-toolbar-grp .mce-btn[aria-label="Show blocks"],.column li.gfield.uses-rich-editor .tmce-active .mce-toolbar-grp .mce-btn[aria-label="Source code"],.column li.gfield.uses-rich-editor .tmce-active .mce-toolbar-grp .mce-btn[aria-label="Text color"],.column li.gfield.uses-rich-editor .tmce-active .mce-toolbar-grp .mce-btn[aria-label="Toolbar Toggle (Shift+Alt+Z)"],.column li.gfield.uses-rich-editor .tmce-active .mce-toolbar-grp .mce-btn[aria-label=Table] {
-	display: none;
-}
-
-.column li.gfield.uses-rich-editor .tmce-active .mce-statusbar {
-	display: none;
-}
-
-.column li.gfield.uses-rich-editor .wp-editor-container {
-	border-color: #717171 !important;
-}
-
-.column li.gfield.uses-rich-editor iframe {
-	width: 100% !important;
-}
-
-.column li.gfield.uses-rich-editor span.gp-word-count-label {
-	margin-top: 0 !important;
-}
-
-.column li.gfield>div.ginput_complex>span>label {
-	color: #360b12;
-}
-
-.column li.gfield>.ginput_container_select>.chosen-container {
-	width: 100% !important;
-}
-
-.column li.gfield>.ginput_container_select>.chosen-container-single>.chosen-single {
-	background: linear-gradient(to bottom,rgba(0,0,0,0) 20%,rgba(0,0,0,.038) 50%,rgba(0,0,0,.07) 52%,rgba(0,0,0,.045) 100%), linear-gradient(to bottom,#fff,#fff);
-	height: 1.98em;
-	line-height: 1.98em;
-}
-
-.column li.gfield>.ginput_container_select>.chosen-container-single>.chosen-single:hover {
-	text-shadow: none;
-}
-
-.column li.gfield>.ginput_container_select>.chosen-container-single>.chosen-single>div>b {
-	background-position: 0 calc(-10px + 1.98em / 2);
-}
-
-.column li.gfield>.ginput_container_select>.chosen-container-single.chosen-with-drop>.chosen-single {
-	background: linear-gradient(to bottom,rgba(0,0,0,.07) 20%,rgba(0,0,0,0) 80%), linear-gradient(to bottom,#fff,#fff);
-}
-
-.column li.gfield div.ginput_container_textarea>textarea {
-	font-size: 16px;
-}
-
-.column .gform_fields.top_label>li.gfield.gfield_error.gf_left_half,.column .gform_fields.top_label>li.gfield.gfield_error.gf_right_half {
-	width: calc(50% - 16px);
-}
-
-.column .gform_fields.top_label>li.gfield.gf_left_half ul.gfield_checkbox,.column .gform_fields.top_label>li.gfield.gf_left_half ul.gfield_radio,.column .gform_fields.top_label>li.gfield.gf_right_half ul.gfield_checkbox,.column .gform_fields.top_label>li.gfield.gf_right_half ul.gfield_radio {
-	width: 100%;
-}
-
-.column .gform_fields.top_label>li.gfield>div.gfield_description {
+.gform_wrapper.gravity-theme .field_sublabel_above .instruction {
+	margin-top: .25rem;
 	padding: 0;
-	margin: 0;
-	color: #360b12;
 }
 
-.column .gform_fields.top_label>li.gfield>div.gfield_description ul li {
-	list-style: disc inside none !important;
+.gform_wrapper.gravity-theme .gfield {
+	margin-top: 1rem;
 }
 
-.column .gform_fields.top_label>li.gfield>div.gfield_description p+ul {
-	margin-top: 0;
+.gform_wrapper.gravity-theme .gfield input,.gform_wrapper.gravity-theme .gfield select,.gform_wrapper.gravity-theme .gfield textarea {
+	padding: .5rem;
 }
 
-.column .gform_fields.top_label>li.gfield>div.ginput_complex {
-	margin-top: 0;
+.gform_wrapper.gravity-theme .gfield .gfield_checkbox,.gform_wrapper.gravity-theme .gfield .gfield_radio,.gform_wrapper.gravity-theme .gfield input,.gform_wrapper.gravity-theme .gfield select,.gform_wrapper.gravity-theme .gfield textarea {
+	background: #fff;
+	border: 1px solid #ccc;
+	border-bottom-color: #000;
+	border-radius: .3125rem;
 }
 
-.column .gform_fields.top_label li.gfield:first-child,.column .gform_fields.top_label>li.gfield+li.gfield:not(.gsection) {
-	margin-top: .5em;
+.gform_wrapper.gravity-theme .gfield_label {
+	font-weight: 600;
+	margin-bottom: 0;
 }
 
-.column .gform_fields>.gfield.gfield_contains_required>.ginput_container_select>.gfield_select:not(.gf-value-entered)+.chosen-container-single:not(.chosen-with-drop)>.chosen-single {
-	background: linear-gradient(to bottom,rgba(255,0,0,.1) 0,rgba(255,0,0,0) .6em);
+.gform_wrapper.gravity-theme .gfield_label+.ginput_container {
+	margin-top: .5rem;
 }
 
-.column .gform_fields>.gfield.gfield_contains_required>.ginput_container_select>.gfield_select+.chosen-container-single.chosen-with-drop>.chosen-single {
-	background: linear-gradient(to bottom,rgba(0,0,255,.1) 0,transparent .3em);
+.gform_wrapper.gravity-theme .ginput_complex label {
+	padding: 0;
 }
 
-.column .gform_fields>.gfield.gfield_contains_required input,.column .gform_fields>.gfield.gfield_contains_required select,.column .gform_fields>.gfield.gfield_contains_required textarea {
-	transition: background .3s ease;
+.gform_wrapper.gravity-theme label {
+	font-weight: 400;
 }
 
-.column .gform_fields>.gfield.gfield_contains_required input:focus,.column .gform_fields>.gfield.gfield_contains_required select:focus,.column .gform_fields>.gfield.gfield_contains_required textarea:focus {
-	background: linear-gradient(to bottom,rgba(0,0,255,.1) 0,transparent .3em);
+.gform_wrapper.gravity-theme .gfield_contains_required .gfield_checkbox:not(.gf-value-entered),.gform_wrapper.gravity-theme .gfield_contains_required .gfield_radio:not(.gf-value-entered),.gform_wrapper.gravity-theme .gfield_contains_required input:not(.gf-value-entered),.gform_wrapper.gravity-theme .gfield_contains_required select:not(.gf-value-entered),.gform_wrapper.gravity-theme .gfield_contains_required textarea:not(.gf-value-entered) {
+	border-left: 2px solid #a60f2d;
 }
 
-.column .gform_fields>.gfield.gfield_contains_required input:not(.gf-value-entered):not(:focus),.column .gform_fields>.gfield.gfield_contains_required select:not(.gf-value-entered):not(:focus),.column .gform_fields>.gfield.gfield_contains_required textarea:not(.gf-value-entered):not(:focus) {
-	background-color: rgba(255,0,0,.1);
-	background: linear-gradient(to bottom,rgba(255,0,0,.1) 0,rgba(255,0,0,0) .6em);
+.gform_wrapper.gravity-theme .gfield_contains_required input.gf-value-entered,.gform_wrapper.gravity-theme .gfield_contains_required select.gf-value-entered,.gform_wrapper.gravity-theme .gfield_contains_required textarea.gf-value-entered {
+	padding-left: calc(.5rem + 1px);
 }
 
-.column .gform_fields>.gfield.gfield_contains_required .gfield_checkbox,.column .gform_fields>.gfield.gfield_contains_required .gfield_radio {
-	border: 1px solid #767676;
-	padding: .25em .5em .1em !important;
-	transition: background .3s ease;
-}
-
-.column .gform_fields>.gfield.gfield_contains_required .gfield_checkbox:not(.gf-value-entered),.column .gform_fields>.gfield.gfield_contains_required .gfield_radio:not(.gf-value-entered) {
-	background-color: rgba(255,0,0,.1);
-	background: linear-gradient(to bottom,rgba(255,0,0,.1) 0,rgba(255,0,0,0) .6em);
-}
-
-.column .gform_fields>.gfield.gfield_contains_required .address_line_2 input,.column .gform_fields>.gfield.gfield_contains_required .name_middle input,.column .gform_fields>.gfield.gfield_contains_required .name_suffix input {
-	background: #fff !important;
-}
-
-.column .gform_fields>.gfield.gfield_contains_required .address_line_2 input:focus,.column .gform_fields>.gfield.gfield_contains_required .name_middle input:focus,.column .gform_fields>.gfield.gfield_contains_required .name_suffix input:focus {
-	background-color: #edf3f4 !important;
+.gform_wrapper.gravity-theme .gfield_contains_required .gfield_checkbox.gf-value-entered,.gform_wrapper.gravity-theme .gfield_contains_required .gfield_radio.gf-value-entered {
+	padding-left: 1px;
 }
 
 .post-password-required {
@@ -6548,11 +6384,11 @@ div.auto-scroller ul li {
  *  Fully documented, precompiled source code from which this section of the custom stylesheet was
  *    built is developed and maintained on the linked GitHub project.
  *
- *  @version 1.0.0
+ *  @version 1.1.0
  *
  *  @author Daniel Rieck [daniel.rieck@wsu.edu] (https://github.com/invokeImmediately)
  *  @link https://github.com/invokeImmediately/commonreading.wsu.edu/
- *  @license MIT — Copyright (c) 2021 Washington State University.
+ *  @license MIT — Copyright (c) 2022 Washington State University.
  *    Permission is hereby granted, free of charge, to any person obtaining a copy of this software
  *      and associated documentation files (the “Software”), to deal in the Software without
  *      restriction, including without limitation the rights to use, copy, modify, merge, publish,
@@ -6631,7 +6467,7 @@ main {
 	color: #000;
 }
 
-.row.calendar .column h3,.row.calendar .gform_heading h3.gform_title {
+.row.calendar .column h3 {
 	padding-top: 0;
 	padding-bottom: 0;
 	margin-top: .25rem;
@@ -6657,50 +6493,50 @@ main {
 	font-size: 2.07883559em;
 }
 
-.page.archives .column h3,.page.archives .gform_heading h3.gform_title,.page.book-nominations .column h3,.page.book-nominations .gform_heading h3.gform_title {
+.page.archives .column h3,.page.book-nominations .column h3 {
 	font-size: 1.8044081em;
 }
 
-.page.archives .column h3:not(.no-background),.page.archives .gform_heading h3.gform_title:not(.no-background),.page.book-nominations .column h3:not(.no-background),.page.book-nominations .gform_heading h3.gform_title:not(.no-background) {
+.page.archives .column h3:not(.no-background),.page.book-nominations .column h3:not(.no-background) {
 	padding: .4em;
 	margin-bottom: 1rem;
 	border-top: 1px solid rgba(166,15,45,.6667);
 	background-color: rgba(202,18,55,.075);
 }
 
-.page.archives .column h3:not(.no-background)[class],.page.archives .gform_heading h3.gform_title:not(.no-background)[class],.page.book-nominations .column h3:not(.no-background)[class],.page.book-nominations .gform_heading h3.gform_title:not(.no-background)[class] {
+.page.archives .column h3:not(.no-background)[class],.page.book-nominations .column h3:not(.no-background)[class] {
 	margin-top: 2rem;
 	background-position: right center;
 	background-size: auto 31px;
 	background-repeat: no-repeat;
 }
 
-.page.archives .column h3:not(.no-background).about-the-author,.page.archives .gform_heading h3.gform_title:not(.no-background).about-the-author,.page.book-nominations .column h3:not(.no-background).about-the-author,.page.book-nominations .gform_heading h3.gform_title:not(.no-background).about-the-author {
+.page.archives .column h3:not(.no-background).about-the-author,.page.book-nominations .column h3:not(.no-background).about-the-author {
 	padding-right: 50px;
 	background-image: url(/wp-content/uploads/sites/52/2017/05/icon_user_displayed-at-right.png);
 }
 
-.page.archives .column h3:not(.no-background).about-the-book,.page.archives .gform_heading h3.gform_title:not(.no-background).about-the-book,.page.book-nominations .column h3:not(.no-background).about-the-book,.page.book-nominations .gform_heading h3.gform_title:not(.no-background).about-the-book {
+.page.archives .column h3:not(.no-background).about-the-book,.page.book-nominations .column h3:not(.no-background).about-the-book {
 	padding-right: 49px;
 	background-image: url(/wp-content/uploads/sites/52/2017/05/icon_book_displayed-at-right.png);
 }
 
-.page.archives .column h3:not(.no-background).calendar,.page.archives .gform_heading h3.gform_title:not(.no-background).calendar,.page.book-nominations .column h3:not(.no-background).calendar,.page.book-nominations .gform_heading h3.gform_title:not(.no-background).calendar {
+.page.archives .column h3:not(.no-background).calendar,.page.book-nominations .column h3:not(.no-background).calendar {
 	padding-right: 58px;
 	background-image: url(/wp-content/uploads/sites/52/2017/05/icon_month_displayed-at-right.png);
 }
 
-.page.archives .column h3:not(.no-background).for-families,.page.archives .gform_heading h3.gform_title:not(.no-background).for-families,.page.book-nominations .column h3:not(.no-background).for-families,.page.book-nominations .gform_heading h3.gform_title:not(.no-background).for-families {
+.page.archives .column h3:not(.no-background).for-families,.page.book-nominations .column h3:not(.no-background).for-families {
 	padding-right: 57px;
 	background-image: url(/wp-content/uploads/sites/52/2017/05/icon_for-families_displayed-at-right.png);
 }
 
-.page.archives .column h3:not(.no-background).for-faculty,.page.archives .gform_heading h3.gform_title:not(.no-background).for-faculty,.page.book-nominations .column h3:not(.no-background).for-faculty,.page.book-nominations .gform_heading h3.gform_title:not(.no-background).for-faculty {
+.page.archives .column h3:not(.no-background).for-faculty,.page.book-nominations .column h3:not(.no-background).for-faculty {
 	padding-right: 43px;
 	background-image: url(/wp-content/uploads/sites/52/2017/05/icon_for-faculty_displayed-at-right.png);
 }
 
-.page.archives .column h3:not(.no-background).contact,.page.archives .gform_heading h3.gform_title:not(.no-background).contact,.page.book-nominations .column h3:not(.no-background).contact,.page.book-nominations .gform_heading h3.gform_title:not(.no-background).contact {
+.page.archives .column h3:not(.no-background).contact,.page.book-nominations .column h3:not(.no-background).contact {
 	padding-right: 66px;
 	background-image: url(/wp-content/uploads/sites/52/2017/05/icon_contact_displayed-at-right.png);
 }
@@ -6955,19 +6791,19 @@ body:not(.crimson-key-home):not(.crimson-key) .row.h1-header .column:before {
 	font-weight: 400;
 }
 
-.page.crimson-key-home .column h1,.page.crimson-key-home .column h2,.page.crimson-key-home .column h3,.page.crimson-key-home .column h4,.page.crimson-key-home .column h5,.page.crimson-key-home .column h6,.page.crimson-key-home .gform_heading h3.gform_title,.page.crimson-key.black-key-clue .column h1,.page.crimson-key.black-key-clue .column h2,.page.crimson-key.black-key-clue .column h3,.page.crimson-key.black-key-clue .column h4,.page.crimson-key.black-key-clue .column h5,.page.crimson-key.black-key-clue .column h6,.page.crimson-key.black-key-clue .gform_heading h3.gform_title {
+.page.crimson-key-home .column h1,.page.crimson-key-home .column h2,.page.crimson-key-home .column h3,.page.crimson-key-home .column h4,.page.crimson-key-home .column h5,.page.crimson-key-home .column h6,.page.crimson-key.black-key-clue .column h1,.page.crimson-key.black-key-clue .column h2,.page.crimson-key.black-key-clue .column h3,.page.crimson-key.black-key-clue .column h4,.page.crimson-key.black-key-clue .column h5,.page.crimson-key.black-key-clue .column h6 {
 	padding-top: 0;
 	margin-top: .5em;
 	font-weight: 400;
 	color: #fff;
 }
 
-.page.crimson-key-home .column h1.has-top-border,.page.crimson-key-home .column h2.has-top-border,.page.crimson-key-home .column h3.has-top-border,.page.crimson-key-home .column h4.has-top-border,.page.crimson-key-home .column h5.has-top-border,.page.crimson-key-home .column h6.has-top-border,.page.crimson-key-home .gform_heading h3.gform_title.has-top-border,.page.crimson-key.black-key-clue .column h1.has-top-border,.page.crimson-key.black-key-clue .column h2.has-top-border,.page.crimson-key.black-key-clue .column h3.has-top-border,.page.crimson-key.black-key-clue .column h4.has-top-border,.page.crimson-key.black-key-clue .column h5.has-top-border,.page.crimson-key.black-key-clue .column h6.has-top-border,.page.crimson-key.black-key-clue .gform_heading h3.gform_title.has-top-border {
+.page.crimson-key-home .column h1.has-top-border,.page.crimson-key-home .column h2.has-top-border,.page.crimson-key-home .column h3.has-top-border,.page.crimson-key-home .column h4.has-top-border,.page.crimson-key-home .column h5.has-top-border,.page.crimson-key-home .column h6.has-top-border,.page.crimson-key.black-key-clue .column h1.has-top-border,.page.crimson-key.black-key-clue .column h2.has-top-border,.page.crimson-key.black-key-clue .column h3.has-top-border,.page.crimson-key.black-key-clue .column h4.has-top-border,.page.crimson-key.black-key-clue .column h5.has-top-border,.page.crimson-key.black-key-clue .column h6.has-top-border {
 	margin-top: 1em;
 	border-top: 1px solid #fff;
 }
 
-.page.crimson-key-home .column h1.has-top-border.border-is-faded,.page.crimson-key-home .column h2.has-top-border.border-is-faded,.page.crimson-key-home .column h3.has-top-border.border-is-faded,.page.crimson-key-home .column h4.has-top-border.border-is-faded,.page.crimson-key-home .column h5.has-top-border.border-is-faded,.page.crimson-key-home .column h6.has-top-border.border-is-faded,.page.crimson-key-home .gform_heading h3.gform_title.has-top-border.border-is-faded,.page.crimson-key.black-key-clue .column h1.has-top-border.border-is-faded,.page.crimson-key.black-key-clue .column h2.has-top-border.border-is-faded,.page.crimson-key.black-key-clue .column h3.has-top-border.border-is-faded,.page.crimson-key.black-key-clue .column h4.has-top-border.border-is-faded,.page.crimson-key.black-key-clue .column h5.has-top-border.border-is-faded,.page.crimson-key.black-key-clue .column h6.has-top-border.border-is-faded,.page.crimson-key.black-key-clue .gform_heading h3.gform_title.has-top-border.border-is-faded {
+.page.crimson-key-home .column h1.has-top-border.border-is-faded,.page.crimson-key-home .column h2.has-top-border.border-is-faded,.page.crimson-key-home .column h3.has-top-border.border-is-faded,.page.crimson-key-home .column h4.has-top-border.border-is-faded,.page.crimson-key-home .column h5.has-top-border.border-is-faded,.page.crimson-key-home .column h6.has-top-border.border-is-faded,.page.crimson-key.black-key-clue .column h1.has-top-border.border-is-faded,.page.crimson-key.black-key-clue .column h2.has-top-border.border-is-faded,.page.crimson-key.black-key-clue .column h3.has-top-border.border-is-faded,.page.crimson-key.black-key-clue .column h4.has-top-border.border-is-faded,.page.crimson-key.black-key-clue .column h5.has-top-border.border-is-faded,.page.crimson-key.black-key-clue .column h6.has-top-border.border-is-faded {
 	border-top: 1px solid rgba(255,255,255,.5);
 }
 
@@ -7657,7 +7493,7 @@ body.tribe-theme-spine:not(.tribe_venue-template-default) .main-header .header-g
  *      https://github.com/invokeImmediately/commonreading.wsu.edu/
  *
  *  @author Daniel Rieck [daniel.rieck@wsu.edu] (https://github.com/invokeImmediately)
- *  @license: MIT - Copyright (c) 2021 Washington State University
+ *  @license: MIT - Copyright (c) 2022 Washington State University
  *    Permission is hereby granted, free of charge, to any person obtaining a copy of this software
  *      and associated documentation files (the "Software"), to deal in the Software without
  *      restriction, including without limitation the rights to use, copy, modify, merge, publish,
@@ -7708,28 +7544,6 @@ body.tribe-theme-spine:not(.tribe_venue-template-default) .main-header .header-g
 	}
 }
 
-@media only screen and (min-width:641px) {
-	.column .gform_wrapper .top_label li ul.gfield_radio {
-		width: 100%;
-	}
-	
-	.column .gform_wrapper.gf_browser_chrome .gform_body {
-		width: calc(100% + 15px);
-	}
-	
-	.column li.gfield.gf_left_half.expands-to-two-thirds {
-		width: 67% !important;
-	}
-	
-	.column li.gfield.gf_left_half.expands-to-two-thirds+li.gfield.gf_right_half {
-		width: 33% !important;
-	}
-	
-	.column li.gfield.has-label-spacer>div.ginput_container {
-		margin-top: 21px;
-	}
-}
-
 @media all and (min-width:694px) {
 	section.thirds img.show-when-adjacent {
 		width: 100%;
@@ -7768,12 +7582,6 @@ body.tribe-theme-spine:not(.tribe_venue-template-default) .main-header .header-g
 	}
 }
 
-@media only screen and (min-width:792px) {
-	.column li.gfield.has-label-spacer>div.ginput_container {
-		margin-top: 23px;
-	}
-}
-
 @media all and (min-width:792px) {
 	.show-on-tablet {
 		display: none !important;
@@ -7787,10 +7595,6 @@ body.tribe-theme-spine:not(.tribe_venue-template-default) .main-header .header-g
 	
 	body.use-max-width-1386 #binder.max-1188 .row {
 		max-width: 1386px;
-	}
-	
-	.column li.gfield.has-label-spacer>div.ginput_container {
-		margin-top: 21px;
 	}
 }
 
@@ -7806,7 +7610,7 @@ body.tribe-theme-spine:not(.tribe_venue-template-default) .main-header .header-g
 	}
 	
 	.row.side-left .column.two,.row.side-right .column.one,.row.single .column {
-		font-size: 1.118em;
+		font-size: 1em;
 	}
 	
 	.row.halves .column,.row.mimic-two-column-sections .column,.row.side-left .column.one,.row.side-left .column.two.mimic-sidebar,.row.side-right .column.one.mimic-sidebar,.row.side-right .column.two {
@@ -7823,12 +7627,6 @@ body.tribe-theme-spine:not(.tribe_venue-template-default) .main-header .header-g
 	
 	.tablepress thead th {
 		font-size: .98384em;
-	}
-}
-
-@media only screen and (min-width:1073px) {
-	.column li.gfield.has-label-spacer>div.ginput_container {
-		margin-top: 23px;
 	}
 }
 
@@ -8053,19 +7851,6 @@ body.tribe-theme-spine:not(.tribe_venue-template-default) .main-header .header-g
 	}
 	
 	.notice {
-		width: 100%;
-	}
-}
-
-@media only screen and (max-width:641px) {
-	.column li.gfield>.ginput_container_select>.chosen-container-single>.chosen-single>div>b {
-		top: calc(.99em - 3px);
-		background-position: 0 -7px;
-	}
-}
-
-@media only screen and (max-width:640px) {
-	.column .gform_wrapper.gf_browser_chrome .gform_body {
 		width: 100%;
 	}
 }
@@ -8338,7 +8123,7 @@ body.tribe-theme-spine:not(.tribe_venue-template-default) .main-header .header-g
 	}
 	
 	.row.side-left .column.two,.row.side-right .column.one,.row.single .column {
-		font-size: 1em;
+		font-size: .941em;
 	}
 	
 	.row.halves .column,.row.mimic-two-column-sections .column,.row.side-left .column.one,.row.side-left .column.two.mimic-sidebar,.row.side-right .column.one.mimic-sidebar,.row.side-right .column.two {
@@ -8364,7 +8149,7 @@ body.tribe-theme-spine:not(.tribe_venue-template-default) .main-header .header-g
 	}
 	
 	.row.side-left .column.two,.row.side-right .column.one,.row.single .column {
-		font-size: 1.118em;
+		font-size: .941em;
 	}
 	
 	.row.halves .column,.row.mimic-two-column-sections .column,.row.side-left .column.one,.row.side-left .column.two.mimic-sidebar,.row.side-right .column.one.mimic-sidebar,.row.side-right .column.two {
